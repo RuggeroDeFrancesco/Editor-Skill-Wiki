@@ -121,10 +121,10 @@ Public Class SpellDataWindow
             spellDataCreator = New SpellDataCreator(Convert.ToInt32(languageSelected))
             spellDataCreator.parseData(path)
             spellName = spellDataCreator.SpellName
-            DescriptionResetValue = spellDataCreator.rawDescription
-            Description = CheckExistingCustomDataCombinations(spellDataCreator.rawDescription)
-            CustomDataNameList = spellDataCreator.customDataNameList
-            CustomDataValueList = spellDataCreator.customDataValueList
+            Description = spellDataCreator.rawDescription
+            'Description = CheckExistingCustomDataCombinations(spellDataCreator.rawDescription)
+            'CustomDataNameList = spellDataCreator.customDataNameList
+            'CustomDataValueList = spellDataCreator.customDataValueList
         Catch ex As Exception
             MsgBox(ex.Message)
             MsgBox(ex.StackTrace)

@@ -4,31 +4,37 @@ Public Class MonsterDataCreator
 
     Dim languageEnum As Integer = 0
     Dim languageData As LanguageData
+    Dim spellFolder As String
+    Dim attackFolder As String
 
 
     Private Sub test_click(sender As Object, e As RoutedEventArgs)
         Try
-            Dim rawData As String
-            Dim OpenFileDialog1 As New Microsoft.Win32.OpenFileDialog
-            OpenFileDialog1.Title = "Open File..."
-            OpenFileDialog1.Multiselect = False
-            OpenFileDialog1.Filter = "All Files|*.*"
-            OpenFileDialog1.ShowDialog()
-            Dim path As String = OpenFileDialog1.FileName
-            If System.IO.File.Exists(path) Then
-                rawData = System.IO.File.ReadAllText(path)
-            Else Throw New System.Exception("File does not exist.")
+            If spellFolder <> "" And attackFolder <> "" Then
+                Dim rawData As String
+                Dim OpenFileDialog1 As New Microsoft.Win32.OpenFileDialog
+                OpenFileDialog1.Title = "Open File..."
+                OpenFileDialog1.Multiselect = False
+                OpenFileDialog1.Filter = "All Files|*.*"
+                OpenFileDialog1.ShowDialog()
+                Dim path As String = OpenFileDialog1.FileName
+                If System.IO.File.Exists(path) Then
+                    rawData = System.IO.File.ReadAllText(path)
+                Else Throw New System.Exception("File does not exist.")
+                End If
+
+                'extract language data to get the correct monster name and description
+                languageData = deserializeLanguageData(GetLanguageData())
+
+
+                Dim parsedData = parseMonsterData(rawData)
+                Dim finalData As New MonsterFinalData
+                finalData.parseData(parsedData, attackFolder, spellFolder)
+                Dim output = createModuleOutput(finalData)
+                OutputBlock.Text = output
+            Else
+                MsgBox("Please select valid folders for Attacks and Spells.")
             End If
-
-            'extract language data to get the correct monster name and description
-            languageData = deserializeLanguageData(GetLanguageData())
-
-
-            Dim parsedData = parseMonsterData(rawData)
-            Dim finalData As New MonsterFinalData
-            finalData.parseData(parsedData, "E:\Desktop\Miscellanea\Fractured\Creatures\Pre Closing\Attacks", "E:\Desktop\Miscellanea\Fractured\Spell\Pre Closing")
-            Dim output = createModuleOutput(finalData)
-            OutputBlock.Text = output
         Catch ex As Exception
             MsgBox(ex.Message)
             MsgBox(ex.StackTrace)
@@ -155,5 +161,19 @@ Public Class MonsterDataCreator
         Return name
     End Function
 
+    Private Sub selectAttacks_Click(sender As Object, e As RoutedEventArgs)
+        Dim fbd As Ookii.Dialogs.Wpf.VistaFolderBrowserDialog = New Ookii.Dialogs.Wpf.VistaFolderBrowserDialog
+        If fbd.ShowDialog() Then
+            attackFolder = fbd.SelectedPath
+            SelectedAttackFolder.Text = attackFolder
+        End If
+    End Sub
 
+    Private Sub selectSpells_Click(sender As Object, e As RoutedEventArgs)
+        Dim fbd As Ookii.Dialogs.Wpf.VistaFolderBrowserDialog = New Ookii.Dialogs.Wpf.VistaFolderBrowserDialog
+        If fbd.ShowDialog() Then
+            spellFolder = fbd.SelectedPath
+            SelectedSpellFolder.Text = spellFolder
+        End If
+    End Sub
 End Class

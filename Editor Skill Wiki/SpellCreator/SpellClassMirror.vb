@@ -65,7 +65,7 @@ Public Class spellcastingRestrictions
     Public restrictedWeaponClass As Integer
     Public restrictedWeaponWeight As Integer
     Public restrictedWeaponDamage As Integer
-    Public shieldRequired As Boolean
+    Public specialWeaponRestriction As Integer
     Public restrictedArmorWeight As Integer
 End Class
 

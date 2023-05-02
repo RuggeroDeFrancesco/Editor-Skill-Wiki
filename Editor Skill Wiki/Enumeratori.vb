@@ -442,7 +442,7 @@
 	End Enum
 
 	Public Enum RestrictedWeaponDamage
-		'Any = 0
+		Any = 0
 		Slash = 1
 		Pierce = 2
 		'Slash_Pierce = 3
