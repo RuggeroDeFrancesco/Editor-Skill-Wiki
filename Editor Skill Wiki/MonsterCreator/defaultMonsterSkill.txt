@@ -1,0 +1,5 @@
+﻿            {
+                ["Name"] = "nameText",
+                ["KP"] = "kpText",
+                ["Acquired"] = "acquiredText",
+            },

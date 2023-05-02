@@ -1,0 +1,33 @@
+﻿<Window x:Class="MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Editor_Skill_Wiki"
+        mc:Ignorable="d"
+        Title="Fractured Wiki Assistant" Height="320" Width="960" Loaded="Window_Loaded"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <ImageBrush ImageSource="/Images/MainWindow.jpg" />
+    </Window.Background>
+    <Grid>
+        <WrapPanel Margin="0,0,502,195">
+            <Button HorizontalAlignment="Left" Margin="33,28,0,0" VerticalAlignment="Top" Click="GenerateSpellData" Height="64" Width="64">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Images/SpellData.Png" />
+                </Button.Background>
+            </Button>
+            <TextBox Text="Spell Data" FontSize="18" FontFamily="MS Gothic" FontWeight="Bold" Foreground="Tan"  Background="Transparent" BorderBrush="Transparent" Height="32" Margin="33,28,0,0"/>
+        </WrapPanel>
+        <WrapPanel Margin="0,83,0,110">
+            <Button HorizontalAlignment="Left" Margin="33,28,0,0" VerticalAlignment="Top" Click="GenerateMonsterSpells" Height="64" Width="64">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Images/MonsterSpells.Png" />
+                </Button.Background>
+            </Button>
+            <TextBox Text="Monster Spells" FontSize="18" FontFamily="MS Gothic" FontWeight="Bold" Foreground="Tan"  Background="Transparent" BorderBrush="Transparent" Height="32" Margin="33,28,0,0"/>
+        </WrapPanel>
+
+    </Grid>
+</Window>

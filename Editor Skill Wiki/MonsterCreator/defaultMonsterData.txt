@@ -1,0 +1,37 @@
+﻿["nameText"] = {
+        ["Description"] = "descriptionText",
+        ["EnvImage"] = "imageText",
+        ["Category"] = "categoryText",
+        ["Attributes and Modifiers"] = {
+            ["STR"] = "strText",
+            ["DEX"] = "dexText",
+            ["INT"] = "intText",
+            ["CON"] = "conText",
+            ["PER"] = "perText",
+            ["CHA"] = "chaText",
+            ["Health"] = "healthText",
+            ["Mana"] = "manaText",
+            ["Accuracy"] = "accuracyText",
+            ["Fortitude"] = "fortitudeText",
+            ["Evasion"] = "evasionText",
+            ["Willpower"] = "willpowerText",
+        },
+        ["Armor and Resistances"] = {
+            ["Armor (Slash)"] = "slashText (slash%Text)",
+            ["Armor (Pierce)"] = "pierceText (pierce%Text)",
+            ["Armor (Crush)"] = "crushText (crush%Text)",
+            ["Elemental (Fire)"] = "fireText (fire%Text)",
+            ["Elemental (Ice)"] = "iceText (ice%Text)",
+            ["Elemental (Shock)"] = "shockText (shock%Text)",
+            ["Magic"] = "magicText (magic%Text)",
+            ["Poison"] = "poisonText (poison%Text)",
+            ["Acid"] = "acidText (acid%Text)",
+        },
+        ["Base Attacks"] = {
+attackSpace
+        },
+        ["Skills and Abilities"] = {
+skillSpace
+        },
+       ["Tags"] = {"Arboreus","Terra"},
+    },

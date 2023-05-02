@@ -1,0 +1,1363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Assets filename="E:\Desktop\Miscellanea\Fractured\Creatures\Pre Closing\Attacks\assets.xml" createdAt="2022-12-26T16:43:06">
+  <Asset>
+    <Name>attack_BitingDartfrog_TongueHit</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58103</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>540</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_GiantBullfrog_TongueHit</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58104</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>568</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_LegendBullfrog_TongueHit</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58105</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>568</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_ScorchingDartfrog_TongueHit</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58106</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>548</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_ToxicDartfrog_TongueHit</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58107</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>540</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_BlackWidowHatchling_Bite</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58118</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>488</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_BlackWidow_Bite</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58119</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>460</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_GiantSpider_Bite</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58120</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>464</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_GiantSpider_Legend_Bite</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58121</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>472</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_Spiderling_Bite</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58122</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>468</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_VampiricSpider_Bite</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58123</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>480</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_ArmoredBear_Bite</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58137</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>452</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_ArmoredBear_Claws</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58138</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>512</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_BlackBear_Bite</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58139</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>452</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_BlackBear_Claws</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58140</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>512</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_GrizzlyBear_Bite</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58141</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>452</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_GrizzlyBear_Claws</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58142</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>512</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_GrizzlyBear_Legend_Bite</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58143</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>460</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_GrizzlyBear_Legend_Claws</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58144</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>520</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_WildBehemut_Horn</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58153</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>512</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_Cassowary_Slash</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58156</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>380</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_LegendCassowary_Slash</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58157</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>384</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_SeaCrab_Claws</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58162</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>496</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_MammothLegend_Warhead</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58175</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>356</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_Mammoth_Warhead</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58176</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>464</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_WoolyTapir_Warhead</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58185</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>468</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_Warthog_Warhead</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58188</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>464</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_ArcticWolfLegend_Bite</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58191</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>436</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_ArcticWolf_Bite</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58192</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>432</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_BattleWarg_Bite</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58193</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>432</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_Direwolf_Bite</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58194</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>452</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_TrainedWolf_Bite</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58195</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>432</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_Warg_Bite</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58196</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>424</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_Wolf_Bite</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58197</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>424</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_Wolf_Bite_Tutorial</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58198</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>436</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_YoungWolf_Bite</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58199</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>432</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_ArborealDragon_Bite</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58218</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>500</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_ArborealDragon_Tail</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58219</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>576</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_ArborealDragonling_Bite</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58220</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>504</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_ArborealDragonling_Tail</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58221</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>580</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_EmberDragon_Bite</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58222</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>496</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_EmberDragon_Tail</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58223</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>572</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_EmberDragonling_Bite</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58224</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>500</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_EmberDragonling_Tail</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58225</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>576</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_LegendDragonArboreal</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58226</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>356</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_LegendDragonEmber</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58227</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>352</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_LegendDragonMountain</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58228</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>356</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_MountainDragon_Bite</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58229</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>484</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_MountainDragon_Tail</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58230</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>576</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_MountainDragonling_Bite</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58231</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>488</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_MountainDragonling_Tail</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58232</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>580</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_OgreArchDruid_Staff</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58251</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>540</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_OgreBrute_Sword</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58252</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>476</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_OgreDruid_Staff</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58253</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>536</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_OgreWatcher_Shields</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58254</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>500</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_OgreWitch_Staff</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58255</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>536</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_JotunnBerserker_Axe</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58266</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>504</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_JotunnCleric_Staff</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58267</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>536</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_JotunnLegend_Axe</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58268</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>500</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_JotunnStormborn_Hammer</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58269</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>528</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_JotunnWarrior_Axe</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58270</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>492</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_OgreLord_AxeMace</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58281</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>500</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_OgreMage_Staff</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58282</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>532</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_OgreMaster_Hammer</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58283</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>520</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_OgreShieldbearer_Shields</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58284</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>552</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_OgreWarrior_Sword</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58285</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>508</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_Goblin_Cutthroat_Daggers</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58296</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>528</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_Goblin_Enforcer_ShortSword</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58297</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>524</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_Goblin_FrostShaman</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58298</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>528</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_Goblin_FrostShot_Shortbow</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58299</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>500</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_Goblin_Medic_Staff</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58300</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>528</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_Goblin_Shadowdancer_Daggers</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58301</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>532</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_Goblin_ShamanDeath_Legend_StaffPoison</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58302</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>548</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_Goblin_ShamanDeath_StaffPoison</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58303</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>544</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_Goblin_ShamanFire_StaffFire</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58304</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>536</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_Goblin_StormShaman</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58305</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>528</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_Goblin_Trapper_Shortbow</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58306</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>516</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_Goblin_Warchief_Mace</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58307</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>496</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_Bandit_Agitator_Longbow</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58332</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>496</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_Bandit_Archer_Shortbow</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58333</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>516</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_Bandit_ArchmageOutcast_MagicStaff</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58334</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>556</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_Bandit_Brawler_Dagger</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58335</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>524</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_Bandit_CrazyAeromancer_ShockStaff</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58336</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>556</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_Bandit_CrazyCryomancer_IceStaff</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58337</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>556</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_Bandit_CrazyPyromancer_FireStaff</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58338</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>556</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_Bandit_Leader_Warhammer</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58339</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>532</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_Bandit_Marauder_Scimitar</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58340</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>532</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_Bandit_Marksman_Shortbow</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58341</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>516</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_Bandit_Ruffian_Club</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58342</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>496</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_Bandit_Sorcerer_MagicStaff</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58343</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>552</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_Bandit_Spellsword_Rapier</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58344</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>516</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_Bandit_SwordMan_Scimitar</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58345</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>532</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_Bandit_Thug_Dagger</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58346</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>524</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_ColossalHuskworm_Attack</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58377</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>484</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_EmeraldHuskworm_Attack</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58378</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>492</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_RubyHuskworm_Attack</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58379</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>488</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_TopazHuskworm_Attack</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58380</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>488</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_LegendTermidian_Bite</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58389</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>588</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_TermidianDrone_Bite</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58390</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>560</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_TermidianLarva_Bite</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58391</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>492</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_TermidianMatron_Bite</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58392</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>588</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_TermidianSpitter_Bite</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58393</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>560</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_TermidianWarrior_Bite</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58394</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>560</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_TermidianWitch_Bite</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58395</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>560</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_ForgeSnapper_Smash</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58416</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>624</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_LavaLizard_Bite</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58417</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>448</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_LavaLizard_Claws</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58418</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>500</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_ObsidianCrab_Claws</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58419</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>504</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_CrystalColossus_Fist</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58426</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>640</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_FireColossus_Fist</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58427</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>560</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_IceColossus_Fists</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58428</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>560</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_CrystalElemental_Greater_MagicProjectile</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58437</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>656</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_CrystalElemental_MagicProjectile</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58438</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>616</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_EarthElemental_Fists</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58439</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>564</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_EarthElemental_Greater_Fists</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58440</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>604</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_EarthElemental_Legend_Fists</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58441</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>604</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_FireElemental_Greater_MagicProjectile</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58442</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>640</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_FireElemental_MagicProjectile</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58443</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>600</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_IceElemental_Fists</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58444</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>564</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_IceElemental_Greater_Fists</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58445</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>628</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_StormElemental_Greater_MagicProjectile</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58446</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>648</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_StormElemental_MagicProjectile</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58447</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>576</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_CrystalPrimeling_Fist</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58470</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>576</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_FirePrimeling_Fist</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58471</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>564</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_IcePrimeling_Fists</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58472</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>560</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_StormPrimeling_Fist</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58473</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>568</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_Sproutling_Claws</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58482</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>524</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_Treant_Fists</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58485</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>552</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_Treant_Legend_Fists</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58486</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>528</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_ForestTroll_Claws</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58491</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>520</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_ForestTroll_Elder_Claws</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58492</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>528</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_MountainTroll_Elder_Fists</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58493</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>528</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_MountainTroll_Fists</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58494</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>524</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_SeaTroll_Claws</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58495</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>520</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_SeaTroll_Elder_Claws</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58496</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>524</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_WoodlandWisp</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58509</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>576</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_WoodlandWisp_Greater</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58510</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>584</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_WoodlandWisp_Legend</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58511</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>584</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_CrestedLizard_Bite</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58518</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>436</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_CrestedLizard_Claws</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58519</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>504</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_Crocodile_Bite</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58520</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>460</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_KomodoDragon_Claws</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58521</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>512</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_LegendCrestedLizard_Bite</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58522</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>440</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_LegendCrestedLizard_Claws</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58523</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>508</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_MudAlligator_Bite</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58524</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>460</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_SeaTurtle_Smash</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58525</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>536</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_GrokotonChieftain_Axe</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58538</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>504</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_GrokotonHunter_Bow</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58539</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>512</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_GrokotonSage_StaffAcid</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58540</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>544</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_GrokotonShaman_StaffAcid</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58541</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>544</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_GrokotonStalker_Daggers</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58542</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>496</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_GrokotonWarrior_Spear</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58543</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>492</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_SkeletalDragon_Tail</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58556</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>576</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_SkleletalDragon_Bite</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58557</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>500</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_Felghoul_Claws</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58560</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>516</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_Ghoul_Bite</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58561</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>444</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_Ghoul_Claws</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58562</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>500</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_Ghoul_Legend_Bite</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58563</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>448</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_Ghoul_Legend_Claws</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58564</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>508</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_SkeletalArcher_Longbow</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58571</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>496</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_SkeletalKnight_Longsword</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58572</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>520</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_SkeletalMage_Magestaff (Acid)</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58573</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>536</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_SkeletalPriest_Mace</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58574</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>496</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_SkeletalWarrior_Greatsword</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58575</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>524</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_Skeleton_Fists</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58576</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>512</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_CrawlingHorror_Bite</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58589</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>472</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_SpiderLich_Bite</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58590</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>484</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_SpiderLich_Legend_Bite</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58591</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>492</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_Zombie_Fists</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58598</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>532</Size>
+  </Asset>
+  <Asset>
+    <Name>attack_Giant Rat</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>58601</PathID>
+    <Source>D:\Glyph\Games\FracturedOnline\Live\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>416</Size>
+  </Asset>
+</Assets>

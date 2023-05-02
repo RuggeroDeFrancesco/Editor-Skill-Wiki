@@ -1,0 +1,6 @@
+﻿            {
+                ["Name"] = "textName",
+                ["Damage"] = "textDamage",
+                ["Range"] = "textRange",
+                ["Speed"] = "textSpeed",
+            },
