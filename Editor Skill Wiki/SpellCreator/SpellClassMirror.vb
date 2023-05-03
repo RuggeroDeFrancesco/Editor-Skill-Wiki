@@ -38,6 +38,8 @@ Public Class SpellClassMirror
     Public requireStatusOnTarget As Integer
     Public preCastTime As Double
     Public ResourceCost As Double
+    Public tooltipActivationType As Integer
+    Public tooltipTargetType As Integer
 
     Public spellData As List(Of spellDataInfo)
     Public spellcastingRestrictions As spellcastingRestrictions

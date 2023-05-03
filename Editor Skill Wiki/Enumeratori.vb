@@ -52,6 +52,40 @@
 		Link
 	End Enum
 
+	Public Enum TargetEntityType
+		Player = 1
+		Enemy = 2
+		Ally = 4
+		Monster = 8
+		Self = 16
+	End Enum
+
+	Public Enum TargetType
+		Self
+		Location
+		Entity
+		PlaceSpellEntityLocation
+		PlaceSpellTotemLocation
+	End Enum
+
+	Public Enum tooltipActivationType
+		None
+		Targeted
+		Toggle
+		Ready
+		Directional
+		Self
+	End Enum
+
+	Public Enum tooltipTargetType
+		None
+		Terrain
+		Enemy
+		FrozenEnemy
+		RootedEnemy
+		Ally
+	End Enum
+
 	Public Enum SpellGroup
 		None
 		ReadyOnAttack
@@ -107,6 +141,7 @@
 	Public Enum canBeCritical
 		No
 		Yes
+		Irrelevant
 	End Enum
 
 	Public Enum mobilitySpell
@@ -125,21 +160,7 @@
 		Hard
 	End Enum
 
-	Public Enum TargetEntityType
-		Player = 1
-		Enemy = 2
-		Ally = 4
-		Monster = 8
-		Self = 16
-	End Enum
 
-	Public Enum TargetType
-		Self
-		Location
-		Entity
-		PlaceSpellEntityLocation
-		PlaceSpellTotemLocation
-	End Enum
 
 	Public Enum RequireStatusOnTarget
 		None
@@ -436,10 +457,10 @@
 
 	'Restrizione sull'arma
 
-	Public Enum ChannelingWeapon
-		No
-		Yes
-	End Enum
+	'Public Enum ChannelingWeapon
+	'	No
+	'	Yes
+	'End Enum
 
 	Public Enum RestrictedWeaponDamage
 		Any = 0
@@ -527,6 +548,16 @@
 		Constitution = 4
 		Perception = 5
 		Charisma = 6
+	End Enum
+
+	Public Enum SpellCoefficientAttributeType
+		None
+		STR
+		DEX
+		COS
+		PER
+		INT
+		CHA
 	End Enum
 
 

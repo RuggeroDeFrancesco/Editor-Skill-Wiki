@@ -7,7 +7,9 @@ Public Class SpellDataCreator
 
     Dim deserializedlanguageData As LanguageData
     Public Property Output As String 'full list of the properties, to be used for the datamodule on the wiki
-    Public Property rawDescription As String 'description of the spell, before filling the parameters with customData
+    Public Property rawDescription As String 'description of the spell
+
+    Public Property parameters As String 'numerical parameters that follow the description
 
     Public Property customDataNameList As ObjectModel.ObservableCollection(Of String)
 
@@ -63,6 +65,7 @@ Public Class SpellDataCreator
         deserializedlanguageData = deserializeLanguageData(rawlanguagedata)
         Output = createOutput(data)
         rawDescription = GetDescription(data)
+        parameters = GetSkillParameters(data)
         SpellName = data.m_name
         removed = data.removed
         gameReady = data.gameReady
@@ -94,29 +97,66 @@ Public Class SpellDataCreator
         output = output.Replace("schoolValue", [Enum].GetName(GetType(SpellSchool), data.SpellSchool))
         'output = output.Replace("toggleGroupValue", [Enum].GetName(GetType(ToggleGroup), data.toggleGroup))
         'output = output.Replace("effectGroupValue", [Enum].GetName(GetType(EffectGroup), data.effectgroup))
-        output = output.Replace("readyTriggerValue", [Enum].GetName(GetType(ReadyTrigger), data.readyTrigger))
         output = output.Replace("friendlyFireValue", [Enum].GetName(GetType(FriendlyFire), data.friendlyFire))
         'output = output.Replace("secureHitValue", [Enum].GetName(GetType(SecureHit), data.SecureHit))
         'output = output.Replace("removeStealthValue", [Enum].GetName(GetType(dontRemoveStealth), data.dontRemoveStealth))
         'output = output.Replace("BlockCheckValue", [Enum].GetName(GetType(avoidBlockControllerCheck), data.avoidBlockControllerCheck))
         output = output.Replace("canCritValue", [Enum].GetName(GetType(canBeCritical), data.canBeCritical))
         'output = output.Replace("mobilitySpellValue", [Enum].GetName(GetType(mobilitySpell), data.mobilitySpell))
+        output = output.Replace("preCastTimeValue", data.preCastTime.ToString)
         output = output.Replace("memoryCostValue", data.difficulty + 1)
         output = output.Replace("spellGroupValue", [Enum].GetName(GetType(SpellGroup), data.spellGroup))
-        output = output.Replace("cooldownValue", data.Cooldown)
-        output = output.Replace("ActivationTypeValue", [Enum].GetName(GetType(ActivationType), data.activationType))
-        output = output.Replace("targetTypeValue", [Enum].GetName(GetType(TargetType), data.targetType))
+        output = output.Replace("cooldownValue", data.cooldown)
+
+        'output = output.Replace("readyTriggerValue", [Enum].GetName(GetType(ReadyTrigger), data.readyTrigger))
+        'output = output.Replace("ActivationTypeValue", [Enum].GetName(GetType(ActivationType), data.activationType))
+        'output = output.Replace("targetTypeValue", [Enum].GetName(GetType(TargetType), data.targetType))
+        'output = output.Replace("targetEntityValue", [Enum].GetName(GetType(TargetEntityType), data.targetEntityType))
+
+        Dim abilityType As String = ""
+        If data.tooltipActivationType = tooltipActivationType.Toggle Then
+            abilityType = "Toggle"
+
+        ElseIf data.tooltipActivationType = tooltipActivationType.Ready Then
+            abilityType = "Ready"
+        ElseIf data.tooltipActivationType = tooltipActivationType.Directional Then
+            abilityType = "Directional"
+        ElseIf data.tooltipActivationType = tooltipActivationType.self Then
+            abilityType = "Self"
+        ElseIf data.tooltipActivationType = tooltipActivationType.Targeted Then
+            If data.tooltipTargetType = tooltipTargetType.Terrain Then
+                abilityType = "Targeted (Terrain)"
+            End If
+            If data.tooltipTargetType = tooltipTargetType.Enemy Then
+                abilityType = "Targeted (Enemy)"
+            End If
+            If data.tooltipTargetType = tooltipTargetType.FrozenEnemy Then
+                abilityType = "Targeted (Frozen Enemy)"
+            End If
+            If data.tooltipTargetType = tooltipTargetType.RootedEnemy Then
+                abilityType = "Targeted (Rooted Enemy)"
+            End If
+            If data.tooltipTargetType = tooltipTargetType.Ally Then
+                abilityType = "Targeted (Ally)"
+            End If
+            If data.tooltipTargetType = tooltipTargetType.None Then
+                abilityType = "Targeted"
+            End If
+        End If
+
+        output = output.Replace("abilityTypeValue", abilityType)
+
         'output = output.Replace("targetingRangeValue", data.TargetingRange)
         'output = output.Replace("castingRangeValue", data.CastingRange)
         'output = output.Replace("checkLosValue", [Enum].GetName(GetType(checkLos), data.checkLos))
-        output = output.Replace("ChannelingWeaponValue", [Enum].GetName(GetType(ChannelingWeapon), data.spellcastingRestrictions.spellChannelingWeapon))
+        'output = output.Replace("ChannelingWeaponValue", [Enum].GetName(GetType(ChannelingWeapon), data.spellcastingRestrictions.spellChannelingWeapon))
         output = output.Replace("weaponClassValue", [Enum].GetName(GetType(RestrictedWeaponClass), data.spellcastingRestrictions.restrictedWeaponClass))
         'output = output.Replace("weaponWeightValue", correctWeightEnumerator([Enum].GetName(GetType(RestrictedWeaponWeight), data.spellcastingRestrictions.restrictedWeaponWeight)))
         output = output.Replace("weaponDamageValue", correctDamageEnumerator([Enum].GetName(GetType(RestrictedWeaponDamage), data.spellcastingRestrictions.restrictedWeaponDamage)))
         output = output.Replace("SpecialWeaponRestictionValue", [Enum].GetName(GetType(SpellSpecialWeaponRestriction), data.spellcastingRestrictions.specialWeaponRestriction))
         output = output.Replace("armorWeightValue", correctWeightEnumerator([Enum].GetName(GetType(RestrictedArmorWeight), data.spellcastingRestrictions.restrictedArmorWeight)))
-        output = output.Replace("targetEntityValue", [Enum].GetName(GetType(TargetEntityType), data.targetEntityType))
-        output = output.Replace("preCastTimeValue", data.preCastTime.ToString)
+
+
 
         For Each dataType As spellDataInfo In data.spellData
 
@@ -143,56 +183,63 @@ Public Class SpellDataCreator
         'End If
 
 
-        'Dim categories As String = ""
-        'Select Case data.difficulty
-        '    Case 0
-        '        categories &= """Memory Cost 1 Spells"","
-        '    Case 1
-        '        categories &= """Memory Cost 2 Spells"","
-        '    Case 2
-        '        categories &= """Memory Cost 3 Spells"","
-        'End Select
+        Dim categories As String = ""
+        Select Case data.difficulty
+            Case 0
+                categories &= """Memory Cost 1 Spells"","
+            Case 1
+                categories &= """Memory Cost 2 Spells"","
+            Case 2
+                categories &= """Memory Cost 3 Spells"","
+        End Select
 
-        'Select Case data.spellcastingRestrictions.spellChannelingWeapon
-        '    Case 1
-        '        categories &= """Magical Skills"","
-        '    Case 0
-        '        categories &= """Combat Skills"","
-        'End Select
+        Select Case data.spellcastingRestrictions.spellChannelingWeapon
+            Case 1
+                categories &= """Magical Skills"","
+            Case 0
+                categories &= """Combat Skills"","
+        End Select
 
-        'Select Case data.canBeCritical
-        '    Case canBeCritical.Yes
-        '        categories &= """Skills that Can Critically Hit"","
-        'End Select
+        Select Case data.canBeCritical
+            Case canBeCritical.Yes
+                categories &= """Skills that Can Critically Hit"","
+        End Select
 
-        'Select Case data.spellcastingRestrictions.restrictedArmorWeight
-        '    Case 0
-        '        categories &= """Skills Usable in Light Armor"","
-        '        categories &= """Skills Usable in Medium Armor"","
-        '        categories &= """Skills Usable in Heavy Armor"","
-        '    Case 1
-        '        categories &= """Skills Usable in Light Armor"","
-        '    Case 2
-        '        categories &= """Skills Usable in Medium Armor"","
-        '    Case 3
-        '        categories &= """Skills Usable in Light Armor"","
-        '        categories &= """Skills Usable in Medium Armor"","
-        '    Case 4
-        '        categories &= """Skills Usable in Heavy Armor"","
-        '    Case 5
-        '        categories &= """Skills Usable in Light Armor"","
-        '        categories &= """Skills Usable in Heavy Armor"","
-        '    Case 6
-        '        categories &= """Skills Usable in Medium Armor"","
-        '        categories &= """Skills Usable in Heavy Armor"","
+        Select Case data.spellcastingRestrictions.restrictedArmorWeight
+            Case RestrictedArmorWeight.Any
+                categories &= """Skills Usable in Light Armor"","
+                categories &= """Skills Usable in Medium Armor"","
+                categories &= """Skills Usable in Heavy Armor"","
+            Case RestrictedArmorWeight.Light
+                categories &= """Skills Usable in Light Armor"","
+            Case RestrictedArmorWeight.Medium
+                categories &= """Skills Usable in Light Armor"","
+                categories &= """Skills Usable in Medium Armor"","
+            'Case 3
+            '    categories &= """Skills Usable in Light Armor"","
+            '    categories &= """Skills Usable in Medium Armor"","
+            Case RestrictedArmorWeight.Heavy
+                categories &= """Skills Usable in Light Armor"","
+                categories &= """Skills Usable in Medium Armor"","
+                categories &= """Skills Usable in Heavy Armor"","
+                'Case 5
+                '    categories &= """Skills Usable in Light Armor"","
+                '    categories &= """Skills Usable in Heavy Armor"","
+                'Case 6
+                '    categories &= """Skills Usable in Medium Armor"","
+                '    categories &= """Skills Usable in Heavy Armor"","
 
-        'End Select
+        End Select
 
-        ''Select Case data.spellcastingRestrictions.shieldRequired
-        ''    Case True
-        ''        categories &= """Skills Requiring a Shield"","
-        ''    Case False
-        ''End Select
+        Select Case data.spellcastingRestrictions.specialWeaponRestriction
+            Case SpellSpecialWeaponRestriction.BowRequired
+                categories &= """Skills Requiring a bow"","
+            Case SpellSpecialWeaponRestriction.ShieldRequired
+                categories &= """Skills Requiring a shield"","
+            Case SpellSpecialWeaponRestriction.Unarmed
+                categories &= """Unarmed Skills"","
+        End Select
+
 
         'Select Case data.spellcastingRestrictions.restrictedWeaponWeight
         '    Case 0
@@ -213,17 +260,27 @@ Public Class SpellDataCreator
         '        categories &= """Skills that Require Heavy Weapons"","
         'End Select
 
-        'Select Case data.spellcastingRestrictions.restrictedWeaponClass
-        '    Case 0
-        '    Case 1
-        '        categories &= """Skills that Require Melee Weapons"","
-        '    Case 2
-        '        categories &= """Skills that Require Ranged Weapons"","
-        '    Case 8
-        '        categories &= """Skills that Require Being Unarmed"","
-        'End Select
+        Select Case data.spellcastingRestrictions.restrictedWeaponClass
+            Case RestrictedWeaponClass.None
+            Case RestrictedWeaponClass.TwoHanded
+                categories &= """Skills that Require Two Handed Weapons"","
+            Case RestrictedWeaponClass.SpellChanneling
+                categories &= """Skills that Require Spell Channeling Weapons"","
+            Case RestrictedWeaponClass.OneHanded
+                categories &= """Skills that Require One Handed Weapons"","
+        End Select
 
-        'output = output.Replace("CategoriesValue", categories)
+        Select Case data.spellcastingRestrictions.specialWeaponRestriction
+            Case RestrictedWeaponClass.None
+            Case RestrictedWeaponClass.TwoHanded
+                categories &= """Skills that Require Two Handed Weapons"","
+            Case RestrictedWeaponClass.SpellChanneling
+                categories &= """Skills that Require Spell Channeling Weapons"","
+            Case RestrictedWeaponClass.OneHanded
+                categories &= """Skills that Require One Handed Weapons"","
+        End Select
+
+        output = output.Replace("CategoriesValue", categories)
 
         Return output
     End Function
@@ -291,15 +348,24 @@ Public Class SpellDataCreator
         rawDescription = rawDescription.Replace(vbCr, " ").Replace(vbLf, " ")
 
 
+
+
+        Return rawDescription
+    End Function
+
+    Private Function GetSkillParameters(data As SpellClassMirror) As String
+        Dim term As String
+        Dim parameters As String = ""
+
         For Each dataType As spellDataInfo In data.spellData
             If dataType.dataType <> SpellDataType.ManaCost And dataType.dataType <> SpellDataType.ManaCostPerSecond And dataType.dataType <> SpellDataType.Cooldown Then
                 Dim dataDescription As String = ""
                 term = GetSpellDataTypeName([Enum].GetName(GetType(SpellDataType), dataType.dataType))
                 If dataType.attributeType <> CharacterAttribute.None Then
                     If dataType.level0 <> dataType.level10 Then
-                        dataDescription = term & ": (" & dataType.level0 & " to " & dataType.level10 & ") x " & [Enum].GetName(GetType(CharacterAttribute), dataType.attributeType)
+                        dataDescription = term & ": (" & dataType.level0 & " to " & dataType.level10 & ") x " & [Enum].GetName(GetType(SpellCoefficientAttributeType), dataType.attributeType)
                     Else
-                        dataDescription = term & ": " & dataType.level0 & " x " & [Enum].GetName(GetType(CharacterAttribute), dataType.attributeType)
+                        dataDescription = term & ": " & dataType.level0 & " x " & [Enum].GetName(GetType(SpellCoefficientAttributeType), dataType.attributeType)
                     End If
                 Else
                     If dataType.level0 <> dataType.level10 Then
@@ -309,12 +375,12 @@ Public Class SpellDataCreator
                     End If
 
                 End If
-                rawDescription &= vbCrLf
-                rawDescription &= dataDescription
+                parameters &= vbCrLf
+                parameters &= dataDescription
             End If
         Next
+        Return parameters
 
-        Return rawDescription
     End Function
 
     Public Shared Function GetTooltipName(spellname As String, deserializedlanguageData As LanguageData, language As Integer) 'the func
@@ -383,10 +449,10 @@ Public Class SpellDataCreator
         Dim output As String
 
         Select Case Value
-            Case "Light_Medium"
-                output = "Light, Medium"
+            Case "Medium"
+                output = "Light/Medium"
                 Exit Select
-            Case "Light_Heavy"
+            Case "Heavy"
                 output = "Light, Heavy"
                 Exit Select
             Case "Medium_Heavy"

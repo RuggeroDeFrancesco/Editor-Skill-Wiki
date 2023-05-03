@@ -151,10 +151,12 @@ Public Class SpellDataWindow
                 spellDataCreator.parseData(file.FullName)
                 If True AndAlso Not spellDataCreator.removed AndAlso spellsInserted.IndexOf(spellDataCreator.SpellName) = -1 Then
                     spellName = spellDataCreator.SpellName
-                    DescriptionResetValue = spellDataCreator.rawDescription
-                    Description = CheckExistingCustomDataCombinations(spellDataCreator.rawDescription)
+                    'DescriptionResetValue = spellDataCreator.rawDescription
+                    'Description = CheckExistingCustomDataCombinations(spellDataCreator.rawDescription)
+                    Description = spellDataCreator.rawDescription
                     Description = createHyperlinks(Description)
                     OutputText &= spellDataCreator.Output.Replace("descriptionValue", Description)
+                    OutputText = OutputText.Replace("skillParametersValue", spellDataCreator.parameters)
                     OutputText &= vbCrLf
                     OutputText &= vbCrLf
                     spellsInserted.Add(spellDataCreator.SpellName)
