@@ -69,7 +69,7 @@ Public Class SpellDataCreator
         SpellName = data.m_name
         removed = data.removed
         gameReady = data.gameReady
-        Output = Output.Replace("SpellName", GetTooltipName(SpellName, deserializedlanguageData, language))
+        Output = Output.Replace("SpellName", GetTooltipName(SpellName, deserializedlanguageData, language).Replace("'", "\"))
         'Dim customDataLists As filteredCustomData
         'customDataLists = data.GetCustomData()
         'customDataNameList = customDataLists.name
@@ -389,12 +389,11 @@ Public Class SpellDataCreator
 
                 End If
                 parameters &= dataDescription
-                parameters &= vbCrLf
+                parameters &= "</br>"
             End If
         Next
         If parameters <> "" Then
-            Dim oTrim() As Char = {vbCr, vbLf}
-            parameters = parameters.TrimEnd(oTrim) 'tolgo il vbCrlf di troppo
+            parameters = parameters.Substring(0, parameters.Count() - 5) 'tolgo il vbCrlf di troppo
         End If
         Return parameters
 
