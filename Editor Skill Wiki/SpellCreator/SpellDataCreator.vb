@@ -150,11 +150,24 @@ Public Class SpellDataCreator
         'output = output.Replace("castingRangeValue", data.CastingRange)
         'output = output.Replace("checkLosValue", [Enum].GetName(GetType(checkLos), data.checkLos))
         'output = output.Replace("ChannelingWeaponValue", [Enum].GetName(GetType(ChannelingWeapon), data.spellcastingRestrictions.spellChannelingWeapon))
-        output = output.Replace("weaponClassValue", [Enum].GetName(GetType(RestrictedWeaponClass), data.spellcastingRestrictions.restrictedWeaponClass))
+        'output = output.Replace("weaponClassValue", [Enum].GetName(GetType(RestrictedWeaponClass), data.spellcastingRestrictions.restrictedWeaponClass))
         'output = output.Replace("weaponWeightValue", correctWeightEnumerator([Enum].GetName(GetType(RestrictedWeaponWeight), data.spellcastingRestrictions.restrictedWeaponWeight)))
-        output = output.Replace("weaponDamageValue", correctDamageEnumerator([Enum].GetName(GetType(RestrictedWeaponDamage), data.spellcastingRestrictions.restrictedWeaponDamage)))
-        output = output.Replace("SpecialWeaponRestictionValue", [Enum].GetName(GetType(SpellSpecialWeaponRestriction), data.spellcastingRestrictions.specialWeaponRestriction))
-        output = output.Replace("armorWeightValue", correctWeightEnumerator([Enum].GetName(GetType(RestrictedArmorWeight), data.spellcastingRestrictions.restrictedArmorWeight)))
+        'output = output.Replace("weaponDamageValue", correctDamageEnumerator([Enum].GetName(GetType(RestrictedWeaponDamage), data.spellcastingRestrictions.restrictedWeaponDamage)))
+
+        Dim weaponRestriction As String = ""
+        If data.spellcastingRestrictions.weaponRestriction <> RestrictedWeaponClass.None Then
+            weaponRestriction = GetSpellDataTypeName([Enum].GetName(GetType(RestrictedWeaponClass), data.spellcastingRestrictions.weaponRestriction))
+        End If
+        If data.spellcastingRestrictions.specialWeaponRestriction <> SpellSpecialWeaponRestriction.None Then
+            If weaponRestriction = "" Then
+                weaponRestriction = GetSpellDataTypeName([Enum].GetName(GetType(SpellSpecialWeaponRestriction), data.spellcastingRestrictions.specialWeaponRestriction))
+            Else
+                weaponRestriction &= ", " & GetSpellDataTypeName([Enum].GetName(GetType(SpellSpecialWeaponRestriction), data.spellcastingRestrictions.specialWeaponRestriction))
+            End If
+        End If
+
+        output = output.Replace("SpecialWeaponRestictionValue", weaponRestriction)
+        output = output.Replace("armorWeightValue", GetSpellDataTypeName(([Enum].GetName(GetType(RestrictedArmorWeight), data.spellcastingRestrictions.restrictedArmorWeight))))
 
 
 
@@ -193,10 +206,10 @@ Public Class SpellDataCreator
                 categories &= """Memory Cost 3 Spells"","
         End Select
 
-        Select Case data.spellcastingRestrictions.spellChannelingWeapon
-            Case 1
+        Select Case data.SpellSchool
+            Case SpellSchool.Pyromancy Or SpellSchool.Cryomancy Or SpellSchool.Aeromancy Or SpellSchool.Geomancy Or SpellSchool.Venomancy Or SpellSchool.Vitriomancy Or SpellSchool.Druidcraft Or SpellSchool.Necromancy Or SpellSchool.Abjuration Or SpellSchool.Restoration Or SpellSchool.Illusionism
                 categories &= """Magical Skills"","
-            Case 0
+            Case SpellSchool.Leadership Or SpellSchool.Assassination Or SpellSchool.Hunting Or SpellSchool.Warfare Or SpellSchool.MartialArts Or SpellSchool.KnifeFighting Or SpellSchool.Swordsmanship Or SpellSchool.Fencing Or SpellSchool.MaceFighting Or SpellSchool.AxeFighting Or SpellSchool.PoleFighting Or SpellSchool.Archery Or SpellSchool.ShieldFighting
                 categories &= """Combat Skills"","
         End Select
 
@@ -260,7 +273,7 @@ Public Class SpellDataCreator
         '        categories &= """Skills that Require Heavy Weapons"","
         'End Select
 
-        Select Case data.spellcastingRestrictions.restrictedWeaponClass
+        Select Case data.spellcastingRestrictions.weaponRestriction
             Case RestrictedWeaponClass.None
             Case RestrictedWeaponClass.TwoHanded
                 categories &= """Skills that Require Two Handed Weapons"","
@@ -270,15 +283,15 @@ Public Class SpellDataCreator
                 categories &= """Skills that Require One Handed Weapons"","
         End Select
 
-        Select Case data.spellcastingRestrictions.specialWeaponRestriction
-            Case RestrictedWeaponClass.None
-            Case RestrictedWeaponClass.TwoHanded
-                categories &= """Skills that Require Two Handed Weapons"","
-            Case RestrictedWeaponClass.SpellChanneling
-                categories &= """Skills that Require Spell Channeling Weapons"","
-            Case RestrictedWeaponClass.OneHanded
-                categories &= """Skills that Require One Handed Weapons"","
-        End Select
+        'Select Case data.spellcastingRestrictions.specialWeaponRestriction
+        '    Case RestrictedWeaponClass.None
+        '    Case RestrictedWeaponClass.TwoHanded
+        '        categories &= """Skills that Require Two Handed Weapons"","
+        '    Case RestrictedWeaponClass.SpellChanneling
+        '        categories &= """Skills that Require Spell Channeling Weapons"","
+        '    Case RestrictedWeaponClass.OneHanded
+        '        categories &= """Skills that Require One Handed Weapons"","
+        'End Select
 
         output = output.Replace("CategoriesValue", categories)
 
@@ -375,10 +388,14 @@ Public Class SpellDataCreator
                     End If
 
                 End If
-                parameters &= vbCrLf
                 parameters &= dataDescription
+                parameters &= vbCrLf
             End If
         Next
+        If parameters <> "" Then
+            Dim oTrim() As Char = {vbCr, vbLf}
+            parameters = parameters.TrimEnd(oTrim) 'tolgo il vbCrlf di troppo
+        End If
         Return parameters
 
     End Function

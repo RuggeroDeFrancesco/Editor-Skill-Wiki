@@ -1,7 +1,7 @@
 ﻿["nameText"] = {
         ["Description"] = "descriptionText",
         ["EnvImage"] = "imageText",
-        ["Category"] = "categoryText",
+        ["ChallengeRating"] = "challengeRatingText"
         ["Attributes and Modifiers"] = {
             ["STR"] = "strText",
             ["DEX"] = "dexText",
@@ -26,6 +26,8 @@
             ["Magic"] = "magicText (magic%Text)",
             ["Poison"] = "poisonText (poison%Text)",
             ["Acid"] = "acidText (acid%Text)",
+            ["Immunity Effect Group"] = "immunityGroupText"
+            ["Status Effect Immunities"] ="immunitySpace"
         },
         ["Base Attacks"] = {
 attackSpace
@@ -34,4 +36,5 @@ attackSpace
 skillSpace
         },
        ["Tags"] = {"Arboreus","Terra"},
+       ["Category"] = "categoryText",
     },

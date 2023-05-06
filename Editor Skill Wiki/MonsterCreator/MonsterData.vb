@@ -44,11 +44,13 @@
     Public poisonDamageIncrease As Integer
     Public energyDamageIncrease As Integer
     Public monsterPoisonRank As Integer
+    Public immunityEffectGroup As Integer
 
     Public MonsterAttacks As List(Of MonsterAttack)
 
     Public MonsterSpellsList As List(Of MonsterSpells)
 
+    Public immunityStatusEffectList As List(Of StatusEffect)
 End Class
 
 Public Class Strenght
@@ -178,6 +180,10 @@ Public Class MonsterSpells
 
     Public Property hideInKnowledgeBook As Boolean
 
+End Class
+
+Public Class StatusEffect
+    Public Property m_PathID As Integer
 End Class
 
 

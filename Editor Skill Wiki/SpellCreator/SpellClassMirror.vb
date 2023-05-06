@@ -63,12 +63,13 @@ Public Class SpellClassMirror
 End Class
 
 Public Class spellcastingRestrictions
-    Public spellChannelingWeapon As Boolean
-    Public restrictedWeaponClass As Integer
-    Public restrictedWeaponWeight As Integer
-    Public restrictedWeaponDamage As Integer
+    'Public spellChannelingWeapon As Boolean
+    Public weaponRestriction As Integer
+    'Public restrictedWeaponWeight As Integer
+    'Public restrictedWeaponDamage As Integer
     Public specialWeaponRestriction As Integer
     Public restrictedArmorWeight As Integer
+    Public SpellSchool As Integer
 End Class
 
 Public Class customData 'the json files have a high number of customData fields. These fields are optional in a spell file. This class contains all of them.

@@ -57,6 +57,7 @@ Public Class MonsterDataCreator
 
         output = output.Replace("nameText", getMonsterName(data.name, languageData))
         output = output.Replace("descriptionText", getMonsterDescription(data.name, languageData))
+        output = output.Replace("challengeRatingText", data.challengeRating)
         output = output.Replace("strText", data.str)
         output = output.Replace("dexText", data.dex)
         output = output.Replace("intText", data.int)
@@ -88,7 +89,20 @@ Public Class MonsterDataCreator
         output = output.Replace("poison%Text", data.poisonResistancePerc)
         output = output.Replace("acidText", data.acidResistance)
         output = output.Replace("acid%Text", data.acidResistancePerc)
+        output = output.Replace("immunityGroupText", getEffectGroupName(data.immunityEffectGroup, languageData))
 
+        Dim statusImmunityText As String = ""
+
+        For Each statusImmunity As String In data.immunityStatusEffectList
+            statusImmunityText &= getStatusEffectName(statusImmunity, languageData)
+            statusImmunityText &= ", "
+        Next
+
+        If statusImmunityText.Count <> 0 Then
+            statusImmunityText = statusImmunityText.Substring(0, (statusImmunityText.Count - 2))
+        End If
+
+        output = output.Replace("immunitySpace", statusImmunityText)
 
         Dim attackText As String = ""
         For Each attack As MonsterAttackFinalData In data.monsterAttacks
@@ -136,6 +150,21 @@ Public Class MonsterDataCreator
         tooltipName = deserializedData.returnTerm(term, languageEnum)
         Return tooltipName
 
+    End Function
+
+    Private Function getEffectGroupName(effectGroupName As Integer, deserializedData As LanguageData)
+        Dim term As String = "spells/statusType_" & [Enum].GetName(GetType(EffectGroup), effectGroupName)
+        Return deserializedData.returnTerm(term, languageEnum)
+    End Function
+
+    Private Function getStatusEffectName(statusEffectName As String, deserializedData As LanguageData)
+        Dim name As String
+
+        Dim term As String = statusEffectName.Replace("se_", "status_effect/")
+        term &= "_name"
+
+        name = deserializedData.returnTerm(term, languageEnum)
+        Return name
     End Function
 
     Private Function getMonsterDescription(monsterName As String, deserializedData As LanguageData)

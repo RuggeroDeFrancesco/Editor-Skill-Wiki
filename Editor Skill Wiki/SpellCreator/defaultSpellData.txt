@@ -6,8 +6,6 @@
         ['Can Crit'] = "canCritValue",
         ['Friend Fire'] = "friendlyFireValue", 
         ['Restricted Armor Weight'] = "armorWeightValue",
-        ['Restricted Weapon Damage'] = "weaponDamageValue",
-        ['Restricted Weapon Class'] = "weaponClassValue",
         ['Special Weapon Restiction'] = "SpecialWeaponRestictionValue",
         ['description'] = "descriptionValue",
         ['Skill Parameters'] = "skillParametersValue",

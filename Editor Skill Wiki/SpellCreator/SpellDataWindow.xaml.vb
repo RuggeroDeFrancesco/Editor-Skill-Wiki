@@ -122,6 +122,9 @@ Public Class SpellDataWindow
             spellDataCreator.parseData(path)
             spellName = spellDataCreator.SpellName
             Description = spellDataCreator.rawDescription
+            Description = createHyperlinks(Description)
+            OutputText &= spellDataCreator.Output.Replace("descriptionValue", Description)
+            OutputText = OutputText.Replace("skillParametersValue", spellDataCreator.parameters)
             'Description = CheckExistingCustomDataCombinations(spellDataCreator.rawDescription)
             'CustomDataNameList = spellDataCreator.customDataNameList
             'CustomDataValueList = spellDataCreator.customDataValueList

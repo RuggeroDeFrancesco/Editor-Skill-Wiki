@@ -2,6 +2,7 @@
 
     Public name As String
     Public description As String
+    Public challengeRating As String
 
     Public str As String
     Public dex As String
@@ -43,8 +44,11 @@
     Public acidResistance As String
     Public acidResistancePerc As String
 
+    Public immunityEffectGroup As String
+
     Public monsterAttacks As List(Of MonsterAttackFinalData)
     Public monsterSkills As List(Of MonsterSpellFinalData)
+    Public immunityStatusEffectList As List(Of String)
 
 
     Public Sub parseData(data As MonsterData, attackFolder As String, spellFolder As String)
@@ -53,6 +57,7 @@
         Dim spellFolderPath As String
         monsterAttacks = New List(Of MonsterAttackFinalData)
         monsterSkills = New List(Of MonsterSpellFinalData)
+        immunityStatusEffectList = New List(Of String)
 
         If System.IO.Directory.Exists(attackFolder) Then
             attackFolderPath = attackFolder
@@ -65,7 +70,7 @@
         End If
 
         name = data.m_name
-
+        challengeRating = data.challengeRating.ToString
         str = data.str.value.ToString
         dex = data.dex.value.ToString
         int = data._int.value.ToString
@@ -109,6 +114,20 @@
         poisonResistancePerc = calculatePerc(data.poisonResistance.value)
         acidResistance = data.acidResistance.value.ToString
         acidResistancePerc = calculatePerc(data.acidResistance.value)
+        immunityEffectGroup = data.immunityEffectGroup
+
+        Dim statusRawData As String = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "MonsterCreator/statusEffects.xml"))
+
+        For Each StatusEffect As StatusEffect In data.immunityStatusEffectList
+            If StatusEffect.m_PathID <> 0 Then
+                Dim newImmunity As String = getStatusEffect(StatusEffect.m_PathID, statusRawData)
+                If newImmunity <> "" Then
+                    immunityStatusEffectList.Add(newImmunity)
+                End If
+
+            End If
+        Next
+
 
         Dim attackRawData As String = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "MonsterCreator/attacks.xml"))
 
@@ -164,6 +183,15 @@
             End If
         End If
         Return newAttack
+    End Function
+
+    Private Function getStatusEffect(statusRef As String, rawdata As String) As String
+        Dim statusEffect As String = ""
+        Dim index As Integer = rawdata.IndexOf(statusRef)
+        Dim startName As Integer = rawdata.LastIndexOf("<Name>", index)
+        Dim endName As Integer = rawdata.IndexOf("</Name>", startName)
+        statusEffect = rawdata.Substring(startName + 6, endName - startName - 6)
+        Return statusEffect
     End Function
 
     Private Function getSpellData(spellRef As String, rawData As String, spellFolder As String)
