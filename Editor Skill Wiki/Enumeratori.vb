@@ -160,7 +160,58 @@
 		Hard
 	End Enum
 
-
+	Public Enum SpellTag
+		None
+		MagicalAbility
+		PhysicalAbility
+		MagicalBuff
+		MagicalDebuff
+		PhysicalBuff
+		PhysicalDebuff
+		MagicalProtection
+		ElementalCondition
+		LinkedEffects
+		Channeled
+		Melee
+		Ranged
+		Projectile
+		AoE
+		Wall
+		Mobility
+		Healing
+		StatusRemoval
+		Summon
+		Invisibility
+		Trap
+		Hidden
+		Blinded
+		Confused
+		Dazed
+		Frightened
+		Paralyzed
+		Petrified
+		Silenced
+		Slowed
+		Unhealable
+		Weakened
+		Burning
+		Chilled
+		Frozen
+		Shocked
+		Warm
+		Atrophied
+		Bleeding
+		Corrosion
+		Crippled
+		Poisoned
+		Rooted
+		Stunned
+		Trapped
+		Immortal
+		Webbed
+		Snared
+		Magnetize
+	End Enum
 
 	Public Enum RequireStatusOnTarget
 		None

@@ -165,28 +165,51 @@ Public Class SpellDataCreator
                 weaponRestriction &= ", " & GetSpellDataTypeName([Enum].GetName(GetType(SpellSpecialWeaponRestriction), data.spellcastingRestrictions.specialWeaponRestriction))
             End If
         End If
+        If weaponRestriction = "" Then
+            weaponRestriction = "N/A"
+        End If
 
         output = output.Replace("SpecialWeaponRestictionValue", weaponRestriction)
         output = output.Replace("armorWeightValue", GetSpellDataTypeName(([Enum].GetName(GetType(RestrictedArmorWeight), data.spellcastingRestrictions.restrictedArmorWeight))))
 
 
-
+        Dim foundManaCost As Boolean = False
         For Each dataType As spellDataInfo In data.spellData
 
             If dataType.dataType = SpellDataType.ManaCost Then
                 output = output.Replace("manaCostValue", dataType.level0)
                 output = output.Replace("manaCostPersValue", 0)
+                foundManaCost = True
             End If
 
             If dataType.dataType = SpellDataType.ManaCostPerSecond Then
                 output = output.Replace("manaCostPersValue", dataType.level0)
                 output = output.Replace("manaCostValue", 0)
+                foundManaCost = True
             End If
 
         Next
 
+        If foundManaCost = False Then
+            output = output.Replace("manaCostValue", 0)
+            output = output.Replace("manaCostPersValue", 0)
+        End If
 
+        Dim SpellTags As String = ""
+        Dim skillType As String = "Magical Skill"
 
+        For Each tag As SpellTagClass In data.spellTags
+            If tag.dataType = 2 Then
+                skillType = "Physical Skill"
+            End If
+            SpellTags &= GetSpellTagName([Enum].GetName(GetType(SpellTag), tag.dataType))
+            SpellTags &= ", "
+        Next
+        If SpellTags.Count <> 0 Then
+            SpellTags = SpellTags.Substring(0, SpellTags.Count - 2)
+        End If
+        output = output.Replace("spellTagsValue", SpellTags)
+        output = output.Replace("spellTypeValue", skillType)
         'If data.customData.ManaPerSecond <> 0 Then
         '    output = output.Replace("manaCostPersValue", data.customData.ManaPerSecond)
         'ElseIf data.customData.consumePerSecond <> 0 Then
@@ -451,6 +474,11 @@ Public Class SpellDataCreator
 
     Private Function GetSpellDataTypeName(dataType As String) As String
         Dim term As String = "spells/spelldata_" & dataType
+        Return deserializedlanguageData.returnTerm(term, language)
+    End Function
+
+    Private Function GetSpellTagName(spellTag As String) As String
+        Dim term As String = "spells/spelltag_" & spellTag
         Return deserializedlanguageData.returnTerm(term, language)
     End Function
 

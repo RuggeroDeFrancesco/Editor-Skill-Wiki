@@ -1,6 +1,7 @@
 ﻿    ['SpellName'] = {
         ['Memory Cost'] = memoryCostValue,
         ['school'] = "schoolValue",
+        ['Spell Type'] = "spellTypeValue",
         ['Ability Type'] = "abilityTypeValue",
         ['Pre Cast Time'] = "preCastTimeValue",
         ['Can Crit'] = "canCritValue",
@@ -9,6 +10,7 @@
         ['Special Weapon Restriction'] = "SpecialWeaponRestictionValue",
         ['description'] = "descriptionValue",
         ['Skill Parameters'] = "skillParametersValue",
+        ['Spell Tags'] = "spellTagsValue",
         ['cooldown'] = cooldownValue,
         ['mana_cost'] = manaCostValue,
         ['mana_cost_per_s'] = manaCostPersValue,

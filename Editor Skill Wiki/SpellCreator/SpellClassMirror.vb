@@ -42,6 +42,7 @@ Public Class SpellClassMirror
     Public tooltipTargetType As Integer
 
     Public spellData As List(Of spellDataInfo)
+    Public spellTags As List(Of SpellTagClass)
     Public spellcastingRestrictions As spellcastingRestrictions
     Public customData As customData
 
@@ -335,6 +336,11 @@ Public Class spellDataInfo
     Public modifierType As Integer
     Public level0 As Double
     Public level10 As Double
+End Class
+
+Public Class SpellTagClass
+    Public dataType As Integer
+    Public tooltipHidden As Boolean
 End Class
 
 Public Class filteredCustomData
