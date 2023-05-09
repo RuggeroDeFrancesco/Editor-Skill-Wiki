@@ -170,7 +170,16 @@ Public Class SpellDataCreator
         End If
 
         output = output.Replace("SpecialWeaponRestictionValue", weaponRestriction)
-        output = output.Replace("armorWeightValue", GetSpellDataTypeName(([Enum].GetName(GetType(RestrictedArmorWeight), data.spellcastingRestrictions.restrictedArmorWeight))))
+        Dim armorRestriction As String
+        Select Case data.spellcastingRestrictions.restrictedArmorWeight
+            Case 1
+                armorRestriction = GetSpellDataTypeName([Enum].GetName(GetType(RestrictedArmorWeight), 1))
+            Case 2
+                armorRestriction = GetSpellDataTypeName([Enum].GetName(GetType(RestrictedArmorWeight), 1)) & " / " & GetSpellDataTypeName([Enum].GetName(GetType(RestrictedArmorWeight), 2))
+            Case Else
+                armorRestriction = "Any"
+        End Select
+        output = output.Replace("armorWeightValue", armorRestriction)
 
 
         Dim foundManaCost As Boolean = False
@@ -196,20 +205,22 @@ Public Class SpellDataCreator
         End If
 
         Dim SpellTags As String = ""
-        Dim skillType As String = "Magical Skill"
+        'Dim skillType As String = "Magical Skill"
 
         For Each tag As SpellTagClass In data.spellTags
             If tag.dataType = 2 Then
-                skillType = "Physical Skill"
+                'skillType = "Physical Skill"
             End If
-            SpellTags &= GetSpellTagName([Enum].GetName(GetType(SpellTag), tag.dataType))
-            SpellTags &= ", "
+            If tag.tooltipHidden = False Then
+                SpellTags &= GetSpellTagName([Enum].GetName(GetType(SpellTag), tag.dataType))
+                SpellTags &= ", "
+            End If
         Next
         If SpellTags.Count <> 0 Then
             SpellTags = SpellTags.Substring(0, SpellTags.Count - 2)
         End If
         output = output.Replace("spellTagsValue", SpellTags)
-        output = output.Replace("spellTypeValue", skillType)
+        'output = output.Replace("spellTypeValue", skillType)
         'If data.customData.ManaPerSecond <> 0 Then
         '    output = output.Replace("manaCostPersValue", data.customData.ManaPerSecond)
         'ElseIf data.customData.consumePerSecond <> 0 Then
@@ -465,6 +476,9 @@ Public Class SpellDataCreator
         tooltipName = deserializedlanguageData.returnTerm(term, language)
         If tooltipName = "Counterstrike" Then
             tooltipName = "Counter Strike"
+        End If
+        If tooltipName = "DoubleStrike" Then
+            tooltipName = "Double Strike"
         End If
 
         Return tooltipName

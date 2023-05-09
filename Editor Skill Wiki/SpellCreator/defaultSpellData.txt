@@ -1,7 +1,6 @@
 ﻿    ['SpellName'] = {
         ['Memory Cost'] = memoryCostValue,
         ['school'] = "schoolValue",
-        ['Spell Type'] = "spellTypeValue",
         ['Ability Type'] = "abilityTypeValue",
         ['Pre Cast Time'] = "preCastTimeValue",
         ['Can Crit'] = "canCritValue",

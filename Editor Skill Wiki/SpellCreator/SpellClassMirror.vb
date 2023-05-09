@@ -3,47 +3,50 @@
 Public Class SpellClassMirror
 
     'Class mirroring the contents of the json files of the spells
-
     Public m_name As String
-    Public spellIndex As Integer
-    Public SpellKey As String
-    Public SpellSchool As Integer
-    Public toggleGroup As Integer
-    Public effectgroup As Integer
-    Public readyTrigger As Integer
-    Public friendlyFire As Integer
-    Public SecureHit As Boolean
-    Public dontRemoveStealth As Boolean
+
+    Public activationType As Integer
+    Public animationType As Integer
     Public avoidBlockControllerCheck As Boolean
+    Public avoidPathFinding As Boolean
     Public canBeCritical As Boolean
-    Public mobilitySpell As Boolean
-    Public learnSpellIndex As Integer
-    Public gameReady As Boolean
-    Public removed As Boolean
-    Public difficulty As Integer
-    Public spellGroup As Integer
-    Public castChance As Double
+    Public castChance As Integer
+    Public castingRange As Double
+    Public checkLos As Boolean
     Public cooldown As Double
     Public cooldownModAttribute As Integer
     Public cooldownModCoefficient As Double
-    Public activationType As Integer
-    Public targetType As Integer
-    Public TargetingRange As Double
-    Public CastingRange As Double
-    Public checkLos As Boolean
-    Public avoidPathFinding As Boolean
+    Public difficulty As Integer
+    Public dontRemoveStealth As Boolean
+    Public effectgroup As Integer
+    Public friendlyFire As Integer
+    Public gameReady As Boolean
+    Public irremovable As Boolean
+    Public learnSpellIndex As Integer
     Public linkSpellDuration As Double
-    Public animationType As Integer
-    Public targetEntityType As Integer
-    Public requireStatusOnTarget As Integer
+    Public pathfinding As Integer
     Public preCastTime As Double
+    Public readyTrigger As Integer
+    Public removed As Boolean
+    Public requireStatusOnTarget As Integer
     Public ResourceCost As Double
+    Public SecureHit As Boolean
+    Public spellcastingRestrictions As spellcastingRestrictions
+    Public spellData As List(Of spellDataInfo)
+    Public spellGroup As Integer
+    Public spellIndex As Integer
+    Public SpellKey As String
+    Public SpellSchool As Integer
+    Public spellTags As List(Of SpellTagClass)
+    Public spellType As Integer
+    Public targetEntityType As Integer
+    Public TargetingRange As Double
+    Public targetType As Integer
+    Public toggleGroup As Integer
     Public tooltipActivationType As Integer
     Public tooltipTargetType As Integer
+    Public unicityGroup As Integer
 
-    Public spellData As List(Of spellDataInfo)
-    Public spellTags As List(Of SpellTagClass)
-    Public spellcastingRestrictions As spellcastingRestrictions
     Public customData As customData
 
     Public Function GetCustomData() 'used to extract the list of customData names and values.
