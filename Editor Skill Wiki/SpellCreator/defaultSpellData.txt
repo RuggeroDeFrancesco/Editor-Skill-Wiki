@@ -1,4 +1,6 @@
 ﻿    ['SpellName'] = {
+
+    -- Main Info --
         ['Memory Cost'] = memoryCostValue,
         ['school'] = "schoolValue",
         ['Ability Type'] = "abilityTypeValue",
@@ -13,6 +15,27 @@
         ['cooldown'] = cooldownValue,
         ['mana_cost'] = manaCostValue,
         ['mana_cost_per_s'] = manaCostPersValue,
-        ['Categories'] = {CategoriesValue},
         ['image'] = "imageValue",
+
+        -- Secondary Info --
+
+        ['Spell Type'] = "spellTypeValue",
+        ['Toggle Spell Group'] = "toggleSpellGroupValue",
+        ['Effect Group'] = "effectGroupValue",
+        ['Irremovable'] = "irremovableValue",
+        ['Spell Unicity Group'] = "spellUnicityGroupValue",
+        ['Tooltip Activation Type'] = "spellTooltipActivationTypeValue",
+        ['Tooltip Target Type'] = "spellTooltipTargetTypeValue",
+        ['Pathfinding'] = "spellPathfindingValue",
+        ['Ready Trigger'] = "readyTriggerValue",
+        ['Secure Hit'] = "secureHitValue",
+        ['Remove Stealth'] = "RemoveStealthValue",
+        ['Block Check'] = "blockCheckValue",
+        ['ActivationType'] = "activationTypeValue",
+        ['Target Type'] = "targetTypeValue",
+        ['Target Entity'] = "targetEntityValue",
+        ['Targeting Range'] = "targetingRangeValue",
+        ['Casting Range'] = "castingRangeValue",
+        ['Check Los'] = "checkLosValue",
+        ['Status On Target'] = "statusOnTargetValue",
     },

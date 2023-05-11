@@ -53,6 +53,7 @@
 	End Enum
 
 	Public Enum TargetEntityType
+		None = 0
 		Player = 1
 		Enemy = 2
 		Ally = 4
@@ -112,6 +113,20 @@
 		Poison = 1024
 		SpecialEffect = 2048
 	End Enum
+
+	Public Enum SpellUnicityGroup
+		None
+		MagicalGlobe
+		DamageProtection
+		Totem
+		WeaponModifier
+		Link
+		BattleStance
+		Skin
+		ReadyStrike
+		Aura
+	End Enum
+
 	Public Enum ReadyTrigger
 		None
 		OnDeath
@@ -144,7 +159,7 @@
 		Irrelevant
 	End Enum
 
-	Public Enum mobilitySpell
+	Public Enum irremovable
 		No
 		Yes
 	End Enum
@@ -152,6 +167,12 @@
 	Public Enum checkLos
 		No
 		Yes
+	End Enum
+
+	Public Enum pathfinding
+		No
+		Yes
+		Irrelevant
 	End Enum
 
 	Public Enum Difficulty

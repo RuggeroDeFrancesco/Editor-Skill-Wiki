@@ -95,23 +95,16 @@ Public Class SpellDataCreator
             output = output.Replace("imageValue", data.m_name.Replace("spell_", "Icon_") & ".png")
         End If
         output = output.Replace("schoolValue", [Enum].GetName(GetType(SpellSchool), data.SpellSchool))
-        'output = output.Replace("toggleGroupValue", [Enum].GetName(GetType(ToggleGroup), data.toggleGroup))
-        'output = output.Replace("effectGroupValue", [Enum].GetName(GetType(EffectGroup), data.effectgroup))
+
         output = output.Replace("friendlyFireValue", [Enum].GetName(GetType(FriendlyFire), data.friendlyFire))
-        'output = output.Replace("secureHitValue", [Enum].GetName(GetType(SecureHit), data.SecureHit))
-        'output = output.Replace("removeStealthValue", [Enum].GetName(GetType(dontRemoveStealth), data.dontRemoveStealth))
-        'output = output.Replace("BlockCheckValue", [Enum].GetName(GetType(avoidBlockControllerCheck), data.avoidBlockControllerCheck))
+
         output = output.Replace("canCritValue", [Enum].GetName(GetType(canBeCritical), data.canBeCritical))
-        'output = output.Replace("mobilitySpellValue", [Enum].GetName(GetType(mobilitySpell), data.mobilitySpell))
         output = output.Replace("preCastTimeValue", data.preCastTime.ToString)
         output = output.Replace("memoryCostValue", data.difficulty + 1)
         output = output.Replace("spellGroupValue", [Enum].GetName(GetType(SpellGroup), data.spellGroup))
         output = output.Replace("cooldownValue", data.cooldown)
 
-        'output = output.Replace("readyTriggerValue", [Enum].GetName(GetType(ReadyTrigger), data.readyTrigger))
-        'output = output.Replace("ActivationTypeValue", [Enum].GetName(GetType(ActivationType), data.activationType))
-        'output = output.Replace("targetTypeValue", [Enum].GetName(GetType(TargetType), data.targetType))
-        'output = output.Replace("targetEntityValue", [Enum].GetName(GetType(TargetEntityType), data.targetEntityType))
+
 
         Dim abilityType As String = ""
         If data.tooltipActivationType = tooltipActivationType.Toggle Then
@@ -146,9 +139,7 @@ Public Class SpellDataCreator
 
         output = output.Replace("abilityTypeValue", abilityType)
 
-        'output = output.Replace("targetingRangeValue", data.TargetingRange)
-        'output = output.Replace("castingRangeValue", data.CastingRange)
-        'output = output.Replace("checkLosValue", [Enum].GetName(GetType(checkLos), data.checkLos))
+
         'output = output.Replace("ChannelingWeaponValue", [Enum].GetName(GetType(ChannelingWeapon), data.spellcastingRestrictions.spellChannelingWeapon))
         'output = output.Replace("weaponClassValue", [Enum].GetName(GetType(RestrictedWeaponClass), data.spellcastingRestrictions.restrictedWeaponClass))
         'output = output.Replace("weaponWeightValue", correctWeightEnumerator([Enum].GetName(GetType(RestrictedWeaponWeight), data.spellcastingRestrictions.restrictedWeaponWeight)))
@@ -220,104 +211,108 @@ Public Class SpellDataCreator
             SpellTags = SpellTags.Substring(0, SpellTags.Count - 2)
         End If
         output = output.Replace("spellTagsValue", SpellTags)
-        'output = output.Replace("spellTypeValue", skillType)
-        'If data.customData.ManaPerSecond <> 0 Then
-        '    output = output.Replace("manaCostPersValue", data.customData.ManaPerSecond)
-        'ElseIf data.customData.consumePerSecond <> 0 Then
-        '    output = output.Replace("manaCostPersValue", data.customData.consumePerSecond)
-        'Else
-        '    output = output.Replace("manaCostPersValue", "0")
-        'End If
+
+        output = output.Replace("spellTypeValue", [Enum].GetName(GetType(ToggleGroup), data.spellType))
+        output = output.Replace("toggleSpellGroupValue", [Enum].GetName(GetType(ToggleGroup), data.toggleGroup))
+        output = output.Replace("effectGroupValue", [Enum].GetName(GetType(EffectGroup), data.effectgroup))
+        output = output.Replace("irremovableValue", [Enum].GetName(GetType(Irremovable), data.irremovable))
+        output = output.Replace("spellUnicityGroupValue", [Enum].GetName(GetType(SpellUnicityGroup), data.unicityGroup))
+        output = output.Replace("spellTooltipActivationTypeValue", [Enum].GetName(GetType(tooltipActivationType), data.tooltipActivationType))
+        output = output.Replace("spellTooltipTargetTypeValue", [Enum].GetName(GetType(tooltipTargetType), data.tooltipTargetType))
+        output = output.Replace("spellPathfindingValue", [Enum].GetName(GetType(pathfinding), data.pathfinding))
+        output = output.Replace("readyTriggerValue", [Enum].GetName(GetType(ReadyTrigger), data.readyTrigger))
+        output = output.Replace("secureHitValue", [Enum].GetName(GetType(SecureHit), data.SecureHit))
+        output = output.Replace("removeStealthValue", [Enum].GetName(GetType(dontRemoveStealth), data.dontRemoveStealth))
+        output = output.Replace("blockCheckValue", [Enum].GetName(GetType(avoidBlockControllerCheck), data.avoidBlockControllerCheck))
+        output = output.Replace("activationTypeValue", [Enum].GetName(GetType(ActivationType), data.activationType))
+        output = output.Replace("targetTypeValue", [Enum].GetName(GetType(TargetType), data.targetType))
+        output = output.Replace("targetEntityValue", [Enum].GetName(GetType(TargetEntityType), data.targetEntityType))
+        output = output.Replace("targetingRangeValue", data.TargetingRange)
+        output = output.Replace("castingRangeValue", data.castingRange)
+        output = output.Replace("checkLosValue", [Enum].GetName(GetType(checkLos), data.checkLos))
+        output = output.Replace("statusOnTargetValue", [Enum].GetName(GetType(checkLos), data.requireStatusOnTarget))
 
 
-        Dim categories As String = ""
-        Select Case data.difficulty
-            Case 0
-                categories &= """Memory Cost 1 Spells"","
-            Case 1
-                categories &= """Memory Cost 2 Spells"","
-            Case 2
-                categories &= """Memory Cost 3 Spells"","
-        End Select
-
-        Select Case data.SpellSchool
-            Case SpellSchool.Pyromancy Or SpellSchool.Cryomancy Or SpellSchool.Aeromancy Or SpellSchool.Geomancy Or SpellSchool.Venomancy Or SpellSchool.Vitriomancy Or SpellSchool.Druidcraft Or SpellSchool.Necromancy Or SpellSchool.Abjuration Or SpellSchool.Restoration Or SpellSchool.Illusionism
-                categories &= """Magical Skills"","
-            Case SpellSchool.Leadership Or SpellSchool.Assassination Or SpellSchool.Hunting Or SpellSchool.Warfare Or SpellSchool.MartialArts Or SpellSchool.KnifeFighting Or SpellSchool.Swordsmanship Or SpellSchool.Fencing Or SpellSchool.MaceFighting Or SpellSchool.AxeFighting Or SpellSchool.PoleFighting Or SpellSchool.Archery Or SpellSchool.ShieldFighting
-                categories &= """Combat Skills"","
-        End Select
-
-        Select Case data.canBeCritical
-            Case canBeCritical.Yes
-                categories &= """Skills that Can Critically Hit"","
-        End Select
-
-        Select Case data.spellcastingRestrictions.restrictedArmorWeight
-            Case RestrictedArmorWeight.Any
-                categories &= """Skills Usable in Light Armor"","
-                categories &= """Skills Usable in Medium Armor"","
-                categories &= """Skills Usable in Heavy Armor"","
-            Case RestrictedArmorWeight.Light
-                categories &= """Skills Usable in Light Armor"","
-            Case RestrictedArmorWeight.Medium
-                categories &= """Skills Usable in Light Armor"","
-                categories &= """Skills Usable in Medium Armor"","
-            'Case 3
-            '    categories &= """Skills Usable in Light Armor"","
-            '    categories &= """Skills Usable in Medium Armor"","
-            Case RestrictedArmorWeight.Heavy
-                categories &= """Skills Usable in Light Armor"","
-                categories &= """Skills Usable in Medium Armor"","
-                categories &= """Skills Usable in Heavy Armor"","
-                'Case 5
-                '    categories &= """Skills Usable in Light Armor"","
-                '    categories &= """Skills Usable in Heavy Armor"","
-                'Case 6
-                '    categories &= """Skills Usable in Medium Armor"","
-                '    categories &= """Skills Usable in Heavy Armor"","
-
-        End Select
-
-        Select Case data.spellcastingRestrictions.specialWeaponRestriction
-            Case SpellSpecialWeaponRestriction.BowRequired
-                categories &= """Skills Requiring a bow"","
-            Case SpellSpecialWeaponRestriction.ShieldRequired
-                categories &= """Skills Requiring a shield"","
-            Case SpellSpecialWeaponRestriction.Unarmed
-                categories &= """Unarmed Skills"","
-        End Select
 
 
-        'Select Case data.spellcastingRestrictions.restrictedWeaponWeight
+        'Dim categories As String = ""
+        'Select Case data.difficulty
         '    Case 0
+        '        categories &= """Memory Cost 1 Spells"","
         '    Case 1
-        '        categories &= """Skills that Require Light Weapons"","
+        '        categories &= """Memory Cost 2 Spells"","
         '    Case 2
-        '        categories &= """Skills that Require Medium Weapons"","
-        '    Case 3
-        '        categories &= """Skills that Require Light Weapons"","
-        '        categories &= """Skills that Require Medium Weapons"","
-        '    Case 4
-        '        categories &= """Skills that Require Heavy Weapons"","
-        '    Case 5
-        '        categories &= """Skills that Require Light Weapons"","
-        '        categories &= """Skills that Require Heavy Weapons"","
-        '    Case 6
-        '        categories &= """Skills that Require Medium Weapons"","
-        '        categories &= """Skills that Require Heavy Weapons"","
+        '        categories &= """Memory Cost 3 Spells"","
         'End Select
 
-        Select Case data.spellcastingRestrictions.weaponRestriction
-            Case RestrictedWeaponClass.None
-            Case RestrictedWeaponClass.TwoHanded
-                categories &= """Skills that Require Two Handed Weapons"","
-            Case RestrictedWeaponClass.SpellChanneling
-                categories &= """Skills that Require Spell Channeling Weapons"","
-            Case RestrictedWeaponClass.OneHanded
-                categories &= """Skills that Require One Handed Weapons"","
-        End Select
+        'Select Case data.SpellSchool
+        '    Case SpellSchool.Pyromancy Or SpellSchool.Cryomancy Or SpellSchool.Aeromancy Or SpellSchool.Geomancy Or SpellSchool.Venomancy Or SpellSchool.Vitriomancy Or SpellSchool.Druidcraft Or SpellSchool.Necromancy Or SpellSchool.Abjuration Or SpellSchool.Restoration Or SpellSchool.Illusionism
+        '        categories &= """Magical Skills"","
+        '    Case SpellSchool.Leadership Or SpellSchool.Assassination Or SpellSchool.Hunting Or SpellSchool.Warfare Or SpellSchool.MartialArts Or SpellSchool.KnifeFighting Or SpellSchool.Swordsmanship Or SpellSchool.Fencing Or SpellSchool.MaceFighting Or SpellSchool.AxeFighting Or SpellSchool.PoleFighting Or SpellSchool.Archery Or SpellSchool.ShieldFighting
+        '        categories &= """Combat Skills"","
+        'End Select
+
+        'Select Case data.canBeCritical
+        '    Case canBeCritical.Yes
+        '        categories &= """Skills that Can Critically Hit"","
+        'End Select
+
+        'Select Case data.spellcastingRestrictions.restrictedArmorWeight
+        '    Case RestrictedArmorWeight.Any
+        '        categories &= """Skills Usable in Light Armor"","
+        '        categories &= """Skills Usable in Medium Armor"","
+        '        categories &= """Skills Usable in Heavy Armor"","
+        '    Case RestrictedArmorWeight.Light
+        '        categories &= """Skills Usable in Light Armor"","
+        '    Case RestrictedArmorWeight.Medium
+        '        categories &= """Skills Usable in Light Armor"","
+        '        categories &= """Skills Usable in Medium Armor"","
+        '    'Case 3
+        '    '    categories &= """Skills Usable in Light Armor"","
+        '    '    categories &= """Skills Usable in Medium Armor"","
+        '    Case RestrictedArmorWeight.Heavy
+        '        categories &= """Skills Usable in Light Armor"","
+        '        categories &= """Skills Usable in Medium Armor"","
+        '        categories &= """Skills Usable in Heavy Armor"","
+        '        'Case 5
+        '        '    categories &= """Skills Usable in Light Armor"","
+        '        '    categories &= """Skills Usable in Heavy Armor"","
+        '        'Case 6
+        '        '    categories &= """Skills Usable in Medium Armor"","
+        '        '    categories &= """Skills Usable in Heavy Armor"","
+
+        'End Select
 
         'Select Case data.spellcastingRestrictions.specialWeaponRestriction
+        '    Case SpellSpecialWeaponRestriction.BowRequired
+        '        categories &= """Skills Requiring a bow"","
+        '    Case SpellSpecialWeaponRestriction.ShieldRequired
+        '        categories &= """Skills Requiring a shield"","
+        '    Case SpellSpecialWeaponRestriction.Unarmed
+        '        categories &= """Unarmed Skills"","
+        'End Select
+
+
+        ''Select Case data.spellcastingRestrictions.restrictedWeaponWeight
+        ''    Case 0
+        ''    Case 1
+        ''        categories &= """Skills that Require Light Weapons"","
+        ''    Case 2
+        ''        categories &= """Skills that Require Medium Weapons"","
+        ''    Case 3
+        ''        categories &= """Skills that Require Light Weapons"","
+        ''        categories &= """Skills that Require Medium Weapons"","
+        ''    Case 4
+        ''        categories &= """Skills that Require Heavy Weapons"","
+        ''    Case 5
+        ''        categories &= """Skills that Require Light Weapons"","
+        ''        categories &= """Skills that Require Heavy Weapons"","
+        ''    Case 6
+        ''        categories &= """Skills that Require Medium Weapons"","
+        ''        categories &= """Skills that Require Heavy Weapons"","
+        ''End Select
+
+        'Select Case data.spellcastingRestrictions.weaponRestriction
         '    Case RestrictedWeaponClass.None
         '    Case RestrictedWeaponClass.TwoHanded
         '        categories &= """Skills that Require Two Handed Weapons"","
@@ -327,7 +322,17 @@ Public Class SpellDataCreator
         '        categories &= """Skills that Require One Handed Weapons"","
         'End Select
 
-        output = output.Replace("CategoriesValue", categories)
+        ''Select Case data.spellcastingRestrictions.specialWeaponRestriction
+        ''    Case RestrictedWeaponClass.None
+        ''    Case RestrictedWeaponClass.TwoHanded
+        ''        categories &= """Skills that Require Two Handed Weapons"","
+        ''    Case RestrictedWeaponClass.SpellChanneling
+        ''        categories &= """Skills that Require Spell Channeling Weapons"","
+        ''    Case RestrictedWeaponClass.OneHanded
+        ''        categories &= """Skills that Require One Handed Weapons"","
+        ''End Select
+
+        'output = output.Replace("CategoriesValue", categories)
 
         Return output
     End Function
@@ -421,6 +426,9 @@ Public Class SpellDataCreator
                         dataDescription = term & ": " & dataType.level0
                     End If
 
+                End If
+                If dataType.modifierType <> SaveModifierType.None Then
+                    dataDescription &= " (Reduced by: " & [Enum].GetName(GetType(SaveModifierType), dataType.modifierType) & ")"
                 End If
                 parameters &= dataDescription
                 parameters &= "</br>"
