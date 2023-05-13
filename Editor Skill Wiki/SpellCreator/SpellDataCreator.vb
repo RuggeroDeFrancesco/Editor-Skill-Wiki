@@ -212,7 +212,7 @@ Public Class SpellDataCreator
         End If
         output = output.Replace("spellTagsValue", SpellTags)
 
-        output = output.Replace("spellTypeValue", [Enum].GetName(GetType(ToggleGroup), data.spellType))
+        output = output.Replace("spellTypeValue", [Enum].GetName(GetType(SpellType), data.spellType))
         output = output.Replace("toggleSpellGroupValue", [Enum].GetName(GetType(ToggleGroup), data.toggleGroup))
         output = output.Replace("effectGroupValue", [Enum].GetName(GetType(EffectGroup), data.effectgroup))
         output = output.Replace("irremovableValue", [Enum].GetName(GetType(Irremovable), data.irremovable))
@@ -222,7 +222,7 @@ Public Class SpellDataCreator
         output = output.Replace("spellPathfindingValue", [Enum].GetName(GetType(pathfinding), data.pathfinding))
         output = output.Replace("readyTriggerValue", [Enum].GetName(GetType(ReadyTrigger), data.readyTrigger))
         output = output.Replace("secureHitValue", [Enum].GetName(GetType(SecureHit), data.SecureHit))
-        output = output.Replace("removeStealthValue", [Enum].GetName(GetType(dontRemoveStealth), data.dontRemoveStealth))
+        output = output.Replace("removeStealthValue", [Enum].GetName(GetType(dontRemoveStealth), Not data.dontRemoveStealth))
         output = output.Replace("blockCheckValue", [Enum].GetName(GetType(avoidBlockControllerCheck), data.avoidBlockControllerCheck))
         output = output.Replace("activationTypeValue", [Enum].GetName(GetType(ActivationType), data.activationType))
         output = output.Replace("targetTypeValue", [Enum].GetName(GetType(TargetType), data.targetType))
@@ -230,7 +230,7 @@ Public Class SpellDataCreator
         output = output.Replace("targetingRangeValue", data.TargetingRange)
         output = output.Replace("castingRangeValue", data.castingRange)
         output = output.Replace("checkLosValue", [Enum].GetName(GetType(checkLos), data.checkLos))
-        output = output.Replace("statusOnTargetValue", [Enum].GetName(GetType(checkLos), data.requireStatusOnTarget))
+        output = output.Replace("statusOnTargetValue", [Enum].GetName(GetType(RequireStatusOnTarget), data.requireStatusOnTarget))
 
 
 

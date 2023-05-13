@@ -11,12 +11,20 @@
   <ItemGroup>
     <None Remove="defaultSpellData.txt" />
     <None Remove="I2Languages.json" />
+    <None Remove="Images\ItemData.png" />
     <None Remove="Images\MainWindow.jpg" />
+    <None Remove="Images\MonsterData.png" />
     <None Remove="Images\MonsterSpells.png" />
     <None Remove="Images\SpellData.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Images\ItemData.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\MonsterData.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Images\MonsterSpells.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

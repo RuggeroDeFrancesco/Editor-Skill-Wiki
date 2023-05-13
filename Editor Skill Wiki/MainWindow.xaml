@@ -12,7 +12,12 @@
         <ImageBrush ImageSource="/Images/MainWindow.jpg" />
     </Window.Background>
     <Grid>
-        <WrapPanel Margin="0,0,502,195">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <WrapPanel Grid.Row="0">
             <Button HorizontalAlignment="Left" Margin="33,28,0,0" VerticalAlignment="Top" Click="GenerateSpellData" Height="64" Width="64">
                 <Button.Background>
                     <ImageBrush ImageSource="/Images/SpellData.Png" />
@@ -20,13 +25,21 @@
             </Button>
             <TextBox Text="Spell Data" FontSize="18" FontFamily="MS Gothic" FontWeight="Bold" Foreground="Tan"  Background="Transparent" BorderBrush="Transparent" Height="32" Margin="33,28,0,0"/>
         </WrapPanel>
-        <WrapPanel Margin="0,83,0,110">
+        <WrapPanel Grid.Row="1">
             <Button HorizontalAlignment="Left" Margin="33,28,0,0" VerticalAlignment="Top" Click="GenerateMonsterSpells" Height="64" Width="64">
                 <Button.Background>
-                    <ImageBrush ImageSource="/Images/MonsterSpells.Png" />
+                    <ImageBrush ImageSource="/Images/MonsterData.Png" />
                 </Button.Background>
             </Button>
-            <TextBox Text="Monster Spells" FontSize="18" FontFamily="MS Gothic" FontWeight="Bold" Foreground="Tan"  Background="Transparent" BorderBrush="Transparent" Height="32" Margin="33,28,0,0"/>
+            <TextBox Text="Monster Data" FontSize="18" FontFamily="MS Gothic" FontWeight="Bold" Foreground="Tan"  Background="Transparent" BorderBrush="Transparent" Height="32" Margin="33,28,0,0"/>
+        </WrapPanel>
+        <WrapPanel Grid.Row="2">
+            <Button HorizontalAlignment="Left" Margin="33,28,0,0" VerticalAlignment="Top" Click="GenerateItemData" Height="64" Width="64">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Images/ItemData.Png" />
+                </Button.Background>
+            </Button>
+            <TextBox Text="Item Data" FontSize="18" FontFamily="MS Gothic" FontWeight="Bold" Foreground="Tan"  Background="Transparent" BorderBrush="Transparent" Height="32" Margin="33,28,0,0"/>
         </WrapPanel>
 
     </Grid>

@@ -1,0 +1,21 @@
+﻿<Window x:Class="ItemDataWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Editor_Skill_Wiki"
+        mc:Ignorable="d"
+        Title="ItemDataWindow" Height="450" Width="800">
+    <DockPanel>
+
+        <Button x:Name="CreateOutput" Grid.Column="1" Grid.Row="1" Margin="5, 0, 5, 5" Click="GetReagentsData"  DockPanel.Dock="Top">
+            <TextBlock Text="Generate Reagent Data"/>
+        </Button>
+        <DockPanel DockPanel.Dock="Bottom" LastChildFill="False">
+            <ComboBox x:Name="LanguageCombo" DockPanel.Dock="Right" Width="150" SelectionChanged="LanguageCombo_SelectionChanged"/>
+        </DockPanel>
+        <TextBox x:Name="OutputBlock" DockPanel.Dock="Bottom" Text="{Binding Path=OutputText}" TextWrapping="Wrap">
+
+        </TextBox>
+    </DockPanel>
+</Window>

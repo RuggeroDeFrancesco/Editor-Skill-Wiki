@@ -30,4 +30,15 @@
 
     End Sub
 
+    Private Sub GenerateItemData(sender As Object, e As RoutedEventArgs)
+        Try
+            Dim ItemDataWindow As New ItemDataWindow()
+            ItemDataWindow.Show()
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            MsgBox(ex.StackTrace)
+        End Try
+
+    End Sub
+
 End Class

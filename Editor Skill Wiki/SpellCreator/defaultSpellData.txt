@@ -29,7 +29,7 @@
         ['Pathfinding'] = "spellPathfindingValue",
         ['Ready Trigger'] = "readyTriggerValue",
         ['Secure Hit'] = "secureHitValue",
-        ['Remove Stealth'] = "RemoveStealthValue",
+        ['Remove Stealth'] = "removeStealthValue",
         ['Block Check'] = "blockCheckValue",
         ['ActivationType'] = "activationTypeValue",
         ['Target Type'] = "targetTypeValue",

@@ -44,6 +44,18 @@
 		Invisibility
 	End Enum
 
+	Public Enum SpellType
+		None
+		Ready
+		Toggle
+		Self
+		Target
+		Link
+		Location
+		Skillshot
+		Summon
+	End Enum
+
 	Public Enum ActivationType
 		Standard
 		Toggle
@@ -590,6 +602,16 @@
 	'	Yes
 	'End Enum
 
+	Public Enum SpellCoefficientAttributeType
+		None
+		STR
+		DEX
+		COS
+		PER
+		INT
+		CHA
+	End Enum
+
 #End Region
 
 	Public Enum EnumLanguage
@@ -622,15 +644,45 @@
 		Charisma = 6
 	End Enum
 
-	Public Enum SpellCoefficientAttributeType
+
+	Public Enum ItemCategory
 		None
-		STR
-		DEX
-		COS
-		PER
-		INT
-		CHA
+		Hide
+		Cloth
+		Leather
+		Ingot
+		WoodPlank
 	End Enum
 
+	Public Enum ToolCategory
+		None
+		Axe
+		Pickaxe
+		Basket
+		Hammer
+		WateringCan
+	End Enum
+
+	Public Enum Aspects
+		Mind = 0
+		Body = 1
+		Soul = 2
+		Create = 100
+		Destroy = 101
+		Negate = 102
+		Transform = 103
+		Transfer = 104
+		Air = 200
+		Earth = 201
+		Fire = 202
+		Water = 203
+		Death = 204
+		Life = 205
+		Chaos = 206
+		Order = 207
+		Time = 208
+		Energy = 209
+		Knowledge = 210
+	End Enum
 
 End Module
