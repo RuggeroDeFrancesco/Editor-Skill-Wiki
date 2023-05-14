@@ -685,4 +685,42 @@
 		Knowledge = 210
 	End Enum
 
+	Public Function combinedEnumeratorName(enumType As Type, value As Integer) As String
+		Dim listOfEnumerators As New List(Of Integer)
+		Dim combinedName As String = ""
+		Dim highestPower As Integer = 1
+
+		If value = 0 Then
+			Return [Enum].GetName(enumType, 0)
+		End If
+
+		While highestPower * 2 <= value
+			highestPower = highestPower * 2
+		End While
+		Dim i As Integer = highestPower
+		While True
+
+			If value >= i Then
+				listOfEnumerators.Add(i)
+				value = value - i
+			End If
+			If i = 1 Then
+				Exit While
+			Else
+				i = i / 2
+			End If
+
+		End While
+
+		For Each enumeratore As Integer In listOfEnumerators
+			combinedName &= [Enum].GetName(enumType, enumeratore) & ", "
+		Next
+
+		If combinedName <> "" Then
+			combinedName = combinedName.Substring(0, combinedName.Count() - 2) 'tolgo il vbCrlf di troppo
+		End If
+
+		Return combinedName
+	End Function
+
 End Module

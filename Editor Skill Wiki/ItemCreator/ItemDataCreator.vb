@@ -77,7 +77,7 @@ Public Class ItemDataCreator
         Dim i As Integer = 0
         For Each aspect As MagicAspectValue In data.PowerAspects
             i += 1
-            Dim targetName As String = "Aspect" & i
+            Dim targetName As String = "aspect" & i
             Dim targetValue As String = "Value" & i
             output = output.Replace(targetName, [Enum].GetName(GetType(Aspects), aspect.aspect))
             output = output.Replace(targetValue, aspect.value)

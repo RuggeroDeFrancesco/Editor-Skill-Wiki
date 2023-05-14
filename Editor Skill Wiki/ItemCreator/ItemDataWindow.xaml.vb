@@ -18,6 +18,7 @@ Public Class ItemDataWindow
         InitializeComponent()
 
         ' Aggiungere le eventuali istruzioni di inizializzazione dopo la chiamata a InitializeComponent().
+        OutputBlock.DataContext = Me
         LanguageCombo.ItemsSource = [Enum].GetValues(GetType(EnumLanguage))
 
     End Sub
@@ -57,12 +58,15 @@ Public Class ItemDataWindow
             For Each file As IO.FileInfo In files
                 itemDataCreator = New ItemDataCreator(Convert.ToInt32(languageSelected))
                 itemDataCreator.getAspectsData(file.FullName)
-                OutputText &= itemDataCreator.Output
-                OutputText &= vbCrLf
-                OutputText &= vbCrLf
+                If itemDataCreator.Output <> "" Then
+                    OutputText &= itemDataCreator.Output
+                    OutputText &= vbCrLf
+                    OutputText &= vbCrLf
+                End If
                 itemsInserted.Add(itemDataCreator.itemName)
             Next
         End If
+        Dim stringola As String = OutputBlock.Text
     End Sub
 
     Private Sub LanguageCombo_SelectionChanged(sender As Object, e As SelectionChangedEventArgs)

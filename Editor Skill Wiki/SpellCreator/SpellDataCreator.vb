@@ -69,7 +69,7 @@ Public Class SpellDataCreator
         SpellName = data.m_name
         removed = data.removed
         gameReady = data.gameReady
-        Output = Output.Replace("SpellName", GetTooltipName(SpellName, deserializedlanguageData, language).Replace("'", "\"))
+        Output = Output.Replace("SpellName", GetTooltipName(SpellName, deserializedlanguageData, language).Replace("'", "\'"))
         'Dim customDataLists As filteredCustomData
         'customDataLists = data.GetCustomData()
         'customDataNameList = customDataLists.name
@@ -214,7 +214,7 @@ Public Class SpellDataCreator
 
         output = output.Replace("spellTypeValue", [Enum].GetName(GetType(SpellType), data.spellType))
         output = output.Replace("toggleSpellGroupValue", [Enum].GetName(GetType(ToggleGroup), data.toggleGroup))
-        output = output.Replace("effectGroupValue", [Enum].GetName(GetType(EffectGroup), data.effectgroup))
+        output = output.Replace("effectGroupValue", Enumeratori.combinedEnumeratorName(GetType(EffectGroup), data.effectgroup))
         output = output.Replace("irremovableValue", [Enum].GetName(GetType(Irremovable), data.irremovable))
         output = output.Replace("spellUnicityGroupValue", [Enum].GetName(GetType(SpellUnicityGroup), data.unicityGroup))
         output = output.Replace("spellTooltipActivationTypeValue", [Enum].GetName(GetType(tooltipActivationType), data.tooltipActivationType))
@@ -226,7 +226,7 @@ Public Class SpellDataCreator
         output = output.Replace("blockCheckValue", [Enum].GetName(GetType(avoidBlockControllerCheck), data.avoidBlockControllerCheck))
         output = output.Replace("activationTypeValue", [Enum].GetName(GetType(ActivationType), data.activationType))
         output = output.Replace("targetTypeValue", [Enum].GetName(GetType(TargetType), data.targetType))
-        output = output.Replace("targetEntityValue", [Enum].GetName(GetType(TargetEntityType), data.targetEntityType))
+        output = output.Replace("targetEntityValue", Enumeratori.combinedEnumeratorName(GetType(TargetEntityType), data.targetEntityType))
         output = output.Replace("targetingRangeValue", data.TargetingRange)
         output = output.Replace("castingRangeValue", data.castingRange)
         output = output.Replace("checkLosValue", [Enum].GetName(GetType(checkLos), data.checkLos))
