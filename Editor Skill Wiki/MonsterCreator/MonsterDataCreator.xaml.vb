@@ -14,24 +14,29 @@ Public Class MonsterDataCreator
                 Dim rawData As String
                 Dim OpenFileDialog1 As New Microsoft.Win32.OpenFileDialog
                 OpenFileDialog1.Title = "Open File..."
-                OpenFileDialog1.Multiselect = False
+                OpenFileDialog1.Multiselect = True
                 OpenFileDialog1.Filter = "All Files|*.*"
                 OpenFileDialog1.ShowDialog()
-                Dim path As String = OpenFileDialog1.FileName
-                If System.IO.File.Exists(path) Then
-                    rawData = System.IO.File.ReadAllText(path)
-                Else Throw New System.Exception("File does not exist.")
-                End If
 
                 'extract language data to get the correct monster name and description
                 languageData = deserializeLanguageData(GetLanguageData())
+                Dim output As String = ""
+                For Each file As String In OpenFileDialog1.FileNames
+                    Dim Path As String = file
+                    If System.IO.File.Exists(Path) Then
+                        rawData = System.IO.File.ReadAllText(Path)
+                        Dim parsedData = parseMonsterData(rawData)
+                        Dim finalData As New MonsterFinalData
+                        finalData.parseData(parsedData, attackFolder, spellFolder)
+                        output &= createModuleOutput(finalData)
+                        output &= vbCrLf
+                        output &= vbCrLf
+                    Else Throw New System.Exception("File does not exist.")
+                    End If
+                Next
 
-
-                Dim parsedData = parseMonsterData(rawData)
-                Dim finalData As New MonsterFinalData
-                finalData.parseData(parsedData, attackFolder, spellFolder)
-                Dim output = createModuleOutput(finalData)
                 OutputBlock.Text = output
+
             Else
                 MsgBox("Please select valid folders for Attacks and Spells.")
             End If

@@ -202,6 +202,47 @@
             Dim startName As Integer = rawData.LastIndexOf("<Name>", index)
             Dim endName As Integer = rawData.IndexOf("</Name>", startName)
             Dim name As String = rawData.Substring(startName + 6, endName - startName - 6)
+
+            'eccezioni di skill specifiche dei mostri
+            Select Case name
+                Case "spell_ArborealDragonBreath_ArborealDragon"
+                    name = "spell_ArborealDragonBreath"
+                Case "spell_SkeletalDragonBreath_SkeletalDragon"
+                    name = "spell_SkeletalDragonBreath"
+                Case "spell_MountainDragonBreath_MountainDragon"
+                    name = "spell_MountainDragonBreath"
+                Case "spell_EmberDragonBreath_EmberDragon"
+                    name = "spell_EmberDragonBreath"
+
+                Case "spell_MagicReflection_ColossalHuskWorm"
+                    name = "spell_MagicReflection"
+                Case "spell_BattleJump_Ghoul"
+                    name = "spell_BattleJump"
+
+                Case "spell_MagicReflection_ColossalHuskWorm"
+                    name = "spell_MagicReflection"
+                Case "spell_LegendWOPSilence"
+                    name = "spell_WordOfPower_Silence"
+                Case "spell_LegendShivers"
+                    name = "spell_Shivers"
+                Case "spell_LegendMegaEruption"
+                    name = "spell_Eruption"
+                Case "spell_LegendLargeSlow"
+                    name = "spell_Slow"
+                Case "spell_LegendIceSpikesRing"
+                    name = "spell_IceSpikes"
+                Case "spell_LegendGrooveRam"
+                    name = "spell_RamThrough"
+                Case "spell_LegendGrooveQuake"
+                    name = "spell_Earthquake"
+                Case "spell_LegendAxfitmithissTouch"
+                    name = "spell_ChillingTouch"
+
+
+
+
+            End Select
+
             Dim filePath As String = spellFolder & "\" & name & ".json"
             If System.IO.File.Exists(filePath) Then
                 Dim textData As String = System.IO.File.ReadAllText(filePath)
