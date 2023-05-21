@@ -2,6 +2,13 @@
 
     Public m_name As String
     Public challengeRating As Integer
+    Public difficulty As Integer
+    Public monsterRace As Integer
+    Public capturable As Boolean
+    Public skinAmount As Integer
+    Public champion As Boolean
+    Public walkSpeed As Integer
+    Public baseSpeed As Integer
     Public str As Strenght
     Public dex As Dexterity
     Public _int As Intelligence
@@ -43,14 +50,28 @@
     Public acidDamageIncrease As Integer
     Public poisonDamageIncrease As Integer
     Public energyDamageIncrease As Integer
+    Public fireDamageConversion As Integer
+    Public iceDamageConversion As Integer
+    Public shockDamageConversion As Integer
+    Public acidDamageConversion As Integer
+    Public poisonDamageConversion As Integer
+    Public energyDamageConversion As Integer
     Public monsterPoisonRank As Integer
     Public immunityEffectGroup As Integer
+    Public playerAttitude As Integer
+    Public combatStance As Integer
+    Public monsterPoisonStack As Integer
+    Public BroadcastAggression As Boolean
 
     Public MonsterAttacks As List(Of MonsterAttack)
 
     Public MonsterSpellsList As List(Of MonsterSpells)
 
     Public immunityStatusEffectList As List(Of StatusEffect)
+
+    Public damageAbsorbed As List(Of Integer)
+
+    Public allowedPoi As List(Of Integer)
 End Class
 
 Public Class Strenght

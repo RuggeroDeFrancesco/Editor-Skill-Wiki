@@ -2,6 +2,13 @@
         ["Description"] = "descriptionText",
         ["EnvImage"] = "imageText",
         ["ChallengeRating"] = "challengeRatingText"
+        ["Difficulty"] = "difficultyText"
+        ["MonsterRace"] = "monsterRaceText"
+        ["Capturable"] = "capturableText"
+        ["SkinAmount"] = "skinAmountText"
+        ["Champion"] = "championText"
+        ["WalkSpeed"] = "walkSpeedText"
+        ["BaseSpeed"] = "baseSpeedText"
         ["Attributes and Modifiers"] = {
             ["STR"] = "strText",
             ["DEX"] = "dexText",
@@ -10,11 +17,18 @@
             ["PER"] = "perText",
             ["CHA"] = "chaText",
             ["Health"] = "healthText",
+            ["Health Regen"] = "healthRegenText",
             ["Mana"] = "manaText",
+            ["Mana Regen"] = "manaText",
             ["Accuracy"] = "accuracyText",
             ["Fortitude"] = "fortitudeText",
             ["Evasion"] = "evasionText",
             ["Willpower"] = "willpowerText",
+            ["Stealth"] = "stealthText",
+            ["Detection"] = "detectionText",
+            ["Luck"] = "luckText",
+            ["Critical Chance"] = "criticalChanceText",
+            ["Critical Damage"] = "criticalDamageText",
         },
         ["Armor and Resistances"] = {
             ["Armor (Slash)"] = "slashText (slash%Text)",
@@ -28,6 +42,32 @@
             ["Acid"] = "acidText (acid%Text)",
             ["Immunity Effect Group"] = "immunityGroupText"
             ["Status Effect Immunities"] ="immunitySpace"
+            ["Damage Absorbed"] = "absorbSpace"
+            ["Magical Damage Reflection"] ="magicalDamageReflectionText"
+            ["Physical Damage Reflection"] ="physicalDamageReflectionText"
+        },
+        ["Attack Modifiers"] = {
+            ["Slash Damage Increase"] ="slashDamageIncreaseText"
+            ["Pierce Damage Increase"] ="pierceDamageIncreaseText"
+            ["Crush Damage Increase"] ="crushDamageIncreaseText"
+            ["Fire Damage Increase"] ="fireDamageIncreaseText"
+            ["Ice Damage Increase"] ="iceDamageIncreaseText"
+            ["Shock Damage Increase"] ="shockDamageIncreaseText"
+            ["Acid Damage Increase"] ="acidDamageIncreaseText"
+            ["Poison Damage Increase"] ="poisonDamageIncreaseText"
+            ["Energy Damage Increase"] ="energyDamageIncreaseText"
+            ["Acid Damage Conversion"] ="acidDamageConversionText"
+            ["Poison Damage Conversion"] ="poisonDamageConversionText"
+            ["Energy Damage Conversion"] ="energyDamageConversionText"
+            ["Fire Damage Conversion"] ="fireDamageConversionText"
+            ["Ice Damage Conversion"] ="iceDamageConversionText"
+            ["Shock Damage Conversion"] ="shockDamageConversionText"
+            ["Acid Damage Conversion"] ="acidDamageConversionText"
+            ["Poison Damage Conversion"] ="poisonDamageConversionText"
+            ["Energy Damage Conversion"] ="energyDamageConversionText"
+            ["Poison Stacks"] = "monsterPoisonStacksText"
+            ["Cooldown Reduction"] = "cooldownReductionText"
+            ["Spell Damage Increase"] = "spellDamageIncreaseText"
         },
         ["Base Attacks"] = {
 attackSpace
@@ -35,6 +75,10 @@ attackSpace
         ["Skills and Abilities"] = {
 skillSpace
         },
+       ["Broadcast Aggression"] = "broadcastAggressionText"
+       ["playerAttitude"] = "playerAttitudeText",
+       ["combatStance"] = "combatStanceText",
        ["Tags"] = {"Arboreus","Terra"},
+       ["Allowed POI"] = "allowedPoiSpace",
        ["Category"] = "categoryText",
     },

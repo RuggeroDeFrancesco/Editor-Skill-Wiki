@@ -685,6 +685,104 @@
 		Knowledge = 210
 	End Enum
 
+	Public Enum POIType
+		MountainTrollCamp
+		ForestTrollCamp
+		SeaTrollDwelling
+		HillGoblinsCamp
+		RuinsOfOlissa
+		ArenaOfOlissa
+		RuinsOfFairfront
+		RuinsOfHollowgrove
+		TempleOfHeartwood
+		AltarOfTyros
+		ChurchOfTyros
+		SacredHill
+		ShadowGoblinsCamp
+		RuinsOfEastmere
+		BonePit
+		WargPit
+		BanditsCamp
+		BanditsFortress
+		BanditsTower
+		OgreVillage
+		FireElementalLaboratory
+		FireElemementalPrison
+		IceElementalLaboratory
+		IceElemementalPrison
+		StormElementalLaboratory
+		StormElemementalPrison
+		CrystalElementalLaboratory
+		CrystalElemementalPrison
+		ShipwreckCamp
+		BuccaneerRest
+		JunkPile
+		ImprovisedArena
+		MoonBayCamp
+		RuinedGardens
+		LargeBanditCamp
+		WickerTotem
+		TradersMaze
+		ReclaimedRuins
+		PlatformsRamp
+		Belvedere
+		GrokotonDistrict
+		GrokotonHamlet
+		TermidianNest
+		TermidianOutpost
+		TermidianNursery
+		GuardedBridge
+		InfestedDump
+		OgreLivingQuarters
+		OgreTrainingGrounds
+		CreepingGardens
+		JotunnOutpost
+		JotunnVillage
+		JotunnCitadel
+		InfestedGraveyard
+		MountainDragonNest
+		EmberDragonNest
+		ArborealDragonNest
+		RimeDragonNest
+		OgreFacility
+		OgreSuburb
+		OgreBarracks
+	End Enum
+
+	Public Enum MonsterRace
+		Beast
+		Giant
+		Human
+		Humanoid
+		Primordial
+		Undead
+		Reptilian
+		Amphibian
+		Arachnid
+		Dragon
+		Insect
+		Reptile
+	End Enum
+
+	Public Enum PlayerAttitude
+		Aggressive
+		Neutral
+		Fleeing
+		WanderingNPC
+	End Enum
+
+	Public Enum CombatStance
+		Fighter
+		KeepDistance
+		Assassin
+	End Enum
+
+	Public Enum LegendDifficulty
+		Easy
+		Medium
+		Hard
+	End Enum
+
 	Public Function combinedEnumeratorName(enumType As Type, value As Integer) As String
 		Dim listOfEnumerators As New List(Of Integer)
 		Dim combinedName As String = ""

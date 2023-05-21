@@ -3,6 +3,14 @@
     Public name As String
     Public description As String
     Public challengeRating As String
+    Public difficulty As String
+    Public monsterRace As String
+    Public capturable As String
+    Public skinAmount As String
+    Public champion As String
+
+    Public walkSpeed As String
+    Public baseSpeed As String
 
     Public str As String
     Public dex As String
@@ -11,6 +19,8 @@
     Public per As String
     Public cha As String
     Public health As String
+    Public healthRegen As String
+    Public manaRegen As String
     Public mana As String
     Public accuracy As String
     Public fortitude As String
@@ -44,105 +54,180 @@
     Public acidResistance As String
     Public acidResistancePerc As String
 
+    Public magicalDamageReflection As String
+    Public physicalDamageReflection As String
+    Public slashDamageIncrease As String
+    Public pierceDamageIncrease As String
+    Public crushDamageIncrease As String
+    Public fireDamageIncrease As String
+    Public iceDamageIncrease As String
+    Public shockDamageIncrease As String
+    Public acidDamageIncrease As String
+    Public poisonDamageIncrease As String
+    Public energyDamageIncrease As String
+    Public fireDamageConversion As String
+    Public iceDamageConversion As String
+    Public shockDamageConversion As String
+    Public acidDamageConversion As String
+    Public poisonDamageConversion As String
+    Public energyDamageConversion As String
+    Public monsterPoisonStack As String
+    Public broadcastAggression As String
+
     Public immunityEffectGroup As String
+
 
     Public monsterAttacks As List(Of MonsterAttackFinalData)
     Public monsterSkills As List(Of MonsterSpellFinalData)
     Public immunityStatusEffectList As List(Of String)
+    Public damageAbsorbed As List(Of String)
 
+    Public playerAttitude As String
+    Public combatStance As String
+    Public category As String
+    Public allowedPoi As List(Of String)
 
     Public Sub parseData(data As MonsterData, attackFolder As String, spellFolder As String)
-
-        Dim attackFolderPath As String
-        Dim spellFolderPath As String
-        monsterAttacks = New List(Of MonsterAttackFinalData)
-        monsterSkills = New List(Of MonsterSpellFinalData)
-        immunityStatusEffectList = New List(Of String)
-
-        If System.IO.Directory.Exists(attackFolder) Then
-            attackFolderPath = attackFolder
-        Else Throw New Exception("Attack folder does not exist.")
-        End If
-
-        If System.IO.Directory.Exists(spellFolder) Then
-            spellFolderPath = spellFolder
-        Else Throw New Exception("Spell folder does not exist.")
-        End If
-
-        name = data.m_name
-        challengeRating = data.challengeRating.ToString
-        str = data.str.value.ToString
-        dex = data.dex.value.ToString
-        int = data._int.value.ToString
-        cos = data.cos.value.ToString
-        per = data.per.value.ToString
-        cha = data.cha.value.ToString
-
-        health = (data.baseEndurance.value + data.str.value * 50 + data.cos.value * 75).ToString
-        mana = (data.baseEnergy.value + data._int.value * 75 + data.cha.value * 50).ToString
-        accuracy = (data.accuracy.value + data.per.value * 25 - 150).ToString
-        fortitude = (data.fortitude.value + data.cos.value * 25 - 150).ToString
-        evasion = (data.evasion.value + data.dex.value * 25 - 150).ToString
-        willpower = (data.willpower.value + data._int.value * 25 - 150).ToString
-        stealth = (data.Stealth.value + data.dex.value * 25 - 150).ToString
-        detection = (data.Detection.value + data.per.value * 25 - 150).ToString
-        luck = (data.baseLuck.value + data.cha.value * 25 - 250).ToString
-        criticalChance = (data.criticalChance.value + data.per.value * 1 - 10).ToString & "%"
+        Try
+            Dim attackFolderPath As String
+            Dim spellFolderPath As String
+            monsterAttacks = New List(Of MonsterAttackFinalData)
+            monsterSkills = New List(Of MonsterSpellFinalData)
+            immunityStatusEffectList = New List(Of String)
+            damageAbsorbed = New List(Of String)
+            allowedPoi = New List(Of String)
 
 
-
-        criticalDamage = data.criticalDamage.value.ToString
-        spellDamageIncrease = data.spellDamageIncrease.value.ToString
-        cooldownReduction = data.cooldownReduction.value.ToString
-
-
-        slashArmor = data.armorSlash.value.ToString
-        slashArmorPerc = calculatePerc(data.armorSlash.value)
-        pierceArmor = data.armorPierce.value.ToString
-        pierceArmorPerc = calculatePerc(data.armorPierce.value)
-        crushArmor = data.armorCrush.value.ToString
-        crushArmorPerc = calculatePerc(data.armorCrush.value)
-        fireResistance = data.fireResistance.value.ToString
-        fireResistancePerc = calculatePerc(data.fireResistance.value)
-        coldResistance = data.coldResistance.value.ToString
-        coldResistancePerc = calculatePerc(data.coldResistance.value)
-        shockResistance = data.shockResistance.value.ToString
-        shockResistancePerc = calculatePerc(data.shockResistance.value)
-        magicResistance = data.magicResistance.value.ToString
-        magicResistancePerc = calculatePerc(data.magicResistance.value)
-        poisonResistance = data.poisonResistance.value.ToString
-        poisonResistancePerc = calculatePerc(data.poisonResistance.value)
-        acidResistance = data.acidResistance.value.ToString
-        acidResistancePerc = calculatePerc(data.acidResistance.value)
-        immunityEffectGroup = data.immunityEffectGroup
-
-        Dim statusRawData As String = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "MonsterCreator/statusEffects.xml"))
-
-        For Each StatusEffect As StatusEffect In data.immunityStatusEffectList
-            If StatusEffect.m_PathID <> 0 Then
-                Dim newImmunity As String = getStatusEffect(StatusEffect.m_PathID, statusRawData)
-                If newImmunity <> "" Then
-                    immunityStatusEffectList.Add(newImmunity)
-                End If
-
+            If System.IO.Directory.Exists(attackFolder) Then
+                attackFolderPath = attackFolder
+            Else Throw New Exception("Attack folder does not exist.")
             End If
-        Next
+
+            If System.IO.Directory.Exists(spellFolder) Then
+                spellFolderPath = spellFolder
+            Else Throw New Exception("Spell folder does not exist.")
+            End If
+
+            name = data.m_name
+            challengeRating = data.challengeRating.ToString
+            difficulty = [Enum].GetName(GetType(LegendDifficulty), data.difficulty)
+            monsterRace = [Enum].GetName(GetType(MonsterRace), data.monsterRace)
+            category = monsterRace
+            playerAttitude = [Enum].GetName(GetType(PlayerAttitude), data.playerAttitude)
+            combatStance = [Enum].GetName(GetType(CombatStance), data.combatStance)
+            capturable = data.capturable.ToString
+            skinAmount = data.skinAmount.ToString
+            champion = data.champion.ToString
+            broadcastAggression = data.BroadcastAggression.ToString
+
+            walkSpeed = data.walkSpeed.ToString
+            baseSpeed = data.baseSpeed.ToString
+
+            str = data.str.value.ToString
+            dex = data.dex.value.ToString
+            int = data._int.value.ToString
+            cos = data.cos.value.ToString
+            per = data.per.value.ToString
+            cha = data.cha.value.ToString
+
+            health = (data.baseEndurance.value + data.str.value * 50 + data.cos.value * 75).ToString
+            healthRegen = (data.baseEnduranceRegen.value + data.str.value).ToString
+            mana = (data.baseEnergy.value + data._int.value * 75 + data.cha.value * 50).ToString
+            manaRegen = (data.baseEnergyRegen.value + data._int.value * 2).ToString
+            accuracy = (data.accuracy.value + data.per.value * 25 - 150).ToString
+            fortitude = (data.fortitude.value + data.cos.value * 25 - 150).ToString
+            evasion = (data.evasion.value + data.dex.value * 25 - 150).ToString
+            willpower = (data.willpower.value + data._int.value * 25 - 150).ToString
+            stealth = (data.Stealth.value + data.dex.value * 25 - 150).ToString
+            detection = (data.Detection.value + data.per.value * 25 - 150).ToString
+            luck = (data.baseLuck.value + data.cha.value * 25 - 250).ToString
+            criticalChance = (data.criticalChance.value + data.per.value * 1 - 10).ToString & "%"
+            criticalDamage = data.criticalDamage.value.ToString
 
 
-        Dim attackRawData As String = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "MonsterCreator/attacks.xml"))
+            slashArmor = data.armorSlash.value.ToString
+            slashArmorPerc = calculatePerc(data.armorSlash.value)
+            pierceArmor = data.armorPierce.value.ToString
+            pierceArmorPerc = calculatePerc(data.armorPierce.value)
+            crushArmor = data.armorCrush.value.ToString
+            crushArmorPerc = calculatePerc(data.armorCrush.value)
+            fireResistance = data.fireResistance.value.ToString
+            fireResistancePerc = calculatePerc(data.fireResistance.value)
+            coldResistance = data.coldResistance.value.ToString
+            coldResistancePerc = calculatePerc(data.coldResistance.value)
+            shockResistance = data.shockResistance.value.ToString
+            shockResistancePerc = calculatePerc(data.shockResistance.value)
+            magicResistance = data.magicResistance.value.ToString
+            magicResistancePerc = calculatePerc(data.magicResistance.value)
+            poisonResistance = data.poisonResistance.value.ToString
+            poisonResistancePerc = calculatePerc(data.poisonResistance.value)
+            acidResistance = data.acidResistance.value.ToString
+            acidResistancePerc = calculatePerc(data.acidResistance.value)
+            immunityEffectGroup = data.immunityEffectGroup
 
-        For Each attack As MonsterAttack In data.MonsterAttacks
-            monsterAttacks.Add(getAttackData(attack.value.m_pathID, attackRawData, attackFolderPath))
-        Next
+            magicalDamageReflection = data.magicalDamageReflection.ToString
+            physicalDamageReflection = data.physicalDamageReflection.ToString
+            slashDamageIncrease = data.slashDamageIncrease.ToString
+            pierceDamageIncrease = data.pierceDamageIncrease.ToString
+            crushDamageIncrease = data.crushDamageIncrease.ToString
+            fireDamageIncrease = data.fireDamageConversion.ToString
+            iceDamageIncrease = data.iceDamageConversion.ToString
+            shockDamageIncrease = data.shockDamageConversion.ToString
+            acidDamageIncrease = data.acidDamageConversion.ToString
+            poisonDamageIncrease = data.poisonDamageConversion.ToString
+            energyDamageIncrease = data.energyDamageConversion.ToString
+            fireDamageConversion = data.fireDamageConversion.ToString
+            iceDamageConversion = data.iceDamageConversion.ToString
+            shockDamageConversion = data.shockDamageConversion.ToString
+            acidDamageConversion = data.acidDamageConversion.ToString
+            poisonDamageConversion = data.poisonDamageConversion.ToString
+            energyDamageConversion = data.energyDamageConversion.ToString
+            monsterPoisonStack = data.monsterPoisonStack.ToString
+            spellDamageIncrease = data.spellDamageIncrease.value.ToString
+            cooldownReduction = data.cooldownReduction.value.ToString
 
-        Dim spellRawData As String = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "MonsterCreator/SpellIndex.xml"))
 
-        For Each spell As MonsterSpells In data.MonsterSpellsList
-            Dim newskill As MonsterSpellFinalData = getSpellData(spell.value.m_pathID, spellRawData, spellFolderPath)
-            newskill.acquired = spell.targetToUnlock & "%"
-            compileSkillFullText(newskill)
-            monsterSkills.Add(newskill)
-        Next
+
+
+            Dim statusRawData As String = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "MonsterCreator/statusEffects.xml"))
+
+            For Each StatusEffect As StatusEffect In data.immunityStatusEffectList
+                If StatusEffect.m_PathID <> 0 Then
+                    Dim newImmunity As String = getStatusEffect(StatusEffect.m_PathID, statusRawData)
+                    If newImmunity <> "" Then
+                        immunityStatusEffectList.Add(newImmunity)
+                    End If
+
+                End If
+            Next
+
+            For Each damage As Integer In data.damageAbsorbed
+                damageAbsorbed.Add([Enum].GetName(GetType(DamageType), damage))
+            Next
+
+
+            Dim attackRawData As String = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "MonsterCreator/attacks.xml"))
+
+            For Each attack As MonsterAttack In data.MonsterAttacks
+                monsterAttacks.Add(getAttackData(attack.value.m_pathID, attackRawData, attackFolderPath))
+            Next
+
+            Dim spellRawData As String = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "MonsterCreator/SpellIndex.xml"))
+
+            For Each spell As MonsterSpells In data.MonsterSpellsList
+                Dim newskill As MonsterSpellFinalData = getSpellData(spell.value.m_pathID, spellRawData, spellFolderPath)
+                newskill.acquired = spell.targetToUnlock
+                compileSkillFullText(newskill)
+                monsterSkills.Add(newskill)
+            Next
+
+            For Each poi As Integer In allowedPoi
+                allowedPoi.Add([Enum].GetName(GetType(POIType), poi))
+            Next
+        Catch ex As Exception
+            Throw New Exception("The file selected is not a creature.")
+        End Try
+
 
     End Sub
 

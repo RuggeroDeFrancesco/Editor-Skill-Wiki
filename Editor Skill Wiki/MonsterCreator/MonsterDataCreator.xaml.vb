@@ -41,8 +41,12 @@ Public Class MonsterDataCreator
                 MsgBox("Please select valid folders for Attacks and Spells.")
             End If
         Catch ex As Exception
-            MsgBox(ex.Message)
-            MsgBox(ex.StackTrace)
+            If ex.Message = "The file selected is not a creature." Then
+                MsgBox(ex.Message)
+            Else
+                MsgBox(ex.Message)
+                MsgBox(ex.StackTrace)
+            End If
         End Try
     End Sub
 
@@ -57,12 +61,33 @@ Public Class MonsterDataCreator
 
 
     Private Function createModuleOutput(data As MonsterFinalData)
+        If data.name = "Dummy" Or
+            data.name = "NPC " Or
+            data.name = "TotemDecay" Or data.name = "TotemThunder" Or data.name = "TotemWildfire" Or data.name = "TotemWinter" Then
+            Return ""
+        End If
         Dim output As String
         output = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "MonsterCreator/defaultMonsterData.txt"))
-
-        output = output.Replace("nameText", getMonsterName(data.name, languageData))
+        Try
+            output = output.Replace("nameText", getMonsterName(data.name, languageData))
+        Catch ex As Exception
+            If ex.Message = "No Match" And data.challengeRating = 10 Then
+                'this is an old Myr legend, skip
+                Return ""
+            End If
+        End Try
         output = output.Replace("descriptionText", getMonsterDescription(data.name, languageData))
+
         output = output.Replace("challengeRatingText", data.challengeRating)
+        output = output.Replace("difficultyText", data.difficulty)
+        output = output.Replace("monsterRaceText", data.monsterRace)
+        output = output.Replace("capturableText", data.capturable)
+        output = output.Replace("skinAmountText", data.skinAmount)
+        output = output.Replace("championText", data.champion)
+
+        output = output.Replace("walkSpeedText", data.walkSpeed)
+        output = output.Replace("baseSpeedText", data.baseSpeed)
+
         output = output.Replace("strText", data.str)
         output = output.Replace("dexText", data.dex)
         output = output.Replace("intText", data.int)
@@ -70,11 +95,18 @@ Public Class MonsterDataCreator
         output = output.Replace("perText", data.per)
         output = output.Replace("chaText", data.cha)
         output = output.Replace("healthText", data.health)
+        output = output.Replace("healthRegenText", data.healthRegen)
         output = output.Replace("manaText", data.mana)
+        output = output.Replace("manaRegenText", data.manaRegen)
         output = output.Replace("accuracyText", data.accuracy)
         output = output.Replace("fortitudeText", data.fortitude)
         output = output.Replace("evasionText", data.evasion)
         output = output.Replace("willpowerText", data.willpower)
+        output = output.Replace("stealthText", data.stealth)
+        output = output.Replace("detectionText", data.detection)
+        output = output.Replace("luckText", data.luck)
+        output = output.Replace("criticalChanceText", data.criticalChance)
+        output = output.Replace("criticalDamageText", data.criticalDamage)
 
         output = output.Replace("slashText", data.slashArmor)
         output = output.Replace("slash%Text", data.slashArmorPerc)
@@ -95,6 +127,35 @@ Public Class MonsterDataCreator
         output = output.Replace("acidText", data.acidResistance)
         output = output.Replace("acid%Text", data.acidResistancePerc)
         output = output.Replace("immunityGroupText", getEffectGroupName(data.immunityEffectGroup, languageData))
+        output = output.Replace("magicalDamageReflectionText", data.magicalDamageReflection)
+        output = output.Replace("physicalDamageReflectionText", data.physicalDamageReflection)
+
+        output = output.Replace("slashDamageIncreaseText", data.slashDamageIncrease)
+        output = output.Replace("pierceDamageIncreaseText", data.pierceDamageIncrease)
+        output = output.Replace("crushDamageIncreaseText", data.crushDamageIncrease)
+        output = output.Replace("fireDamageIncreaseText", data.fireDamageConversion)
+        output = output.Replace("iceDamageIncreaseText", data.iceDamageConversion)
+        output = output.Replace("shockDamageIncreaseText", data.shockDamageConversion)
+        output = output.Replace("acidDamageIncreaseText", data.acidDamageConversion)
+        output = output.Replace("energyDamageIncreaseText", data.energyDamageConversion)
+        output = output.Replace("poisonDamageIncreaseText", data.poisonDamageConversion)
+        output = output.Replace("acidDamageConversionText", data.acidDamageConversion)
+        output = output.Replace("poisonDamageConversionText", data.poisonDamageConversion)
+        output = output.Replace("energyDamageConversionText", data.energyDamageConversion)
+        output = output.Replace("fireDamageConversionText", data.fireDamageConversion)
+        output = output.Replace("iceDamageConversionText", data.iceDamageConversion)
+        output = output.Replace("shockDamageConversionText", data.shockDamageConversion)
+        output = output.Replace("acidDamageConversionText", data.acidDamageConversion)
+        output = output.Replace("poisonDamageConversionText", data.poisonDamageConversion)
+        output = output.Replace("energyDamageConversionText", data.energyDamageConversion)
+        output = output.Replace("monsterPoisonStacksText", data.monsterPoisonStack)
+        output = output.Replace("cooldownReductionText", data.cooldownReduction)
+        output = output.Replace("spellDamageIncreaseText", data.spellDamageIncrease)
+
+        output = output.Replace("broadcastAggressionText", data.broadcastAggression)
+        output = output.Replace("playerAttitudeText", data.playerAttitude)
+        output = output.Replace("combatStanceText", data.combatStance)
+        output = output.Replace("categoryText", data.category)
 
         Dim statusImmunityText As String = ""
 
@@ -108,6 +169,19 @@ Public Class MonsterDataCreator
         End If
 
         output = output.Replace("immunitySpace", statusImmunityText)
+
+        Dim damageAbsorbedText As String = ""
+
+        For Each damage As String In data.damageAbsorbed
+            damageAbsorbedText &= damage
+            damageAbsorbedText &= ", "
+        Next
+
+        If data.damageAbsorbed.Count <> 0 Then
+            damageAbsorbedText = damageAbsorbedText.Substring(0, (damageAbsorbedText.Count - 2))
+        End If
+
+        output = output.Replace("absorbSpace", damageAbsorbedText)
 
         Dim attackText As String = ""
         For Each attack As MonsterAttackFinalData In data.monsterAttacks
@@ -126,6 +200,19 @@ Public Class MonsterDataCreator
         Next
 
         output = output.Replace("skillSpace", skillText)
+
+        Dim allowedPoiText As String = ""
+
+        For Each poi As String In data.allowedPoi
+            allowedPoiText &= getStatusEffectName(poi, languageData)
+            allowedPoiText &= ", "
+        Next
+
+        If allowedPoiText.Count <> 0 Then
+            allowedPoiText = allowedPoiText.Substring(0, (allowedPoiText.Count - 2))
+        End If
+
+        output = output.Replace("allowedPoiSpace", allowedPoiText)
 
         Return output
     End Function
@@ -150,9 +237,42 @@ Public Class MonsterDataCreator
 
         term = monsterName.Replace("class_", "monsters/")
         term &= "Name"
+        term = term.Replace("_Tutorial_", "") 'the name of tutorial monsters does not cointain the "tutorial" part
+        term = term.Replace("_", "") 'some monster names have a _ in the name, which isn't found in the l2language terms. It has to be removed
+        'list of exceptions
+        If term.IndexOf("EarthElementalGreater") <> -1 Then
+            term = term.Replace("EarthElementalGreater", "GreaterEarthElemental")
+        End If
+        If term.IndexOf("ForestTroll") <> -1 Then
+            term = term.Replace("ForestTroll", "TrollForest")
+        End If
+        If term.IndexOf("MountainTroll") <> -1 Then
+            term = term.Replace("MountainTroll", "TrollMountain")
+        End If
+        If term.IndexOf("SeaTroll") <> -1 Then
+            term = term.Replace("SeaTroll", "TrollSea")
+        End If
+        If term.IndexOf("Swordman") <> -1 Then
+            term = term.Replace("Swordman", "Swordsman")
+        End If
+        If term.IndexOf("Frostshot") <> -1 Then
+            term = term.Replace("Frostshot", "Archer")
+        End If
+        If term.IndexOf("ShamanDeath") <> -1 Then
+            term = term.Replace("ShamanDeath", "DeathShaman")
+        End If
+        If term.IndexOf("ShamanFire") <> -1 Then
+            term = term.Replace("ShamanFire", "FireShaman")
+        End If
+        If term.IndexOf("GrizzlyBear") <> -1 Then
+            term = term.Replace("GrizzlyBear", "Bear")
+        End If
         term = term.Remove(9, 1).Insert(9, Char.ToLower(term(9))) 'converts the 9th letter to lower case
 
         tooltipName = deserializedData.returnTerm(term, languageEnum)
+        If tooltipName = "" Then
+            Throw New Exception("No Match")
+        End If
         Return tooltipName
 
     End Function
@@ -178,6 +298,7 @@ Public Class MonsterDataCreator
 
         term = monsterName.Replace("class_", "monsters/")
         term &= "Description"
+        term = term.Replace("_", "") 'some monster names have a _ in the name, which isn't found in the l2language terms. It has to be removed
         term = term.Remove(10, 1).Insert(10, Char.ToLower(term(10))) 'converts the 10th letter to lower case
 
         description = deserializedData.returnTerm(term, languageEnum)
