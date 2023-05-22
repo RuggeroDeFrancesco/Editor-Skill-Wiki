@@ -51,7 +51,7 @@ Public Class MonsterDataCreator
     End Sub
 
 
-    Private Function parseMonsterData(data As String)
+    Shared Function parseMonsterData(data As String) 'used also by the loot creator
         Dim parsedData As MonsterData
         parsedData = JsonConvert.DeserializeObject(Of MonsterData)(data)
 
@@ -69,7 +69,7 @@ Public Class MonsterDataCreator
         Dim output As String
         output = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "MonsterCreator/defaultMonsterData.txt"))
         Try
-            output = output.Replace("nameText", getMonsterName(data.name, languageData))
+            output = output.Replace("nameText", getMonsterName(data.name, languageData, languageEnum))
         Catch ex As Exception
             If ex.Message = "No Match" And data.challengeRating = 10 Then
                 'this is an old Myr legend, skip
@@ -231,7 +231,7 @@ Public Class MonsterDataCreator
         Return parsedData
     End Function
 
-    Private Function getMonsterName(monsterName As String, deserializedData As LanguageData)
+    Shared Function getMonsterName(monsterName As String, deserializedData As LanguageData, language As Integer) 'used by loot creator
         Dim tooltipName As String
         Dim term As String
 
@@ -269,7 +269,7 @@ Public Class MonsterDataCreator
         End If
         term = term.Remove(9, 1).Insert(9, Char.ToLower(term(9))) 'converts the 9th letter to lower case
 
-        tooltipName = deserializedData.returnTerm(term, languageEnum)
+        tooltipName = deserializedData.returnTerm(term, language)
         If tooltipName = "" Then
             Throw New Exception("No Match")
         End If

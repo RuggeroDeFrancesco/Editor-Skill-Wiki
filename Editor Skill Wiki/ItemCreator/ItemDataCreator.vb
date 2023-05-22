@@ -30,7 +30,7 @@ Public Class ItemDataCreator
         Return processedData
     End Function
 
-    Private Function deserializeSpellData(data As String) As ItemClassMirror 'converts the json to fields of the ItemClassMirror
+    Shared Function deserializeItemData(data As String) As ItemClassMirror 'converts the json to fields of the ItemClassMirror, used also by the loot creator
 
         Dim parsedData As ItemClassMirror
         parsedData = JsonConvert.DeserializeObject(Of ItemClassMirror)(data)
@@ -53,7 +53,7 @@ Public Class ItemDataCreator
 
     Public Sub getAspectsData(path As String) 'uses the private methods to extract the data from an item file, deserialize it into an itemClassMirror class and extracts the aspects information
 
-        Dim data As ItemClassMirror = deserializeSpellData(cutData(getRawData(path)))
+        Dim data As ItemClassMirror = deserializeItemData(cutData(getRawData(path)))
         ItemName = data.Name
         If data.PowerAspects.Count = 0 Then
             Output = ""
@@ -73,7 +73,7 @@ Public Class ItemDataCreator
     Private Function GetAspectsOutput(data As ItemClassMirror) As String
         Dim output As String
         output = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "ItemCreator/defaultReagentData.txt"))
-        output = output.Replace("reagentNameValue", GetItemName(data.Name))
+        output = output.Replace("reagentNameValue", GetItemName(data.Name, deserializedlanguageData, language))
         Dim i As Integer = 0
         For Each aspect As MagicAspectValue In data.PowerAspects
             i += 1
@@ -85,9 +85,9 @@ Public Class ItemDataCreator
         Return output
     End Function
 
-    Private Function GetItemName(name As String) As String
-        Dim term As String = "items/" & name & "_name"
-        Return deserializedlanguageData.returnTerm(term, language)
+    Shared Function GetItemName(name As String, deserializedLanguageData As LanguageData, language As Integer) As String 'used also by Loot Creator
+        Dim term As String = name.Replace("item_", "items/") & "_name"
+        Return deserializedLanguageData.returnTerm(term, language)
     End Function
 
 End Class

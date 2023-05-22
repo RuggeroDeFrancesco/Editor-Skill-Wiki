@@ -614,77 +614,7 @@
 
 #End Region
 
-	Public Enum EnumLanguage
-		English = 0
-		German = 1
-		French = 2
-	End Enum
-
-	Public Enum DamageType
-		None = 0
-		Slash = 1
-		Pierce = 2
-		Crush = 3
-		Fire = 4
-		Ice = 5
-		Shock = 6
-		Energy = 7
-		Poison = 8
-		Acid = 9
-		Pure = 10
-	End Enum
-
-	Public Enum CharacterAttribute
-		None = 0
-		Strength = 1
-		Dexterity = 2
-		Intelligence = 3
-		Constitution = 4
-		Perception = 5
-		Charisma = 6
-	End Enum
-
-
-	Public Enum ItemCategory
-		None
-		Hide
-		Cloth
-		Leather
-		Ingot
-		WoodPlank
-	End Enum
-
-	Public Enum ToolCategory
-		None
-		Axe
-		Pickaxe
-		Basket
-		Hammer
-		WateringCan
-	End Enum
-
-	Public Enum Aspects
-		Mind = 0
-		Body = 1
-		Soul = 2
-		Create = 100
-		Destroy = 101
-		Negate = 102
-		Transform = 103
-		Transfer = 104
-		Air = 200
-		Earth = 201
-		Fire = 202
-		Water = 203
-		Death = 204
-		Life = 205
-		Chaos = 206
-		Order = 207
-		Time = 208
-		Energy = 209
-		Knowledge = 210
-	End Enum
-
+#Region "Monster Enumerators"
 	Public Enum POIType
 		MountainTrollCamp
 		ForestTrollCamp
@@ -781,6 +711,93 @@
 		Easy
 		Medium
 		Hard
+	End Enum
+#End Region
+
+
+
+#Region "Item Enumerators"
+	Public Enum ItemCategory
+		None
+		Hide
+		Cloth
+		Leather
+		Ingot
+		WoodPlank
+	End Enum
+
+	Public Enum ToolCategory
+		None
+		Axe
+		Pickaxe
+		Basket
+		Hammer
+		WateringCan
+	End Enum
+
+	Public Enum Aspects
+		Mind = 0
+		Body = 1
+		Soul = 2
+		Create = 100
+		Destroy = 101
+		Negate = 102
+		Transform = 103
+		Transfer = 104
+		Air = 200
+		Earth = 201
+		Fire = 202
+		Water = 203
+		Death = 204
+		Life = 205
+		Chaos = 206
+		Order = 207
+		Time = 208
+		Energy = 209
+		Knowledge = 210
+	End Enum
+
+
+
+	Public Enum LoreTabletRegion
+		None
+		ValeOfShadows
+		Heartwood
+		AncientMyr
+		WillOfGalvanos
+		NorthernMyths
+		JungleVoice
+	End Enum
+#End Region
+
+	Public Enum EnumLanguage
+		English = 0
+		German = 1
+		French = 2
+	End Enum
+
+	Public Enum DamageType
+		None = 0
+		Slash = 1
+		Pierce = 2
+		Crush = 3
+		Fire = 4
+		Ice = 5
+		Shock = 6
+		Energy = 7
+		Poison = 8
+		Acid = 9
+		Pure = 10
+	End Enum
+
+	Public Enum CharacterAttribute
+		None = 0
+		Strength = 1
+		Dexterity = 2
+		Intelligence = 3
+		Constitution = 4
+		Perception = 5
+		Charisma = 6
 	End Enum
 
 	Public Function combinedEnumeratorName(enumType As Type, value As Integer) As String

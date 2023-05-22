@@ -63,6 +63,8 @@
     Public monsterPoisonStack As Integer
     Public BroadcastAggression As Boolean
 
+    Public lootList As LootList
+
     Public MonsterAttacks As List(Of MonsterAttack)
 
     Public MonsterSpellsList As List(Of MonsterSpells)
@@ -208,7 +210,10 @@ Public Class StatusEffect
 End Class
 
 
-
+Public Class LootList
+    Public m_FileID As String
+    Public m_PathID As String
+End Class
 
 
 

@@ -1,0 +1,42 @@
+﻿<Window x:Class="LootDataWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Editor_Skill_Wiki"
+        mc:Ignorable="d"
+        Title="LootDataWindow" Height="450" Width="800">
+    <Grid>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="OutputBlock" Grid.Row="0" Text="{Binding Path=OutputText}" ></TextBox>
+        <Button x:Name="SelectMonsterButton" Grid.Row="3" Margin="5, 0, 5, 5" Click="SelectMonsterButton_click">
+            <TextBlock Text="Select Monster(s)"/>
+        </Button>
+        <DockPanel DockPanel.Dock="Bottom" LastChildFill="False" Grid.Row="1">
+            <ComboBox x:Name="LanguageCombo" DockPanel.Dock="Right" Width="150" SelectionChanged="LanguageCombo_SelectionChanged"/>
+        </DockPanel>
+        <DockPanel Grid.Row="1">
+            <Button x:Name="selectLootLists" Margin="5, 0, 5, 5" Click="selectLootLists_Click">
+                <TextBlock Text="Select Loot Lists Folder"/>
+            </Button>
+            <TextBlock x:Name="SelectedLootListsFolder">
+
+            </TextBlock>
+        </DockPanel  >
+        <DockPanel Grid.Row="2">
+            <Button x:Name="selectItems" Margin="5, 0, 5, 5" Click="selectItems_Click">
+                <TextBlock Text="Select Items Folder"/>
+            </Button>
+            <TextBlock x:Name="SelectedItemsFolder">
+
+            </TextBlock>
+        </DockPanel  >
+
+    </Grid>
+</Window>

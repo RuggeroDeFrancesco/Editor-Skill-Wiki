@@ -17,6 +17,10 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
         <WrapPanel Grid.Row="0">
             <Button HorizontalAlignment="Left" Margin="33,28,0,0" VerticalAlignment="Top" Click="GenerateSpellData" Height="64" Width="64">
                 <Button.Background>
@@ -40,6 +44,22 @@
                 </Button.Background>
             </Button>
             <TextBox Text="Item Data" FontSize="18" FontFamily="MS Gothic" FontWeight="Bold" Foreground="Tan"  Background="Transparent" BorderBrush="Transparent" Height="32" Margin="33,28,0,0"/>
+        </WrapPanel>
+        <WrapPanel Grid.Row="0" Grid.Column="1">
+            <Button HorizontalAlignment="Left" Margin="33,28,0,0" VerticalAlignment="Top" Click="GenerateLootData" Height="64" Width="64">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Images/LootData.Png" />
+                </Button.Background>
+            </Button>
+            <TextBox Text="Loot Data" FontSize="18" FontFamily="MS Gothic" FontWeight="Bold" Foreground="Tan"  Background="Transparent" BorderBrush="Transparent" Height="32" Margin="33,28,0,0"/>
+        </WrapPanel>
+        <WrapPanel Grid.Row="1" Grid.Column="1">
+            <Button HorizontalAlignment="Left" Margin="33,28,0,0" VerticalAlignment="Top" Click="GenerateSeData" Height="64" Width="64">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Images/SeData.Png" />
+                </Button.Background>
+            </Button>
+            <TextBox Text="Status Effects Data" FontSize="18" FontFamily="MS Gothic" FontWeight="Bold" Foreground="Tan"  Background="Transparent" BorderBrush="Transparent" Height="32" Margin="33,28,0,0"/>
         </WrapPanel>
 
     </Grid>

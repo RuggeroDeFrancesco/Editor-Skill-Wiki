@@ -12,14 +12,26 @@
     <None Remove="defaultSpellData.txt" />
     <None Remove="I2Languages.json" />
     <None Remove="Images\ItemData.png" />
+    <None Remove="Images\LootData.png" />
     <None Remove="Images\MainWindow.jpg" />
     <None Remove="Images\MonsterData.png" />
     <None Remove="Images\MonsterSpells.png" />
+    <None Remove="Images\SeData.png" />
     <None Remove="Images\SpellData.png" />
     <None Remove="ItemCreator\defaultReagentData.txt" />
+    <None Remove="LootCreator\defaultItemLootData.txt" />
+    <None Remove="LootCreator\defaultLootData.txt" />
+    <None Remove="LootCreator\itemsIndex.xml" />
+    <None Remove="LootCreator\lootIndex.xml" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Images\SeData.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\LootData.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Images\ItemData.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -36,6 +48,18 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="ItemCreator\defaultReagentData.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="LootCreator\defaultItemLootData.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="LootCreator\defaultLootData.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="LootCreator\itemsIndex.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="LootCreator\lootIndex.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="SpellCreator\defaultSpellData.txt">

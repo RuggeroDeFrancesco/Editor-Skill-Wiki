@@ -41,4 +41,26 @@
 
     End Sub
 
+    Private Sub GenerateLootData(sender As Object, e As RoutedEventArgs)
+        Try
+            Dim LootDataWindow As New LootDataWindow()
+            LootDataWindow.Show()
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            MsgBox(ex.StackTrace)
+        End Try
+
+    End Sub
+
+    Private Sub GenerateSeData(sender As Object, e As RoutedEventArgs)
+        Try
+            Dim SeDataWindow As New SeDataWindow()
+            SeDataWindow.Show()
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            MsgBox(ex.StackTrace)
+        End Try
+
+    End Sub
+
 End Class
