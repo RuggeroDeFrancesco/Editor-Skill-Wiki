@@ -4,9 +4,11 @@
     Public description As String
     Public challengeRating As String
     Public difficulty As String
+    Public halfKillsRequired As String
     Public monsterRace As String
     Public capturable As String
     Public skinAmount As String
+    Public petItemType As String
     Public champion As String
 
     Public walkSpeed As String
@@ -75,6 +77,7 @@
     Public broadcastAggression As String
 
     Public immunityEffectGroup As String
+    Public specialImmunity As String
 
 
     Public monsterAttacks As List(Of MonsterAttackFinalData)
@@ -111,6 +114,7 @@
             name = data.m_name
             challengeRating = data.challengeRating.ToString
             difficulty = [Enum].GetName(GetType(LegendDifficulty), data.difficulty)
+            halfKillsRequired = data.halfKillsRequired.ToString
             monsterRace = [Enum].GetName(GetType(MonsterRace), data.monsterRace)
             category = monsterRace
             playerAttitude = [Enum].GetName(GetType(PlayerAttitude), data.playerAttitude)
@@ -164,6 +168,7 @@
             acidResistance = data.acidResistance.value.ToString
             acidResistancePerc = calculatePerc(data.acidResistance.value)
             immunityEffectGroup = data.immunityEffectGroup
+            specialImmunity = [Enum].GetName(GetType(SpecialMonsterImmunity), data.specialImmunities)
 
             magicalDamageReflection = data.magicalDamageReflection.ToString
             physicalDamageReflection = data.physicalDamageReflection.ToString
@@ -186,12 +191,17 @@
             spellDamageIncrease = data.spellDamageIncrease.value.ToString
             cooldownReduction = data.cooldownReduction.value.ToString
 
+            'If data.petItemType.m_PathID <> 0 Then
+            '    Dim itemRawData As String = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "LootCreator/itemsIndex.xml"))
+            '    petItemType = LootCreator.getItem(data.petItemType.m_PathID, itemRawData)
+            'Else petItemType = ""
+            'End If
+            petItemType = "" 'inseguire i dati dei petItem è troppo difficile, lascio il campo vuoto
 
 
+            Dim statusRawData As String = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "AssetIndices/statusEffects.xml"))
 
-            Dim statusRawData As String = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "MonsterCreator/statusEffects.xml"))
-
-            For Each StatusEffect As StatusEffect In data.immunityStatusEffectList
+            For Each StatusEffect As PropertyClass In data.immunityStatusEffectList
                 If StatusEffect.m_PathID <> 0 Then
                     Dim newImmunity As String = getStatusEffect(StatusEffect.m_PathID, statusRawData)
                     If newImmunity <> "" Then
@@ -206,17 +216,18 @@
             Next
 
 
-            Dim attackRawData As String = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "MonsterCreator/attacks.xml"))
+            Dim attackRawData As String = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "AssetIndices/attacks.xml"))
 
             For Each attack As MonsterAttack In data.MonsterAttacks
                 monsterAttacks.Add(getAttackData(attack.value.m_pathID, attackRawData, attackFolderPath))
             Next
 
-            Dim spellRawData As String = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "MonsterCreator/SpellIndex.xml"))
+            Dim spellRawData As String = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "AssetIndices/SpellIndex.xml"))
 
             For Each spell As MonsterSpells In data.MonsterSpellsList
-                Dim newskill As MonsterSpellFinalData = getSpellData(spell.value.m_pathID, spellRawData, spellFolderPath)
+                Dim newskill As MonsterSpellFinalData = getSpellData(spell.value.m_pathID, spellRawData, spellFolderPath, spell)
                 newskill.acquired = spell.targetToUnlock
+                compileRestrictions(spell, newskill)
                 compileSkillFullText(newskill)
                 monsterSkills.Add(newskill)
             Next
@@ -279,7 +290,8 @@
         Return statusEffect
     End Function
 
-    Private Function getSpellData(spellRef As String, rawData As String, spellFolder As String)
+
+    Private Function getSpellData(spellRef As String, rawData As String, spellFolder As String, spell As MonsterSpells)
         Dim newSpell As New MonsterSpellFinalData
         Dim parsedData As SpellClassMirror
         Dim index As Integer = rawData.IndexOf(spellRef)
@@ -334,6 +346,10 @@
                 parsedData = Newtonsoft.Json.JsonConvert.DeserializeObject(Of SpellClassMirror)(textData)
                 newSpell.name = parsedData.m_name
                 newSpell.kp = ((parsedData.difficulty + 1) * 1000).ToString
+                newSpell.override = spell.cooldownOverride.ToString
+                newSpell.globalCd = spell.globalCooldown.ToString
+                newSpell.castingChance = spell.castingChance.ToString
+                newSpell.targetAlly = spell.targetAlly.ToString
 
             Else Throw New Exception(filePath & " Not Found")
             End If
@@ -380,12 +396,31 @@
 
     End Sub
 
+    Private Function compileRestrictions(spell As MonsterSpells, finalSpell As MonsterSpellFinalData)
+        Dim restrictionText As String = ""
+        For Each restriction As MonsterCastingRestriction In spell.castingRestrictions
+            Dim baseText As String = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "MonsterCreator/defaultMonsterRestriction.txt"))
+            baseText = baseText.Replace("typeText", [Enum].GetName(GetType(MonsterRestrictionType), restriction.type))
+            baseText = baseText.Replace("valueText", restriction.value.ToString)
+            baseText = baseText.Replace("statusEffectText", [Enum].GetName(GetType(RestrictionStatusEffect), restriction.statusEffect))
+            baseText = baseText.Replace("statusGroupText", [Enum].GetName(GetType(EffectGroup), restriction.statusEffectGroup))
+            restrictionText &= baseText
+            restrictionText &= vbCrLf
+        Next
+        finalSpell.restrictionText = restrictionText
+        Return finalSpell
+    End Function
+
     Private Sub compileSkillFullText(ByRef spell As MonsterSpellFinalData)
         Dim baseText As String = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "MonsterCreator/defaultMonsterSkill.txt"))
         'the name will be compiled later by the MonsterDataCreator since it needs the language data
         baseText = baseText.Replace("kpText", spell.kp)
         baseText = baseText.Replace("acquiredText", spell.acquired)
-
+        baseText = baseText.Replace("cooldownOverrideText", spell.override)
+        baseText = baseText.Replace("globalCooldownText", spell.globalCd)
+        baseText = baseText.Replace("castingChanceText", spell.castingChance)
+        baseText = baseText.Replace("targetAllyText", spell.targetAlly)
+        baseText = baseText.Replace("restrictionsSpace", spell.restrictionText)
         spell.fullText = baseText
     End Sub
 
@@ -415,6 +450,11 @@ Public Class MonsterSpellFinalData
     Public name As String
     Public kp As String
     Public acquired As String
+    Public override As String
+    Public globalCd As String
+    Public targetAlly As String
+    Public castingChance As String
+    Public restrictionText As String
     Public fullText As String
 
 End Class

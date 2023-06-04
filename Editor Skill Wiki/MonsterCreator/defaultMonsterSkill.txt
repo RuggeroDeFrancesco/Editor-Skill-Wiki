@@ -2,4 +2,12 @@
                 ["Name"] = "nameText",
                 ["KP"] = "kpText",
                 ["Acquired"] = "acquiredText",
+                ["Cooldown Override"] = "cooldownOverrideText",
+                ["Global Cooldown"] = "globalCooldownText",
+                ["Casting Chance"] = "castingChanceText",
+                ["Target Ally"] = "targetAllyText",
+                ["Restrictions"] = {
+                restrictionsSpace
+                },
+
             },

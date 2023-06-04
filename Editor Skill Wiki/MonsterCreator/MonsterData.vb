@@ -3,9 +3,11 @@
     Public m_name As String
     Public challengeRating As Integer
     Public difficulty As Integer
+    Public halfKillsRequired As Boolean
     Public monsterRace As Integer
     Public capturable As Boolean
     Public skinAmount As Integer
+    Public petItemType As PropertyClass
     Public champion As Boolean
     Public walkSpeed As Integer
     Public baseSpeed As Integer
@@ -58,18 +60,19 @@
     Public energyDamageConversion As Integer
     Public monsterPoisonRank As Integer
     Public immunityEffectGroup As Integer
+    Public specialImmunities As Integer
     Public playerAttitude As Integer
     Public combatStance As Integer
     Public monsterPoisonStack As Integer
     Public BroadcastAggression As Boolean
 
-    Public lootList As LootList
+    Public lootList As PropertyClass
 
     Public MonsterAttacks As List(Of MonsterAttack)
 
     Public MonsterSpellsList As List(Of MonsterSpells)
 
-    Public immunityStatusEffectList As List(Of StatusEffect)
+    Public immunityStatusEffectList As List(Of PropertyClass)
 
     Public damageAbsorbed As List(Of Integer)
 
@@ -77,153 +80,169 @@
 End Class
 
 Public Class Strenght
-    Public value As String
+    Public value As Integer
 End Class
 
 Public Class Dexterity
-    Public value As String
+    Public value As Integer
 End Class
 
 Public Class Intelligence
-    Public value As String
+    Public value As Integer
 End Class
 
 Public Class Constitution
-    Public value As String
+    Public value As Integer
 End Class
 
 Public Class Perception
-    Public value As String
+    Public value As Integer
 End Class
 
 Public Class Charisma
-    Public value As String
+    Public value As Integer
 End Class
 
 Public Class BaseEndurance
-    Public value As String
+    Public value As Integer
 End Class
 
 Public Class BaseEnduranceRegen
-    Public value As String
+    Public value As Integer
 End Class
 
 Public Class BaseEnergy
-    Public value As String
+    Public value As Integer
 End Class
 Public Class BaseEnergyRegen
-    Public value As String
+    Public value As Integer
 End Class
 Public Class Evasion
-    Public value As String
+    Public value As Integer
 End Class
 Public Class Accuracy
-    Public value As String
+    Public value As Integer
 End Class
 Public Class Fortitude
-    Public value As String
+    Public value As Integer
 End Class
 Public Class Willpower
-    Public value As String
+    Public value As Integer
 End Class
 Public Class Stealth
-    Public value As String
+    Public value As Integer
 End Class
 Public Class Detection
-    Public value As String
+    Public value As Integer
 End Class
 
 Public Class SpellDamageIncrease
-    Public value As String
+    Public value As Integer
 End Class
 
 Public Class CooldownReduction
-    Public value As String
+    Public value As Integer
 End Class
 
 Public Class BaseLuck
-    Public value As String
+    Public value As Integer
 End Class
 
 Public Class CriticalChance
-    Public value As String
+    Public value As Integer
 End Class
 
 Public Class CriticalDamage
-    Public value As String
+    Public value As Integer
 End Class
 
 Public Class ArmorSlash
-    Public value As String
+    Public value As Integer
 End Class
 
 Public Class ArmorPierce
-    Public value As String
+    Public value As Integer
 End Class
 
 Public Class ArmorCrush
-    Public value As String
+    Public value As Integer
 End Class
 
 Public Class FireResistance
-    Public value As String
+    Public value As Integer
 End Class
 
 Public Class ColdResistance
-    Public value As String
+    Public value As Integer
 End Class
 
 Public Class ShockResistance
-    Public value As String
+    Public value As Integer
 End Class
 
 Public Class MagicResistance
-    Public value As String
+    Public value As Integer
 End Class
 
 Public Class PoisonResistance
-    Public value As String
+    Public value As Integer
 End Class
 
 Public Class AcidResistance
-    Public value As String
+    Public value As Integer
 End Class
 
 Public Class MonsterAttack
 
     Public targetToUnlock As Integer
-    Public value As Value
+    Public value As PropertyClass
 
 End Class
 
 
 Public Class MonsterSpells
-    Public Property targetToUnlock As String
-    Public Property value As Value
 
-    Public Property hideInKnowledgeBook As Boolean
+    Public targetToUnlock As String
+    Public value As PropertyClass
 
-End Class
+    Public hideInKnowledgeBook As Boolean
 
-Public Class StatusEffect
-    Public Property m_PathID As Integer
-End Class
-
-
-Public Class LootList
-    Public m_FileID As String
-    Public m_PathID As String
-End Class
-
-
-
-
-
-
-
-Public Class Value
-
-    Public m_fileID As String
-    Public m_pathID As String
+    Public cooldownOverride As Integer
+    Public globalCooldown As Integer
+    Public castingChance As Integer
+    Public castingPriority As Integer
+    Public targetAlly As Boolean
+    Public castingRestrictions As List(Of MonsterCastingRestriction)
 
 End Class
+
+Public Class MonsterCastingRestriction
+    Public type As Integer
+    Public value As Double
+    Public statusEffect As Integer
+    Public statusEffectGroup As Integer
+End Class
+
+'Public Class StatusEffect
+'    Public Property m_PathID As Integer
+'End Class
+
+
+'Public Class LootList
+'    Public m_FileID As String
+'    Public m_PathID As String
+'End Class
+
+'Public Class PetItemType
+'    Public m_FileID As String
+'    Public m_PathID As String
+'End Class
+
+
+
+'Public Class Value
+
+'    Public m_fileID As String
+'    Public m_pathID As String
+
+'End Class

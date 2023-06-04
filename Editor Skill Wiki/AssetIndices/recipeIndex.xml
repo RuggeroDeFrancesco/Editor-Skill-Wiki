@@ -1,0 +1,1915 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Assets filename="E:\Desktop\Miscellanea\Fractured\Closed Test\b06b\Recipes\assets.xml" createdAt="2023-06-04T07:19:22">
+  <Asset>
+    <Name>data_recipe_WoodenPole</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62655</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>160</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_WoodenHeaterShield</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62654</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>200</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_WoodenHandle</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62653</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>160</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_WoodenClub</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62652</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>160</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_WoodenBuckler</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62651</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>192</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_QuarterStaff</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62650</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>160</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_MageStaffShaft</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62649</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>168</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_WitchwoodBoard</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62647</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>204</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_SparkwoodBoard</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62646</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>204</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_SoftwoodBoard</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62645</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>180</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_SilverwoodBoard</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62644</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>204</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_PalmwoodBoard</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62643</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>180</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_IronwoodBoard</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62642</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>204</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_HardwoodBoard</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62641</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>180</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_FrostwoodBoard</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62640</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>204</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_DeadwoodBoard</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62639</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>204</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_BloodwoodBoard</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62638</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>204</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_AmberwoodBoard</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62637</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>204</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_ShockStaff</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62635</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>184</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_PoisonStaff</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62634</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>184</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_MageStaff</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62633</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>184</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_IceStaff</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62632</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>176</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_FlawlessTopaz</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62631</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>168</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_FlawlessSapphire</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62630</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>168</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_FlawlessRuby</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62629</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>160</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_FlawlessEmerald</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62628</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>168</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_FlawlessDiamond</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62627</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>168</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_FlawlessAmethyst</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62626</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>168</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_FireStaff</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62625</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>184</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_FineTopaz</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62624</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>160</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_FineSapphire</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62623</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>160</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_FineRuby</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62622</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>152</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_FineEmerald</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62621</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>160</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_FineDiamond</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62620</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>160</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_FineAmethyst</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62619</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>160</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_AcidStaff</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62618</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>184</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_WoolCloth</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62616</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>160</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_TermidianSilkCloth</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62615</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>200</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_SilkCloth</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62614</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>160</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_PrimalWeave</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62613</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>184</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_MammothWoolCloth</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62612</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>192</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_LinenWeave</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62611</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>160</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_GhastlySilkFabric</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62610</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>200</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_CottonCloth</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62609</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>160</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_WargLeather</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62607</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>184</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_ReptileLeather</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62606</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>168</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_MountainDragonLeather</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62605</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>208</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_GhoulLeather</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62604</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>184</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_EmberDragonLeather</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62603</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>200</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_ArborealDragonLeather</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62602</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>208</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_AnimalLeather</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62601</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>168</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_WolfTeethNecklace</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62600</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>200</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_RabbitPawAmulet</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62599</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>192</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_FoxTailAmulet</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62598</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>192</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_BearClawsAmulet</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62597</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>192</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_WolfHeaddress</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62595</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>168</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_WarthogHeaddress</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62594</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>168</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_WarlockHelmet</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62593</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>216</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_WarlockGloves</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62592</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>216</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_WarlockBoots</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62591</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>208</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_WarlockArmor</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62590</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>208</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_StagHeaddress</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62589</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>168</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_ScholarHood</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62588</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>208</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_ScholarGloves</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62587</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>216</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_ScholarClothes</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62586</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>216</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_ScholarBoots</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62585</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>208</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_RogueHelmet</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62584</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>208</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_RogueGloves</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62583</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>208</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_RogueBoots</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62582</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>208</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_RogueArmor</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62581</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>208</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_RangerHelmet</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62580</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>208</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_RangerGloves</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62579</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>208</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_RangerBoots</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62578</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>208</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_RangerArmor</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62577</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>208</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_LeatherHelmet</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62576</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>168</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_LeatherGloves</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62575</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>168</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_LeatherBoots</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62574</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>160</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_LeatherArmor</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62573</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>160</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_HunterHelmet</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62572</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>208</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_HunterGloves</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62571</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>208</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_HunterBoots</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62570</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>208</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_HunterArmor</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62569</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>208</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_HideHelmet</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62568</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>160</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_HideGloves</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62567</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>160</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_HideBoots</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62566</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>160</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_HideArmor</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62565</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>160</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_CommonHood</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62564</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>160</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_CommonGloves</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62563</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>160</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_CommonClothes</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62562</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>168</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_CommonBoots</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62561</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>160</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_BearHeaddress</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62560</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>172</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_AssassinHood</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62559</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>208</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_AssassinGloves</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62558</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>216</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_AssassinClothes</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62557</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>216</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_AssassinBoots</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62556</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>216</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_RaggedCloth_Hood</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62554</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>168</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_RaggedCloth_Body</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62553</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>192</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_PrimitiveStaff</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62552</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>200</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_PrimitiveSpear</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62551</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>216</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_PrimitiveShield</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62550</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>192</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_PrimitiveMageStaff</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62549</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>200</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_PrimitiveMace</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62548</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>216</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_PrimitiveKnife</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62547</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>192</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_PrimitiveHandaxe</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62546</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>216</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_PrimitiveHammer</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62545</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>216</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_PrimitiveClub</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62544</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>168</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_PrimitiveBow</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62543</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>184</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_Remedy_PassionFlowerTincture</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62542</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>188</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_Remedy_MandrakeElixir</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62541</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>176</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_Remedy_LavenderElixir</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62540</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>176</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_Remedy_BloodveinTea</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62539</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>168</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_Remedy_BitterleafTea</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62538</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>172</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_Remedy_BeeBalmTincture</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62537</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>176</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_Remedy_ArnicaTea</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62536</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>164</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_PoisonPasteWolfsbane</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62535</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>200</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_PoisonPasteSneezeweed</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62534</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>208</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_PoisonPastePoinsettia</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62533</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>208</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_PoisonPasteNightshade</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62532</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>208</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_PoisonPasteMilkweed</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62531</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>200</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_PoisonPasteAmanita</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62530</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>200</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_PoisonPasteWeak</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62529</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>192</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_PoisonPasteStrong</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62528</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>248</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_PoisonPasteSimple</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62527</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>224</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_HerbalRemedy3</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62526</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>188</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_HerbalRemedy2</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62525</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>188</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_HerbalRemedy</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62524</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>184</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_WheatSack</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62522</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>160</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_RiceSack</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62521</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>152</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_DriedMeatSack_Wolf</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62520</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>176</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_DriedMeatSack_Venison</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62519</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>184</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_DriedMeatSack_Tapir</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62518</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>176</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_DriedMeatSack_Reptile</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62517</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>184</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_DriedMeatSack_Rabbit</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62516</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>176</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_DriedMeatSack_Moose</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62515</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>176</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_DriedMeatSack_Mammoth</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62514</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>184</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_DriedMeatSack_Frog</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62513</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>176</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_DriedMeatSack_Fox</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62512</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>176</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_DriedMeatSack_Crab</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62511</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>176</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_DriedMeatSack_Cassoway</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62510</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>184</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_DriedMeatSack_Boar</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62509</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>176</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_DriedMeatSack_Behemut</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62508</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>184</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_DriedMeatSack_Bear</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62507</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>176</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_BeansSack</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62506</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>160</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_RyeFlour</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62504</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>152</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_Flour</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62503</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>156</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_Dough</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62502</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>152</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_Bread</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62501</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>152</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_WoodenLockpick</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62500</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>168</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_SimpleBandages</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62499</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>168</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_Rope</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62498</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>144</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_AnimalNet</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62497</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>160</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_Warhammer</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62495</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>184</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_TowerShield</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62494</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>184</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_ThrowingDagger</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62493</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>156</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_Spear</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62492</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>176</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_SlayerHelmet</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62491</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>208</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_SlayerGauntlets</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62490</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>216</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_SlayerBoots</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62489</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>208</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_SlayerArmor</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62488</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>208</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_ShortSword</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62487</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>184</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_Scimitar</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62486</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>176</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_Rapier</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62485</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>176</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_ProfessionalLockpick</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62484</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>176</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_PrimitiveSword</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62483</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>212</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_Morningstar</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62482</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>160</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_MetalSheet</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62481</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>160</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_MetalRing_Topaz</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62480</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>188</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_MetalRing_Sapphire</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62479</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>192</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_MetalRing_Ruby</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62478</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>184</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_MetalRing_Emerald</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62477</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>192</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_MetalRing_Diamond</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62476</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>192</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_MetalRing_Ametyst</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62475</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>192</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_MetalNecklace_Topaz</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62474</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>196</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_MetalNecklace_Sapphire</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62473</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>200</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_MetalNecklace_Ruby</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62472</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>192</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_MetalNecklace_Emerald</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62471</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>200</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_MetalNecklace_Diamond</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62470</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>200</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_MetalNecklace_Ametyst</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62469</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>200</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_MetalComponents</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62468</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>168</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_Mace</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62467</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>144</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_Longsword</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62466</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>184</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_KnightHelmet</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62465</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>208</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_KnightGauntlets</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62464</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>216</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_KnightBoots</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62463</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>208</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_KnightArmor</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62462</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>208</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_Handaxe</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62461</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>176</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_Halberd</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62460</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>176</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_Greatsword</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62459</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>184</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_GreatAxe</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62458</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>176</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_FullPlateHelmet</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62457</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>168</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_FullPlateGauntlets</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62456</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>176</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_FullPlateBoots</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62455</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>168</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_FullPlateArmor</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62454</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>168</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_DualDagger</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62453</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>184</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_Dagger</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62452</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>176</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_ClericHelmet</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62451</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>208</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_ClericGauntlets</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62450</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>216</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_ClericBoots</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62449</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>208</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_ClericArmor</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62448</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>208</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_ChainMailHelmet</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62447</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>168</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_ChainMailGauntlets</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62446</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>176</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_ChainMailBoots</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62445</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>168</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_ChainMailArmor</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62444</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>168</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_BattlemageArmor</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62443</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>216</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_Battleaxe</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62442</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>184</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_BattleMageHelmet</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62441</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>216</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_BattleMageGauntlets</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62440</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>224</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_BattleMageBoots</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62439</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>216</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_ShortBow</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62437</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>176</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_Longbow</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62436</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>176</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_CompositeLongbow</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62435</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>192</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_WargHide</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62433</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>204</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_DirewolfFur</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62432</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>212</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_ArcticWolfFur</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62431</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>220</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_AnimalHide</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62430</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>188</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_Unguent</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62428</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>176</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_TurtleSoup</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62427</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>160</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_TapirSteak</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62426</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>160</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_RoastedWolfMeat</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62425</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>168</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_RoastedVenison</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62424</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>168</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_RoastedReptileMeat</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62423</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>176</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_RoastedRabbit</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62422</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>168</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_RoastedMooseMeat</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62421</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>168</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_RoastedMammothMeat</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62420</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>172</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_RoastedFox</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62419</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>160</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_RoastedBearMeat</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62418</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>168</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_GrilledWhiteCaps</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62417</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>168</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_GrilledPumpkins</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62416</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>168</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_GrilledPotatoes</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62415</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>168</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_GrilledPennyBuns</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62414</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>168</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_GrilledOnions</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62413</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>168</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_GrilledHoneynails</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62412</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>176</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_GrilledFrogDrumstick</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62411</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>176</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_GrilledCrab</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62410</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>160</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_GrilledCarrots</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62409</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>168</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_CassowarySteak</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62408</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>168</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_BoarSteak</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62407</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>160</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_BehemutSteak</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62406</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>160</Size>
+  </Asset>
+  <Asset>
+    <Name>data_recipe_Ashes</Name>
+    <Container></Container>
+    <Type id="114">MonoBehaviour</Type>
+    <PathID>62405</PathID>
+    <Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+    <Size>152</Size>
+  </Asset>
+</Assets>

@@ -1,0 +1,6 @@
+﻿    {
+                     ["Type"] = "typeText",
+                     ["Value"] = "valueText",
+                     ["Status Effect"] = "statusEffectText",
+                     ["Status Effect Group"] = "statusGroupText",
+                   },

@@ -2,7 +2,7 @@
 Public Class MonsterDataCreator
 
 
-    Dim languageEnum As Integer = 0
+    Dim languageEnum As Integer = 1
     Dim languageData As LanguageData
     Dim spellFolder As String
     Dim attackFolder As String
@@ -68,8 +68,10 @@ Public Class MonsterDataCreator
         End If
         Dim output As String
         output = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "MonsterCreator/defaultMonsterData.txt"))
+        Dim monsterName As String = ""
         Try
-            output = output.Replace("nameText", getMonsterName(data.name, languageData, languageEnum))
+            monsterName = getMonsterName(data.name, languageData, languageEnum)
+            output = output.Replace("nameText", monsterName)
         Catch ex As Exception
             If ex.Message = "No Match" And data.challengeRating = 10 Then
                 'this is an old Myr legend, skip
@@ -78,11 +80,15 @@ Public Class MonsterDataCreator
         End Try
         output = output.Replace("descriptionText", getMonsterDescription(data.name, languageData))
 
+        output = output.Replace("imageText", "Env " & monsterName & ".png")
+
         output = output.Replace("challengeRatingText", data.challengeRating)
         output = output.Replace("difficultyText", data.difficulty)
+        output = output.Replace("halfKillsRequiredText", data.halfKillsRequired)
         output = output.Replace("monsterRaceText", data.monsterRace)
         output = output.Replace("capturableText", data.capturable)
         output = output.Replace("skinAmountText", data.skinAmount)
+        output = output.Replace("petItemTypeText", data.petItemType)
         output = output.Replace("championText", data.champion)
 
         output = output.Replace("walkSpeedText", data.walkSpeed)
@@ -127,6 +133,7 @@ Public Class MonsterDataCreator
         output = output.Replace("acidText", data.acidResistance)
         output = output.Replace("acid%Text", data.acidResistancePerc)
         output = output.Replace("immunityGroupText", getEffectGroupName(data.immunityEffectGroup, languageData))
+        output = output.Replace("specialImmunityText", data.specialImmunity)
         output = output.Replace("magicalDamageReflectionText", data.magicalDamageReflection)
         output = output.Replace("physicalDamageReflectionText", data.physicalDamageReflection)
 
@@ -239,6 +246,7 @@ Public Class MonsterDataCreator
         term &= "Name"
         term = term.Replace("_Tutorial_", "") 'the name of tutorial monsters does not cointain the "tutorial" part
         term = term.Replace("_", "") 'some monster names have a _ in the name, which isn't found in the l2language terms. It has to be removed
+
         'list of exceptions
         If term.IndexOf("EarthElementalGreater") <> -1 Then
             term = term.Replace("EarthElementalGreater", "GreaterEarthElemental")
@@ -267,11 +275,19 @@ Public Class MonsterDataCreator
         If term.IndexOf("GrizzlyBear") <> -1 Then
             term = term.Replace("GrizzlyBear", "Bear")
         End If
-        term = term.Remove(9, 1).Insert(9, Char.ToLower(term(9))) 'converts the 9th letter to lower case
+
 
         tooltipName = deserializedData.returnTerm(term, language)
         If tooltipName = "" Then
-            Throw New Exception("No Match")
+            If monsterName.IndexOf("Legend") <> -1 Then 'could be an old legend, which used champion instead of legend
+                term = term.Replace("Legend", "Champion")
+                tooltipName = deserializedData.returnTerm(term, language)
+                If tooltipName = "" Then
+                    Throw New Exception("No Match")
+                End If
+            Else
+                Throw New Exception("No Match")
+            End If
         End If
         Return tooltipName
 

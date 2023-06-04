@@ -7,8 +7,10 @@
         mc:Ignorable="d"
         Title="ItemDataWindow" Height="450" Width="800">
     <DockPanel>
-
-        <Button x:Name="CreateOutput" Grid.Column="1" Grid.Row="1" Margin="5, 0, 5, 5" Click="GetReagentsData"  DockPanel.Dock="Top">
+        <Button x:Name="CreateItemOutput" Grid.Column="1" Grid.Row="1" Margin="5, 0, 5, 5" Click="GetItemsData"  DockPanel.Dock="Top">
+            <TextBlock Text="Generate Item Data"/>
+        </Button>
+        <Button x:Name="CreateAspectsOutput" Grid.Column="1" Grid.Row="1" Margin="5, 0, 5, 5" Click="GetReagentsData"  DockPanel.Dock="Top">
             <TextBlock Text="Generate Reagent Data"/>
         </Button>
         <DockPanel DockPanel.Dock="Bottom" LastChildFill="False">

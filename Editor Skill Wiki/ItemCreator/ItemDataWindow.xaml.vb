@@ -38,6 +38,37 @@ Public Class ItemDataWindow
     Dim languageSelected As EnumLanguage = EnumLanguage.English
     Dim itemDataCreator As ItemDataCreator
 
+    Private Sub GetItemsData()
+        Dim fbd As Ookii.Dialogs.Wpf.VistaFolderBrowserDialog = New Ookii.Dialogs.Wpf.VistaFolderBrowserDialog
+        Dim path As String = Nothing
+        Dim files As System.IO.FileInfo() = Nothing
+        If fbd.ShowDialog() Then
+            path = fbd.SelectedPath
+
+        End If
+
+        If path IsNot Nothing Then
+            Dim dinfo As New System.IO.DirectoryInfo(path)
+            files = dinfo.GetFiles("*.json")
+        End If
+
+        If files IsNot Nothing AndAlso files.Count <> 0 Then
+            Dim itemsInserted As New List(Of String)
+            itemDataCreator = New ItemDataCreator(Convert.ToInt32(languageSelected))
+            For Each file As IO.FileInfo In files
+
+                itemDataCreator.getItemData(file.FullName)
+                If itemDataCreator.Output <> "" Then
+                    OutputText &= itemDataCreator.Output
+                    OutputText &= vbCrLf
+                    OutputText &= vbCrLf
+                End If
+                itemsInserted.Add(itemDataCreator.ItemName)
+            Next
+        End If
+        Dim stringola As String = OutputBlock.Text
+    End Sub
+
     Private Sub GetReagentsData()
         Dim fbd As Ookii.Dialogs.Wpf.VistaFolderBrowserDialog = New Ookii.Dialogs.Wpf.VistaFolderBrowserDialog
         Dim path As String = Nothing
@@ -54,9 +85,9 @@ Public Class ItemDataWindow
 
         If files IsNot Nothing AndAlso files.Count <> 0 Then
             Dim itemsInserted As New List(Of String)
-
+            itemDataCreator = New ItemDataCreator(Convert.ToInt32(languageSelected))
             For Each file As IO.FileInfo In files
-                itemDataCreator = New ItemDataCreator(Convert.ToInt32(languageSelected))
+
                 itemDataCreator.getAspectsData(file.FullName)
                 If itemDataCreator.Output <> "" Then
                     OutputText &= itemDataCreator.Output

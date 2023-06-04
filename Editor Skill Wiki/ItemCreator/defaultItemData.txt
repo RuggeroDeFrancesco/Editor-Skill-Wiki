@@ -1,0 +1,8 @@
+﻿
+        ["itemNameText"] = {
+        ["image"] = "imageText",
+        ["Weight"] = "weightText",
+        ["Max Stack"] = "stackText",
+        ["description"] = "descriptionText",
+        ["envImage"] = "envImageText",
+    },

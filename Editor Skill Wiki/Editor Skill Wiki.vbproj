@@ -9,6 +9,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="AssetIndices\Icons.xml" />
+    <None Remove="AssetIndices\recipeIndex.xml" />
     <None Remove="defaultSpellData.txt" />
     <None Remove="I2Languages.json" />
     <None Remove="Images\ItemData.png" />
@@ -23,9 +25,16 @@
     <None Remove="LootCreator\defaultLootData.txt" />
     <None Remove="LootCreator\itemsIndex.xml" />
     <None Remove="LootCreator\lootIndex.xml" />
+    <None Remove="MonsterCreator\defaultMonsterRestriction.txt" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="AssetIndices\Icons.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="AssetIndices\recipeIndex.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Images\SeData.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -47,6 +56,9 @@
     <Content Include="Images\MainWindow.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="ItemCreator\defaultItemData.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="ItemCreator\defaultReagentData.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -56,10 +68,13 @@
     <Content Include="LootCreator\defaultLootData.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="LootCreator\itemsIndex.xml">
+    <Content Include="AssetIndices\itemsIndex.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="LootCreator\lootIndex.xml">
+    <Content Include="AssetIndices\lootIndex.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MonsterCreator\defaultMonsterRestriction.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="SpellCreator\defaultSpellData.txt">
@@ -107,7 +122,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="MonsterCreator\attacks.xml">
+    <None Update="AssetIndices\attacks.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="MonsterCreator\defaultMonsterAttack.txt">
@@ -119,10 +134,10 @@
     <None Update="MonsterCreator\defaultMonsterSkill.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="MonsterCreator\SpellIndex.xml">
+    <None Update="AssetIndices\SpellIndex.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="MonsterCreator\statusEffects.xml">
+    <None Update="AssetIndices\statusEffects.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

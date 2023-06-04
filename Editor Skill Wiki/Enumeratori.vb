@@ -112,18 +112,18 @@
 
 	Public Enum EffectGroup
 		None = 0
-		MagicalBuff = 1
-		Invisibility = 2
-		ElementalConditions = 4
-		PhysicalBuff = 8
-		MagicalProtection = 16
-		Snare = 32
-		Disease = 64
-		Illusion = 128
-		MagicalDebuff = 256
-		PhysicalDebuff = 512
-		Poison = 1024
-		SpecialEffect = 2048
+		MagicalBuff = 2
+		Invisibility = 4
+		ElementalConditions = 8
+		PhysicalBuff = 16
+		MagicalProtection = 32
+		Snare = 64
+		Disease = 128
+		Illusion = 256
+		MagicalDebuff = 512
+		PhysicalDebuff = 1024
+		Poison = 2048
+		SpecialEffect = 4096
 	End Enum
 
 	Public Enum SpellUnicityGroup
@@ -166,8 +166,8 @@
 	End Enum
 
 	Public Enum canBeCritical
-		No
 		Yes
+		No
 		Irrelevant
 	End Enum
 
@@ -680,6 +680,7 @@
 	End Enum
 
 	Public Enum MonsterRace
+		None
 		Beast
 		Giant
 		Human
@@ -692,6 +693,7 @@
 		Dragon
 		Insect
 		Reptile
+		Tutorial
 	End Enum
 
 	Public Enum PlayerAttitude
@@ -712,7 +714,148 @@
 		Medium
 		Hard
 	End Enum
+
+	Public Enum SpecialMonsterImmunity
+		None = 0
+		SpiderWeb = 1
+		Incorporeal = 2
+		Incapacitated = 4
+		Snared = 8
+	End Enum
+
+	Public Enum MonsterRestrictionType
+		CasterHealthPercAbove
+		CasterHealthPercBelow
+		TargetHealthPercAbove
+		TargetHealthPercBelow
+		TargetDistanceAbove
+		TargetDistanceBelow
+		CasterHasStatus
+		CasterDoesNotHaveStatus
+		TargetHasStatus
+		TargetDoesNotHaveStatus
+		CasterHasStatusType
+		TargetHasStatusType
+	End Enum
+
+	Public Enum RestrictionStatusEffect
+		None
+		BurningHot
+		Cold
+		FreezingCold
+		Hot
+		Hungry
+		Tired
+		Encumbered
+		Starving
+		Exhausted
+		Stunned
+		Bleeding
+		Frightened
+		HeavilyEncumbered
+		DeathMark
+		Blinded
+		Crippled
+		Silenced
+		StrikeWounds
+		Poisoned
+		Enraged
+		Slowed
+		Inspire
+		Absorb
+		Unconscious
+		Paralyzed
+		Snared_Web
+		NecroticDisease
+		ConcussiveStrike
+		WildfireTotemBuff
+		WildfireTotemDebuff
+		Snared_Net
+		VerdantRegrowth
+		TotemDecayDebuff
+		Hidden
+		PavedRoadBuff
+		MonsterProtection
+		ArmorDebuff
+		TamingTrap
+		Corrosion
+		Resolve
+		CallToTenacity
+		HomingAI
+		EmpowerBuff
+		Weakened
+		UnholyStr
+		DeathBargain
+		Knockback
+		Chilled
+		Warm
+		Frozen
+		Burning
+		Shocked
+		Shocked_Paralysis
+		LightningRush
+		BattleJump
+		Dazed
+		Confused
+		Magnetize
+		Explosion
+		Petrify
+		Unhealable
+		SnaredRoot
+		Overpower
+		RendArmor
+		Lunge
+		RamThrough
+		PierceThrough
+		ShadowDash
+		Bloodlust
+		ExecuteBuff
+		ExposeVulnDebuff
+		LifeDrain
+		ManaDrain
+		NimblenessBuff
+		ViciousAttacksBuff
+		TrueStrike
+		ShieldsUp
+		ChargeBuff
+		FeintBuff
+		DebilitatingStrikeDebuff
+		CrystalShacklesDebuff
+		BondOfAgonyDebuff
+		CleaveArmorDebuff
+		WizardClothesBuff
+		AssassinClothesBuff
+		RogueArmorSetBuff
+		ClericArmorSetBuff
+		SlayerArmorSetBuff
+		BattlemageArmorSetBuff
+		RangeArmorSetBuff
+		KnightArmorSetBuff
+		WarlockArmorSetBuff
+		HunterArmorSetBuff
+		DirtRoadBuff
+		PlayerInvulnerability
+		AuraOfDevotionBuff
+		AuraOfDevotionDebuff
+		ChallengeDebuff
+		LifeLinkBuff
+		InsectSwarmDebuff
+		StoneSkinBuff
+		Atrophied
+		HunterMarkDebuff
+		HunterMarkBuff
+		ChadraPrimalForm
+		ErwydraPrimalForm
+		BlessedHumanPrimalForm
+		Sated
+		Rested
+		CrushingAssault
+		Bandaging
+	End Enum
+
 #End Region
+
+
 
 
 
@@ -724,6 +867,38 @@
 		Leather
 		Ingot
 		WoodPlank
+	End Enum
+
+	Public Enum ItemTooltipCategory
+		None = 0
+		Armor = 1
+		Weapon = 2
+		Shield = 4
+		Trinket = 8
+		Consumable = 16
+		Food = 32
+		RawFood = 64
+		Reagent = 128
+		Gem = 256
+		ImbuedGem = 512
+		Currency = 1024
+		Lockpick = 2048
+		MountToken = 4096
+		Poison = 8192
+		CraftingRecipe = 16384
+		CommonItem = 32768
+		TamingTool = 65536
+		Mat_RawHide = 131072
+		Mat_Skin = 262144
+		Mat_Hide = 524288
+		Mat_Leather = 1048576
+		Mat_Fiber = 2097152
+		Mat_Fabric = 4194304
+		Mat_Ingot = 8388608
+		Mat_Board = 16777216
+		HerbalRemedy = 33554432
+		Bandages = 67108864
+		ProficiencyOrb = 134217728
 	End Enum
 
 	Public Enum ToolCategory
@@ -757,6 +932,92 @@
 		Knowledge = 210
 	End Enum
 
+	Public Enum ReagentRarity
+		Weak
+		Normal
+		Strong
+		Legendary
+	End Enum
+
+	Public Enum MarketPlaceSubFilter
+		Necklaces = 0
+		Rings = 1
+		ChainArmor = 2
+		HideArmor = 3
+		LeatherArmor = 4
+		PlateArmor = 5
+		RaggedClothes = 6
+		ScholarClothes = 7
+		Shields = 8
+		Bandages = 9
+		Foods = 10
+		LoreTablets = 11
+		OthersConsumables = 12
+		Unguents = 13
+		AnimalHeads = 14
+		Boards = 15
+		Cloths = 16
+		Fibers = 17
+		RawGems = 18
+		Ingots = 19
+		Leathers = 20
+		OthersMaterialsLight = 21
+		ProcessedHides = 22
+		RawHides = 23
+		FoodSacks = 24
+		Ores = 25
+		Stones = 26
+		WoodLogs = 27
+		Axes = 28
+		Clubs = 29
+		Daggers = 30
+		Hammers = 31
+		Halberds = 32
+		Maces = 33
+		Quarterstaffs = 34
+		Spears = 35
+		Swords = 36
+		Bows = 37
+		MageStaffs = 38
+		Horses = 39
+		Reagent_Mind = 40
+		Reagent_Body = 41
+		Reagent_Soul = 42
+		Reagent_Create = 43
+		Reagent_Destroy = 44
+		Reagent_Negate = 45
+		Reagent_Transform = 46
+		Reagent_Transfer = 47
+		Reagent_Air = 48
+		Reagent_Earth = 49
+		Reagent_Fire = 50
+		Reagent_Water = 51
+		Reagent_Death = 52
+		Reagent_Life = 53
+		Reagent_Chaos = 54
+		Reagent_Order = 55
+		Reagent_Time = 56
+		Reagent_Energy = 57
+		Reagent_Knowledge = 58
+		Other = 59
+		Planks = 60
+		Ammunitions = 61
+		ImbuedGem = 62
+		Lockpick = 63
+		CommonClothes = 64
+		AssassinClothes = 65
+		UnlockableRecipe = 66
+		BattleMageArmor = 67
+		ClericArmor = 68
+		HunterArmor = 69
+		KnightArmor = 70
+		RangerArmor = 71
+		RogueArmor = 72
+		SlayerArmor = 73
+		WarlockArmor = 74
+		ProficiencyOrb = 75
+		None = -1
+	End Enum
 
 
 	Public Enum LoreTabletRegion
@@ -768,12 +1029,102 @@
 		NorthernMyths
 		JungleVoice
 	End Enum
+
+	Public Enum ArmorPieceType
+		Main
+		Secondary
+	End Enum
+
+	Public Enum EquipEnchantClass
+		None
+		Armor
+		Weapon
+		Shield
+		Amulet
+		Ring
+	End Enum
+
+	Public Enum EquipmentSlot
+		None
+		Chest
+		Helmet
+		Cape
+		Hands
+		Feet
+		Belt
+		Necklace
+		Ring
+		Ring_1
+		MainHand
+		MainHand_1
+		MainHand_2
+		OffHand
+		Mount
+	End Enum
+
+	Public Enum EquipType
+		None = -1
+		ClothMain
+		ClothSecondary
+		LightMain
+		LightSecondary
+		MediumMain
+		MediumSecondary
+		HeavyMain
+		HeavySecondary
+		Weapon
+		MagicWeapon
+		Shield
+		MagicOrb
+		Cape
+		Belt
+		Necklace
+		Ring
+		Ammunition
+	End Enum
+
+	Public Enum EquipWeightClass
+		None = 0
+		Light = 1
+		Medium = 2
+		Heavy = 4
+	End Enum
+
+	Public Enum ArmorSetBonus
+		None
+		Scholar
+		Assassin
+		Rogue
+		Cleric
+		Slayer
+		Battlemage
+		Ranger
+		Knight
+		Warlock
+		Hunter
+	End Enum
+
+	Public Enum MaterialGroups
+		Hide
+		Leather
+		Cloth
+		Metal
+		Wood
+	End Enum
+
+	Public Enum EquipTier
+		Tier1
+		Tier2
+		Tier3
+		Tier4
+	End Enum
+
 #End Region
 
 	Public Enum EnumLanguage
-		English = 0
-		German = 1
-		French = 2
+		English = 1
+		German = 2
+		French = 3
 	End Enum
 
 	Public Enum DamageType

@@ -102,7 +102,20 @@ Public Class SpellDataCreator
         output = output.Replace("preCastTimeValue", data.preCastTime.ToString)
         output = output.Replace("memoryCostValue", data.difficulty + 1)
         output = output.Replace("spellGroupValue", [Enum].GetName(GetType(SpellGroup), data.spellGroup))
-        output = output.Replace("cooldownValue", data.cooldown)
+
+        Dim foundCooldown As Boolean = False
+
+        For Each dataType As spellDataInfo In data.spellData
+
+            If dataType.dataType = SpellDataType.Cooldown Then
+                output = output.Replace("cooldownValue", dataType.level0)
+                foundCooldown = True
+            End If
+        Next
+
+        If Not foundCooldown Then
+            output = output.Replace("cooldownValue", data.cooldown)
+        End If
 
 
 

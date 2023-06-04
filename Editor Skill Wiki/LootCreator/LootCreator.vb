@@ -24,8 +24,8 @@ Public Class LootCreator
         deserializedlanguageData = deserializeLanguageData(rawlanguagedata)
         getLootData(lootPath)
         getItemData(itempath)
-        lootListIndex = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "LootCreator/lootIndex.xml"))
-        itemListIndex = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "LootCreator/itemsIndex.xml"))
+        lootListIndex = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "AssetIndices/lootIndex.xml"))
+        itemListIndex = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "AssetIndices/itemsIndex.xml"))
     End Sub
 
     Public Sub parseData(path As String) 'main method of the class, uses the private methods to extract the data from a loot file, deserialize it into a lootClassMirror class and extracts information from lootClassMirror
@@ -161,7 +161,7 @@ Public Class LootCreator
         Return lootListName
     End Function
 
-    Private Function getItem(item As String) As String
+    Shared Function getItem(item As String, itemListIndex As String) As String 'used also by monster data creator
 
         Dim itemRef As String = ""
         Dim index As Integer = itemListIndex.IndexOf(item)
@@ -177,8 +177,8 @@ Public Class LootCreator
 
         For Each item As ItemLoot In lootList.probabilityLoot
             Dim partialOutput As String = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "LootCreator/defaultItemLootData.txt"))
-            Dim itemRef As String = getItem(item.item.m_PathID)
-            Dim itemName As String = ItemDataCreator.GetItemName(itemRef, deserializedlanguageData, language)
+            Dim itemRef As String = getItem(item.item.m_PathID, itemListIndex)
+            Dim itemName As String = ItemDataCreator.GetItemName(itemRef, 0, deserializedlanguageData, language)
             partialOutput = partialOutput.Replace("itemNameText", itemName)
             partialOutput = partialOutput.Replace("minimumQuantityText", item.minQuantity.ToString)
             partialOutput = partialOutput.Replace("maximumQuantityText", item.maxQuantity.ToString)

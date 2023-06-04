@@ -3,4 +3,5 @@
                 ["Damage"] = "textDamage",
                 ["Range"] = "textRange",
                 ["Speed"] = "textSpeed",
+                ["Poison Chance"] = "poisonChanceText",
             },
