@@ -211,7 +211,7 @@ Public Class MonsterDataCreator
         Dim allowedPoiText As String = ""
 
         For Each poi As String In data.allowedPoi
-            allowedPoiText &= getStatusEffectName(poi, languageData)
+            allowedPoiText &= getPoiName(poi, languageData)
             allowedPoiText &= ", "
         Next
 
@@ -303,6 +303,15 @@ Public Class MonsterDataCreator
 
         Dim term As String = statusEffectName.Replace("se_", "status_effect/")
         term &= "_name"
+
+        name = deserializedData.returnTerm(term, languageEnum)
+        Return name
+    End Function
+
+    Private Function getPoiName(poiName As String, deserializedData As LanguageData)
+        Dim name As String
+
+        Dim term As String = "ui/worldMap_POI_" & poiName
 
         name = deserializedData.returnTerm(term, languageEnum)
         Return name

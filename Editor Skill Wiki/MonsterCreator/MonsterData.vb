@@ -197,6 +197,7 @@ Public Class MonsterAttack
     Public targetToUnlock As Integer
     Public value As PropertyClass
 
+
 End Class
 
 

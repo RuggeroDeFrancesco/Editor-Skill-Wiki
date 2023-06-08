@@ -116,7 +116,11 @@
             difficulty = [Enum].GetName(GetType(LegendDifficulty), data.difficulty)
             halfKillsRequired = data.halfKillsRequired.ToString
             monsterRace = [Enum].GetName(GetType(MonsterRace), data.monsterRace)
-            category = monsterRace
+            If challengeRating = 10 Then
+                category = "Legend"
+            Else
+                category = monsterRace
+            End If
             playerAttitude = [Enum].GetName(GetType(PlayerAttitude), data.playerAttitude)
             combatStance = [Enum].GetName(GetType(CombatStance), data.combatStance)
             capturable = data.capturable.ToString
@@ -232,7 +236,7 @@
                 monsterSkills.Add(newskill)
             Next
 
-            For Each poi As Integer In allowedPoi
+            For Each poi As Integer In data.allowedPoi
                 allowedPoi.Add([Enum].GetName(GetType(POIType), poi))
             Next
         Catch ex As Exception
@@ -273,9 +277,13 @@
                 newAttack.secondaryStat = [Enum].GetName(GetType(CharacterAttribute), parsedData.damage.secondDamageAttribute)
                 newAttack.range = parsedData.damageLength.ToString
                 newAttack.speed = parsedData.speed.ToString
+                If parsedData.weaponProperties IsNot Nothing AndAlso parsedData.weaponProperties.Count <> 0 Then
+                    newAttack.poisonChance = parsedData.weaponProperties(0).baseAmount
+                End If
+
                 calculateAttackDamage(newAttack)
-                compileAttackFullText(newAttack)
-            Else Throw New Exception(filePath & " Not Found")
+                    compileAttackFullText(newAttack)
+                Else Throw New Exception(filePath & " Not Found")
             End If
         End If
         Return newAttack
@@ -391,7 +399,7 @@
         baseText = baseText.Replace("textDamage", attack.damage)
         baseText = baseText.Replace("textRange", attack.range)
         baseText = baseText.Replace("textSpeed", attack.speed)
-
+        baseText = baseText.Replace("poisonChanceText", attack.poisonChance)
         attack.fullText = baseText
 
     End Sub
@@ -441,7 +449,7 @@ Public Class MonsterAttackFinalData
     Public primaryStat As String
     Public secondaryStat As String
     Public fullText As String
-
+    Public poisonChance As String
 End Class
 
 

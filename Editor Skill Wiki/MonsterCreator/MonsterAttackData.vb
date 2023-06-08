@@ -4,6 +4,7 @@
     Public damageLength As Double
     Public speed As Double
     Public attackName As String
-    Public attackProperties
+    Public weaponProperties As List(Of WeaponProperty)
+
 End Class
 
