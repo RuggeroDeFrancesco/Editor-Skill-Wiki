@@ -338,7 +338,12 @@ Public Class MonsterDataCreator
         term = attackName.Replace("key:", "")
 
         name = deserializedData.returnTerm(term, languageEnum)
-        Return name
+        If name <> "" Then
+            Return name
+        Else
+            Return "Attack"
+        End If
+
     End Function
 
     Private Sub selectAttacks_Click(sender As Object, e As RoutedEventArgs)
