@@ -5,24 +5,42 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Editor_Skill_Wiki"
         mc:Ignorable="d"
-        Title="MonsterDataCreator" Height="450" Width="800">
+        Title="MonsterDataCreator" Height="450" Width="800" Loaded="Window_Loaded">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="auto"></RowDefinition>
             <RowDefinition Height="auto"></RowDefinition>
             <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
         </Grid.RowDefinitions>
         <TextBox x:Name="OutputBlock" Grid.Row="0"></TextBox>
-        <Button x:Name="test" Grid.Row="3" Margin="5, 0, 5, 5" Click="test_click">
+        <Button x:Name="test" Grid.Row="5" Margin="5, 0, 5, 5" Click="test_click">
             <TextBlock Text="Load Monster Data"/>
         </Button>
-        <DockPanel Grid.Row="2" >
+        <DockPanel Grid.Row="4" >
             <Button x:Name="selectAttacks" Margin="5, 0, 5, 5" Click ="selectAttacks_Click">
                 <TextBlock Text="Select Attacks Folder"/>
             </Button>
             <TextBlock x:Name="SelectedAttackFolder">
                 
+            </TextBlock>
+        </DockPanel>
+        <DockPanel Grid.Row="3" >
+            <Button x:Name="selectEnchant" Margin="5, 0, 5, 5" Click ="selectEnchant_Click">
+                <TextBlock Text="Select Enchants Folder"/>
+            </Button>
+            <TextBlock x:Name="SelectedEnchantFolder">
+
+            </TextBlock>
+        </DockPanel>
+        <DockPanel Grid.Row="2" >
+            <Button x:Name="selectWP" Margin="5, 0, 5, 5" Click ="selectWP_Click">
+                <TextBlock Text="Select WP Folder"/>
+            </Button>
+            <TextBlock x:Name="SelectedWPFolder">
+
             </TextBlock>
         </DockPanel>
         <DockPanel Grid.Row="1">

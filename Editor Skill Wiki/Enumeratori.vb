@@ -869,6 +869,13 @@
 		WoodPlank
 	End Enum
 
+	Public Enum WeaponDamageType
+		None
+		LineDamage
+		LineDamageFirstTarget
+		ConeDamage
+		ProjectileDamage
+	End Enum
 	Public Enum ItemTooltipCategory
 		None = 0
 		Armor = 1

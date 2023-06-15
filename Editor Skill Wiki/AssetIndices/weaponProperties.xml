@@ -1,0 +1,419 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Assets filename="E:\Desktop\Miscellanea\Fractured\Closed Test\b06d\WP\assets.xml" createdAt="2023-06-13T20:18:00">
+	<Asset>
+		<Name>WP_AccuracyBonus</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63083</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>116</Size>
+	</Asset>
+	<Asset>
+		<Name>WP_AddChilledSE</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63084</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>108</Size>
+	</Asset>
+	<Asset>
+		<Name>WP_AddCorrosionSE</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63085</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>112</Size>
+	</Asset>
+	<Asset>
+		<Name>WP_AddPoisonSE</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63086</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>108</Size>
+	</Asset>
+	<Asset>
+		<Name>WP_AddShockedSE</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63087</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>108</Size>
+	</Asset>
+	<Asset>
+		<Name>WP_AddWarmSE</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63088</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>100</Size>
+	</Asset>
+	<Asset>
+		<Name>WP_ArmorBonus_Magical</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63089</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>80</Size>
+	</Asset>
+	<Asset>
+		<Name>WP_ArmorBonus_Physical</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63090</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>80</Size>
+	</Asset>
+	<Asset>
+		<Name>WP_ArmorEncumbrance</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63091</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>76</Size>
+	</Asset>
+	<Asset>
+		<Name>WP_ArmorPenetration</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63092</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>100</Size>
+	</Asset>
+	<Asset>
+		<Name>WP_AttributeBonus_Charisma</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63093</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>132</Size>
+	</Asset>
+	<Asset>
+		<Name>WP_AttributeBonus_Constitution</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63094</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>136</Size>
+	</Asset>
+	<Asset>
+		<Name>WP_AttributeBonus_Dexterity</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63095</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>132</Size>
+	</Asset>
+	<Asset>
+		<Name>WP_AttributeBonus_Intelligence</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63096</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>136</Size>
+	</Asset>
+	<Asset>
+		<Name>WP_AttributeBonus_Perception</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63097</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>132</Size>
+	</Asset>
+	<Asset>
+		<Name>WP_AttributeBonus_Strength</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63098</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>128</Size>
+	</Asset>
+	<Asset>
+		<Name>WP_Bashing</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63099</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>88</Size>
+	</Asset>
+	<Asset>
+		<Name>WP_BlockChance</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63100</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>92</Size>
+	</Asset>
+	<Asset>
+		<Name>WP_ColdInsulation</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63101</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>76</Size>
+	</Asset>
+	<Asset>
+		<Name>WP_CooldownReduction</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63102</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>124</Size>
+	</Asset>
+	<Asset>
+		<Name>WP_CriticalChance</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63103</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>124</Size>
+	</Asset>
+	<Asset>
+		<Name>WP_CriticalDamage</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63104</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>124</Size>
+	</Asset>
+	<Asset>
+		<Name>WP_DamageConversion_Acid</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63105</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>80</Size>
+	</Asset>
+	<Asset>
+		<Name>WP_DamageConversion_Fire</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63106</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>80</Size>
+	</Asset>
+	<Asset>
+		<Name>WP_DamageConversion_Poison</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63107</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>84</Size>
+	</Asset>
+	<Asset>
+		<Name>WP_DamageConversion_Shock</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63108</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>84</Size>
+	</Asset>
+	<Asset>
+		<Name>WP_DamageIncrease_Acid</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63109</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>80</Size>
+	</Asset>
+	<Asset>
+		<Name>WP_DamageIncrease_Energy</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63110</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>80</Size>
+	</Asset>
+	<Asset>
+		<Name>WP_DamageIncrease_Fire</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63111</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>80</Size>
+	</Asset>
+	<Asset>
+		<Name>WP_DamageIncrease_Ice</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63112</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>80</Size>
+	</Asset>
+	<Asset>
+		<Name>WP_DamageIncrease_Magical</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63113</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>84</Size>
+	</Asset>
+	<Asset>
+		<Name>WP_DamageIncrease_Physical</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63114</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>84</Size>
+	</Asset>
+	<Asset>
+		<Name>WP_DamageIncrease_Poison</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63115</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>80</Size>
+	</Asset>
+	<Asset>
+		<Name>WP_DamageIncrease_Shock</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63116</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>80</Size>
+	</Asset>
+	<Asset>
+		<Name>WP_EvasionBonus</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63117</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>116</Size>
+	</Asset>
+	<Asset>
+		<Name>WP_FortitudeBonus</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63118</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>76</Size>
+	</Asset>
+	<Asset>
+		<Name>WP_HealthBonus</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63119</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>120</Size>
+	</Asset>
+	<Asset>
+		<Name>WP_HealthRegen</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63120</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>72</Size>
+	</Asset>
+	<Asset>
+		<Name>WP_HeatInsulation</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63121</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>76</Size>
+	</Asset>
+	<Asset>
+		<Name>WP_HitsIncorporeal</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63122</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>76</Size>
+	</Asset>
+	<Asset>
+		<Name>WP_LowerManaCost</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63123</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>116</Size>
+	</Asset>
+	<Asset>
+		<Name>WP_LuckBonus</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63124</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>108</Size>
+	</Asset>
+	<Asset>
+		<Name>WP_ManaRegen</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63125</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>124</Size>
+	</Asset>
+	<Asset>
+		<Name>WP_NecroticDisease</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63126</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>80</Size>
+	</Asset>
+	<Asset>
+		<Name>WP_Poisonable</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63127</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>112</Size>
+	</Asset>
+	<Asset>
+		<Name>WP_ResistanceBonus_Acid</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63128</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>124</Size>
+	</Asset>
+	<Asset>
+		<Name>WP_ResistanceBonus_Cold</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63129</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>128</Size>
+	</Asset>
+	<Asset>
+		<Name>WP_ResistanceBonus_Energy</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63130</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>132</Size>
+	</Asset>
+	<Asset>
+		<Name>WP_ResistanceBonus_Fire</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63131</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>128</Size>
+	</Asset>
+	<Asset>
+		<Name>WP_ResistanceBonus_Poison</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63132</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>132</Size>
+	</Asset>
+	<Asset>
+		<Name>WP_ResistanceBonus_Shock</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63133</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>128</Size>
+	</Asset>
+	<Asset>
+		<Name>WP_WillpowerBonus</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63134</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>76</Size>
+	</Asset>
+</Assets>

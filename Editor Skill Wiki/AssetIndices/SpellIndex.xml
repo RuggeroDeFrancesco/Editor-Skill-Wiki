@@ -1,3762 +1,1771 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-
--<Assets createdAt="2023-05-28T06:55:57" filename="E:\Desktop\Miscellanea\Fractured\Closed Test\b06b\Spells\assets.xml">
-
-
-	-<Asset>
-
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Assets filename="E:\Desktop\Miscellanea\Fractured\Closed Test\b06d\Spells\assets.xml" createdAt="2023-06-13T20:15:10">
+	<Asset>
 		<Name>spell_AbsorbElements</Name>
-
-		<Container/>
-
+		<Container></Container>
 		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63639</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>656</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_DispelMagic</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63640</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>740</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_GlobeOfSpellProtection</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63641</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>688</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_MageArmor</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63642</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>648</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_MagicReflection</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63643</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>484</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_MagicReflection_ColossalHuskWorm</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63644</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>424</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_PierceMagic</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63645</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>764</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_ProtectionFromAcid</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63646</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>580</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_ProtectionFromCold</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63647</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>604</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_ProtectionFromElectricity</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63648</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>624</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_ProtectionFromFire</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63649</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>604</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_ProtectionFromPoison</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63650</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>584</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_ShatterWards</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63651</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>652</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_ChainLightning</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63652</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>792</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_CloakOfLightning</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63653</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>824</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_ForkedLightning</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63654</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>868</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_LightningRush</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63655</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>844</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_LightningStrike</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63656</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>636</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_Magnetize</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63657</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>800</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_ShockingLash</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63658</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>752</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_ShockingLash_Totem</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63659</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>732</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_StaticDischarge</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63660</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>864</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_StaticPull</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63661</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>624</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_ThunderClap</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63662</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>604</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_Thunderbolt</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63663</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>860</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_Thunderstorm</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63664</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>888</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_TotemOfThunders</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63665</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>564</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_Barrage</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63666</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>808</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_BurningArrows</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63667</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>832</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_ChillingArrows</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63668</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>840</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_DoubleShot</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63669</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>404</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_GuidedShot</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63670</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>808</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_MercilessStrike</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63671</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>640</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_PinDown</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63672</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>640</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_PowerShot</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63673</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>712</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_Ricochet</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63674</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>720</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_ShockingArrows</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
 		<PathID>63675</PathID>
-
 		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>848</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_Volley</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63676</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>792</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_BlindingDust</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63677</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>684</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_DeathMark</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63678</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>480</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_GlitterDust</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63679</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>668</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_Nimbleness</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63680</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>564</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_ShadowDance (REMOVED)</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63681</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>332</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_ShadowDash</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63682</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>616</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_ShadowStep</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63683</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>916</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_ShadowWalk</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63684</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>496</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_StrikeWounds</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63685</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>724</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_TrueStrike</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63686</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>564</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_CleaveArmor</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63687</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>628</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_Decimate</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63688</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>920</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_Execute</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63689</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>816</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_FlurryOfBlows</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63690</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>600</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_Lacerate</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63691</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>556</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_SharpStrike</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63692</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>544</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_SpellTamingNetTrap</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63695</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>328</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_CloakOfFrost</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63696</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>796</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_DeepFreeze</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63697</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>872</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_FrostBlast</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63698</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>824</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_FrostBlast_Totem</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63699</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>684</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_FrostNova</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63700</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>664</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_Hailstorm</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63701</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>928</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_IceSpikes</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63702</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>788</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_IceboundBlast</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63703</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>588</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_Permafrost</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63704</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>596</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_Shivers</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63705</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>640</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_TotemOfWinter</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63706</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>564</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_WinterGrasp</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63707</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>884</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_ArborealDragonBreath</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63708</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>684</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_ArborealDragonBreath_ArborealDragon</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63709</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>548</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_BarbedSkin</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63710</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>672</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_BrambleWall</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63711</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>732</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_Cobweb</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63712</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>824</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_CrushingRoots</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63713</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>616</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_EntanglingRoots</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63714</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>524</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_EntanglingWeb</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63715</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>864</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_InsectSwarm</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63716</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>628</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_SproutingPulse</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63717</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>636</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_VerdantRegrowth</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63718</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>636</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_DoubleStrike</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63719</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>520</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_HeartPiercingStrike</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63720</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>580</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_Impale</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63721</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>640</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_Lunge</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63722</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>772</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_PierceThrough</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63723</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>772</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_PuncturingStrike</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63724</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>620</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_CrystalShackles</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63725</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>696</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_CrystallineSkin</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63726</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>700</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_EarthSpikes</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63727</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>808</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_Earthquake</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63728</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>748</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_Epicenter</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63729</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>680</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_Eruption</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63730</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>580</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_GlassBarrier</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63731</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>592</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_MountainDragonBreath</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63732</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>764</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_MountainDragonBreath_MountainDragon</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63733</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>628</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_Petrify</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63734</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>616</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_PrimalStorm</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63735</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>728</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_StoneLance</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63736</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>868</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_StoneSkin</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63737</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>608</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_TectonicOutburst</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63738</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>720</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_HunterMark</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63739</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
 		<Size>652</Size>
-
 	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_NetTrap</Name>
-
-		<Container/>
-
+	<Asset>
+		<Name>spell_DispelMagic</Name>
+		<Container></Container>
 		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63740</PathID>
-
+		<PathID>63676</PathID>
 		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>660</Size>
-
+		<Size>736</Size>
 	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_SpikeTrap</Name>
-
-		<Container/>
-
+	<Asset>
+		<Name>spell_GlobeOfSpellProtection</Name>
+		<Container></Container>
 		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63741</PathID>
-
+		<PathID>63677</PathID>
 		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>884</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_SpikeTrapGrokoton</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63742</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>512</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_AtrophyWave</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63743</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
 		<Size>684</Size>
-
 	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_Fear</Name>
-
-		<Container/>
-
+	<Asset>
+		<Name>spell_MageArmor</Name>
+		<Container></Container>
 		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63744</PathID>
-
+		<PathID>63678</PathID>
 		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>616</Size>
-
+		<Size>644</Size>
 	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_MindStrike</Name>
-
-		<Container/>
-
+	<Asset>
+		<Name>spell_MagicReflection</Name>
+		<Container></Container>
 		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63745</PathID>
-
+		<PathID>63679</PathID>
 		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>796</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_ShimmeringSphere</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63746</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>756</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_WordOfPower_Heal</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63747</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
 		<Size>680</Size>
-
 	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_WordOfPower_Kill</Name>
-
-		<Container/>
-
+	<Asset>
+		<Name>spell_MagicReflection_ColossalHuskWorm</Name>
+		<Container></Container>
 		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63748</PathID>
-
+		<PathID>63680</PathID>
 		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>684</Size>
-
+		<Size>680</Size>
 	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_WordOfPower_Silence</Name>
-
-		<Container/>
-
+	<Asset>
+		<Name>spell_PierceMagic</Name>
+		<Container></Container>
 		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63749</PathID>
-
+		<PathID>63681</PathID>
 		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>696</Size>
-
+		<Size>760</Size>
 	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_WordOfPower_Stun</Name>
-
-		<Container/>
-
+	<Asset>
+		<Name>spell_ProtectionFromAcid</Name>
+		<Container></Container>
 		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63750</PathID>
-
+		<PathID>63682</PathID>
 		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>676</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_BleedingStrike</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63751</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>584</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_CoupDeGrace</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63752</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>540</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_CripplingStrike</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63753</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>588</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_DebilitatingStrike</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63754</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>620</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_DisruptingStrike</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63755</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>592</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_LethalStrike</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63756</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
 		<Size>576</Size>
-
 	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_RendArmor</Name>
-
-		<Container/>
-
+	<Asset>
+		<Name>spell_ProtectionFromCold</Name>
+		<Container></Container>
 		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63757</PathID>
-
+		<PathID>63683</PathID>
 		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>784</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_AuraOfDevotion</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63758</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>620</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_CallToTenacity</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63759</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>868</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_Challenge</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63760</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>756</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_Charge</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63761</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>612</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_CrushingShout</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63762</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>752</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_Inspire</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63763</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>668</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_Intimidate</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63764</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>628</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_ShieldsUp</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63765</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>640</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_StaggeringShout</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63766</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>620</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_ConcussiveStrike</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63767</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>584</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_CrushingAssault</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63768</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>612</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_HeavyBlow</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63769</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>560</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_ResonatingBlow</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63770</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>648</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_SpineBreakerBlow</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63771</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>604</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_SplitEarth</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63772</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
 		<Size>600</Size>
-
 	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_BurningTouch</Name>
-
-		<Container/>
-
+	<Asset>
+		<Name>spell_ProtectionFromElectricity</Name>
+		<Container></Container>
 		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63773</PathID>
-
+		<PathID>63684</PathID>
 		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>708</Size>
-
+		<Size>620</Size>
 	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_ChillingTouch</Name>
-
-		<Container/>
-
+	<Asset>
+		<Name>spell_ProtectionFromFire</Name>
+		<Container></Container>
 		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63774</PathID>
-
+		<PathID>63685</PathID>
 		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>716</Size>
-
+		<Size>600</Size>
 	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_CrystallineTouch</Name>
-
-		<Container/>
-
+	<Asset>
+		<Name>spell_ProtectionFromPoison</Name>
+		<Container></Container>
 		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63775</PathID>
-
+		<PathID>63686</PathID>
 		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>724</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_ShockingTouch</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63776</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>708</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_BondOfAgony</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63777</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>564</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_BoneBarrage</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63778</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>680</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_DeathBargain</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63779</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>500</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_DeathCircle</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63780</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>604</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_LifeDrain</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63781</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>512</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_ManaDrain</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63782</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>512</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_SkeletalDragonBreath</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63783</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>684</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_SkeletalDragonBreath_SkeletalDragon</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63784</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>528</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_UnholyStrength</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63785</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>640</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_BurningPillar</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63786</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>764</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_CloakOfFlames</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63787</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>808</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_EmberDragonBreath</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63788</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>764</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_EmberDragonBreath_EmberDragon</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63789</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>616</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_Explosion</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63790</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>616</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_FanOfFlames</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63791</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>636</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_Fireball</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63792</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>760</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_Firebolt</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63793</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>808</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_Firebolt_Totem</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63794</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>680</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_Firestorm</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63795</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>912</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_Ignite</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63796</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>780</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_Incinerate</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63797</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>880</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_Pyroblast</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63798</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>684</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_TotemOfWildfire</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63799</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>572</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_CurePoison</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63800</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
 		<Size>580</Size>
-
 	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_CureWounds</Name>
-
-		<Container/>
-
+	<Asset>
+		<Name>spell_ShatterWards</Name>
+		<Container></Container>
 		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63801</PathID>
-
+		<PathID>63687</PathID>
 		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>660</Size>
-
+		<Size>648</Size>
 	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_HealingBurst</Name>
-
-		<Container/>
-
+	<Asset>
+		<Name>spell_ChainLightning</Name>
+		<Container></Container>
 		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63802</PathID>
-
+		<PathID>63688</PathID>
 		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>592</Size>
-
+		<Size>788</Size>
 	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_HealingWave</Name>
-
-		<Container/>
-
+	<Asset>
+		<Name>spell_CloakOfLightning</Name>
+		<Container></Container>
 		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63803</PathID>
-
+		<PathID>63689</PathID>
 		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>752</Size>
-
+		<Size>820</Size>
 	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_LifeLink</Name>
-
-		<Container/>
-
+	<Asset>
+		<Name>spell_ForkedLightning</Name>
+		<Container></Container>
 		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63804</PathID>
-
+		<PathID>63690</PathID>
 		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>732</Size>
-
+		<Size>864</Size>
 	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_MassCureWounds</Name>
-
-		<Container/>
-
+	<Asset>
+		<Name>spell_LightningRush</Name>
+		<Container></Container>
 		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63805</PathID>
-
+		<PathID>63691</PathID>
 		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>1028</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_MinorHealing</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63806</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>592</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_PhysicalRecovery</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63807</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>612</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_RamThrough</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63808</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>732</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_ShieldSlam</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63809</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>776</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_Eviscerate</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63810</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>848</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_PommelStrike</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63811</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>544</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_SlashingWave</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63812</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>628</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_Swipe</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63813</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>708</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_Whirlwind</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63814</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>540</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_AcidArrows</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63815</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>800</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_AcidBreath</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63816</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>860</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_AcidRain</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63817</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>704</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_AcidShell</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63818</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>676</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_AcidSphere</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63819</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>612</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_BlindingVenom</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63820</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>884</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_InfectiousBurst</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63821</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>836</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_NoxiousJet</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63822</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>772</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_Poison</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63823</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>628</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_PoisonSpray</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63824</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>860</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_TotemOfDecay</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63825</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>576</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_BattleJump</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63826</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>812</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_BattleJump_Ghoul</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63827</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>700</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_Bloodlust</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63828</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>564</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_Counterstrike</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63829</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>604</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_Enrage</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63830</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>576</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_Frenzy</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63831</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>564</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_Overpower</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63832</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>536</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_Resolve</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63833</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>476</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_SecondWind</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63834</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>568</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_Shockwave</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63835</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>676</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_ViciousAttacks</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63836</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>556</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_Empower</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63837</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>608</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_EnergyBlast</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63838</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>760</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_ExposeVulnerabilities</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63839</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>660</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_MagicMissiles</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63840</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
 		<Size>840</Size>
-
 	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_Relocate</Name>
-
-		<Container/>
-
+	<Asset>
+		<Name>spell_LightningStrike</Name>
+		<Container></Container>
 		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63841</PathID>
-
+		<PathID>63692</PathID>
 		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
+		<Size>632</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_Magnetize</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63693</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>796</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_ShockingLash</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63694</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>748</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_ShockingLash_Totem</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63695</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>728</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_StaticDischarge</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63696</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>860</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_StaticPull</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63697</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>620</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_ThunderClap</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63698</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>600</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_Thunderbolt</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63699</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>856</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_Thunderstorm</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63700</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>884</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_TotemOfThunders</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63701</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>564</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_Barrage</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63702</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>804</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_BurningArrows</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63703</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>828</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_ChillingArrows</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63704</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>836</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_DoubleShot</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63705</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>400</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_GuidedShot</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63706</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>804</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_MercilessStrike</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63707</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>636</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_PinDown</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63708</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>636</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_PowerShot</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63709</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>708</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_Ricochet</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63710</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>716</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_ShockingArrows</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63711</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>844</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_Volley</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63712</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>788</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_BlindingDust</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63713</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
 		<Size>680</Size>
-
 	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_Slow</Name>
-
-		<Container/>
-
+	<Asset>
+		<Name>spell_DeathMark</Name>
+		<Container></Container>
 		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63842</PathID>
-
+		<PathID>63714</PathID>
 		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>552</Size>
-
+		<Size>476</Size>
 	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_Weaken</Name>
-
-		<Container/>
-
+	<Asset>
+		<Name>spell_GlitterDust</Name>
+		<Container></Container>
 		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63843</PathID>
-
+		<PathID>63715</PathID>
 		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>660</Size>
-
+		<Size>664</Size>
 	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_LegendAxfitmithissTouch</Name>
-
-		<Container/>
-
+	<Asset>
+		<Name>spell_Nimbleness</Name>
+		<Container></Container>
 		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63844</PathID>
-
+		<PathID>63716</PathID>
 		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>356</Size>
-
+		<Size>560</Size>
 	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_LegendGrooveQuake</Name>
-
-		<Container/>
-
+	<Asset>
+		<Name>spell_ShadowDance (REMOVED)</Name>
+		<Container></Container>
 		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63845</PathID>
-
+		<PathID>63717</PathID>
 		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>372</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_LegendGrooveRam</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63846</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>348</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_LegendIceSpikesRing</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63847</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>388</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_LegendLargeSlow</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63848</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>336</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_LegendMegaEruption</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63849</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>380</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_LegendShivers</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63850</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>352</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_LegendWOPSilence</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63851</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>360</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_Bash (REMOVED)</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63852</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>320</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_Blight (REMOVED)</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63853</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>324</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_CursedGrounds (REMOVED)</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63854</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>352</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_IgnoreAmor_OLD</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63855</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>308</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_ParalyzingStrike_OLD</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63856</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
 		<Size>328</Size>
-
 	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_ParalyzingTouch (REMOVED)</Name>
-
-		<Container/>
-
+	<Asset>
+		<Name>spell_ShadowDash</Name>
+		<Container></Container>
 		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>63857</PathID>
-
+		<PathID>63718</PathID>
 		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
+		<Size>612</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_ShadowStep</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63719</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>912</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_ShadowWalk</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63720</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>492</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_StrikeWounds</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63721</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>720</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_TrueStrike</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63722</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>560</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_CleaveArmor</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63723</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>624</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_Decimate</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63724</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>916</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_Execute</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63725</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>812</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_Hack&amp;Slash</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63726</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>588</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_Lacerate</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63727</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>552</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_SharpStrike</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63728</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>540</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_SpellTamingNetTrap</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63731</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>324</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_CloakOfFrost</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63732</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>792</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_DeepFreeze</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63733</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>868</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_FrostBlast</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63734</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>820</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_FrostBlast_Totem</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63735</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>680</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_FrostNova</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63736</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>660</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_Hailstorm</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63737</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>924</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_IceSpikes</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63738</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>784</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_IceboundBlast</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63739</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>584</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_Permafrost</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63740</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>592</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_Shivers</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63741</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>636</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_TotemOfWinter</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63742</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>564</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_WinterGrasp</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63743</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>880</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_ArborealDragonBreath</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63744</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>680</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_ArborealDragonBreath_ArborealDragon</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63745</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>664</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_BarbedSkin</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63746</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>668</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_BrambleWall</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63747</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>728</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_Cobweb</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63748</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>820</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_CrushingRoots</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63749</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>612</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_EntanglingRoots</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63750</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>520</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_EntanglingWeb</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63751</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>860</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_InsectSwarm</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63752</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>624</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_SproutingPulse</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63753</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>632</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_VerdantRegrowth</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63754</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>632</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_DoubleStrike</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63755</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>516</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_HeartPiercingStrike</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63756</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>576</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_Impale</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63757</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>636</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_Lunge</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63758</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>768</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_PierceThrough</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63759</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>768</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_PuncturingStrike</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63760</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>616</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_CrystalShackles</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63761</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>692</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_CrystallineSkin</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63762</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>696</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_EarthSpikes</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63763</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>804</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_Earthquake</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63764</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>744</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_Epicenter</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63765</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>676</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_Eruption</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63766</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>576</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_GlassBarrier</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63767</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>588</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_MountainDragonBreath</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63768</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>760</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_MountainDragonBreath_MountainDragon</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63769</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>744</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_Petrify</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63770</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>612</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_PrimalStorm</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63771</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>724</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_StoneLance</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63772</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>864</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_StoneSkin</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63773</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>604</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_TectonicOutburst</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63774</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>716</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_HunterMark</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63775</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>648</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_NetTrap</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63776</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>656</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_SpikeTrap</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63777</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>880</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_SpikeTrapGrokoton</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63778</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>592</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_AtrophyWave</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63779</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>680</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_Fear</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63780</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>612</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_MindStrike</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63781</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>792</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_ShimmeringSphere</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63782</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>752</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_WordOfPower_Heal</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63783</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>676</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_WordOfPower_Kill</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63784</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>680</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_WordOfPower_Silence</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63785</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>692</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_WordOfPower_Stun</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63786</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>672</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_BleedingStrike</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63787</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>580</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_CoupDeGrace</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63788</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
 		<Size>536</Size>
-
 	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_PoisonStrike (REMOVED)</Name>
-
-		<Container/>
-
+	<Asset>
+		<Name>spell_CripplingStrike</Name>
+		<Container></Container>
 		<Type id="114">MonoBehaviour</Type>
-
+		<PathID>63789</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>584</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_DebilitatingStrike</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63790</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>616</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_DisruptingStrike</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63791</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>588</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_LethalStrike</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63792</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>572</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_RendArmor</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63793</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>780</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_AuraOfDevotion</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63794</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>616</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_CallToTenacity</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63795</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>864</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_Challenge</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63796</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>752</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_Charge</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63797</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>608</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_CrushingShout</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63798</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>748</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_Inspire</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63799</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>664</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_Intimidate</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63800</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>624</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_ShieldsUp</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63801</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>636</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_StaggeringShout</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63802</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>616</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_ConcussiveStrike</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63803</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>580</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_CrushingAssault</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63804</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>608</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_HeavyBlow</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63805</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>556</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_ResonatingBlow</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63806</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>644</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_SpineBreakerBlow</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63807</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>600</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_SplitEarth</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63808</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>596</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_BurningTouch</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63809</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>704</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_ChillingTouch</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63810</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>712</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_CrystallineTouch</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63811</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>720</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_ShockingTouch</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63812</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>704</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_BondOfAgony</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63813</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>560</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_BoneBarrage</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63814</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>676</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_DeathBargain</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63815</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>496</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_DeathCircle</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63816</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>600</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_LifeDrain</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63817</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>508</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_ManaDrain</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63818</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>508</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_SkeletalDragonBreath</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63819</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>680</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_SkeletalDragonBreath_SkeletalDragon</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63820</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>644</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_UnholyStrength</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63821</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>636</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_BurningPillar</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63822</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>760</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_CloakOfFlames</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63823</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>804</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_EmberDragonBreath</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63824</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>760</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_EmberDragonBreath_EmberDragon</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63825</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>732</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_Explosion</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63826</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>612</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_FanOfFlames</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63827</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>632</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_Fireball</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63828</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>756</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_Firebolt</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63829</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>804</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_Firebolt_Totem</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63830</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>676</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_Firestorm</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63831</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>908</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_Ignite</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63832</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>776</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_Incinerate</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63833</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>876</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_Pyroblast</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63834</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>680</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_TotemOfWildfire</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63835</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>572</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_CurePoison</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63836</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>576</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_CureWounds</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63837</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>656</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_HealingBurst</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63838</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>588</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_HealingWave</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63839</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>748</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_LifeLink</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63840</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>728</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_MassCureWounds</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63841</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>1024</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_MinorHealing</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63842</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>588</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_PhysicalRecovery</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63843</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>608</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_RamThrough</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63844</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>728</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_ShieldSlam</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63845</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>772</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_Eviscerate</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63846</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>844</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_PommelStrike</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63847</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>540</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_SlashingWave</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63848</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>624</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_Swipe</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63849</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>704</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_Whirlwind</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63850</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>536</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_AcidArrows</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63851</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>796</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_AcidBreath</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63852</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>856</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_AcidRain</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63853</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>700</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_AcidShell</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63854</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>720</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_AcidSphere</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63855</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>608</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_BlindingVenom</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63856</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>880</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_InfectiousBurst</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63857</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>832</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_NoxiousJet</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
 		<PathID>63858</PathID>
-
 		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>392</Size>
-
+		<Size>768</Size>
 	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_RelentlessStyle (REMOVED)</Name>
-
-		<Container/>
-
+	<Asset>
+		<Name>spell_Poison</Name>
+		<Container></Container>
 		<Type id="114">MonoBehaviour</Type>
-
 		<PathID>63859</PathID>
-
 		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>336</Size>
-
+		<Size>624</Size>
 	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_ShieldBlock_OLD</Name>
-
-		<Container/>
-
+	<Asset>
+		<Name>spell_PoisonSpray</Name>
+		<Container></Container>
 		<Type id="114">MonoBehaviour</Type>
-
 		<PathID>63860</PathID>
-
 		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>312</Size>
-
+		<Size>856</Size>
 	</Asset>
-
-
-	-<Asset>
-
-		<Name>spell_TotemOfThunders (REMOVED)</Name>
-
-		<Container/>
-
+	<Asset>
+		<Name>spell_TotemOfDecay</Name>
+		<Container></Container>
 		<Type id="114">MonoBehaviour</Type>
-
 		<PathID>63861</PathID>
-
 		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>348</Size>
-
+		<Size>572</Size>
 	</Asset>
-
+	<Asset>
+		<Name>spell_BattleJump</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63862</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>808</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_BattleJump_Ghoul</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63863</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>776</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_Bloodlust</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63864</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>560</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_Counterstrike</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63865</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>600</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_Enrage</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63866</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>572</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_Frenzy</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63867</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>560</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_Overpower</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63868</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>532</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_Resolve</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63869</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>472</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_SecondWind</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63870</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>564</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_Shockwave</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63871</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>672</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_ViciousAttacks</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63872</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>552</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_Empower</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63873</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>604</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_EnergyBlast</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63874</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>756</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_ExposeVulnerabilities</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63875</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>656</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_MagicMissiles</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63876</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>836</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_Relocate</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63877</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>676</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_Slow</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63878</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>548</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_Weaken</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63879</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>648</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_LegendAxfitmithissTouch</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63880</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>352</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_LegendGrooveQuake</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63881</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>368</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_LegendGrooveRam</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63882</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>344</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_LegendIceSpikesRing</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63883</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>384</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_LegendLargeSlow</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63884</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>392</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_LegendMegaEruption</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63885</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>376</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_LegendShivers</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63886</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>348</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_LegendWOPSilence</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63887</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>356</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_Bash (REMOVED)</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63888</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>316</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_Blight (REMOVED)</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63889</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>320</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_CursedGrounds (REMOVED)</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63890</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>348</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_IgnoreAmor_OLD</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63891</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>304</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_ParalyzingStrike_OLD</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63892</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>324</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_ParalyzingTouch (REMOVED)</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63893</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>532</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_PoisonStrike (REMOVED)</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63894</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>388</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_RelentlessStyle (REMOVED)</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63895</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>332</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_ShieldBlock_OLD</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63896</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>308</Size>
+	</Asset>
+	<Asset>
+		<Name>spell_TotemOfThunders (REMOVED)</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>63897</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>344</Size>
+	</Asset>
 </Assets>

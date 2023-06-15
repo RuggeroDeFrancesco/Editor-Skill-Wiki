@@ -1,7 +1,16 @@
 ﻿            {
                 ["Name"] = "textName",
-                ["Damage"] = "textDamage",
+                ["Damage"] = "textDamageValue",
+                ["DamageType1"] = "textType1",
+                ["DamageType2"] = "textType2",
+                ["DamageType3"] = "textType3",
                 ["Range"] = "textRange",
                 ["Speed"] = "textSpeed",
-                ["Poison Chance"] = "poisonChanceText",
+                ["Weapon Type"] = "textWeaponType",
+                ["Damage Width"] = "textDamageWidth",
+                ["Damange Length"] = "textDamageLength",
+                ["Damage Amplitude"] = "textDamageAmplitude",
+                ["Attack Properties"] = {
+propertySpace
+                },
             },

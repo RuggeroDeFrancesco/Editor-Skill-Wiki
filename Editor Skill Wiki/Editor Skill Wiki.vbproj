@@ -126,7 +126,16 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="AssetIndices\enchantments.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="AssetIndices\weaponProperties.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="AssetIndices\attacks.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="MonsterCreator\defaultAttackProperty.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="MonsterCreator\defaultMonsterAttack.txt">

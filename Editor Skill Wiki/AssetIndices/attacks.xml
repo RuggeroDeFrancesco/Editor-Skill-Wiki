@@ -1,2963 +1,1395 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-
--<Assets createdAt="2023-05-28T07:03:18" filename="E:\Desktop\Miscellanea\Fractured\Closed Test\b06b\Attacks\assets.xml">
-
-
-	-<Asset>
-
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Assets filename="E:\Desktop\Miscellanea\Fractured\Closed Test\b06d\Attacks\assets.xml" createdAt="2023-06-13T20:16:36">
+	<Asset>
 		<Name>attack_BitingDartfrog_TongueHit</Name>
-
-		<Container/>
-
+		<Container></Container>
 		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61466</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>556</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_GiantBullfrog_TongueHit</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61467</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>584</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_LegendBullfrog_TongueHit</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61468</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>584</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_ScorchingDartfrog_TongueHit</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61469</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>564</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_ToxicDartfrog_TongueHit</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61470</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>572</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_BlackWidowHatchling_Bite</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61481</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>504</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_BlackWidow_Bite</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61482</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>476</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_GiantSpider_Bite</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61483</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>480</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_GiantSpider_Legend_Bite</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61484</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>488</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_Spiderling_Bite</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61485</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>484</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_VampiricSpider_Bite</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61486</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>496</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_WolfSpider_Bite</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61487</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>492</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_ArmoredBear_Bite</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
 		<PathID>61501</PathID>
-
 		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>468</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_ArmoredBear_Claws</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61502</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>528</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_BlackBear_Bite</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61503</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>468</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_BlackBear_Claws</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61504</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>528</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_GrizzlyBear_Bite</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61505</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>468</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_GrizzlyBear_Claws</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61506</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>528</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_GrizzlyBear_Legend_Bite</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61507</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>476</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_GrizzlyBear_Legend_Claws</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61508</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>536</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_WildBehemut_Horn</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61517</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>528</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_Cassowary_Slash</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61520</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>396</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_LegendCassowary_Slash</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61521</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>400</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_SeaCrab_Claws</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61526</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>512</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_MammothLegend_Warhead</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61539</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>372</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_Mammoth_Warhead</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61540</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>480</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_WoolyTapir_Warhead</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61549</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>484</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_Warthog_Warhead</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61552</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>480</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_ArcticWolfLegend_Bite</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61555</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>452</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_ArcticWolf_Bite</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61556</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>448</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_BattleWarg_Bite</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61557</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>448</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_Direwolf_Bite</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61558</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>468</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_TrainedWolf_Bite</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61559</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>448</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_Warg_Bite</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61560</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>440</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_Wolf_Bite</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61561</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>440</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_Wolf_Bite_Tutorial</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61562</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>452</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_YoungWolf_Bite</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61563</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>448</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_ArborealDragon_Bite</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61582</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>516</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_ArborealDragon_Tail</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61583</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>592</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_ArborealDragonling_Bite</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61584</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>520</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_ArborealDragonling_Tail</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61585</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>596</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_EmberDragon_Bite</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61586</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>512</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_EmberDragon_Tail</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61587</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>588</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_EmberDragonling_Bite</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61588</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>516</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_EmberDragonling_Tail</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61589</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>592</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_LegendDragonArboreal_Bite</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61590</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>520</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_LegendDragonArboreal_Tail</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61591</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>596</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_LegendDragonEmber_Bite</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61592</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>520</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_LegendDragonEmber_Tail</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61593</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>596</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_LegendDragonMountain_Bite</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61594</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>504</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_LegendDragonMountain_Tail</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61595</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>596</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_MountainDragon_Bite</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61596</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>500</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_MountainDragon_Tail</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61597</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>592</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_MountainDragonling_Bite</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61598</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>504</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_MountainDragonling_Tail</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61599</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>596</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_OgreArchDruid_Staff</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61618</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
 		<Size>556</Size>
-
 	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_OgreBrute_Sword</Name>
-
-		<Container/>
-
+	<Asset>
+		<Name>attack_GiantBullfrog_TongueHit</Name>
+		<Container></Container>
 		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61619</PathID>
-
+		<PathID>61502</PathID>
 		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>492</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_OgreDruid_Staff</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61620</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>552</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_OgreWatcher_Shields</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61621</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>516</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_OgreWitch_Staff</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61622</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>552</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_JotunnBerserker_Axe</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61633</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>520</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_JotunnCleric_Staff</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61634</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>552</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_JotunnLegend_Axe</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61635</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>516</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_JotunnStormborn_Hammer</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61636</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>544</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_JotunnWarrior_Axe</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61637</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>508</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_OgreLord_AxeMace</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61648</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>516</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_OgreMage_Staff</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61649</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>548</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_OgreMaster_Hammer</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61650</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>536</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_OgreShieldbearer_Shields</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61651</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>568</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_OgreWarrior_Sword</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61652</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>524</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_Goblin_Cutthroat_Daggers</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61663</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>544</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_Goblin_Enforcer_ShortSword</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61664</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>540</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_Goblin_FrostShaman</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61665</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>544</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_Goblin_FrostShot_Shortbow</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61666</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>516</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_Goblin_Medic_Staff</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61667</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>544</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_Goblin_Shadowdancer_Daggers</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61668</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>548</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_Goblin_ShamanDeath_Legend_StaffPoison</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61669</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>564</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_Goblin_ShamanDeath_StaffPoison</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61670</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>560</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_Goblin_ShamanFire_StaffFire</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61671</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>552</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_Goblin_StormShaman</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61672</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>544</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_Goblin_Trapper_Shortbow</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61673</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>532</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_Goblin_Warchief_Mace</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61674</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>512</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_Bandit_Agitator_Longbow</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61699</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>512</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_Bandit_Archer_Shortbow</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61700</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>532</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_Bandit_ArchmageOutcast_MagicStaff</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61701</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>572</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_Bandit_Brawler_Dagger</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61702</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>540</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_Bandit_CrazyAeromancer_ShockStaff</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61703</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>572</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_Bandit_CrazyCryomancer_IceStaff</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61704</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>572</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_Bandit_CrazyPyromancer_FireStaff</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61705</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>572</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_Bandit_Leader_Warhammer</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61706</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>548</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_Bandit_Marauder_Scimitar</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61707</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>548</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_Bandit_Marksman_Shortbow</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61708</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>532</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_Bandit_Ruffian_Club</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61709</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>512</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_Bandit_Sorcerer_MagicStaff</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61710</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>568</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_Bandit_Spellsword_Rapier</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61711</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>532</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_Bandit_SwordMan_Scimitar</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61712</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>548</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_Bandit_Thug_Dagger</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61713</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>540</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_ColossalHuskworm_Attack</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61744</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>500</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_EmeraldHuskworm_Attack</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61745</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>524</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_RubyHuskworm_Attack</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61746</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>504</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_TopazHuskworm_Attack</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61747</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>504</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_LegendTermidian_Bite</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61756</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>604</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_TermidianDrone_Bite</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61757</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>576</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_TermidianLarva_Bite</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61758</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>508</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_TermidianMatron_Bite</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61759</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>604</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_TermidianSpitter_Bite</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61760</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>576</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_TermidianWarrior_Bite</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61761</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>576</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_TermidianWitch_Bite</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61762</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>576</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_ForgeSnapper_Smash</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61783</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>640</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_LavaLizard_Bite</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61784</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>464</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_LavaLizard_Claws</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61785</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>516</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_ObsidianCrab_Claws</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61786</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>520</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_CrystalColossus_Fist</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61793</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>656</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_FireColossus_Fist</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61794</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>576</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_IceColossus_Fists</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61795</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>576</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_CrystalElemental_Greater_MagicProjectile</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61804</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>672</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_CrystalElemental_MagicProjectile</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61805</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>632</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_EarthElemental_Fists</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61806</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>580</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_EarthElemental_Greater_Fists</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61807</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>620</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_EarthElemental_Legend_Fists</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61808</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>620</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_FireElemental_Greater_MagicProjectile</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61809</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>656</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_FireElemental_MagicProjectile</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61810</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>616</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_IceElemental_Fists</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61811</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>580</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_IceElemental_Greater_Fists</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61812</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>644</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_StormElemental_Greater_MagicProjectile</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61813</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>664</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_StormElemental_MagicProjectile</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61814</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>592</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_CrystalPrimeling_Fist</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61837</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>592</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_FirePrimeling_Fist</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61838</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>580</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_IcePrimeling_Fists</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61839</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>576</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_StormPrimeling_Fist</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61840</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
 		<Size>584</Size>
-
 	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_Sproutling_Claws</Name>
-
-		<Container/>
-
+	<Asset>
+		<Name>attack_LegendBullfrog_TongueHit</Name>
+		<Container></Container>
 		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61849</PathID>
-
+		<PathID>61503</PathID>
 		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>540</Size>
-
+		<Size>584</Size>
 	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_Treant_Fists</Name>
-
-		<Container/>
-
+	<Asset>
+		<Name>attack_ScorchingDartfrog_TongueHit</Name>
+		<Container></Container>
 		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61852</PathID>
-
+		<PathID>61504</PathID>
 		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>568</Size>
-
+		<Size>564</Size>
 	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_Treant_Legend_Fists</Name>
-
-		<Container/>
-
+	<Asset>
+		<Name>attack_ToxicDartfrog_TongueHit</Name>
+		<Container></Container>
 		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61853</PathID>
-
+		<PathID>61505</PathID>
 		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>544</Size>
-
+		<Size>572</Size>
 	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_ForestTroll_Claws</Name>
-
-		<Container/>
-
+	<Asset>
+		<Name>attack_BlackWidowHatchling_Bite</Name>
+		<Container></Container>
 		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61858</PathID>
-
+		<PathID>61516</PathID>
 		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>536</Size>
-
+		<Size>504</Size>
 	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_ForestTroll_Elder_Claws</Name>
-
-		<Container/>
-
+	<Asset>
+		<Name>attack_BlackWidow_Bite</Name>
+		<Container></Container>
 		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61859</PathID>
-
+		<PathID>61517</PathID>
 		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>544</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_MountainTroll_Elder_Fists</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61860</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>544</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_MountainTroll_Fists</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61861</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>540</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_SeaTroll_Claws</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61862</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>536</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_SeaTroll_Elder_Claws</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61863</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>540</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_WoodlandWisp</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61876</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>592</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_WoodlandWisp_Greater</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61877</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>600</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_WoodlandWisp_Legend</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61878</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>600</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_CrestedLizard_Bite</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61885</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>452</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_CrestedLizard_Claws</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61886</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>520</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_Crocodile_Bite</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61887</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
 		<Size>476</Size>
-
 	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_KomodoDragon_Claws</Name>
-
-		<Container/>
-
+	<Asset>
+		<Name>attack_GiantSpider_Bite</Name>
+		<Container></Container>
 		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61888</PathID>
-
+		<PathID>61518</PathID>
 		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>544</Size>
-
+		<Size>480</Size>
 	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_LegendCrestedLizard_Bite</Name>
-
-		<Container/>
-
+	<Asset>
+		<Name>attack_GiantSpider_Legend_Bite</Name>
+		<Container></Container>
 		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61889</PathID>
-
+		<PathID>61519</PathID>
 		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>516</Size>
-
+		<Size>488</Size>
 	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_LegendCrestedLizard_Claws</Name>
-
-		<Container/>
-
+	<Asset>
+		<Name>attack_Spiderling_Bite</Name>
+		<Container></Container>
 		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61890</PathID>
-
+		<PathID>61520</PathID>
 		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>464</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_MudAlligator_Bite</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61891</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>476</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_SeaTurtle_Smash</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61892</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>552</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_GrokotonChieftain_Axe</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61905</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>520</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_GrokotonHunter_Bow</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61906</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>528</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_GrokotonSage_StaffAcid</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61907</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>560</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_GrokotonShaman_StaffAcid</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61908</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>560</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_GrokotonStalker_Daggers</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61909</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>544</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_GrokotonWarrior_Spear</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61910</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>508</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_SkeletalDragon_Tail</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61923</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>592</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_SkleletalDragon_Bite</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61924</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>516</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_Felghoul_Claws</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61927</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>532</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_Ghoul_Bite</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61928</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>460</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_Ghoul_Claws</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61929</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>516</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_Ghoul_Legend_Bite</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61930</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>464</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_Ghoul_Legend_Claws</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61931</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>524</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_SkeletalArcher_Longbow</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61938</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>512</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_SkeletalKnight_Longsword</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61939</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>536</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_SkeletalMage_Magestaff (Acid)</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61940</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>552</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_SkeletalPriest_Mace</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61941</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>512</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_SkeletalWarrior_Greatsword</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61942</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>540</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_Skeleton_Fists</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61943</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>528</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_CrawlingHorror_Bite</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61956</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>472</Size>
-
-	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_SpiderLich_Bite</Name>
-
-		<Container/>
-
-		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61957</PathID>
-
-		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
 		<Size>484</Size>
-
 	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_SpiderLich_Legend_Bite</Name>
-
-		<Container/>
-
+	<Asset>
+		<Name>attack_VampiricSpider_Bite</Name>
+		<Container></Container>
 		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61958</PathID>
-
+		<PathID>61521</PathID>
 		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
+		<Size>496</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_WolfSpider_Bite</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61522</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
 		<Size>492</Size>
-
 	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_Zombie_Fists</Name>
-
-		<Container/>
-
+	<Asset>
+		<Name>attack_ArmoredBear_Bite</Name>
+		<Container></Container>
 		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61965</PathID>
-
+		<PathID>61536</PathID>
 		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
+		<Size>468</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_ArmoredBear_Claws</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61537</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>528</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_BlackBear_Bite</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61538</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>468</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_BlackBear_Claws</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61539</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>528</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_GrizzlyBear_Bite</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61540</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>468</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_GrizzlyBear_Claws</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61541</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>528</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_GrizzlyBear_Legend_Bite</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61542</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>476</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_GrizzlyBear_Legend_Claws</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61543</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>536</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_WildBehemut_Horn</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61552</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>528</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_Cassowary_Slash</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61555</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>396</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_LegendCassowary_Slash</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61556</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>400</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_SeaCrab_Claws</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61561</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>512</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_MammothLegend_Warhead</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61574</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>372</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_Mammoth_Warhead</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61575</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>480</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_WoolyTapir_Warhead</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61584</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>484</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_Warthog_Warhead</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61587</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>480</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_ArcticWolfLegend_Bite</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61590</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>452</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_ArcticWolf_Bite</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61591</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>448</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_BattleWarg_Bite</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61592</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>448</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_Direwolf_Bite</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61593</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>468</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_TrainedWolf_Bite</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61594</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>448</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_Warg_Bite</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61595</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>440</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_Wolf_Bite</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61596</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>440</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_Wolf_Bite_Tutorial</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61597</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>452</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_YoungWolf_Bite</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61598</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>448</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_ArborealDragon_Bite</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61617</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
 		<Size>516</Size>
-
 	</Asset>
-
-
-	-<Asset>
-
-		<Name>attack_Giant Rat</Name>
-
-		<Container/>
-
+	<Asset>
+		<Name>attack_ArborealDragon_Tail</Name>
+		<Container></Container>
 		<Type id="114">MonoBehaviour</Type>
-
-		<PathID>61968</PathID>
-
+		<PathID>61618</PathID>
 		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
-
-		<Size>432</Size>
-
+		<Size>592</Size>
 	</Asset>
-
+	<Asset>
+		<Name>attack_ArborealDragonling_Bite</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61619</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>520</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_ArborealDragonling_Tail</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61620</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>596</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_EmberDragon_Bite</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61621</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>512</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_EmberDragon_Tail</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61622</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>588</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_EmberDragonling_Bite</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61623</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>516</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_EmberDragonling_Tail</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61624</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>592</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_LegendDragonArboreal_Bite</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61625</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>520</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_LegendDragonArboreal_Tail</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61626</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>596</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_LegendDragonEmber_Bite</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61627</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>520</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_LegendDragonEmber_Tail</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61628</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>596</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_LegendDragonMountain_Bite</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61629</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>504</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_LegendDragonMountain_Tail</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61630</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>596</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_MountainDragon_Bite</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61631</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>500</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_MountainDragon_Tail</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61632</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>592</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_MountainDragonling_Bite</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61633</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>504</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_MountainDragonling_Tail</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61634</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>596</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_OgreArchDruid_Staff</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61653</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>556</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_OgreBrute_Sword</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61654</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>492</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_OgreDruid_Staff</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61655</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>552</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_OgreWatcher_Shields</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61656</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>516</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_OgreWitch_Staff</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61657</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>552</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_JotunnBerserker_Axe</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61668</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>520</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_JotunnCleric_Staff</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61669</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>552</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_JotunnLegend_Axe</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61670</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>516</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_JotunnStormborn_Hammer</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61671</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>544</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_JotunnWarrior_Axe</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61672</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>508</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_OgreLord_AxeMace</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61683</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>516</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_OgreMage_Staff</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61684</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>548</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_OgreMaster_Hammer</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61685</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>536</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_OgreShieldbearer_Shields</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61686</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>568</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_OgreWarrior_Sword</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61687</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>524</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_Goblin_Cutthroat_Daggers</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61698</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>544</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_Goblin_Enforcer_ShortSword</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61699</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>540</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_Goblin_FrostShaman</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61700</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>544</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_Goblin_FrostShot_Shortbow</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61701</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>516</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_Goblin_Medic_Staff</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61702</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>544</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_Goblin_Shadowdancer_Daggers</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61703</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>548</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_Goblin_ShamanDeath_Legend_StaffPoison</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61704</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>564</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_Goblin_ShamanDeath_StaffPoison</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61705</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>560</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_Goblin_ShamanFire_StaffFire</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61706</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>552</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_Goblin_StormShaman</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61707</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>544</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_Goblin_Trapper_Shortbow</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61708</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>532</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_Goblin_Warchief_Mace</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61709</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>512</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_Bandit_Agitator_Longbow</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61734</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>512</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_Bandit_Archer_Shortbow</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61735</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>532</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_Bandit_ArchmageOutcast_MagicStaff</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61736</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>572</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_Bandit_Brawler_Dagger</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61737</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>540</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_Bandit_CrazyAeromancer_ShockStaff</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61738</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>572</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_Bandit_CrazyCryomancer_IceStaff</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61739</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>572</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_Bandit_CrazyPyromancer_FireStaff</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61740</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>572</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_Bandit_Leader_Warhammer</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61741</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>548</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_Bandit_Marauder_Scimitar</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61742</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>548</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_Bandit_Marksman_Shortbow</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61743</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>532</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_Bandit_Ruffian_Club</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61744</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>512</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_Bandit_Sorcerer_MagicStaff</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61745</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>568</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_Bandit_Spellsword_Rapier</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61746</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>532</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_Bandit_SwordMan_Scimitar</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61747</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>548</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_Bandit_Thug_Dagger</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61748</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>540</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_ColossalHuskworm_Attack</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61779</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>500</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_EmeraldHuskworm_Attack</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61780</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>524</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_RubyHuskworm_Attack</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61781</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>504</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_TopazHuskworm_Attack</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61782</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>504</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_LegendTermidian_Bite</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61791</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>604</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_TermidianDrone_Bite</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61792</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>576</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_TermidianLarva_Bite</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61793</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>508</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_TermidianMatron_Bite</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61794</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>604</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_TermidianSpitter_Bite</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61795</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>576</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_TermidianWarrior_Bite</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61796</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>576</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_TermidianWitch_Bite</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61797</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>576</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_ForgeSnapper_Smash</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61818</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>640</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_LavaLizard_Bite</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61819</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>464</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_LavaLizard_Claws</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61820</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>516</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_ObsidianCrab_Claws</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61821</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>520</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_CrystalColossus_Fist</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61828</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>656</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_FireColossus_Fist</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61829</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>576</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_IceColossus_Fists</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61830</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>576</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_CrystalElemental_Greater_MagicProjectile</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61839</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>672</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_CrystalElemental_MagicProjectile</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61840</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>632</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_EarthElemental_Fists</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61841</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>580</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_EarthElemental_Greater_Fists</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61842</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>620</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_EarthElemental_Legend_Fists</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61843</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>620</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_FireElemental_Greater_MagicProjectile</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61844</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>656</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_FireElemental_MagicProjectile</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61845</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>616</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_IceElemental_Fists</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61846</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>580</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_IceElemental_Greater_Fists</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61847</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>644</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_StormElemental_Greater_MagicProjectile</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61848</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>664</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_StormElemental_MagicProjectile</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61849</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>592</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_CrystalPrimeling_Fist</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61872</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>592</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_FirePrimeling_Fist</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61873</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>580</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_IcePrimeling_Fists</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61874</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>576</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_StormPrimeling_Fist</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61875</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>584</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_Sproutling_Claws</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61884</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>540</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_Treant_Fists</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61887</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>568</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_Treant_Legend_Fists</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61888</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>544</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_ForestTroll_Claws</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61893</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>536</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_ForestTroll_Elder_Claws</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61894</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>544</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_MountainTroll_Elder_Fists</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61895</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>544</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_MountainTroll_Fists</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61896</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>540</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_SeaTroll_Claws</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61897</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>536</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_SeaTroll_Elder_Claws</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61898</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>540</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_WoodlandWisp</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61911</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>592</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_WoodlandWisp_Greater</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61912</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>600</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_WoodlandWisp_Legend</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61913</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>600</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_CrestedLizard_Bite</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61920</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>452</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_CrestedLizard_Claws</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61921</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>520</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_Crocodile_Bite</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61922</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>476</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_KomodoDragon_Claws</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61923</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>544</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_LegendCrestedLizard_Bite</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61924</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>516</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_LegendCrestedLizard_Claws</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61925</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>464</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_MudAlligator_Bite</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61926</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>476</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_SeaTurtle_Smash</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61927</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>552</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_GrokotonChieftain_Axe</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61940</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>520</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_GrokotonHunter_Bow</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61941</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>528</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_GrokotonSage_StaffAcid</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61942</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>560</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_GrokotonShaman_StaffAcid</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61943</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>560</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_GrokotonStalker_Daggers</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61944</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>544</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_GrokotonWarrior_Spear</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61945</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>508</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_SkeletalDragon_Tail</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61958</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>592</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_SkleletalDragon_Bite</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61959</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>516</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_Felghoul_Claws</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61962</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>532</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_Ghoul_Bite</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61963</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>460</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_Ghoul_Claws</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61964</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>516</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_Ghoul_Legend_Bite</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61965</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>464</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_Ghoul_Legend_Claws</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61966</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>524</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_SkeletalArcher_Longbow</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61973</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>512</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_SkeletalKnight_Longsword</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61974</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>536</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_SkeletalMage_Magestaff (Acid)</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61975</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>552</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_SkeletalPriest_Mace</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61976</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>512</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_SkeletalWarrior_Greatsword</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61977</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>540</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_Skeleton_Fists</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61978</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>528</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_CrawlingHorror_Bite</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61991</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>472</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_SpiderLich_Bite</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61992</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>484</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_SpiderLich_Legend_Bite</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>61993</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>492</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_Zombie_Fists</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>62000</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>516</Size>
+	</Asset>
+	<Asset>
+		<Name>attack_Giant Rat</Name>
+		<Container></Container>
+		<Type id="114">MonoBehaviour</Type>
+		<PathID>62003</PathID>
+		<Source>C:\Program Files\Fractured Private Testing\app\UnityClient@Windows_Data\resources.assets</Source>
+		<Size>432</Size>
+	</Asset>
 </Assets>

@@ -6,6 +6,8 @@ Public Class MonsterDataCreator
     Dim languageData As LanguageData
     Dim spellFolder As String
     Dim attackFolder As String
+    Dim wpFolder As String
+    Dim enchantFolder As String
 
 
     Private Sub test_click(sender As Object, e As RoutedEventArgs)
@@ -27,7 +29,7 @@ Public Class MonsterDataCreator
                         rawData = System.IO.File.ReadAllText(Path)
                         Dim parsedData = parseMonsterData(rawData)
                         Dim finalData As New MonsterFinalData
-                        finalData.parseData(parsedData, attackFolder, spellFolder)
+                        finalData.parseData(parsedData, attackFolder, spellFolder, wpFolder, enchantFolder, languageData, languageEnum)
                         output &= createModuleOutput(finalData)
                         output &= vbCrLf
                         output &= vbCrLf
@@ -263,8 +265,8 @@ Public Class MonsterDataCreator
         If term.IndexOf("Swordman") <> -1 Then
             term = term.Replace("Swordman", "Swordsman")
         End If
-        If term.IndexOf("Frostshot") <> -1 Then
-            term = term.Replace("Frostshot", "Archer")
+        If term.IndexOf("FrostShot") <> -1 Then
+            term = term.Replace("FrostShot", "Archer")
         End If
         If term.IndexOf("ShamanDeath") <> -1 Then
             term = term.Replace("ShamanDeath", "DeathShaman")
@@ -272,8 +274,22 @@ Public Class MonsterDataCreator
         If term.IndexOf("ShamanFire") <> -1 Then
             term = term.Replace("ShamanFire", "FireShaman")
         End If
+        If term.IndexOf("ShamanStorm") <> -1 Then
+            term = term.Replace("ShamanStorm", "StormShaman")
+        End If
+        If term.IndexOf("ShamanFrost") <> -1 Then
+            term = term.Replace("ShamanFrost", "FrostShaman")
+        End If
         If term.IndexOf("GrizzlyBear") <> -1 Then
             term = term.Replace("GrizzlyBear", "Bear")
+        End If
+        If term.IndexOf("WoodlandWispLegend") <> -1 Then
+            term = term.Replace("WoodlandWispLegend", "wispChampion")
+        End If
+        If term.IndexOf("Totem") <> -1 Then
+            term = term.Replace("monsters/", "")
+            term = term.Replace("Name", "")
+            Return term
         End If
 
 
@@ -354,11 +370,46 @@ Public Class MonsterDataCreator
         End If
     End Sub
 
+    Private Sub selectWP_Click(sender As Object, e As RoutedEventArgs)
+        Dim fbd As Ookii.Dialogs.Wpf.VistaFolderBrowserDialog = New Ookii.Dialogs.Wpf.VistaFolderBrowserDialog
+        If fbd.ShowDialog() Then
+            WPFolder = fbd.SelectedPath
+            SelectedWPFolder.Text = attackFolder
+        End If
+    End Sub
+
+    Private Sub selectEnchant_Click(sender As Object, e As RoutedEventArgs)
+        Dim fbd As Ookii.Dialogs.Wpf.VistaFolderBrowserDialog = New Ookii.Dialogs.Wpf.VistaFolderBrowserDialog
+        If fbd.ShowDialog() Then
+            enchantFolder = fbd.SelectedPath
+            SelectedEnchantFolder.Text = enchantFolder
+        End If
+    End Sub
+
     Private Sub selectSpells_Click(sender As Object, e As RoutedEventArgs)
         Dim fbd As Ookii.Dialogs.Wpf.VistaFolderBrowserDialog = New Ookii.Dialogs.Wpf.VistaFolderBrowserDialog
         If fbd.ShowDialog() Then
             spellFolder = fbd.SelectedPath
             SelectedSpellFolder.Text = spellFolder
+        End If
+    End Sub
+
+    Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
+        If IO.Directory.Exists(IO.Path.Combine(Environment.CurrentDirectory, "Attacks")) Then
+            attackFolder = IO.Path.Combine(Environment.CurrentDirectory, "Attacks")
+            SelectedAttackFolder.Text = IO.Path.Combine(Environment.CurrentDirectory, "Attacks")
+        End If
+        If IO.Directory.Exists(IO.Path.Combine(Environment.CurrentDirectory, "Spells")) Then
+            spellFolder = IO.Path.Combine(Environment.CurrentDirectory, "Spells")
+            SelectedSpellFolder.Text = IO.Path.Combine(Environment.CurrentDirectory, "Spells")
+        End If
+        If IO.Directory.Exists(IO.Path.Combine(Environment.CurrentDirectory, "WP")) Then
+            wpFolder = IO.Path.Combine(Environment.CurrentDirectory, "WP")
+            SelectedWPFolder.Text = IO.Path.Combine(Environment.CurrentDirectory, "WP")
+        End If
+        If IO.Directory.Exists(IO.Path.Combine(Environment.CurrentDirectory, "Enchantment")) Then
+            enchantFolder = IO.Path.Combine(Environment.CurrentDirectory, "Enchantment")
+            SelectedEnchantFolder.Text = IO.Path.Combine(Environment.CurrentDirectory, "Enchantment")
         End If
     End Sub
 End Class

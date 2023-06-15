@@ -90,10 +90,12 @@
     Public category As String
     Public allowedPoi As List(Of String)
 
-    Public Sub parseData(data As MonsterData, attackFolder As String, spellFolder As String)
+    Public Sub parseData(data As MonsterData, attackFolder As String, spellFolder As String, wpFolder As String, enchantFolder As String, languageData As LanguageData, languageEnum As Integer)
         Try
             Dim attackFolderPath As String
             Dim spellFolderPath As String
+            Dim wpFolderPath As String
+            Dim enchantFolderPath As String
             monsterAttacks = New List(Of MonsterAttackFinalData)
             monsterSkills = New List(Of MonsterSpellFinalData)
             immunityStatusEffectList = New List(Of String)
@@ -109,6 +111,16 @@
             If System.IO.Directory.Exists(spellFolder) Then
                 spellFolderPath = spellFolder
             Else Throw New Exception("Spell folder does not exist.")
+            End If
+
+            If System.IO.Directory.Exists(wpFolder) Then
+                wpFolderPath = wpFolder
+            Else Throw New Exception("WP folder does not exist.")
+            End If
+
+            If System.IO.Directory.Exists(enchantFolder) Then
+                enchantFolderPath = enchantFolder
+            Else Throw New Exception("WP folder does not exist.")
             End If
 
             name = data.m_name
@@ -172,7 +184,7 @@
             acidResistance = data.acidResistance.value.ToString
             acidResistancePerc = calculatePerc(data.acidResistance.value)
             immunityEffectGroup = data.immunityEffectGroup
-            specialImmunity = [Enum].GetName(GetType(SpecialMonsterImmunity), data.specialImmunities)
+            specialImmunity = combinedEnumeratorName(GetType(SpecialMonsterImmunity), data.specialImmunities)
 
             magicalDamageReflection = data.magicalDamageReflection.ToString
             physicalDamageReflection = data.physicalDamageReflection.ToString
@@ -221,15 +233,17 @@
 
 
             Dim attackRawData As String = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "AssetIndices/attacks.xml"))
+            Dim wpRawData As String = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "AssetIndices/weaponProperties.xml"))
+            Dim enchantsRawData As String = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "AssetIndices/enchantments.xml"))
 
             For Each attack As MonsterAttack In data.MonsterAttacks
-                monsterAttacks.Add(getAttackData(attack.value.m_pathID, attackRawData, attackFolderPath))
+                monsterAttacks.Add(getAttackData(attack.value.m_PathID, attackRawData, wpRawData, enchantsRawData, statusRawData, attackFolderPath, wpFolderPath, enchantFolderPath, languageData, languageEnum))
             Next
 
             Dim spellRawData As String = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "AssetIndices/SpellIndex.xml"))
 
             For Each spell As MonsterSpells In data.MonsterSpellsList
-                Dim newskill As MonsterSpellFinalData = getSpellData(spell.value.m_pathID, spellRawData, spellFolderPath, spell)
+                Dim newskill As MonsterSpellFinalData = getSpellData(spell.value.m_PathID, spellRawData, spellFolderPath, spell)
                 newskill.acquired = spell.targetToUnlock
                 compileRestrictions(spell, newskill)
                 compileSkillFullText(newskill)
@@ -256,37 +270,96 @@
         Return percentValue.ToString & "%"
     End Function
 
-    Private Function getAttackData(attackRef As String, rawdata As String, attackFolder As String) As MonsterAttackFinalData
+    Private Function getAttackData(attackRef As String, attackRawData As String, wpRawData As String, enchantRawData As String, statusRawData As String, attackFolder As String, wpFolder As String, enchantFolder As String, languageData As LanguageData, languageEnum As Integer) As MonsterAttackFinalData
         Dim newAttack As New MonsterAttackFinalData
         Dim parsedData As MonsterAttackData
-        Dim index As Integer = rawdata.IndexOf(attackRef)
+        Dim index As Integer = attackRawData.IndexOf(attackRef)
         If index <> -1 Then
-            Dim startName As Integer = rawdata.LastIndexOf("<Name>", index)
-            Dim endName As Integer = rawdata.IndexOf("</Name>", startName)
-            Dim name As String = rawdata.Substring(startName + 6, endName - startName - 6)
+            Dim startName As Integer = attackRawData.LastIndexOf("<Name>", index)
+            Dim endName As Integer = attackRawData.IndexOf("</Name>", startName)
+            Dim name As String = attackRawData.Substring(startName + 6, endName - startName - 6)
             Dim filePath As String = attackFolder & "\" & name & ".json"
             If System.IO.File.Exists(filePath) Then
                 Dim textData As String = System.IO.File.ReadAllText(filePath)
                 parsedData = Newtonsoft.Json.JsonConvert.DeserializeObject(Of MonsterAttackData)(textData)
                 newAttack.name = parsedData.attackName
-                newAttack.primaryDamage = [Enum].GetName(GetType(DamageType), parsedData.damage.dmgType)
-                newAttack.secondaryDamage = [Enum].GetName(GetType(DamageType), parsedData.damage.secondDmgType)
-                newAttack.tertiaryDamage = [Enum].GetName(GetType(DamageType), parsedData.damage.thirdDamageType)
+                newAttack.primaryDamage = [Enum].GetName(GetType(DamageType), parsedData.damage.dmgType1)
+                newAttack.secondaryDamage = [Enum].GetName(GetType(DamageType), parsedData.damage.dmgType2)
+                newAttack.tertiaryDamage = [Enum].GetName(GetType(DamageType), parsedData.damage.dmgType3)
                 newAttack.damageModifier = parsedData.damage.damageModifier.ToString
-                newAttack.primaryStat = [Enum].GetName(GetType(CharacterAttribute), parsedData.damage.damageAttribute)
-                newAttack.secondaryStat = [Enum].GetName(GetType(CharacterAttribute), parsedData.damage.secondDamageAttribute)
-                newAttack.range = parsedData.damageLength.ToString
-                newAttack.speed = parsedData.speed.ToString
-                If parsedData.weaponProperties IsNot Nothing AndAlso parsedData.weaponProperties.Count <> 0 Then
-                    newAttack.poisonChance = parsedData.weaponProperties(0).baseAmount
-                End If
+                newAttack.primaryStat = [Enum].GetName(GetType(CharacterAttribute), parsedData.damage.dmgAttr1)
+                newAttack.secondaryStat = [Enum].GetName(GetType(CharacterAttribute), parsedData.damage.dmgAttr2)
+                newAttack.range = parsedData.range.ToString
+                newAttack.speed = parsedData.attackSpeed.ToString
+                newAttack.weaponDamageType = [Enum].GetName(GetType(WeaponDamageType), parsedData.weaponDamageType)
+                newAttack.damageAmplitude = parsedData.damageAmplitude.ToString
+                newAttack.damageLength = parsedData.damageLength.ToString
+                newAttack.damageWidth = parsedData.damageWidth.ToString
+
+                For Each attackProperty As WeaponProperty In parsedData.weaponProperties
+                    If attackProperty.Property.m_PathID <> "0" Then
+                        Dim newProperty As New AttackProperty
+                        newProperty.value = attackProperty.baseAmount
+                        newProperty.name = getAttackPropertyName(attackProperty.Property.m_PathID, wpFolder, enchantFolder, wpRawData, enchantRawData, statusRawData, languageData, languageEnum)
+                        newAttack.attackProperties.Add(newProperty)
+                    End If
+                Next
+
+
 
                 calculateAttackDamage(newAttack)
-                    compileAttackFullText(newAttack)
-                Else Throw New Exception(filePath & " Not Found")
+                compileAttackFullText(newAttack)
+            Else Throw New Exception(filePath & " Not Found")
             End If
         End If
         Return newAttack
+    End Function
+
+    Private Function getAttackPropertyName(wpRef As String, wpFolder As String, enchantFolder As String, wpRawData As String, enchantRawData As String, statusRawData As String, languageData As LanguageData, languageEnum As Integer) As String
+        Dim attackProperty As New AttackProperty
+        Dim attackPropertyData As New WeaponPropertyData
+        Dim index As Integer = wpRawData.IndexOf(wpRef)
+        Dim startName As Integer = wpRawData.LastIndexOf("<Name>", index)
+        Dim endName As Integer = wpRawData.IndexOf("</Name>", startName)
+        Dim name = wpRawData.Substring(startName + 6, endName - startName - 6)
+        Dim filePath As String = wpFolder & "\" & name & ".json"
+        If System.IO.File.Exists(filePath) Then
+            Dim textData As String = System.IO.File.ReadAllText(filePath)
+            attackPropertyData = Newtonsoft.Json.JsonConvert.DeserializeObject(Of WeaponPropertyData)(textData)
+            If attackPropertyData.localizationString <> "" Then
+                Return languageData.returnTerm(attackPropertyData.localizationString, languageEnum)
+            ElseIf attackPropertyData.enchantment IsNot Nothing Then
+                Return getAttackEnchantName(attackPropertyData.enchantment.m_PathID, enchantFolder, enchantRawData, languageData, languageEnum)
+            ElseIf attackPropertyData.statusEffect IsNot Nothing Then
+                Return getStatusEffect(attackPropertyData.statusEffect.m_PathID, statusRawData)
+            ElseIf attackPropertyData.necroticStatus IsNot Nothing Then
+                Return "Necrotic"
+            Else Return ""
+            End If
+        Else
+            Return ""
+        End If
+    End Function
+
+    Private Function getAttackEnchantName(enchantRef As String, enchantFolder As String, enchantRawData As String, languageData As LanguageData, languageEnum As Integer) As String
+        Dim enchantName As String = ""
+        Dim enchantPropertyData As EnchantmentRecipe
+        Dim name As String = ""
+        Dim index As Integer = enchantRawData.IndexOf(enchantRef)
+        Dim startName As Integer = enchantRawData.LastIndexOf("<Name>", index)
+        Dim endName As Integer = enchantRawData.IndexOf("</Name>", startName)
+        name = enchantRawData.Substring(startName + 6, endName - startName - 6)
+        Dim filePath As String = enchantFolder & "\" & name & ".json"
+        If System.IO.File.Exists(filePath) Then
+            Dim textData As String = System.IO.File.ReadAllText(filePath)
+            enchantPropertyData = Newtonsoft.Json.JsonConvert.DeserializeObject(Of EnchantmentRecipe)(textData)
+            Dim term As String = "enchantments/" & enchantPropertyData.recipeName & "_name"
+            If term.IndexOf("DamageConversion_name") <> -1 Then
+                term = term.Replace("DamageConversion_name", "DamageCovnersion_name") 'game bug
+            End If
+            enchantName = languageData.returnTerm(term, languageEnum)
+        End If
+        Return enchantName
     End Function
 
     Private Function getStatusEffect(statusRef As String, rawdata As String) As String
@@ -343,6 +416,9 @@
                 Case "spell_LegendAxfitmithissTouch"
                     name = "spell_ChillingTouch"
 
+                    'skill con carattere speciale
+                Case "spell_Hack&amp;Slash"
+                    name = "spell_Hack&Slash"
 
 
 
@@ -396,13 +472,31 @@
     Private Sub compileAttackFullText(ByRef attack As MonsterAttackFinalData)
         Dim baseText As String = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "MonsterCreator/defaultMonsterAttack.txt"))
         'the name will be compiled later by the MonsterDataCreator since it needs the language data
-        baseText = baseText.Replace("textDamage", attack.damage)
+        baseText = baseText.Replace("textDamageValue", attack.damage)
+        baseText = baseText.Replace("textType1", attack.primaryDamage)
+        baseText = baseText.Replace("textType2", attack.secondaryDamage)
+        baseText = baseText.Replace("textType3", attack.tertiaryDamage)
         baseText = baseText.Replace("textRange", attack.range)
         baseText = baseText.Replace("textSpeed", attack.speed)
-        baseText = baseText.Replace("poisonChanceText", attack.poisonChance)
+        baseText = baseText.Replace("textWeaponType", attack.weaponDamageType)
+        baseText = baseText.Replace("textDamageLength", attack.damageLength)
+        baseText = baseText.Replace("textDamageAmplitude", attack.damageAmplitude)
+        baseText = baseText.Replace("textDamageWidth", attack.damageWidth)
+
+        Dim propertyText As String = ""
+        For Each attackProperty As AttackProperty In attack.attackProperties
+            Dim newPropertyText As String = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "MonsterCreator/defaultAttackProperty.txt"))
+            newPropertyText = newPropertyText.Replace("textName", attackProperty.name)
+            newPropertyText = newPropertyText.Replace("textValue", attackProperty.value)
+            propertyText &= newPropertyText
+            propertyText &= vbCrLf
+        Next
+        baseText = baseText.Replace("propertySpace", propertyText)
+        'baseText = baseText.Replace("poisonChanceText", attack.poisonChance)
         attack.fullText = baseText
 
     End Sub
+
 
     Private Function compileRestrictions(spell As MonsterSpells, finalSpell As MonsterSpellFinalData)
         Dim restrictionText As String = ""
@@ -448,10 +542,23 @@ Public Class MonsterAttackFinalData
     Public tertiaryDamage As String
     Public primaryStat As String
     Public secondaryStat As String
+    Public weaponDamageType As String
+    Public damageWidth As String
+    Public damageLength As String
+    Public damageAmplitude As String
     Public fullText As String
-    Public poisonChance As String
+    Public attackProperties As List(Of AttackProperty)
+
+    Public Sub New()
+        attackProperties = New List(Of AttackProperty)
+    End Sub
+
 End Class
 
+Public Class AttackProperty
+    Public name As String
+    Public value As String
+End Class
 
 Public Class MonsterSpellFinalData
 

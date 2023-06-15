@@ -50,18 +50,26 @@ End Class
 
 Public Class Damage
 
-    Public dmgType As Integer
-    Public secondDmgType As Integer
-    Public thirdDamageType As Integer
+    Public dmgType1 As Integer
+    Public dmgType2 As Integer
+    Public dmgType3 As Integer
     Public damageModifier As Double
-    Public damageAttribute As Integer
-    Public secondDamageAttribute As Integer
+    Public dmgAttr1 As Integer
+    Public dmgAttr2 As Integer
 
 End Class
 
 Public Class WeaponProperty
     Public [Property] As PropertyClass
     Public baseAmount As Double
+End Class
+
+Public Class WeaponPropertyData
+    Public localizationString As String
+    Public statusEffect As PropertyClass
+    Public stunDuration As String
+    Public enchantment As PropertyClass
+    Public necroticStatus As PropertyClass
 End Class
 
 Public Class PropertyClass
@@ -98,4 +106,9 @@ Public Class StatInfoElement
     Public amountAttrMod As Integer
     Public statType As Integer
 End Class
+
+Public Class EnchantmentRecipe
+    Public recipeName As String
+End Class
+
 

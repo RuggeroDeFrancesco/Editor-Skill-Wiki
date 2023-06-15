@@ -1,10 +1,13 @@
 ﻿Public Class MonsterAttackData
 
     Public damage As Damage
-    Public damageLength As Double
-    Public speed As Double
+    Public range As Double
+    Public attackSpeed As Double
     Public attackName As String
     Public weaponProperties As List(Of WeaponProperty)
-
+    Public weaponDamageType As Integer
+    Public damageWidth As String
+    Public damageLength As String
+    Public damageAmplitude As String
 End Class
 
