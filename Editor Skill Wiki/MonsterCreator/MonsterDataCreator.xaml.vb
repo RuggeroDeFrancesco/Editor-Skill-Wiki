@@ -204,7 +204,7 @@ Public Class MonsterDataCreator
         Dim skillText As String = ""
         For Each skill As MonsterSpellFinalData In data.monsterSkills
             'insert the right name into the fullText, using the language data
-            skill.fullText = skill.fullText.Replace("nameText", SpellDataCreator.GetTooltipName(skill.name, languageData, languageEnum))
+            skill.fullText = skill.fullText.Replace("nameText", SpellDataCreator.GetTooltipName(skill.spellKey, languageData, languageEnum))
             skillText &= skill.fullText & vbCrLf
         Next
 
@@ -287,6 +287,11 @@ Public Class MonsterDataCreator
             term = term.Replace("WoodlandWispLegend", "wispChampion")
         End If
         If term.IndexOf("Totem") <> -1 Then
+            term = term.Replace("monsters/", "")
+            term = term.Replace("Name", "")
+            Return term
+        End If
+        If term.IndexOf("Dummy") <> -1 Then
             term = term.Replace("monsters/", "")
             term = term.Replace("Name", "")
             Return term

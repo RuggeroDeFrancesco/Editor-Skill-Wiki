@@ -67,7 +67,11 @@ Public Class LootCreator
 
         If files IsNot Nothing AndAlso files.Count <> 0 Then
             For Each file As IO.FileInfo In files
-                itemData.Add(ItemDataCreator.deserializeItemData(getRawData(file.FullName)))
+                Try
+                    itemData.Add(ItemDataCreator.deserializeItemData(getRawData(file.FullName)))
+                Catch ex As Exception
+
+                End Try
             Next
         Else Exit Sub
         End If
@@ -80,7 +84,9 @@ Public Class LootCreator
         output = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "LootCreator/defaultLootData.txt"))
 
         Dim lootListName As String = getLootList(data.lootList.m_PathID)
-
+        If lootListName = "" Then
+            Return ""
+        End If
         For Each lootList As LootClassMirror In lootData
             If lootList.m_Name = lootListName Then
                 output = output.Replace("monsterNameText", MonsterDataCreator.getMonsterName(data.m_name, deserializedlanguageData, language))
@@ -152,7 +158,9 @@ Public Class LootCreator
     End Function
 
     Private Function getLootList(lootList As String) As String
-
+        If lootList = "0" Then
+            Return ""
+        End If
         Dim lootListName As String = ""
         Dim index As Integer = lootListIndex.IndexOf(lootList)
         Dim startName As Integer = lootListIndex.LastIndexOf("<Name>", index)
@@ -162,22 +170,30 @@ Public Class LootCreator
     End Function
 
     Shared Function getItem(item As String, itemListIndex As String) As String 'used also by monster data creator
+        If item <> "0" Then
+            Dim itemRef As String = ""
+            Dim index As Integer = itemListIndex.IndexOf(item)
+            Dim startName As Integer = itemListIndex.LastIndexOf("<Name>", index)
+            Dim endName As Integer = itemListIndex.IndexOf("</Name>", startName)
+            itemRef = itemListIndex.Substring(startName + 6, endName - startName - 6)
+            Return itemRef
+        Else
+            Return ""
+        End If
 
-        Dim itemRef As String = ""
-        Dim index As Integer = itemListIndex.IndexOf(item)
-        Dim startName As Integer = itemListIndex.LastIndexOf("<Name>", index)
-        Dim endName As Integer = itemListIndex.IndexOf("</Name>", startName)
-        itemRef = itemListIndex.Substring(startName + 6, endName - startName - 6)
-        Return itemRef
+
 
     End Function
 
     Private Function extractLootItems(lootList As LootClassMirror) As String
         Dim output As String = ""
-
+        lootList.probabilityLoot.AddRange(lootList.alternateLoot) 'I join the 2 lists of loot into one
         For Each item As ItemLoot In lootList.probabilityLoot
             Dim partialOutput As String = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "LootCreator/defaultItemLootData.txt"))
             Dim itemRef As String = getItem(item.item.m_PathID, itemListIndex)
+            If itemRef = "" Then
+                Return ""
+            End If
             Dim itemName As String = ItemDataCreator.GetItemName(itemRef, 0, deserializedlanguageData, language)
             partialOutput = partialOutput.Replace("itemNameText", itemName)
             partialOutput = partialOutput.Replace("minimumQuantityText", item.minQuantity.ToString)

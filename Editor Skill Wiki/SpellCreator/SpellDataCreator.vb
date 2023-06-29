@@ -58,18 +58,22 @@ Public Class SpellDataCreator
         Return parsedData
     End Function
 
-    Public Sub parseData(path As String) 'main method of the class, uses the private methods to extract the data from a spell file, deserialize it into a spellClassMirror class and extracts information from SpellClassMirror
+    Public Sub parseData(path As String, deserializedLanguageData As LanguageData) 'main method of the class, uses the private methods to extract the data from a spell file, deserialize it into a spellClassMirror class and extracts information from SpellClassMirror
 
         Dim data As SpellClassMirror = deserializeSpellData(cutData(getRawData(path)))
-        Dim rawlanguagedata As String = GetLanguageData()
-        deserializedlanguageData = deserializeLanguageData(rawlanguagedata)
-        Output = createOutput(data)
-        rawDescription = GetDescription(data)
-        parameters = GetSkillParameters(data)
-        SpellName = data.m_name
-        removed = data.removed
-        gameReady = data.gameReady
-        Output = Output.Replace("SpellName", GetTooltipName(SpellName, deserializedlanguageData, language).Replace("'", "\'"))
+        Me.deserializedlanguageData = deserializedLanguageData
+        If Not isMonsterSkill(data.m_name) Then
+            Output = createOutput(data)
+            rawDescription = GetDescription(data)
+            parameters = GetSkillParameters(data)
+            SpellName = data.m_name
+            removed = data.removed
+            gameReady = data.gameReady
+            Output = Output.Replace("SpellName", GetTooltipName(data.SpellKey, deserializedLanguageData, language).Replace("'", "\'"))
+        Else
+            Output = ""
+        End If
+
         'Dim customDataLists As filteredCustomData
         'customDataLists = data.GetCustomData()
         'customDataNameList = customDataLists.name
@@ -350,19 +354,6 @@ Public Class SpellDataCreator
         Return output
     End Function
 
-    Private Function GetLanguageData() As String
-        Dim rawLanguageData As String
-        rawLanguageData = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "I2languages.json"))
-        Return rawLanguageData
-    End Function
-
-    Private Function deserializeLanguageData(data As String) As LanguageData
-
-        Dim parsedData As LanguageData
-        Dim correctedData As String = data.Replace("\n", " ")
-        parsedData = JsonConvert.DeserializeObject(Of LanguageData)(data)
-        Return parsedData
-    End Function
 
     Private Function GetDescription(data As SpellClassMirror) As String 'extracts the description of the spell from the I2Language file
 
@@ -370,42 +361,42 @@ Public Class SpellDataCreator
         Dim rawDescription As String
         Dim term As String
 
-        term = data.m_name.Replace("spell_", "spells/")
-        term &= "_description"
-        term = term.Remove(7, 1).Insert(7, Char.ToLower(term(7))) 'converts the 7th letter to lower case
-        If term = "spells/cloakOfLightning_description" Then 'c'è un disallineamento tra il nome della spell sul file name e come termine su l2Language
-            term = "spells/cloakOfLightnings_description"
-        End If
-        If term = "spells/counterstrike_description" Then
-            term = "spells/counterStrike_description"
-        End If
-        If term = "spells/globeOfSpellProtection_description" Then
-            term = "spells/globeSpellProtection_description"
-        End If
-        If term = "spells/lighitningRush_description" Then
-            term = "spells/lightningRush_description"
-        End If
-        If term = "spells/magicMissiles_description" Then
-            term = "spells/magicMissile_description"
-        End If
-        If term = "spells/skeletalDragonBreath_SkeletalDragon_description" Then
-            term = "spells/skeletalDragonBreath_description"
-        End If
-        If term = "spells/thunderClap_description" Then
-            term = "spells/thunderclap_description"
-        End If
-        If term = "spells/wordOfPower_Heal_description" Then
-            term = "spells/wordOfPowerHeal_description"
-        End If
-        If term = "spells/wordOfPower_Silence_description" Then
-            term = "spells/wordOfPowerSilence_description"
-        End If
-        If term = "spells/wordOfPower_Stun_description" Then
-            term = "spells/wordOfPowerStun_description"
-        End If
-        If term = "spells/wordOfPower_Kill_description" Then
-            term = "spells/wordOfPowerKill_description"
-        End If
+        term = "spells/" + data.SpellKey + "_description"
+        'term &= "_description"
+        'term = term.Remove(7, 1).Insert(7, Char.ToLower(term(7))) 'converts the 7th letter to lower case
+        'If term = "spells/cloakOfLightning_description" Then 'c'è un disallineamento tra il nome della spell sul file name e come termine su l2Language
+        '    term = "spells/cloakOfLightnings_description"
+        'End If
+        'If term = "spells/counterstrike_description" Then
+        '    term = "spells/counterStrike_description"
+        'End If
+        'If term = "spells/globeOfSpellProtection_description" Then
+        '    term = "spells/globeSpellProtection_description"
+        'End If
+        'If term = "spells/lighitningRush_description" Then
+        '    term = "spells/lightningRush_description"
+        'End If
+        'If term = "spells/magicMissiles_description" Then
+        '    term = "spells/magicMissile_description"
+        'End If
+        'If term = "spells/skeletalDragonBreath_SkeletalDragon_description" Then
+        '    term = "spells/skeletalDragonBreath_description"
+        'End If
+        'If term = "spells/thunderClap_description" Then
+        '    term = "spells/thunderclap_description"
+        'End If
+        'If term = "spells/wordOfPower_Heal_description" Then
+        '    term = "spells/wordOfPowerHeal_description"
+        'End If
+        'If term = "spells/wordOfPower_Silence_description" Then
+        '    term = "spells/wordOfPowerSilence_description"
+        'End If
+        'If term = "spells/wordOfPower_Stun_description" Then
+        '    term = "spells/wordOfPowerStun_description"
+        'End If
+        'If term = "spells/wordOfPower_Kill_description" Then
+        '    term = "spells/wordOfPowerKill_description"
+        'End If
         rawDescription = deserializedlanguageData.returnTerm(term, language)
         While rawDescription.IndexOf("({") <> -1
             rawDescription = rawDescription.Remove(rawDescription.IndexOf("({"), rawDescription.IndexOf(")", rawDescription.IndexOf("({")) - rawDescription.IndexOf("({") + 1)
@@ -458,42 +449,42 @@ Public Class SpellDataCreator
         Dim tooltipName As String
         Dim term As String
 
-        term = spellname.Replace("spell_", "spells/")
-        term &= "_name"
-        term = term.Remove(7, 1).Insert(7, Char.ToLower(term(7))) 'converts the 7th letter to lower case
-        If term = "spells/cloakOfLightning_name" Then 'c'è un disallineamento tra il nome della spell sul file name e come termine su l2Language
-            term = "spells/cloakOfLightnings_name"
-        End If
-        If term = "spells/counterstrike_name" Then
-            term = "spells/counterStrike_name"
-        End If
-        If term = "spells/globeOfSpellProtection_name" Then
-            term = "spells/globeSpellProtection_name"
-        End If
-        If term = "spells/lighitningRush_name" Then
-            term = "spells/lightningRush_name"
-        End If
-        If term = "spells/magicMissiles_name" Then
-            term = "spells/magicMissile_name"
-        End If
-        If term = "spells/skeletalDragonBreath_SkeletalDragon_name" Then
-            term = "spells/skeletalDragonBreath_name"
-        End If
-        If term = "spells/thunderClap_name" Then
-            term = "spells/thunderclap_name"
-        End If
-        If term = "spells/wordOfPower_Heal_name" Then
-            term = "spells/wordOfPowerHeal_name"
-        End If
-        If term = "spells/wordOfPower_Silence_name" Then
-            term = "spells/wordOfPowerSilence_name"
-        End If
-        If term = "spells/wordOfPower_Stun_name" Then
-            term = "spells/wordOfPowerStun_name"
-        End If
-        If term = "spells/wordOfPower_Kill_name" Then
-            term = "spells/wordOfPowerKill_name"
-        End If
+        term = "spells/" + spellname + "_name"
+        'term &= "_name"
+        'term = term.Remove(7, 1).Insert(7, Char.ToLower(term(7))) 'converts the 7th letter to lower case
+        'If term = "spells/cloakOfLightning_name" Then 'c'è un disallineamento tra il nome della spell sul file name e come termine su l2Language
+        '    term = "spells/cloakOfLightnings_name"
+        'End If
+        'If term = "spells/counterstrike_name" Then
+        '    term = "spells/counterStrike_name"
+        'End If
+        'If term = "spells/globeOfSpellProtection_name" Then
+        '    term = "spells/globeSpellProtection_name"
+        'End If
+        'If term = "spells/lighitningRush_name" Then
+        '    term = "spells/lightningRush_name"
+        'End If
+        'If term = "spells/magicMissiles_name" Then
+        '    term = "spells/magicMissile_name"
+        'End If
+        'If term = "spells/skeletalDragonBreath_SkeletalDragon_name" Then
+        '    term = "spells/skeletalDragonBreath_name"
+        'End If
+        'If term = "spells/thunderClap_name" Then
+        '    term = "spells/thunderclap_name"
+        'End If
+        'If term = "spells/wordOfPower_Heal_name" Then
+        '    term = "spells/wordOfPowerHeal_name"
+        'End If
+        'If term = "spells/wordOfPower_Silence_name" Then
+        '    term = "spells/wordOfPowerSilence_name"
+        'End If
+        'If term = "spells/wordOfPower_Stun_name" Then
+        '    term = "spells/wordOfPowerStun_name"
+        'End If
+        'If term = "spells/wordOfPower_Kill_name" Then
+        '    term = "spells/wordOfPowerKill_name"
+        'End If
         tooltipName = deserializedlanguageData.returnTerm(term, language)
         If tooltipName = "Counterstrike" Then
             tooltipName = "Counter Strike"
@@ -562,6 +553,52 @@ Public Class SpellDataCreator
 
         End Select
         Return output
+    End Function
+
+    Private Function isMonsterSkill(spell As String) As Boolean
+        Select Case spell
+            Case "spell_ArborealDragonBreath_ArborealDragon"
+                Return True
+            Case "spell_BattleJump_Ghoul"
+                Return True
+            Case "spell_EmberDragonBreath_EmberDragon"
+                Return True
+            Case "spell_Firebolt_Totem"
+                Return True
+            Case "spell_FrostBlast_Totem"
+                Return True
+            Case "spell_LegendAxfitmithissTouch"
+                Return True
+            Case "spell_LegendGrooveQuake"
+                Return True
+            Case "spell_LegendGrooveRam"
+                Return True
+            Case "spell_LegendIceSpikesRing"
+                Return True
+            Case "spell_LegendLargeSlow"
+                Return True
+            Case "spell_LegendMegaEruption"
+                Return True
+            Case "spell_LegendShivers"
+                Return True
+            Case "spell_LegendWOPSilence"
+                Return True
+            Case "spell_MagicReflection_ColossalHuskWorm"
+                Return True
+            Case "spell_MountainDragonBreath_MountainDragon"
+                Return True
+            Case "spell_ShockingLash_Totem"
+                Return True
+            Case "spell_SkeletalDragonBreath_SkeletalDragon"
+                Return True
+            Case "spell_SpikeTrapGrokoton"
+                Return True
+            Case Else
+                Return False
+
+
+
+        End Select
     End Function
 
 

@@ -1,4 +1,5 @@
 ﻿Imports System.ComponentModel
+Imports Newtonsoft.Json
 Public Class SpellDataWindow
 
 #Region "Property Changed"
@@ -26,6 +27,7 @@ Public Class SpellDataWindow
         ComboBox4.DataContext = Me
         ComboBox5.DataContext = Me
         LanguageCombo.ItemsSource = [Enum].GetValues(GetType(EnumLanguage))
+
         'I check if there is a file with some saved combinations, if not I create a new one.
 
         If System.IO.File.Exists(IO.Path.Combine(Environment.CurrentDirectory, "SpellCreator/customDataCombinations.txt")) Then
@@ -119,12 +121,16 @@ Public Class SpellDataWindow
             OpenFileDialog1.ShowDialog()
             Dim path As String = OpenFileDialog1.FileName
             spellDataCreator = New SpellDataCreator(Convert.ToInt32(languageSelected))
-            spellDataCreator.parseData(path)
-            spellName = spellDataCreator.SpellName
-            Description = spellDataCreator.rawDescription
-            Description = createHyperlinks(Description)
-            OutputText &= spellDataCreator.Output.Replace("descriptionValue", Description)
-            OutputText = OutputText.Replace("skillParametersValue", spellDataCreator.parameters)
+            Dim rawlanguagedata As String = GetLanguageData()
+            Dim deserializedLanguageData As LanguageData = deserializeLanguageData(rawlanguagedata)
+            spellDataCreator.parseData(path, deserializedLanguageData)
+            If spellDataCreator.Output <> "" Then
+                spellName = spellDataCreator.SpellName
+                Description = spellDataCreator.rawDescription
+                Description = createHyperlinks(Description)
+                OutputText &= spellDataCreator.Output.Replace("descriptionValue", Description)
+                OutputText = OutputText.Replace("skillParametersValue", spellDataCreator.parameters)
+            End If
             'Description = CheckExistingCustomDataCombinations(spellDataCreator.rawDescription)
             'CustomDataNameList = spellDataCreator.customDataNameList
             'CustomDataValueList = spellDataCreator.customDataValueList
@@ -149,10 +155,12 @@ Public Class SpellDataWindow
 
         If files IsNot Nothing AndAlso files.Count <> 0 Then
             Dim spellsInserted As New List(Of String)
+            Dim rawlanguagedata As String = GetLanguageData()
+            Dim deserializedLanguageData As LanguageData = deserializeLanguageData(rawlanguagedata)
             For Each file As IO.FileInfo In files
                 spellDataCreator = New SpellDataCreator(Convert.ToInt32(languageSelected))
-                spellDataCreator.parseData(file.FullName)
-                If True AndAlso Not spellDataCreator.removed AndAlso spellsInserted.IndexOf(spellDataCreator.SpellName) = -1 Then
+                spellDataCreator.parseData(file.FullName, deserializedLanguageData)
+                If spellDataCreator.Output <> "" AndAlso Not spellDataCreator.removed AndAlso spellsInserted.IndexOf(spellDataCreator.SpellName) = -1 Then
                     spellName = spellDataCreator.SpellName
                     'DescriptionResetValue = spellDataCreator.rawDescription
                     'Description = CheckExistingCustomDataCombinations(spellDataCreator.rawDescription)
@@ -415,6 +423,20 @@ Public Class SpellDataWindow
         End If
 
     End Sub
+
+    Private Function GetLanguageData() As String
+        Dim rawLanguageData As String
+        rawLanguageData = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "I2languages.json"))
+        Return rawLanguageData
+    End Function
+
+    Private Function deserializeLanguageData(data As String) As LanguageData
+
+        Dim parsedData As LanguageData
+        Dim correctedData As String = data.Replace("\n", " ")
+        parsedData = JsonConvert.DeserializeObject(Of LanguageData)(data)
+        Return parsedData
+    End Function
 
 
 End Class

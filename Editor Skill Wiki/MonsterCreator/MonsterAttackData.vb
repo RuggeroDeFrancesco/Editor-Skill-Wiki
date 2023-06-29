@@ -9,5 +9,7 @@
     Public damageWidth As String
     Public damageLength As String
     Public damageAmplitude As String
+    Public projectileSpeed As Double
+    Public projectileDespawn As Double
 End Class
 

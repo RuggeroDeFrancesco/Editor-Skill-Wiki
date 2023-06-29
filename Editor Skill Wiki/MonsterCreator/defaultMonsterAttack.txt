@@ -10,6 +10,8 @@
                 ["Damage Width"] = "textDamageWidth",
                 ["Damange Length"] = "textDamageLength",
                 ["Damage Amplitude"] = "textDamageAmplitude",
+                ["Projectile Speed"] = "textProjectileSpeed",
+                ["Projectile Despawn"] = "textProjectileDespawn",
                 ["Attack Properties"] = {
 propertySpace
                 },

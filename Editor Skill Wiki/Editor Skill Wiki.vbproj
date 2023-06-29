@@ -9,8 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="AssetIndices\Icons.xml" />
-    <None Remove="AssetIndices\recipeIndex.xml" />
     <None Remove="defaultSpellData.txt" />
     <None Remove="I2Languages.json" />
     <None Remove="Images\ItemData.png" />
@@ -30,12 +28,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="AssetIndices\Icons.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="AssetIndices\recipeIndex.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="Images\SeData.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -70,12 +62,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="LootCreator\defaultLootData.txt">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="AssetIndices\itemsIndex.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="AssetIndices\lootIndex.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="MonsterCreator\defaultMonsterRestriction.txt">
@@ -126,15 +112,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="AssetIndices\enchantments.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="AssetIndices\weaponProperties.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="AssetIndices\attacks.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
     <None Update="MonsterCreator\defaultAttackProperty.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -147,12 +124,10 @@
     <None Update="MonsterCreator\defaultMonsterSkill.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="AssetIndices\SpellIndex.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="AssetIndices\statusEffects.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="AssetIndices\" />
   </ItemGroup>
 
 </Project>

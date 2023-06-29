@@ -102,4 +102,15 @@ Public Class LootDataWindow
         End If
     End Sub
 
+    Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
+        If IO.Directory.Exists(IO.Path.Combine(Environment.CurrentDirectory, "Loot")) Then
+            lootFolder = IO.Path.Combine(Environment.CurrentDirectory, "Loot")
+            SelectedLootListsFolder.Text = IO.Path.Combine(Environment.CurrentDirectory, "Loot")
+        End If
+        If IO.Directory.Exists(IO.Path.Combine(Environment.CurrentDirectory, "Items")) Then
+            itemsFolder = IO.Path.Combine(Environment.CurrentDirectory, "Items")
+            SelectedItemsFolder.Text = IO.Path.Combine(Environment.CurrentDirectory, "Items")
+        End If
+    End Sub
+
 End Class

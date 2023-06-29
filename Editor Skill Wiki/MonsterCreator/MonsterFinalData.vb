@@ -295,6 +295,8 @@
                 newAttack.damageAmplitude = parsedData.damageAmplitude.ToString
                 newAttack.damageLength = parsedData.damageLength.ToString
                 newAttack.damageWidth = parsedData.damageWidth.ToString
+                newAttack.projectileSpeed = parsedData.projectileSpeed.ToString
+                newAttack.projectileDespawn = parsedData.projectileDespawn.ToString
 
                 For Each attackProperty As WeaponProperty In parsedData.weaponProperties
                     If attackProperty.Property.m_PathID <> "0" Then
@@ -434,6 +436,7 @@
                 newSpell.globalCd = spell.globalCooldown.ToString
                 newSpell.castingChance = spell.castingChance.ToString
                 newSpell.targetAlly = spell.targetAlly.ToString
+                newSpell.spellKey = parsedData.SpellKey
 
             Else Throw New Exception(filePath & " Not Found")
             End If
@@ -482,6 +485,8 @@
         baseText = baseText.Replace("textDamageLength", attack.damageLength)
         baseText = baseText.Replace("textDamageAmplitude", attack.damageAmplitude)
         baseText = baseText.Replace("textDamageWidth", attack.damageWidth)
+        baseText = baseText.Replace("textProjectileSpeed", attack.projectileSpeed)
+        baseText = baseText.Replace("textProjectileDespawn", attack.projectileDespawn)
 
         Dim propertyText As String = ""
         For Each attackProperty As AttackProperty In attack.attackProperties
@@ -546,6 +551,8 @@ Public Class MonsterAttackFinalData
     Public damageWidth As String
     Public damageLength As String
     Public damageAmplitude As String
+    Public projectileSpeed As String
+    Public projectileDespawn As String
     Public fullText As String
     Public attackProperties As List(Of AttackProperty)
 
@@ -570,6 +577,7 @@ Public Class MonsterSpellFinalData
     Public targetAlly As String
     Public castingChance As String
     Public restrictionText As String
+    Public spellKey As String
     Public fullText As String
 
 End Class

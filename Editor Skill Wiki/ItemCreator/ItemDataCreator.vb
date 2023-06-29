@@ -115,12 +115,22 @@ Public Class ItemDataCreator
     Shared Function GetItemName(name As String, itemType As Integer, deserializedLanguageData As LanguageData, language As Integer, Optional school As Integer = 0) As String 'used also by Loot Creator and monster creator
         Dim term As String = ""
         Dim output As String = ""
-
+        name = name.Replace(" ", "") 'alcuni vecchi oggetti hanno degli spazi all'interno
         'eccezioni
         If name = "grilledMarrows" Then
             name = "grilledMarrow"
-        ElseIf name = "bearMeat" Then
-            name = "rawBearMeat"
+        ElseIf name = "item_BearMeat" Or name = "bearMeat" Then
+            name = "item_rawBearMeat"
+        ElseIf name = "item_WolfMeat" Then
+            name = "item_rawWolfMeat"
+        ElseIf name = "item_MooseMeat" Then
+            name = "item_rawMooseMeat"
+        ElseIf name = "item_MammothMeat" Then
+            name = "item_rawMammothMeat"
+        ElseIf name = "item_Venison" Then
+            name = "item_rawVenison"
+        ElseIf name = "item_JotunnBlood" Then
+            name = "item_jotunBlood"
         End If
 
         If itemType = Enumeratori.ItemTooltipCategory.ProficiencyOrb Then
@@ -139,6 +149,8 @@ Public Class ItemDataCreator
             Return name.Replace("item_UnlockableRecipe_", "").Replace(".json", "")
         Else
             term = "items/" & name & "_name"
+            term = term.Replace("item_", "")
+            term = term.Replace("Item_", "") 'sometimes the I is capital
             output = deserializedLanguageData.returnTerm(term, language)
 
         End If
@@ -155,6 +167,9 @@ Public Class ItemDataCreator
         Dim tooltipCategory As String = [Enum].GetName(GetType(ItemTooltipCategory), category)
         Dim term As String = "ui/item_tooltip_ItemDescription_" & tooltipCategory
         Dim output As String = deserializedLanguageData.returnTerm(term, language)
+        If output = "" Then
+            Return ""
+        End If
         output = output.Replace("/n", "")
         output = output.Replace(vbCr, "").Replace(vbLf, "")        ' carriage returns break the module code
         'If output = "" Then 'potrebbe essere un equip
