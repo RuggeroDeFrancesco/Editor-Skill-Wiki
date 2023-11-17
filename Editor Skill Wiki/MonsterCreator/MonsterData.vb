@@ -16,7 +16,7 @@
     Public _int As Intelligence
     Public cos As Constitution
     Public per As Perception
-    Public cha As Charisma
+    Public wis As Wisdom
     Public baseEndurance As BaseEndurance
     Public baseEnduranceRegen As BaseEnduranceRegen
     Public baseEnergy As BaseEnergy
@@ -99,7 +99,7 @@ Public Class Perception
     Public value As Integer
 End Class
 
-Public Class Charisma
+Public Class Wisdom
     Public value As Integer
 End Class
 

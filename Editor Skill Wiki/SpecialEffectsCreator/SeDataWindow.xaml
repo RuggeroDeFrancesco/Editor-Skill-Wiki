@@ -5,8 +5,37 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Editor_Skill_Wiki"
         mc:Ignorable="d"
-        Title="SeDataWindow" Height="450" Width="800">
+        Title="SeDataWindow" Height="450" Width="800" Loaded="Window_Loaded">
     <Grid>
-        
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <DockPanel>
+            <Button x:Name="CreateStatusEffectOutput" Margin="5, 0, 5, 5" Click="GetStatusEffectData"  DockPanel.Dock="Top">
+                <TextBlock Text="Generate Status Effects Data"/>
+            </Button>
+            <TextBox x:Name="OutputBlock" DockPanel.Dock="Bottom" Text="{Binding Path=OutputText}" TextWrapping="Wrap">
+
+            </TextBox>
+        </DockPanel>
+
+
+        <DockPanel DockPanel.Dock="Bottom" LastChildFill="False" Grid.Row="1">
+            <ComboBox x:Name="LanguageCombo" DockPanel.Dock="Right" Width="150" SelectionChanged="LanguageCombo_SelectionChanged"/>
+        </DockPanel>
+        <DockPanel Grid.Row="1">
+            <Button x:Name="selectSkillFolder" Margin="5, 0, 5, 5" Click="selectSkills_Click">
+                <TextBlock Text="Select Skills Folder"/>
+            </Button>
+            <TextBlock x:Name="SelectedSkillsFolder">
+
+            </TextBlock>
+        </DockPanel  >
     </Grid>
 </Window>

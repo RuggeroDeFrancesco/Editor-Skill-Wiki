@@ -23,7 +23,7 @@ Public Class SpellDataCreator
 
     Public Property TooltipSpellName As String
 
-    Private Function getRawData(path As String) As String 'reads the file and extracts the content as text
+    Shared Function getRawData(path As String) As String 'reads the file and extracts the content as text, used also by StatusEffectDataCreator
         If System.IO.File.Exists(path) Then
             Dim rawData As String
             rawData = System.IO.File.ReadAllText(path)
@@ -33,7 +33,7 @@ Public Class SpellDataCreator
         End If
     End Function
 
-    Private Function cutData(data As String) As String 'removes the useless parts of the file
+    Shared Function cutData(data As String) As String 'removes the useless parts of the file, used also by StatusEffectDataCreator
         Dim processedData As String
         Dim startingIndex As Integer
         startingIndex = data.IndexOf("m_Name") - 1
@@ -51,7 +51,7 @@ Public Class SpellDataCreator
         Return processedData
     End Function
 
-    Private Function deserializeSpellData(data As String) As SpellClassMirror 'converts the json to fields of the SpellData class
+    Shared Function deserializeSpellData(data As String) As SpellClassMirror 'converts the json to fields of the SpellData class, , used also by StatusEffectDataCreator
 
         Dim parsedData As SpellClassMirror
         parsedData = JsonConvert.DeserializeObject(Of SpellClassMirror)(data)
@@ -62,17 +62,13 @@ Public Class SpellDataCreator
 
         Dim data As SpellClassMirror = deserializeSpellData(cutData(getRawData(path)))
         Me.deserializedlanguageData = deserializedLanguageData
-        If Not isMonsterSkill(data.m_name) Then
-            Output = createOutput(data)
-            rawDescription = GetDescription(data)
-            parameters = GetSkillParameters(data)
-            SpellName = data.m_name
-            removed = data.removed
-            gameReady = data.gameReady
-            Output = Output.Replace("SpellName", GetTooltipName(data.SpellKey, deserializedLanguageData, language).Replace("'", "\'"))
-        Else
-            Output = ""
-        End If
+        Output = createOutput(data)
+        rawDescription = GetDescription(data)
+        parameters = GetSkillParameters(data)
+        SpellName = data.m_name
+        removed = data.removed
+        gameReady = data.gameReady
+        Output = Output.Replace("SpellName", GetTooltipName(data.SpellKey, deserializedLanguageData, language).Replace("'", "\'"))
 
         'Dim customDataLists As filteredCustomData
         'customDataLists = data.GetCustomData()
@@ -112,9 +108,15 @@ Public Class SpellDataCreator
         For Each dataType As spellDataInfo In data.spellData
 
             If dataType.dataType = SpellDataType.Cooldown Then
-                output = output.Replace("cooldownValue", dataType.level0)
+                If dataType.level0 <> dataType.level10 Then
+                    Dim cooldownValue As String = dataType.level0 & " to " & dataType.level10
+                    output = output.Replace("cooldownValue", """" & cooldownValue & """")
+                Else
+                    output = output.Replace("cooldownValue", dataType.level0)
+                End If
+
                 foundCooldown = True
-            End If
+                End If
         Next
 
         If Not foundCooldown Then
@@ -124,14 +126,14 @@ Public Class SpellDataCreator
 
 
         Dim abilityType As String = ""
-        If data.tooltipActivationType = tooltipActivationType.Toggle Then
-            abilityType = "Toggle"
+        If data.tooltipActivationType = tooltipActivationType.Sustained Then
+            abilityType = "Sustained"
 
         ElseIf data.tooltipActivationType = tooltipActivationType.Ready Then
             abilityType = "Ready"
         ElseIf data.tooltipActivationType = tooltipActivationType.Directional Then
             abilityType = "Directional"
-        ElseIf data.tooltipActivationType = tooltipActivationType.self Then
+        ElseIf data.tooltipActivationType = tooltipActivationType.Self Then
             abilityType = "Self"
         ElseIf data.tooltipActivationType = tooltipActivationType.Targeted Then
             If data.tooltipTargetType = tooltipTargetType.Terrain Then
@@ -194,14 +196,29 @@ Public Class SpellDataCreator
         For Each dataType As spellDataInfo In data.spellData
 
             If dataType.dataType = SpellDataType.ManaCost Then
-                output = output.Replace("manaCostValue", dataType.level0)
-                output = output.Replace("manaCostPersValue", 0)
+                If dataType.level0 <> dataType.level10 Then
+                    Dim manacostValue As String = dataType.level0 & " to " & dataType.level10
+                    output = output.Replace("manaCostValue", """" & manacostValue & """")
+                Else
+                    output = output.Replace("manaCostValue", dataType.level0)
+                    output = output.Replace("manaCostPersValue", 0)
+                    output = output.Replace("maxManaCostValue", 0)
+                End If
+
                 foundManaCost = True
             End If
 
             If dataType.dataType = SpellDataType.ManaCostPerSecond Then
                 output = output.Replace("manaCostPersValue", dataType.level0)
                 output = output.Replace("manaCostValue", 0)
+                output = output.Replace("maxManaCostValue", 0)
+                foundManaCost = True
+            End If
+
+            If dataType.dataType = SpellDataType.MaxManaCost Then
+                output = output.Replace("manaCostPersValue", 0)
+                output = output.Replace("manaCostValue", 0)
+                output = output.Replace("maxManaCostValue", dataType.level0)
                 foundManaCost = True
             End If
 
@@ -210,6 +227,13 @@ Public Class SpellDataCreator
         If foundManaCost = False Then
             output = output.Replace("manaCostValue", 0)
             output = output.Replace("manaCostPersValue", 0)
+            output = output.Replace("maxManaCostValue", 0)
+        End If
+
+        If isMonsterSkill(data.m_name) Then
+            output = output.Replace("monsterOnlyValue", "Yes")
+        Else
+            output = output.Replace("monsterOnlyValue", "No")
         End If
 
         Dim SpellTags As String = ""
@@ -251,106 +275,6 @@ Public Class SpellDataCreator
 
 
 
-
-        'Dim categories As String = ""
-        'Select Case data.difficulty
-        '    Case 0
-        '        categories &= """Memory Cost 1 Spells"","
-        '    Case 1
-        '        categories &= """Memory Cost 2 Spells"","
-        '    Case 2
-        '        categories &= """Memory Cost 3 Spells"","
-        'End Select
-
-        'Select Case data.SpellSchool
-        '    Case SpellSchool.Pyromancy Or SpellSchool.Cryomancy Or SpellSchool.Aeromancy Or SpellSchool.Geomancy Or SpellSchool.Venomancy Or SpellSchool.Vitriomancy Or SpellSchool.Druidcraft Or SpellSchool.Necromancy Or SpellSchool.Abjuration Or SpellSchool.Restoration Or SpellSchool.Illusionism
-        '        categories &= """Magical Skills"","
-        '    Case SpellSchool.Leadership Or SpellSchool.Assassination Or SpellSchool.Hunting Or SpellSchool.Warfare Or SpellSchool.MartialArts Or SpellSchool.KnifeFighting Or SpellSchool.Swordsmanship Or SpellSchool.Fencing Or SpellSchool.MaceFighting Or SpellSchool.AxeFighting Or SpellSchool.PoleFighting Or SpellSchool.Archery Or SpellSchool.ShieldFighting
-        '        categories &= """Combat Skills"","
-        'End Select
-
-        'Select Case data.canBeCritical
-        '    Case canBeCritical.Yes
-        '        categories &= """Skills that Can Critically Hit"","
-        'End Select
-
-        'Select Case data.spellcastingRestrictions.restrictedArmorWeight
-        '    Case RestrictedArmorWeight.Any
-        '        categories &= """Skills Usable in Light Armor"","
-        '        categories &= """Skills Usable in Medium Armor"","
-        '        categories &= """Skills Usable in Heavy Armor"","
-        '    Case RestrictedArmorWeight.Light
-        '        categories &= """Skills Usable in Light Armor"","
-        '    Case RestrictedArmorWeight.Medium
-        '        categories &= """Skills Usable in Light Armor"","
-        '        categories &= """Skills Usable in Medium Armor"","
-        '    'Case 3
-        '    '    categories &= """Skills Usable in Light Armor"","
-        '    '    categories &= """Skills Usable in Medium Armor"","
-        '    Case RestrictedArmorWeight.Heavy
-        '        categories &= """Skills Usable in Light Armor"","
-        '        categories &= """Skills Usable in Medium Armor"","
-        '        categories &= """Skills Usable in Heavy Armor"","
-        '        'Case 5
-        '        '    categories &= """Skills Usable in Light Armor"","
-        '        '    categories &= """Skills Usable in Heavy Armor"","
-        '        'Case 6
-        '        '    categories &= """Skills Usable in Medium Armor"","
-        '        '    categories &= """Skills Usable in Heavy Armor"","
-
-        'End Select
-
-        'Select Case data.spellcastingRestrictions.specialWeaponRestriction
-        '    Case SpellSpecialWeaponRestriction.BowRequired
-        '        categories &= """Skills Requiring a bow"","
-        '    Case SpellSpecialWeaponRestriction.ShieldRequired
-        '        categories &= """Skills Requiring a shield"","
-        '    Case SpellSpecialWeaponRestriction.Unarmed
-        '        categories &= """Unarmed Skills"","
-        'End Select
-
-
-        ''Select Case data.spellcastingRestrictions.restrictedWeaponWeight
-        ''    Case 0
-        ''    Case 1
-        ''        categories &= """Skills that Require Light Weapons"","
-        ''    Case 2
-        ''        categories &= """Skills that Require Medium Weapons"","
-        ''    Case 3
-        ''        categories &= """Skills that Require Light Weapons"","
-        ''        categories &= """Skills that Require Medium Weapons"","
-        ''    Case 4
-        ''        categories &= """Skills that Require Heavy Weapons"","
-        ''    Case 5
-        ''        categories &= """Skills that Require Light Weapons"","
-        ''        categories &= """Skills that Require Heavy Weapons"","
-        ''    Case 6
-        ''        categories &= """Skills that Require Medium Weapons"","
-        ''        categories &= """Skills that Require Heavy Weapons"","
-        ''End Select
-
-        'Select Case data.spellcastingRestrictions.weaponRestriction
-        '    Case RestrictedWeaponClass.None
-        '    Case RestrictedWeaponClass.TwoHanded
-        '        categories &= """Skills that Require Two Handed Weapons"","
-        '    Case RestrictedWeaponClass.SpellChanneling
-        '        categories &= """Skills that Require Spell Channeling Weapons"","
-        '    Case RestrictedWeaponClass.OneHanded
-        '        categories &= """Skills that Require One Handed Weapons"","
-        'End Select
-
-        ''Select Case data.spellcastingRestrictions.specialWeaponRestriction
-        ''    Case RestrictedWeaponClass.None
-        ''    Case RestrictedWeaponClass.TwoHanded
-        ''        categories &= """Skills that Require Two Handed Weapons"","
-        ''    Case RestrictedWeaponClass.SpellChanneling
-        ''        categories &= """Skills that Require Spell Channeling Weapons"","
-        ''    Case RestrictedWeaponClass.OneHanded
-        ''        categories &= """Skills that Require One Handed Weapons"","
-        ''End Select
-
-        'output = output.Replace("CategoriesValue", categories)
-
         Return output
     End Function
 
@@ -362,41 +286,6 @@ Public Class SpellDataCreator
         Dim term As String
 
         term = "spells/" + data.SpellKey + "_description"
-        'term &= "_description"
-        'term = term.Remove(7, 1).Insert(7, Char.ToLower(term(7))) 'converts the 7th letter to lower case
-        'If term = "spells/cloakOfLightning_description" Then 'c'è un disallineamento tra il nome della spell sul file name e come termine su l2Language
-        '    term = "spells/cloakOfLightnings_description"
-        'End If
-        'If term = "spells/counterstrike_description" Then
-        '    term = "spells/counterStrike_description"
-        'End If
-        'If term = "spells/globeOfSpellProtection_description" Then
-        '    term = "spells/globeSpellProtection_description"
-        'End If
-        'If term = "spells/lighitningRush_description" Then
-        '    term = "spells/lightningRush_description"
-        'End If
-        'If term = "spells/magicMissiles_description" Then
-        '    term = "spells/magicMissile_description"
-        'End If
-        'If term = "spells/skeletalDragonBreath_SkeletalDragon_description" Then
-        '    term = "spells/skeletalDragonBreath_description"
-        'End If
-        'If term = "spells/thunderClap_description" Then
-        '    term = "spells/thunderclap_description"
-        'End If
-        'If term = "spells/wordOfPower_Heal_description" Then
-        '    term = "spells/wordOfPowerHeal_description"
-        'End If
-        'If term = "spells/wordOfPower_Silence_description" Then
-        '    term = "spells/wordOfPowerSilence_description"
-        'End If
-        'If term = "spells/wordOfPower_Stun_description" Then
-        '    term = "spells/wordOfPowerStun_description"
-        'End If
-        'If term = "spells/wordOfPower_Kill_description" Then
-        '    term = "spells/wordOfPowerKill_description"
-        'End If
         rawDescription = deserializedlanguageData.returnTerm(term, language)
         While rawDescription.IndexOf("({") <> -1
             rawDescription = rawDescription.Remove(rawDescription.IndexOf("({"), rawDescription.IndexOf(")", rawDescription.IndexOf("({")) - rawDescription.IndexOf("({") + 1)
@@ -414,7 +303,7 @@ Public Class SpellDataCreator
         Dim parameters As String = ""
 
         For Each dataType As spellDataInfo In data.spellData
-            If dataType.dataType <> SpellDataType.ManaCost And dataType.dataType <> SpellDataType.ManaCostPerSecond And dataType.dataType <> SpellDataType.Cooldown Then
+            If dataType.dataType <> SpellDataType.ManaCost And dataType.dataType <> SpellDataType.ManaCostPerSecond And dataType.dataType <> SpellDataType.Cooldown And dataType.dataType <> SpellDataType.MaxManaCost Then
                 Dim dataDescription As String = ""
                 term = GetSpellDataTypeName([Enum].GetName(GetType(SpellDataType), dataType.dataType))
                 If dataType.attributeType <> CharacterAttribute.None Then
@@ -445,46 +334,11 @@ Public Class SpellDataCreator
 
     End Function
 
-    Public Shared Function GetTooltipName(spellname As String, deserializedlanguageData As LanguageData, language As Integer) 'the func
+    Public Shared Function GetTooltipName(spellname As String, deserializedlanguageData As LanguageData, language As Integer) 'used also by monsterDataCreator and StatusEffectDataCreator
         Dim tooltipName As String
         Dim term As String
 
         term = "spells/" + spellname + "_name"
-        'term &= "_name"
-        'term = term.Remove(7, 1).Insert(7, Char.ToLower(term(7))) 'converts the 7th letter to lower case
-        'If term = "spells/cloakOfLightning_name" Then 'c'è un disallineamento tra il nome della spell sul file name e come termine su l2Language
-        '    term = "spells/cloakOfLightnings_name"
-        'End If
-        'If term = "spells/counterstrike_name" Then
-        '    term = "spells/counterStrike_name"
-        'End If
-        'If term = "spells/globeOfSpellProtection_name" Then
-        '    term = "spells/globeSpellProtection_name"
-        'End If
-        'If term = "spells/lighitningRush_name" Then
-        '    term = "spells/lightningRush_name"
-        'End If
-        'If term = "spells/magicMissiles_name" Then
-        '    term = "spells/magicMissile_name"
-        'End If
-        'If term = "spells/skeletalDragonBreath_SkeletalDragon_name" Then
-        '    term = "spells/skeletalDragonBreath_name"
-        'End If
-        'If term = "spells/thunderClap_name" Then
-        '    term = "spells/thunderclap_name"
-        'End If
-        'If term = "spells/wordOfPower_Heal_name" Then
-        '    term = "spells/wordOfPowerHeal_name"
-        'End If
-        'If term = "spells/wordOfPower_Silence_name" Then
-        '    term = "spells/wordOfPowerSilence_name"
-        'End If
-        'If term = "spells/wordOfPower_Stun_name" Then
-        '    term = "spells/wordOfPowerStun_name"
-        'End If
-        'If term = "spells/wordOfPower_Kill_name" Then
-        '    term = "spells/wordOfPowerKill_name"
-        'End If
         tooltipName = deserializedlanguageData.returnTerm(term, language)
         If tooltipName = "Counterstrike" Then
             tooltipName = "Counter Strike"
@@ -592,6 +446,72 @@ Public Class SpellDataCreator
             Case "spell_SkeletalDragonBreath_SkeletalDragon"
                 Return True
             Case "spell_SpikeTrapGrokoton"
+                Return True
+            Case "spell_Argadr_Execute"
+                Return True
+            Case "spell_Argadr_LightningStorm"
+                Return True
+            Case "spell_Argadr_Rage"
+                Return True
+            Case "spell_Argadr_StaticPull"
+                Return True
+            Case "spell_Argadr_StormBlade"
+                Return True
+            Case "spell_Axfitmithiss_AuraOfTerror"
+                Return True
+            Case "spell_Axfitmithiss_ChillingTouch"
+                Return True
+            Case "spell_Axfitmithiss_IceSpikesBarrage"
+                Return True
+            Case "spell_Axfitmithiss_MassSilenceWOP"
+                Return True
+            Case "spell_Axfitmithiss_Shivers"
+                Return True
+            Case "spell_Groove_ConcussiveQuake"
+                Return True
+            Case "spell_Groove_ConcussiveStrike"
+                Return True
+            Case "spell_Groove_Slow"
+                Return True
+            Case "spell_LordEoronn_BramblePrison"
+                Return True
+            Case "spell_LordEoronn_EntanglingTouch"
+                Return True
+            Case "spell_LordEoronn_VerdantRegrowth"
+                Return True
+            Case "spell_Malakar_AuraOfTerror"
+                Return True
+            Case "spell_Malakar_BattleJump"
+                Return True
+            Case "spell_Malakar_ChillingTouch"
+                Return True
+            Case "spell_Malakar_DisruptingStrike"
+                Return True
+            Case "spell_Malakar_RendArmor"
+                Return True
+            Case "spell_MuragGul_BattleJump"
+                Return True
+            Case "spell_MuragGul_ConcussiveStrike"
+                Return True
+            Case "spell_MuragGul_Overpower"
+                Return True
+            Case "spell_MuragGul_Petrify"
+                Return True
+            Case "spell_Syr_Decimate"
+                Return True
+            Case "spell_Syr_Eviscerate"
+                Return True
+            Case "spell_Syr_HeavyBlow"
+                Return True
+            Case "spell_Zephyr_HealingOrb"
+                Return True
+            Case "spell_Zephyr_MassCureWounds"
+                Return True
+            Case "spell_Zephyr_MassShockingLash"
+                Return True
+            Case "spell_Zephyr_Relocate"
+                Return True
+            Case "spell_Zephyr_StaticDischarge"
                 Return True
             Case Else
                 Return False

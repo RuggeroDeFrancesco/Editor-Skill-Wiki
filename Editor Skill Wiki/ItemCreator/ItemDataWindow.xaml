@@ -5,19 +5,80 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Editor_Skill_Wiki"
         mc:Ignorable="d"
-        Title="ItemDataWindow" Height="450" Width="800">
-    <DockPanel>
-        <Button x:Name="CreateItemOutput" Grid.Column="1" Grid.Row="1" Margin="5, 0, 5, 5" Click="GetItemsData"  DockPanel.Dock="Top">
-            <TextBlock Text="Generate Item Data"/>
-        </Button>
-        <Button x:Name="CreateAspectsOutput" Grid.Column="1" Grid.Row="1" Margin="5, 0, 5, 5" Click="GetReagentsData"  DockPanel.Dock="Top">
-            <TextBlock Text="Generate Reagent Data"/>
-        </Button>
-        <DockPanel DockPanel.Dock="Bottom" LastChildFill="False">
+        Title="ItemDataWindow" Height="450" Width="800" Loaded="Window_Loaded">
+    
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <DockPanel>
+            <Button x:Name="CreateItemOutput" Margin="5, 0, 5, 5" Click="GetItemsData"  DockPanel.Dock="Top">
+                <TextBlock Text="Generate Item Data"/>
+            </Button>
+            <Button x:Name="CreateAspectsOutput" Margin="5, 0, 5, 5" Click="GetReagentsData"  DockPanel.Dock="Top">
+                <TextBlock Text="Generate Reagent Data"/>
+            </Button>
+            <Button x:Name="CreateReagentsOutput"  Margin="5, 0, 5, 5" Click="GetRecipesData"  DockPanel.Dock="Top">
+                <TextBlock Text="Generate Recipe Data"/>
+            </Button>
+            <Button x:Name="CreateEquipmentOutput"  Margin="5, 0, 5, 5" Click="GetEquipmentData"  DockPanel.Dock="Top">
+                <TextBlock Text="Generate Equipment Data"/>
+            </Button>
+            <TextBox x:Name="OutputBlock" DockPanel.Dock="Bottom" Text="{Binding Path=OutputText}" TextWrapping="Wrap">
+
+            </TextBox>
+        </DockPanel>
+
+
+        <DockPanel DockPanel.Dock="Bottom" LastChildFill="False" Grid.Row="1">
             <ComboBox x:Name="LanguageCombo" DockPanel.Dock="Right" Width="150" SelectionChanged="LanguageCombo_SelectionChanged"/>
         </DockPanel>
-        <TextBox x:Name="OutputBlock" DockPanel.Dock="Bottom" Text="{Binding Path=OutputText}" TextWrapping="Wrap">
+        <DockPanel Grid.Row="1">
+            <Button x:Name="selectMaterialsLists" Margin="5, 0, 5, 5" Click="selectMaterialsLists_Click">
+                <TextBlock Text="Select Material Lists Folder"/>
+            </Button>
+            <TextBlock x:Name="SelectedMaterialListsFolder">
 
-        </TextBox>
-    </DockPanel>
+            </TextBlock>
+        </DockPanel  >
+        <DockPanel Grid.Row="2">
+            <Button x:Name="selectItems" Margin="5, 0, 5, 5" Click="selectItems_Click">
+                <TextBlock Text="Select Items Folder"/>
+            </Button>
+            <TextBlock x:Name="SelectedItemsFolder">
+
+            </TextBlock>
+        </DockPanel  >
+        <DockPanel Grid.Row="3">
+            <Button x:Name="selectProperties" Margin="5, 0, 5, 5" Click="selectProperties_Click">
+                <TextBlock Text="Select WP Folder"/>
+            </Button>
+            <TextBlock x:Name="SelectedWpFolder">
+
+            </TextBlock>
+        </DockPanel  >
+        <DockPanel Grid.Row="4">
+            <Button x:Name="selectArmorSets" Margin="5, 0, 5, 5" Click="selectArmorSets_Click">
+                <TextBlock Text="Select Armor Sets Folder"/>
+            </Button>
+            <TextBlock x:Name="SelectedArmorSetsFolder">
+
+            </TextBlock>
+        </DockPanel  >
+        <DockPanel Grid.Row="5">
+            <Button x:Name="selectEnchants" Margin="5, 0, 5, 5" Click="selectEnchants_Click">
+                <TextBlock Text="Select Enchantment Folder"/>
+            </Button>
+            <TextBlock x:Name="SelectedEnchantsFolder">
+
+            </TextBlock>
+        </DockPanel  >
+    </Grid>
+
 </Window>

@@ -1,0 +1,5 @@
+﻿                    {
+                        ["name"] = "ingredientNameText",
+                        ["quantity"] = "quantityText",
+                        ["image"] = "imageText"
+                    }

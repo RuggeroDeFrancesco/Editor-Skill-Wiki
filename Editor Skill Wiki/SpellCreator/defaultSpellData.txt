@@ -14,8 +14,10 @@
         ['Spell Tags'] = "spellTagsValue",
         ['cooldown'] = cooldownValue,
         ['mana_cost'] = manaCostValue,
+        ['max_mana_cost'] = maxManaCostValue,
         ['mana_cost_per_s'] = manaCostPersValue,
         ['image'] = "imageValue",
+        ['Monster Only'] = "monsterOnlyValue",
 
         -- Secondary Info --
 

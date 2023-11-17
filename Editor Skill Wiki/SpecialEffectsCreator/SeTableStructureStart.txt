@@ -1,0 +1,11 @@
+﻿{| class="wikitable" style="margin: auto;"
+|+
+!Icon
+!Name
+!Description
+!Status Type
+!Beneficial
+!Can Be Removed
+!Active When Mounted
+!Keeps in Combat
+!Related To Skill

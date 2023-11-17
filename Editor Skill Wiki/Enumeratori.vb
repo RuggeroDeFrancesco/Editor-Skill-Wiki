@@ -34,14 +34,16 @@
 	End Enum
 	Public Enum ToggleGroup
 		None
+		Link
+		ReadyStrike
+		WeaponModifier
 		Aura
 		DamageProtection
+		MagicalGlobe
 		Skin
-		Stance
-		WeaponModifier
-		MajorProtection
-		Ward
 		Invisibility
+		Incapacitated
+		Snared
 	End Enum
 
 	Public Enum SpellType
@@ -58,7 +60,7 @@
 
 	Public Enum ActivationType
 		Standard
-		Toggle
+		Sustained
 		Hold
 		Ready
 		Link
@@ -84,7 +86,7 @@
 	Public Enum tooltipActivationType
 		None
 		Targeted
-		Toggle
+		Sustained
 		Ready
 		Directional
 		Self
@@ -97,6 +99,7 @@
 		FrozenEnemy
 		RootedEnemy
 		Ally
+		CorrodedEnemy
 	End Enum
 
 	Public Enum SpellGroup
@@ -114,7 +117,7 @@
 		None = 0
 		MagicalBuff = 2
 		Invisibility = 4
-		ElementalConditions = 8
+		ElementalCondition = 8
 		PhysicalBuff = 16
 		MagicalProtection = 32
 		Snare = 64
@@ -124,19 +127,26 @@
 		PhysicalDebuff = 1024
 		Poison = 2048
 		SpecialEffect = 4096
+		Summon = 8192
+		Incapacitated = 16384
+		ArmorSetBonus = 32768
+		PrimalForm = 65536
 	End Enum
 
 	Public Enum SpellUnicityGroup
 		None
-		MagicalGlobe
-		DamageProtection
-		Totem
-		WeaponModifier
 		Link
-		BattleStance
-		Skin
 		ReadyStrike
+		WeaponModifier
+		Totem
 		Aura
+		BattleStance
+		DamageProtection
+		MagicalGlobe
+		Skin
+		Invisibility
+		Incapacitated
+		Snared
 	End Enum
 
 	Public Enum ReadyTrigger
@@ -533,9 +543,12 @@
 		AttackSpeedBonusPercentage
 		MaxExtraDamage
 		EffectsAmplificationPercentage
-		TresholdDamageFlat
+		Replace
 		BlockChancePercentage
 		HealthRecoveredPercentage
+		DamageAmplificationPerStackPercentage
+		MaxManaCost
+		RegenerationHealthDebuff
 	End Enum
 
 
@@ -609,7 +622,7 @@
 		COS
 		PER
 		INT
-		CHA
+		WIS
 	End Enum
 
 #End Region
@@ -719,8 +732,8 @@
 		None = 0
 		SpiderWeb = 1
 		Incorporeal = 2
-		Incapacitated = 4
-		Snared = 8
+		'Incapacitated = 4
+		'Snared = 8
 	End Enum
 
 	Public Enum MonsterRestrictionType
@@ -906,8 +919,10 @@
 		HerbalRemedy = 33554432
 		Bandages = 67108864
 		ProficiencyOrb = 134217728
+		AlchemicalOil = 268435456
+		DivineReward = 536870912
+		AspectExtract = 1073741824
 	End Enum
-
 	Public Enum ToolCategory
 		None
 		Axe
@@ -1023,6 +1038,8 @@
 		SlayerArmor = 73
 		WarlockArmor = 74
 		ProficiencyOrb = 75
+		AlchemicalOil = 76
+		DivineReward = 77
 		None = -1
 	End Enum
 
@@ -1042,6 +1059,36 @@
 		Secondary
 	End Enum
 
+	Public Enum WeaponType
+		Dagger
+		Axe
+		Club
+		Mac
+		Spear
+		Quarterstaff
+		Bow
+		Unarmed
+		None
+		Sword
+		Crossbow
+		Hammer
+		Wand
+		Halberd
+	End Enum
+
+	Public Enum WeaponClass
+		Melee = 1
+		Ranged = 2
+		Mage = 4
+		Unarmed = 8
+		Shield = 16
+	End Enum
+
+	Public Enum WeaponAttackSpeed
+		Slow
+		Medium
+		Fast
+	End Enum
 	Public Enum EquipEnchantClass
 		None
 		Armor
@@ -1192,6 +1239,41 @@
 		If combinedName <> "" Then
 			combinedName = combinedName.Substring(0, combinedName.Count() - 2) 'tolgo il vbCrlf di troppo
 		End If
+
+		Return combinedName
+	End Function
+
+	Public Function combinedEnumeratorNameToList(enumType As Type, value As Integer) As List(Of String)
+		Dim listOfEnumerators As New List(Of Integer)
+		Dim combinedName As New List(Of String)
+		Dim highestPower As Integer = 1
+
+		If value = 0 Then
+			combinedName.Add([Enum].GetName(enumType, 0))
+			Return combinedName
+		End If
+
+		While highestPower * 2 <= value
+			highestPower = highestPower * 2
+		End While
+		Dim i As Integer = highestPower
+		While True
+
+			If value >= i Then
+				listOfEnumerators.Add(i)
+				value = value - i
+			End If
+			If i = 1 Then
+				Exit While
+			Else
+				i = i / 2
+			End If
+
+		End While
+
+		For Each enumeratore As Integer In listOfEnumerators
+			combinedName.Add([Enum].GetName(enumType, enumeratore))
+		Next
 
 		Return combinedName
 	End Function

@@ -148,11 +148,11 @@
             int = data._int.value.ToString
             cos = data.cos.value.ToString
             per = data.per.value.ToString
-            cha = data.cha.value.ToString
+            cha = data.wis.value.ToString
 
             health = (data.baseEndurance.value + data.str.value * 50 + data.cos.value * 75).ToString
             healthRegen = (data.baseEnduranceRegen.value + data.str.value).ToString
-            mana = (data.baseEnergy.value + data._int.value * 75 + data.cha.value * 50).ToString
+            mana = (data.baseEnergy.value + data._int.value * 75 + data.wis.value * 50).ToString
             manaRegen = (data.baseEnergyRegen.value + data._int.value * 2).ToString
             accuracy = (data.accuracy.value + data.per.value * 25 - 150).ToString
             fortitude = (data.fortitude.value + data.cos.value * 25 - 150).ToString
@@ -160,7 +160,7 @@
             willpower = (data.willpower.value + data._int.value * 25 - 150).ToString
             stealth = (data.Stealth.value + data.dex.value * 25 - 150).ToString
             detection = (data.Detection.value + data.per.value * 25 - 150).ToString
-            luck = (data.baseLuck.value + data.cha.value * 25 - 250).ToString
+            luck = (data.baseLuck.value + data.wis.value * 25 - 250).ToString
             criticalChance = (data.criticalChance.value + data.per.value * 1 - 10).ToString & "%"
             criticalDamage = data.criticalDamage.value.ToString
 
@@ -215,11 +215,11 @@
             petItemType = "" 'inseguire i dati dei petItem è troppo difficile, lascio il campo vuoto
 
 
-            Dim statusRawData As String = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "AssetIndices/statusEffects.xml"))
+            Dim uniqueIndex As String = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "AssetIndices/unifiedIndex.xml"))
 
             For Each StatusEffect As PropertyClass In data.immunityStatusEffectList
                 If StatusEffect.m_PathID <> 0 Then
-                    Dim newImmunity As String = getStatusEffect(StatusEffect.m_PathID, statusRawData)
+                    Dim newImmunity As String = getStatusEffect(StatusEffect.m_PathID, uniqueIndex)
                     If newImmunity <> "" Then
                         immunityStatusEffectList.Add(newImmunity)
                     End If
@@ -232,18 +232,18 @@
             Next
 
 
-            Dim attackRawData As String = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "AssetIndices/attacks.xml"))
-            Dim wpRawData As String = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "AssetIndices/weaponProperties.xml"))
-            Dim enchantsRawData As String = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "AssetIndices/enchantments.xml"))
+            'Dim attackRawData As String = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "AssetIndices/unifiedIndex.xml"))
+            'Dim wpRawData As String = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "AssetIndices/unifiedIndex.xml"))
+            'Dim enchantsRawData As String = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "AssetIndices/unifiedIndex.xml"))
 
             For Each attack As MonsterAttack In data.MonsterAttacks
-                monsterAttacks.Add(getAttackData(attack.value.m_PathID, attackRawData, wpRawData, enchantsRawData, statusRawData, attackFolderPath, wpFolderPath, enchantFolderPath, languageData, languageEnum))
+                monsterAttacks.Add(getAttackData(attack.value.m_PathID, uniqueIndex, uniqueIndex, uniqueIndex, uniqueIndex, attackFolderPath, wpFolderPath, enchantFolderPath, languageData, languageEnum))
             Next
 
-            Dim spellRawData As String = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "AssetIndices/SpellIndex.xml"))
+            'Dim spellRawData As String = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "AssetIndices/unifiedIndex.xml"))
 
             For Each spell As MonsterSpells In data.MonsterSpellsList
-                Dim newskill As MonsterSpellFinalData = getSpellData(spell.value.m_PathID, spellRawData, spellFolderPath, spell)
+                Dim newskill As MonsterSpellFinalData = getSpellData(spell.value.m_PathID, uniqueIndex, spellFolderPath, spell)
                 newskill.acquired = spell.targetToUnlock
                 compileRestrictions(spell, newskill)
                 compileSkillFullText(newskill)
@@ -254,7 +254,7 @@
                 allowedPoi.Add([Enum].GetName(GetType(POIType), poi))
             Next
         Catch ex As Exception
-            Throw New Exception("The file selected is not a creature.")
+            Throw New Exception("The file selected is not a creature. " & data.m_name)
         End Try
 
 
@@ -273,7 +273,7 @@
     Private Function getAttackData(attackRef As String, attackRawData As String, wpRawData As String, enchantRawData As String, statusRawData As String, attackFolder As String, wpFolder As String, enchantFolder As String, languageData As LanguageData, languageEnum As Integer) As MonsterAttackFinalData
         Dim newAttack As New MonsterAttackFinalData
         Dim parsedData As MonsterAttackData
-        Dim index As Integer = attackRawData.IndexOf(attackRef)
+        Dim index As Integer = attackRawData.IndexOf("<PathID>" & attackRef)
         If index <> -1 Then
             Dim startName As Integer = attackRawData.LastIndexOf("<Name>", index)
             Dim endName As Integer = attackRawData.IndexOf("</Name>", startName)
@@ -317,7 +317,7 @@
         Return newAttack
     End Function
 
-    Private Function getAttackPropertyName(wpRef As String, wpFolder As String, enchantFolder As String, wpRawData As String, enchantRawData As String, statusRawData As String, languageData As LanguageData, languageEnum As Integer) As String
+    Public Shared Function getAttackPropertyName(wpRef As String, wpFolder As String, enchantFolder As String, wpRawData As String, enchantRawData As String, statusRawData As String, languageData As LanguageData, languageEnum As Integer) As String 'used also by itemCreator
         Dim attackProperty As New AttackProperty
         Dim attackPropertyData As New WeaponPropertyData
         Dim index As Integer = wpRawData.IndexOf(wpRef)
@@ -329,13 +329,16 @@
             Dim textData As String = System.IO.File.ReadAllText(filePath)
             attackPropertyData = Newtonsoft.Json.JsonConvert.DeserializeObject(Of WeaponPropertyData)(textData)
             If attackPropertyData.localizationString <> "" Then
-                Return languageData.returnTerm(attackPropertyData.localizationString, languageEnum)
+                Dim term = "enchantments/" & attackPropertyData.localizationString & "_name"
+                Return languageData.returnTerm(term, languageEnum)
             ElseIf attackPropertyData.enchantment IsNot Nothing Then
                 Return getAttackEnchantName(attackPropertyData.enchantment.m_PathID, enchantFolder, enchantRawData, languageData, languageEnum)
             ElseIf attackPropertyData.statusEffect IsNot Nothing Then
                 Return getStatusEffect(attackPropertyData.statusEffect.m_PathID, statusRawData)
             ElseIf attackPropertyData.necroticStatus IsNot Nothing Then
                 Return "Necrotic"
+            ElseIf attackPropertyData.m_Name = "WP_Poisonable" Then
+                Return "Poison Chance"
             Else Return ""
             End If
         Else
@@ -343,7 +346,7 @@
         End If
     End Function
 
-    Private Function getAttackEnchantName(enchantRef As String, enchantFolder As String, enchantRawData As String, languageData As LanguageData, languageEnum As Integer) As String
+    Public Shared Function getAttackEnchantName(enchantRef As String, enchantFolder As String, enchantRawData As String, languageData As LanguageData, languageEnum As Integer) As String 'used also by itemCreator
         Dim enchantName As String = ""
         Dim enchantPropertyData As EnchantmentRecipe
         Dim name As String = ""
@@ -364,7 +367,7 @@
         Return enchantName
     End Function
 
-    Private Function getStatusEffect(statusRef As String, rawdata As String) As String
+    Public Shared Function getStatusEffect(statusRef As String, rawdata As String) As String 'used also by itemCreator
         Dim statusEffect As String = ""
         Dim index As Integer = rawdata.IndexOf(statusRef)
         Dim startName As Integer = rawdata.LastIndexOf("<Name>", index)
@@ -377,7 +380,7 @@
     Private Function getSpellData(spellRef As String, rawData As String, spellFolder As String, spell As MonsterSpells)
         Dim newSpell As New MonsterSpellFinalData
         Dim parsedData As SpellClassMirror
-        Dim index As Integer = rawData.IndexOf(spellRef)
+        Dim index As Integer = rawData.IndexOf("<PathID>" & spellRef)
         If index <> -1 Then
             Dim startName As Integer = rawData.LastIndexOf("<Name>", index)
             Dim endName As Integer = rawData.IndexOf("</Name>", startName)

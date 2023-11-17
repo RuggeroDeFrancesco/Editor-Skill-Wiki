@@ -1,0 +1,8 @@
+﻿["itemNameText"] = {
+        ["Quantity Crafted"] = "quantityText",
+        ["Time Required"] = "timeText",
+        ["Station"] = {"stationText"},
+        ["Materials Needed"] = {
+spazioIngredienti
+        }
+    },

@@ -64,7 +64,7 @@ Public Class MonsterDataCreator
 
     Private Function createModuleOutput(data As MonsterFinalData)
         If data.name = "Dummy" Or
-            data.name = "NPC " Or
+            data.name = "class_NPC " Or
             data.name = "TotemDecay" Or data.name = "TotemThunder" Or data.name = "TotemWildfire" Or data.name = "TotemWinter" Then
             Return ""
         End If
@@ -253,15 +253,31 @@ Public Class MonsterDataCreator
         If term.IndexOf("EarthElementalGreater") <> -1 Then
             term = term.Replace("EarthElementalGreater", "GreaterEarthElemental")
         End If
+
         If term.IndexOf("ForestTroll") <> -1 Then
-            term = term.Replace("ForestTroll", "TrollForest")
+            If term.IndexOf("Legend") = -1 Then
+                term = term.Replace("ForestTroll", "TrollForest")
+            Else
+                term = term.Replace("Legend", "Champion")
+            End If
+
         End If
         If term.IndexOf("MountainTroll") <> -1 Then
-            term = term.Replace("MountainTroll", "TrollMountain")
+            If term.IndexOf("Legend") = -1 Then
+                term = term.Replace("MountainTroll", "TrollMountain")
+            Else
+                term = term.Replace("Legend", "Champion")
+            End If
         End If
+
         If term.IndexOf("SeaTroll") <> -1 Then
-            term = term.Replace("SeaTroll", "TrollSea")
+            If term.IndexOf("Legend") = -1 Then
+                term = term.Replace("SeaTroll", "TrollSea")
+            Else
+                term = term.Replace("Legend", "Champion")
+            End If
         End If
+
         If term.IndexOf("Swordman") <> -1 Then
             term = term.Replace("Swordman", "Swordsman")
         End If

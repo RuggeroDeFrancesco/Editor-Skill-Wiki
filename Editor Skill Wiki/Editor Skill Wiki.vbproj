@@ -19,12 +19,17 @@
     <None Remove="Images\SeData.png" />
     <None Remove="Images\SpellData.png" />
     <None Remove="ItemCreator\defaultArmorData.txt" />
+    <None Remove="ItemCreator\defaultIngredientData.txt" />
     <None Remove="ItemCreator\defaultReagentData.txt" />
+    <None Remove="ItemCreator\defaultRecipeData.txt" />
     <None Remove="LootCreator\defaultItemLootData.txt" />
     <None Remove="LootCreator\defaultLootData.txt" />
     <None Remove="LootCreator\itemsIndex.xml" />
     <None Remove="LootCreator\lootIndex.xml" />
     <None Remove="MonsterCreator\defaultMonsterRestriction.txt" />
+    <None Remove="SpecialEffectsCreator\defaultSERow.txt" />
+    <None Remove="SpecialEffectsCreator\SeTableStructureEnd.txt" />
+    <None Remove="SpecialEffectsCreator\SeTableStructureStart.txt" />
   </ItemGroup>
 
   <ItemGroup>
@@ -49,6 +54,12 @@
     <Content Include="Images\MainWindow.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="ItemCreator\defaultIngredientData.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ItemCreator\defaultRecipeData.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="ItemCreator\defaultArmorData.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -65,6 +76,15 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="MonsterCreator\defaultMonsterRestriction.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SpecialEffectsCreator\defaultSERow.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SpecialEffectsCreator\SeTableStructureEnd.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SpecialEffectsCreator\SeTableStructureStart.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="SpellCreator\defaultSpellData.txt">

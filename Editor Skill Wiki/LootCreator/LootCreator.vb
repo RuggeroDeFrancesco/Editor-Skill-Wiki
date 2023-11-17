@@ -24,8 +24,8 @@ Public Class LootCreator
         deserializedlanguageData = deserializeLanguageData(rawlanguagedata)
         getLootData(lootPath)
         getItemData(itempath)
-        lootListIndex = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "AssetIndices/lootIndex.xml"))
-        itemListIndex = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "AssetIndices/itemsIndex.xml"))
+        lootListIndex = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "AssetIndices/unifiedIndex.xml"))
+        itemListIndex = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "AssetIndices/unifiedIndex.xml"))
     End Sub
 
     Public Sub parseData(path As String) 'main method of the class, uses the private methods to extract the data from a loot file, deserialize it into a lootClassMirror class and extracts information from lootClassMirror
@@ -80,48 +80,52 @@ Public Class LootCreator
 
     Private Function createOutput(data As MonsterData) As String 'converts the enumerators into clear text and adds the categories
         Dim output As String
-
-        output = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "LootCreator/defaultLootData.txt"))
-
-        Dim lootListName As String = getLootList(data.lootList.m_PathID)
-        If lootListName = "" Then
+        If data.m_name = "class_NPC" Then
             Return ""
         End If
-        For Each lootList As LootClassMirror In lootData
-            If lootList.m_Name = lootListName Then
-                output = output.Replace("monsterNameText", MonsterDataCreator.getMonsterName(data.m_name, deserializedlanguageData, language))
+        output = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "LootCreator/defaultLootData.txt"))
+        If data.lootList IsNot Nothing Then
 
-                output = output.Replace("minimumGoldText", lootList.minGold.ToString)
-                output = output.Replace("maximumGoldText", lootList.maxGold.ToString)
 
-                output = output.Replace("maximumGemsText", lootList.maxGems.ToString)
-                output = output.Replace("chippedChanceText", lootList.chippedChance.ToString)
-                output = output.Replace("fineChanceText", lootList.fineChance.ToString)
-                output = output.Replace("flawlessChanceText", lootList.flawlessChance.ToString)
-                output = output.Replace("amethystText", lootList.amethyst.ToString)
-                output = output.Replace("diamondText", lootList.diamond.ToString)
-                output = output.Replace("emeraldText", lootList.emerald.ToString)
-                output = output.Replace("rubyText", lootList.ruby.ToString)
-                output = output.Replace("sapphireText", lootList.sapphire.ToString)
-                output = output.Replace("topazText", lootList.topaz.ToString)
-
-                output = output.Replace("regionText", lootList.loreTabletsLoot.region.ToString)
-                output = output.Replace("minimumCommonText", lootList.loreTabletsLoot.common.minQuantity.ToString)
-                output = output.Replace("maximumCommonText", lootList.loreTabletsLoot.common.maxQuantity.ToString)
-                output = output.Replace("probabilityCommonText", lootList.loreTabletsLoot.common.probability.ToString)
-                output = output.Replace("minimumUncommonText", lootList.loreTabletsLoot.uncommon.minQuantity.ToString)
-                output = output.Replace("maximumUncommonText", lootList.loreTabletsLoot.uncommon.maxQuantity.ToString)
-                output = output.Replace("probabilityUncommonText", lootList.loreTabletsLoot.uncommon.probability.ToString)
-                output = output.Replace("minimumRareText", lootList.loreTabletsLoot.rare.minQuantity.ToString)
-                output = output.Replace("maximumRareText", lootList.loreTabletsLoot.rare.maxQuantity.ToString)
-                output = output.Replace("probabilityRareText", lootList.loreTabletsLoot.rare.probability.ToString)
-
-                Dim itemLootList As String = extractLootItems(lootList)
-                output = output.Replace("itemDropsSpace", itemLootList)
-
+            Dim lootListName As String = getLootList(data.lootList.m_PathID)
+            If lootListName = "" Then
+                Return ""
             End If
-        Next
+            For Each lootList As LootClassMirror In lootData
+                If lootList.m_Name = lootListName Then
+                    output = output.Replace("monsterNameText", MonsterDataCreator.getMonsterName(data.m_name, deserializedlanguageData, language))
 
+                    output = output.Replace("minimumGoldText", lootList.minGold.ToString)
+                    output = output.Replace("maximumGoldText", lootList.maxGold.ToString)
+
+                    output = output.Replace("maximumGemsText", lootList.maxGems.ToString)
+                    output = output.Replace("chippedChanceText", lootList.chippedChance.ToString)
+                    output = output.Replace("fineChanceText", lootList.fineChance.ToString)
+                    output = output.Replace("flawlessChanceText", lootList.flawlessChance.ToString)
+                    output = output.Replace("amethystText", lootList.amethyst.ToString)
+                    output = output.Replace("diamondText", lootList.diamond.ToString)
+                    output = output.Replace("emeraldText", lootList.emerald.ToString)
+                    output = output.Replace("rubyText", lootList.ruby.ToString)
+                    output = output.Replace("sapphireText", lootList.sapphire.ToString)
+                    output = output.Replace("topazText", lootList.topaz.ToString)
+
+                    output = output.Replace("regionText", lootList.loreTabletsLoot.region.ToString)
+                    output = output.Replace("minimumCommonText", lootList.loreTabletsLoot.common.minQuantity.ToString)
+                    output = output.Replace("maximumCommonText", lootList.loreTabletsLoot.common.maxQuantity.ToString)
+                    output = output.Replace("probabilityCommonText", lootList.loreTabletsLoot.common.probability.ToString)
+                    output = output.Replace("minimumUncommonText", lootList.loreTabletsLoot.uncommon.minQuantity.ToString)
+                    output = output.Replace("maximumUncommonText", lootList.loreTabletsLoot.uncommon.maxQuantity.ToString)
+                    output = output.Replace("probabilityUncommonText", lootList.loreTabletsLoot.uncommon.probability.ToString)
+                    output = output.Replace("minimumRareText", lootList.loreTabletsLoot.rare.minQuantity.ToString)
+                    output = output.Replace("maximumRareText", lootList.loreTabletsLoot.rare.maxQuantity.ToString)
+                    output = output.Replace("probabilityRareText", lootList.loreTabletsLoot.rare.probability.ToString)
+
+                    Dim itemLootList As String = extractLootItems(lootList)
+                    output = output.Replace("itemDropsSpace", itemLootList)
+
+                End If
+            Next
+        End If
         Return output
     End Function
 
@@ -169,7 +173,7 @@ Public Class LootCreator
         Return lootListName
     End Function
 
-    Shared Function getItem(item As String, itemListIndex As String) As String 'used also by monster data creator
+    Shared Function getItem(item As String, itemListIndex As String) As String 'used also by monster data creator and Item data creator
         If item <> "0" Then
             Dim itemRef As String = ""
             Dim index As Integer = itemListIndex.IndexOf(item)

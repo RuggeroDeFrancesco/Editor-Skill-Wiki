@@ -1,0 +1,10 @@
+﻿|-
+|<div id="StatusEffectName"></div>[[File:statusEffectIcon.png|alt=|center|frameless]]
+|StatusEffectName
+|StatusEffectDescription
+|StatusEffectType
+|StatusEffectBeneficial
+|CanBeRemoved
+|KeepWhenMounted
+|PutsInCombat
+|RelatedToSkill
