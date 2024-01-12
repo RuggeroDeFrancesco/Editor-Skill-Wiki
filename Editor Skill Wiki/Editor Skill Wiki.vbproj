@@ -11,6 +11,7 @@
   <ItemGroup>
     <None Remove="defaultSpellData.txt" />
     <None Remove="I2Languages.json" />
+    <None Remove="Images\ImbueData.png" />
     <None Remove="Images\ItemData.png" />
     <None Remove="Images\LootData.png" />
     <None Remove="Images\MainWindow.jpg" />
@@ -18,6 +19,7 @@
     <None Remove="Images\MonsterSpells.png" />
     <None Remove="Images\SeData.png" />
     <None Remove="Images\SpellData.png" />
+    <None Remove="ImbueCreator\DefaultImbueData.txt" />
     <None Remove="ItemCreator\defaultArmorData.txt" />
     <None Remove="ItemCreator\defaultIngredientData.txt" />
     <None Remove="ItemCreator\defaultReagentData.txt" />
@@ -33,6 +35,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Images\ImbueData.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Images\SeData.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -52,6 +57,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\MainWindow.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImbueCreator\DefaultImbueData.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="ItemCreator\defaultIngredientData.txt">

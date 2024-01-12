@@ -6,7 +6,7 @@
   "m_Enabled": 1,
   "m_Script": {
     "m_FileID": 1,
-    "m_PathID": 1169
+    "m_PathID": 1155
   },
   "m_Name": "I2Languages",
   "mSource": {
@@ -8566,10 +8566,10 @@
         "TermType": 0,
         "Languages": [
           "",
-          "You have to wait for one week since the last time you've changed your character attributes before you can do it again.",
-          "Du musst eine Woche warten, nachdem du deine Charakterattribute geändert hast, um sie erneut ändern zu können.",
-          "Vous devez attendre une semaine à compter de la dernière fois que vous avez modifié vos attributs de personnage avant de pouvoir effectuer cette action.",
-          "Debes esperar una semana luego de haber cambiado tus atributos antes de volver a cambiarlos.",
+          "You have to wait for 24 hours since the last time you've changed your character attributes before you can do it again. Such frequent respecs are temporarily available to all players, but will be limited to VIP accounts once VIP is implemented.",
+          "",
+          "",
+          "",
           ""
         ],
         "Flags": [
@@ -13292,6 +13292,111 @@
         "Languages": [
           "",
           "Alchemical Oils",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "Flags": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "Languages_Touch": []
+      },
+      {
+        "Term": "ui/craftingWindow_category_potions",
+        "TermType": 0,
+        "Languages": [
+          "",
+          "Potions",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "Flags": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "Languages_Touch": []
+      },
+      {
+        "Term": "ui/craftingWindow_category_potions_attributes",
+        "TermType": 0,
+        "Languages": [
+          "",
+          "Attributes",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "Flags": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "Languages_Touch": []
+      },
+      {
+        "Term": "ui/craftingWindow_category_potions_resistances",
+        "TermType": 0,
+        "Languages": [
+          "",
+          "Resistances",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "Flags": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "Languages_Touch": []
+      },
+      {
+        "Term": "ui/craftingWindow_category_potions_saves",
+        "TermType": 0,
+        "Languages": [
+          "",
+          "Saves and Immunities",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "Flags": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "Languages_Touch": []
+      },
+      {
+        "Term": "ui/craftingWindow_category_potions_misc",
+        "TermType": 0,
+        "Languages": [
+          "",
+          "Miscellaneous",
           "",
           "",
           "",
@@ -23875,7 +23980,7 @@
         "TermType": 0,
         "Languages": [
           "",
-          "Each point of armor encumbrance reduces your Movement Speed by {0}%, your Attack Speed by {1}% and your Cooldown Reduction by {2}%",
+          "Each point of armor encumbrance reduces your Movement Speed by {0}%, your Attack Speed by {1}% and your Damage (both from attacks and abilities) by {2}%.",
           "",
           "",
           "",
@@ -25576,7 +25681,7 @@
         "TermType": 0,
         "Languages": [
           "",
-          "Potions can only be consumed while <style=gold>Resting</style>, and grant a variety of long lasting effects.\n\nEach potion has a certain degree of <style=gold>Toxicity</style>, and drinking too many at once can lead to dire consequences!",
+          "Potions can only be consumed while <style=gold>Resting</style>, and grant a variety of long lasting effects.\n\nEach potion has a certain degree of <style=gold>Toxicity</style>, which prevents you from drinking too many potions at once.",
           "",
           "",
           "",
@@ -26626,7 +26731,7 @@
         "TermType": 0,
         "Languages": [
           "",
-          "<style=TooltipBoldLarge>STRENGTH:</style> {0}\n<style=TooltipBoldLarge>DEXTERITY:</style> {1}\n<style=TooltipBoldLarge>INTELLIGENCE:</style> {2}\n<style=TooltipBoldLarge>CONSTITUTION:</style> {3}\n<style=TooltipBoldLarge>PERCEPTION:</style> {4}\n<style=TooltipBoldLarge>WISDOM:</style> {5}",
+          "<style=TooltipBoldLarge>HEALTH:</style> {0}\n<style=TooltipBoldLarge>SPEED:</style> {1}\n<style=TooltipBoldLarge>ABILITY POWER:</style> {2}",
           "",
           "",
           "",
@@ -28916,6 +29021,27 @@
         "Languages": [
           "",
           "As an Evil player, you have to wait for one minute to suicide after you've been downed.",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "Flags": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "Languages_Touch": []
+      },
+      {
+        "Term": "ui/knockDownPopUp_Respawn_Evil_Not_Allowed",
+        "TermType": 0,
+        "Languages": [
+          "",
+          "As an Evil player, you have to wait for one minute to respawn after you've been downed.",
           "",
           "",
           "",
@@ -31334,6 +31460,27 @@
           "Alchemische Toleranz",
           "Tolérance alchimique",
           "Tolerancia alquímica",
+          ""
+        ],
+        "Flags": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "Languages_Touch": []
+      },
+      {
+        "Term": "ui/knowledgeTalentTree_AlchemicalTolerance",
+        "TermType": 0,
+        "Languages": [
+          "",
+          "+{0} Maximum Alchemical Toxicity",
+          "",
+          "",
+          "",
           ""
         ],
         "Flags": [
@@ -36576,14 +36723,35 @@
         "Languages_Touch": []
       },
       {
-        "Term": "ui/knowledgeTalentTree_SuperiorImmunity_Title",
+        "Term": "ui/knowledgeTalentTree_AlchemicalEfficiency_Title",
         "TermType": 0,
         "Languages": [
           "",
-          "Superior Immunity",
+          "Alchemical Efficiency",
           "Bessere Immunität",
           "Immunité supérieure",
           "Inmunidad superior",
+          ""
+        ],
+        "Flags": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "Languages_Touch": []
+      },
+      {
+        "Term": "ui/knowledgeTalentTree_AlchemicalEfficiency",
+        "TermType": 0,
+        "Languages": [
+          "",
+          "Potions last {0}% longer.",
+          "",
+          "",
+          "",
           ""
         ],
         "Flags": [
@@ -44892,6 +45060,27 @@
         "Languages_Touch": []
       },
       {
+        "Term": "ui/settingsWindow_video_framerateLimitInfoText",
+        "TermType": 0,
+        "Languages": [
+          "",
+          "Framerate cap is disabled when v-sync is active.",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "Flags": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "Languages_Touch": []
+      },
+      {
         "Term": "ui/siegeType_0",
         "TermType": 0,
         "Languages": [
@@ -50394,14 +50583,14 @@
         "Languages_Touch": []
       },
       {
-        "Term": "ui/worldMap_tooltip_LegendAltar_difficulty_0",
+        "Term": "ui/worldMap_tooltip_LegendAltar_summoned",
         "TermType": 0,
         "Languages": [
           "",
-          "Easy",
-          "Einfach",
-          "Facile",
-          "Fácil",
+          "Summoned",
+          "",
+          "",
+          "",
           ""
         ],
         "Flags": [
@@ -50415,35 +50604,14 @@
         "Languages_Touch": []
       },
       {
-        "Term": "ui/worldMap_tooltip_LegendAltar_difficulty_1",
+        "Term": "ui/worldMap_tooltip_LegendAltar_ultimate",
         "TermType": 0,
         "Languages": [
           "",
-          "Medium",
-          "Mittel",
-          "Moyen",
-          "Medio",
-          ""
-        ],
-        "Flags": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "Languages_Touch": []
-      },
-      {
-        "Term": "ui/worldMap_tooltip_LegendAltar_difficulty_2",
-        "TermType": 0,
-        "Languages": [
+          "Ultimate",
           "",
-          "Hard",
-          "Schwer",
-          "Difficile",
-          "Difícil",
+          "",
+          "",
           ""
         ],
         "Flags": [
@@ -50840,6 +51008,237 @@
         "Languages": [
           "",
           "Master Crafter",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "Flags": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "Languages_Touch": []
+      },
+      {
+        "Term": "ui/sendPlayerToPrisonPopUp_Title",
+        "TermType": 0,
+        "Languages": [
+          "",
+          "Jail Criminal",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "Flags": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "Languages_Touch": []
+      },
+      {
+        "Term": "ui/sendPlayerToPrisonPopUp_Body",
+        "TermType": 0,
+        "Languages": [
+          "",
+          "Do you really want to send this criminal scoundrel to jail?",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "Flags": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "Languages_Touch": []
+      },
+      {
+        "Term": "ui/sendPlayerToPrisonPopUp_Button",
+        "TermType": 0,
+        "Languages": [
+          "",
+          "JAIL",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "Flags": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "Languages_Touch": []
+      },
+      {
+        "Term": "ui/sendPlayerToPrisonPopUp_NotAllowed_Body",
+        "TermType": 0,
+        "Languages": [
+          "",
+          "This creature hasn't committed any criminal action yet or has recovered all its negative Karma, so it can't be punished with jail time.",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "Flags": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "Languages_Touch": []
+      },
+      {
+        "Term": "ui/generic_popUp_Attention",
+        "TermType": 0,
+        "Languages": [
+          "",
+          "Attention",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "Flags": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "Languages_Touch": []
+      },
+      {
+        "Term": "ui/storeWindow_packs_currentPledge",
+        "TermType": 0,
+        "Languages": [
+          "",
+          "<style=gold>Current Pledge: {0}</style>",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "Flags": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "Languages_Touch": []
+      },
+      {
+        "Term": "ui/storeWindow_packs_pledgeName_0",
+        "TermType": 0,
+        "Languages": [
+          "",
+          "Adept",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "Flags": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "Languages_Touch": []
+      },
+      {
+        "Term": "ui/storeWindow_packs_pledgeName_1",
+        "TermType": 0,
+        "Languages": [
+          "",
+          "Master",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "Flags": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "Languages_Touch": []
+      },
+      {
+        "Term": "ui/storeWindow_packs_pledgeName_2",
+        "TermType": 0,
+        "Languages": [
+          "",
+          "Legend",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "Flags": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "Languages_Touch": []
+      },
+      {
+        "Term": "ui/storeWindow_packs_pledgeName_3",
+        "TermType": 0,
+        "Languages": [
+          "",
+          "Champion",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "Flags": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "Languages_Touch": []
+      },
+      {
+        "Term": "ui/storeWindow_packs_pledgeName_4",
+        "TermType": 0,
+        "Languages": [
+          "",
+          "Eternal",
           "",
           "",
           "",
@@ -75367,7 +75766,7 @@
         "TermType": 0,
         "Languages": [
           "",
-          "<b>Expert Hunter</b>\nYou deal up to 50% extra damage to monsters depending on how much Knowledge you unlocked for them.",
+          "<b>Expert Hunter</b>\nYou deal up to 20% extra damage to monsters depending on how much Knowledge you unlocked for them.",
           "",
           "",
           "",
@@ -75808,7 +76207,7 @@
         "TermType": 0,
         "Languages": [
           "",
-          "For each successful hit with a bow, you gain a Critical Chance bonus of 2% for 10 seconds. The bonus stacks up to 100% and is halved every time you miss a shot.",
+          "For each successful hit with a bow, you gain a Critical Chance bonus of 4% for 10 seconds. The bonus stacks up to 40% and is halved every time you miss a shot.",
           "",
           "",
           "",
@@ -90252,6 +90651,27 @@
         "Languages_Touch": []
       },
       {
+        "Term": "items/craftingStation_alchemyStation",
+        "TermType": 0,
+        "Languages": [
+          "",
+          "Alchemy Station",
+          "",
+          "",
+          "",
+          "Station"
+        ],
+        "Flags": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "Languages_Touch": []
+      },
+      {
         "Term": "items/theArrivalofMen_name",
         "TermType": 0,
         "Languages": [
@@ -98509,7 +98929,7 @@
         "TermType": 0,
         "Languages": [
           "",
-          "You can only use an Alchemy Potion when you're resting at the fireplace of a private house or a city tavern.",
+          "You can only use an Alchemy Potion when you're resting\nat the fireplace of a private house or a city tavern.",
           "",
           "",
           "",
@@ -98530,7 +98950,7 @@
         "TermType": 0,
         "Languages": [
           "",
-          "Messaggio Toxicity",
+          "You cannot drink this potion because you would exceed\nyour alchemical toxicity tolerance.",
           "",
           "",
           "",
@@ -98828,6 +99248,27 @@
           "Auf Reittieren kann nicht gezaubert werden",
           "Impossible de lancer en étant sur une monture",
           "Debes desmontarte para lanzar habilidades",
+          ""
+        ],
+        "Flags": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "Languages_Touch": []
+      },
+      {
+        "Term": "game_messages/siege_SpellnoAvailable",
+        "TermType": 0,
+        "Languages": [
+          "",
+          "Can't cast in sieges",
+          "",
+          "",
+          "",
           ""
         ],
         "Flags": [
@@ -102605,6 +103046,27 @@
         "Languages": [
           "",
           "Can’t rest in Primal Form",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "Flags": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "Languages_Touch": []
+      },
+      {
+        "Term": "game_messages/alchemy_popUp_StatusChange_body",
+        "TermType": 0,
+        "Languages": [
+          "",
+          "Reset Alchemy Status Effect",
           "",
           "",
           "",
@@ -106884,11 +107346,11 @@
         "Languages_Touch": []
       },
       {
-        "Term": "spells/cleaveArmor_description",
+        "Term": "spells/strikeDown_description",
         "TermType": 0,
         "Languages": [
           "",
-          "You hack at your opponent with enough force to ignore a portion of its armor.\nThis attack is a guaranteed critical hit.",
+          "You hack at your opponent with great force, dealing a guaranteed critical hit with extra critical damage.",
           "",
           "",
           "",
@@ -106905,14 +107367,14 @@
         "Languages_Touch": []
       },
       {
-        "Term": "spells/cleaveArmor_name",
+        "Term": "spells/strikeDown_name",
         "TermType": 0,
         "Languages": [
           "",
-          "Cleave Armor",
-          "Rüstungsspaltung",
-          "Fendre l'armure",
-          "Machacar armadura",
+          "Strike Down",
+          "",
+          "",
+          "",
           ""
         ],
         "Flags": [
@@ -107350,7 +107812,7 @@
         "TermType": 0,
         "Languages": [
           "",
-          "You unleash a powerful shout, which deal massive crush damage to any enemy in a cone if front of you, and stuns them.\nBoth the damage amount and the stun duration are doubled for the first enemy in range.",
+          "You unleash a powerful shout, which deals massive crush damage to any enemy in a cone if front of you, and stuns them.\nBoth the damage amount and the stun duration are doubled for the first enemy in range.",
           "Alle Gegner innerhalb eines {0}°, {1} Meter großen Kegels erhalten [CHA*{2}] ({4}) Schmetter-Schaden, sind für [CHA*{3}] ({5}) Sekunden betäubt (reduziert durch: Willenskraft).\nDie Dauer von Schaden und Betäubt wird beim ersten Gegner in Reichweite verdoppelt.",
           "Tous les ennemis situés dans une zone circulaire de {0}°, {1}mètres subissent [CHA*{2}] ({4}) des écrasements et sont étourdis pendant [CHA*{3}] ({5}) secondes (réduites par : volonté).\nLes dégâts et la durée de l'étourdissement sont doublés pour le premier ennemi à portée.",
           "Todos los enemigos en un cono frente a ti de {0}° y {1} metros reciben {4} (CAR × {2}) puntos de daño aplastante y quedan aturdidos por {5} (CAR × {3}) segundos (reducido por la voluntad).\nEl daño y la duración del aturdimiento se duplican para el primer enemigo afectado.",
@@ -109156,10 +109618,10 @@
         "TermType": 0,
         "Languages": [
           "",
-          "You infuse your next arrow with magical energy, and you shoot it at a target of your choice.\nThe projectile follows your target, and deals extra energy damage as it connects.",
-          "Du schießt ein magisches geführtes Projektil auf ein Ziel mit kurzer Verzögerung, das [AUF*{0}] zusätzlichen Energie-Schaden verursacht.",
-          "Vous tirez un projectile guidé qui prend pour cible après un délai bref. Le projectile inflige [PER*{0}] dégâts d'énergie supplémentaires.",
-          "Disparas un proyectil guiado hacia tu objetivo tras un breve retraso. El proyectil inflige (PER × {0}) puntos de daño de energía adicional.",
+          "You infuse your next arrow with magical energy, and you shoot it at a target of your choice.\nThe projectile follows your target, and deals extra damage as it connects.",
+          "Du schießt ein magisches geführtes Projektil auf ein Ziel mit kurzer Verzögerung, das [AUF*{0}] zusätzlichen Schaden verursacht.",
+          "Vous tirez un projectile guidé qui prend pour cible après un délai bref. Le projectile inflige [PER*{0}] dégâts supplémentaires.",
+          "Disparas un proyectil guiado hacia tu objetivo tras un breve retraso. El proyectil inflige (PER × {0}) puntos de daño adicional.",
           ""
         ],
         "Flags": [
@@ -109366,7 +109828,7 @@
         "TermType": 0,
         "Languages": [
           "",
-          "You attempt to pierce your opponent heart.\nThis attack ignores a good portion of your opponent physical resistances, and makes him bleed profusely.\nIf you manage to score a critical strike, your final damage is amplified significantly.",
+          "This attack is a guaranteed critical strike that ignores a good portion of the physical resistances of your opponent, and makes it bleed profusely.",
           "",
           "",
           "",
@@ -110206,7 +110668,7 @@
         "TermType": 0,
         "Languages": [
           "",
-          "You conjure an invisible magical armor, which increases your physical and energy resistances.\nThe physical resistance bonus doesn't stack with the one provided by your currently equipped armor, while the energy resistance does.",
+          "You conjure an invisible magical armor, which increases your physical and energy resistances.\nThe resistances provided stack with other sources.",
           "Dieser Zauber verleiht dir [INT*{0}] ({1}) Rüstung und magische Verteidigung. Der Rüstungsbonus stapelt sich nicht mit der von Equipment erhaltenen Rüstung, jedoch mit der magischen Verteidigung.",
           "Ce sort octroie [INT*{0}] ({1}) points d'armure et de résistance à la magie. Le bonus de résistance magique se cumule avec la résistance magique gagnée grâce à l'équipement mais pas celui d'armure.",
           "Este hechizo te otorga {1} (INT × {0}) puntos de armadura y de resistencia mágica. La armadura adicional no se acumula con la armadura obtenida del equipamiento, pero la resistencia mágica sí.",
@@ -111550,7 +112012,7 @@
         "TermType": 0,
         "Languages": [
           "",
-          "You pierce every opponent in a line in front of you, ignoring a portion of their physical resistances, and making them bleed.",
+          "You pierce every opponent in a line in front of you, dealing Pure damage and making them bleed.",
           "",
           "",
           "",
@@ -111761,9 +112223,9 @@
         "Languages": [
           "",
           "You hit every enemy in a cone in front of you, dealing extra damage, and cutting and slashing precisely around the joints of their armor, reducing the physical resistance they provide.",
-          "Du brichst und stichst präzise in die Schwachstellen der gegnerischen Rüstung und verursachst damit [GES*{0}] ({4}) Rohschaden an allen Gegnern innerhalb eines {1}°, {2} Meter großen Kegels. Zusätzlich reduzierst du den physischen Schutz der getroffenen Gegner um [DEX+PER]% ({5}%) für {3} Sekunden.",
-          "Vous frappez avec précision les articulations des armures de vos cibles, infligeant [DEX*{0}] ({4}) dégâts bruts à tous les ennemis dans une zone en forme de cône de {1}° et de {2} mètres, et réduisant la protection physique de [DEX+PER]% ({5}%) pendant {3} secondes.",
-          "Cortas con precisión alrededor de la armadura de tus enemigos, lo que les inflige {4} (DES × {0}) puntos de daño verdadero a todos los enemigos en un cono frente a ti de {1}° y {2} metros, y reduces su defensa física en un {5} % [(DES + PER) %] por {3} segundos.",
+          "",
+          "",
+          "",
           ""
         ],
         "Flags": [
@@ -112138,7 +112600,7 @@
         "TermType": 0,
         "Languages": [
           "",
-          "You drive the sharp edge of your axe in your opponent flesh with extreme precision.\nThis attack deals extra damage, is a guaranteed critical hit, and makes your opponent bleed.",
+          "You drive the sharp edge of your axe in your opponent flesh with extreme precision.\nThis attack deals extra damage and makes your opponent bleed.",
           "",
           "",
           "",
@@ -115641,6 +116103,27 @@
         "Languages_Touch": []
       },
       {
+        "Term": "spells/spelldata_CriticalDamageBonus",
+        "TermType": 0,
+        "Languages": [
+          "",
+          "Critical Damage Bonus",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "Flags": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "Languages_Touch": []
+      },
+      {
         "Term": "spells/spelldata_RegenerationMana",
         "TermType": 0,
         "Languages": [
@@ -118018,7 +118501,7 @@
         "TermType": 0,
         "Languages": [
           "",
-          "As long as this ability is active, you strike at your enemies open wounds, dealing a portion of their missing health as extra pure damage with each hit, up to a maximum amount that scales with your dexterity.",
+          "As long as this ability is active, you strike at your enemies open wounds, dealing a portion of their missing health as extra pure damage with each hit, up to a maximum amount that scales with your dexterity.\nThe maximum is reduced by 30% if the target is a monster.",
           "Deine Basisangriffe verursachen {0}% der fehlenden Gesundheit deines Ziels als zusätzlichen Rohschaden, bis zu einem Maximum von [(GES+AUF)*{1}] ({2}) pro Treffer.",
           "Vos attaques de base infligent des dégâts bruts équivalents à {0}% des PV manquants de votre cible, jusqu'à un maximum de [(DEX+PER)*{1}] ({2}) par coup.",
           "Tus ataques básicos infligen un {0} % de la vida faltante del objetivo como daño verdadero adicional, hasta un máximo de {2} [(DES + PER) × {1}] puntos de daño verdadero por golpe.",
@@ -122886,6 +123369,48 @@
         "Languages_Touch": []
       },
       {
+        "Term": "status_effect/AntiacidPotion_desc",
+        "TermType": 0,
+        "Languages": [
+          "Potion - Resistance",
+          "You gain {0} Acid Resistance, and immunity to the Corrosion effect.",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "Flags": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "Languages_Touch": []
+      },
+      {
+        "Term": "status_effect/AntiacidPotion_name",
+        "TermType": 0,
+        "Languages": [
+          "Potion - Resistance",
+          "Antiacid Potion",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "Flags": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "Languages_Touch": []
+      },
+      {
         "Term": "status_effect/PotionOfColdResistance_desc",
         "TermType": 0,
         "Languages": [
@@ -123416,6 +123941,174 @@
         "Languages": [
           "Potion - Stat",
           "Potion of Vitality",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "Flags": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "Languages_Touch": []
+      },
+      {
+        "Term": "status_effect/PotionOfCleasing_name",
+        "TermType": 0,
+        "Languages": [
+          "Potion - Other",
+          "Cleansing Potion",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "Flags": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "Languages_Touch": []
+      },
+      {
+        "Term": "status_effect/PotionOfCleasing_desc",
+        "TermType": 0,
+        "Languages": [
+          "Potion - Other",
+          "Removes all active Potion Effects",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "Flags": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "Languages_Touch": []
+      },
+      {
+        "Term": "status_effect/PotionOfSpeed_name",
+        "TermType": 0,
+        "Languages": [
+          "Potion - Other",
+          "Potion Of Speed",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "Flags": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "Languages_Touch": []
+      },
+      {
+        "Term": "status_effect/PotionOfSpeed_desc",
+        "TermType": 0,
+        "Languages": [
+          "Potion - Other",
+          "{0}% Movement Speed Bonus on foot or mounted. The effect is interrupted if you enter combat.",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "Flags": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "Languages_Touch": []
+      },
+      {
+        "Term": "status_effect/PotionOfRecovery_name",
+        "TermType": 0,
+        "Languages": [
+          "Potion - Other",
+          "Potion of Recovery",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "Flags": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "Languages_Touch": []
+      },
+      {
+        "Term": "status_effect/PotionOfRecovery_desc",
+        "TermType": 0,
+        "Languages": [
+          "Potion - Other",
+          "{0}% Max Health Loss recovered each second",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "Flags": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "Languages_Touch": []
+      },
+      {
+        "Term": "status_effect/PotionOfInsulation_name",
+        "TermType": 0,
+        "Languages": [
+          "Potion - Other",
+          "Potion of Insulation",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "Flags": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "Languages_Touch": []
+      },
+      {
+        "Term": "status_effect/PotionOfInsulation_desc",
+        "TermType": 0,
+        "Languages": [
+          "Potion - Other",
+          "You are immune to environmental temperature conditions.",
           "",
           "",
           "",
@@ -124942,7 +125635,7 @@
     "Google_WebServiceURL": "https://script.google.com/macros/s/AKfycbw1YI_TiQz2QwcsjSOkOdvTDK8XIdfP2f-mijnC/exec",
     "Google_SpreadsheetKey": "1f8v6N2qahUUwMCbVebfQBXqKy39uUj0fyGol5HkMJTk",
     "Google_SpreadsheetName": "I2Loc Fractured Localization",
-    "Google_LastUpdatedVersion": "1700048881965",
+    "Google_LastUpdatedVersion": "1701701316855",
     "GoogleUpdateFrequency": 3,
     "GoogleInEditorCheckFrequency": 2,
     "GoogleUpdateSynchronization": 1,

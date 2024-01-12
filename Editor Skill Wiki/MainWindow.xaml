@@ -61,6 +61,14 @@
             </Button>
             <TextBox Text="Status Effects Data" FontSize="18" FontFamily="MS Gothic" FontWeight="Bold" Foreground="Tan"  Background="Transparent" BorderBrush="Transparent" Height="32" Margin="33,28,0,0"/>
         </WrapPanel>
+        <WrapPanel Grid.Row="2" Grid.Column="1">
+            <Button HorizontalAlignment="Left" Margin="33,28,0,0" VerticalAlignment="Top" Click="GenerateImbueData" Height="64" Width="64">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Images/ImbueData.Png" />
+                </Button.Background>
+            </Button>
+            <TextBox Text="Imbue Data" FontSize="18" FontFamily="MS Gothic" FontWeight="Bold" Foreground="Tan"  Background="Transparent" BorderBrush="Transparent" Height="32" Margin="33,28,0,0"/>
+        </WrapPanel>
 
     </Grid>
 </Window>

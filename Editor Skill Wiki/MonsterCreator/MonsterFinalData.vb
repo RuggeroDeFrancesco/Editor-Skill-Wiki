@@ -90,6 +90,13 @@
     Public category As String
     Public allowedPoi As List(Of String)
 
+
+    Dim assetItemList As AssetItemsList
+
+    Public Sub New(assets As AssetItemsList)
+        Me.assetItemList = assets
+    End Sub
+
     Public Sub parseData(data As MonsterData, attackFolder As String, spellFolder As String, wpFolder As String, enchantFolder As String, languageData As LanguageData, languageEnum As Integer)
         Try
             Dim attackFolderPath As String
@@ -215,11 +222,11 @@
             petItemType = "" 'inseguire i dati dei petItem è troppo difficile, lascio il campo vuoto
 
 
-            Dim uniqueIndex As String = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "AssetIndices/unifiedIndex.xml"))
+            'Dim uniqueIndex As String = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "AssetIndices/unifiedIndex.xml"))
 
             For Each StatusEffect As PropertyClass In data.immunityStatusEffectList
                 If StatusEffect.m_PathID <> 0 Then
-                    Dim newImmunity As String = getStatusEffect(StatusEffect.m_PathID, uniqueIndex)
+                    Dim newImmunity As String = getStatusEffect(StatusEffect.m_PathID, assetItemList)
                     If newImmunity <> "" Then
                         immunityStatusEffectList.Add(newImmunity)
                     End If
@@ -237,13 +244,13 @@
             'Dim enchantsRawData As String = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "AssetIndices/unifiedIndex.xml"))
 
             For Each attack As MonsterAttack In data.MonsterAttacks
-                monsterAttacks.Add(getAttackData(attack.value.m_PathID, uniqueIndex, uniqueIndex, uniqueIndex, uniqueIndex, attackFolderPath, wpFolderPath, enchantFolderPath, languageData, languageEnum))
+                monsterAttacks.Add(getAttackData(attack.value.m_PathID, attackFolderPath, wpFolderPath, enchantFolderPath, languageData, languageEnum))
             Next
 
             'Dim spellRawData As String = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "AssetIndices/unifiedIndex.xml"))
 
             For Each spell As MonsterSpells In data.MonsterSpellsList
-                Dim newskill As MonsterSpellFinalData = getSpellData(spell.value.m_PathID, uniqueIndex, spellFolderPath, spell)
+                Dim newskill As MonsterSpellFinalData = getSpellData(spell.value.m_PathID, spellFolderPath, spell)
                 newskill.acquired = spell.targetToUnlock
                 compileRestrictions(spell, newskill)
                 compileSkillFullText(newskill)
@@ -270,15 +277,11 @@
         Return percentValue.ToString & "%"
     End Function
 
-    Private Function getAttackData(attackRef As String, attackRawData As String, wpRawData As String, enchantRawData As String, statusRawData As String, attackFolder As String, wpFolder As String, enchantFolder As String, languageData As LanguageData, languageEnum As Integer) As MonsterAttackFinalData
+    Private Function getAttackData(attackRef As String, attackFolder As String, wpFolder As String, enchantFolder As String, languageData As LanguageData, languageEnum As Integer) As MonsterAttackFinalData
         Dim newAttack As New MonsterAttackFinalData
         Dim parsedData As MonsterAttackData
-        Dim index As Integer = attackRawData.IndexOf("<PathID>" & attackRef)
-        If index <> -1 Then
-            Dim startName As Integer = attackRawData.LastIndexOf("<Name>", index)
-            Dim endName As Integer = attackRawData.IndexOf("</Name>", startName)
-            Dim name As String = attackRawData.Substring(startName + 6, endName - startName - 6)
-            Dim filePath As String = attackFolder & "\" & name & ".json"
+        Dim name As String = MainWindow.GetAssetFromIndex(attackRef, assetItemList).Name
+        Dim filePath As String = attackFolder & "\" & name & ".json"
             If System.IO.File.Exists(filePath) Then
                 Dim textData As String = System.IO.File.ReadAllText(filePath)
                 parsedData = Newtonsoft.Json.JsonConvert.DeserializeObject(Of MonsterAttackData)(textData)
@@ -302,8 +305,8 @@
                     If attackProperty.Property.m_PathID <> "0" Then
                         Dim newProperty As New AttackProperty
                         newProperty.value = attackProperty.baseAmount
-                        newProperty.name = getAttackPropertyName(attackProperty.Property.m_PathID, wpFolder, enchantFolder, wpRawData, enchantRawData, statusRawData, languageData, languageEnum)
-                        newAttack.attackProperties.Add(newProperty)
+                    newProperty.name = getAttackPropertyName(attackProperty.Property.m_PathID, wpFolder, enchantFolder, languageData, languageEnum, assetItemList)
+                    newAttack.attackProperties.Add(newProperty)
                     End If
                 Next
 
@@ -313,17 +316,14 @@
                 compileAttackFullText(newAttack)
             Else Throw New Exception(filePath & " Not Found")
             End If
-        End If
+
         Return newAttack
     End Function
 
-    Public Shared Function getAttackPropertyName(wpRef As String, wpFolder As String, enchantFolder As String, wpRawData As String, enchantRawData As String, statusRawData As String, languageData As LanguageData, languageEnum As Integer) As String 'used also by itemCreator
+    Public Shared Function getAttackPropertyName(wpRef As String, wpFolder As String, enchantFolder As String, languageData As LanguageData, languageEnum As Integer, asset As AssetItemsList) As String 'used also by itemCreator
         Dim attackProperty As New AttackProperty
         Dim attackPropertyData As New WeaponPropertyData
-        Dim index As Integer = wpRawData.IndexOf(wpRef)
-        Dim startName As Integer = wpRawData.LastIndexOf("<Name>", index)
-        Dim endName As Integer = wpRawData.IndexOf("</Name>", startName)
-        Dim name = wpRawData.Substring(startName + 6, endName - startName - 6)
+        Dim name = MainWindow.GetAssetFromIndex(wpRef, asset).Name
         Dim filePath As String = wpFolder & "\" & name & ".json"
         If System.IO.File.Exists(filePath) Then
             Dim textData As String = System.IO.File.ReadAllText(filePath)
@@ -332,9 +332,9 @@
                 Dim term = "enchantments/" & attackPropertyData.localizationString & "_name"
                 Return languageData.returnTerm(term, languageEnum)
             ElseIf attackPropertyData.enchantment IsNot Nothing Then
-                Return getAttackEnchantName(attackPropertyData.enchantment.m_PathID, enchantFolder, enchantRawData, languageData, languageEnum)
+                Return getAttackEnchantName(attackPropertyData.enchantment.m_PathID, enchantFolder, languageData, languageEnum, asset)
             ElseIf attackPropertyData.statusEffect IsNot Nothing Then
-                Return getStatusEffect(attackPropertyData.statusEffect.m_PathID, statusRawData)
+                Return getStatusEffect(attackPropertyData.statusEffect.m_PathID, asset)
             ElseIf attackPropertyData.necroticStatus IsNot Nothing Then
                 Return "Necrotic"
             ElseIf attackPropertyData.m_Name = "WP_Poisonable" Then
@@ -346,14 +346,10 @@
         End If
     End Function
 
-    Public Shared Function getAttackEnchantName(enchantRef As String, enchantFolder As String, enchantRawData As String, languageData As LanguageData, languageEnum As Integer) As String 'used also by itemCreator
+    Public Shared Function getAttackEnchantName(enchantRef As String, enchantFolder As String, languageData As LanguageData, languageEnum As Integer, assets As AssetItemsList) As String 'used also by itemCreator
         Dim enchantName As String = ""
         Dim enchantPropertyData As EnchantmentRecipe
-        Dim name As String = ""
-        Dim index As Integer = enchantRawData.IndexOf(enchantRef)
-        Dim startName As Integer = enchantRawData.LastIndexOf("<Name>", index)
-        Dim endName As Integer = enchantRawData.IndexOf("</Name>", startName)
-        name = enchantRawData.Substring(startName + 6, endName - startName - 6)
+        Dim name = MainWindow.GetAssetFromIndex(enchantRef, assets).Name
         Dim filePath As String = enchantFolder & "\" & name & ".json"
         If System.IO.File.Exists(filePath) Then
             Dim textData As String = System.IO.File.ReadAllText(filePath)
@@ -367,27 +363,19 @@
         Return enchantName
     End Function
 
-    Public Shared Function getStatusEffect(statusRef As String, rawdata As String) As String 'used also by itemCreator
-        Dim statusEffect As String = ""
-        Dim index As Integer = rawdata.IndexOf(statusRef)
-        Dim startName As Integer = rawdata.LastIndexOf("<Name>", index)
-        Dim endName As Integer = rawdata.IndexOf("</Name>", startName)
-        statusEffect = rawdata.Substring(startName + 6, endName - startName - 6)
-        Return statusEffect
+    Public Shared Function getStatusEffect(statusRef As String, assets As AssetItemsList) As String 'used also by itemCreator
+        Return MainWindow.GetAssetFromIndex(statusRef, assets).Name
     End Function
 
 
-    Private Function getSpellData(spellRef As String, rawData As String, spellFolder As String, spell As MonsterSpells)
+    Private Function getSpellData(spellRef As String, spellFolder As String, spell As MonsterSpells)
         Dim newSpell As New MonsterSpellFinalData
         Dim parsedData As SpellClassMirror
-        Dim index As Integer = rawData.IndexOf("<PathID>" & spellRef)
-        If index <> -1 Then
-            Dim startName As Integer = rawData.LastIndexOf("<Name>", index)
-            Dim endName As Integer = rawData.IndexOf("</Name>", startName)
-            Dim name As String = rawData.Substring(startName + 6, endName - startName - 6)
 
-            'eccezioni di skill specifiche dei mostri
-            Select Case name
+        Dim name As String = MainWindow.GetAssetFromIndex(spellRef, assetItemList).Name
+
+        'eccezioni di skill specifiche dei mostri
+        Select Case name
                 Case "spell_ArborealDragonBreath_ArborealDragon"
                     name = "spell_ArborealDragonBreath"
                 Case "spell_SkeletalDragonBreath_SkeletalDragon"
@@ -443,7 +431,7 @@
 
             Else Throw New Exception(filePath & " Not Found")
             End If
-        End If
+
         Return newSpell
     End Function
 

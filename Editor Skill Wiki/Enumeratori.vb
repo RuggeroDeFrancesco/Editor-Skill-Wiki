@@ -868,10 +868,6 @@
 
 #End Region
 
-
-
-
-
 #Region "Item Enumerators"
 	Public Enum ItemCategory
 		None
@@ -1174,6 +1170,66 @@
 	End Enum
 
 #End Region
+
+#Region "Imbue Enumerators"
+
+	'Public Enum EquipEnchantClass
+	'	None
+	'	Armor
+	'	Weapon
+	'	Shield
+	'	Amulet
+	'	Ring
+	'End Enum
+
+	Public Enum GemFamily
+		Amethyst
+		Diamond
+		Emerald
+		Ruby
+		Sapphire
+		Topaz
+	End Enum
+
+	Public Enum EnchantmentAmountType
+		PureValue
+		Percentage
+	End Enum
+
+	'Public Enum Aspects
+	'	Mind = 0
+	'	Body = 1
+	'	Soul = 2
+	'	Create = 100
+	'	Destroy = 101
+	'	Negate = 102
+	'	Transform = 103
+	'	Transfer = 104
+	'	Air = 200
+	'	Earth = 201
+	'	Fire = 202
+	'	Water = 203
+	'	Death = 204
+	'	Life = 205
+	'	Chaos = 206
+	'	Order = 207
+	'	Time = 208
+	'	Energy = 209
+	'	Knowledge = 210
+	'End Enum
+
+	Public Enum RecipeGroup
+		None
+		Attribute
+		Resistance
+		DamageReflection
+		DamageConversion
+		OnHitEffect
+		ProficiencyBonus
+	End Enum
+
+#End Region
+
 
 	Public Enum EnumLanguage
 		English = 1

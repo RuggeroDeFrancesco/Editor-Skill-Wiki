@@ -13,9 +13,12 @@ Public Class LootCreator
 
     Dim itemData As List(Of ItemClassMirror)
 
-    Dim lootListIndex As String
+    'Dim lootListIndex As String
 
-    Dim itemListIndex As String
+    'Dim itemListIndex As String
+
+    Dim assets As AssetItemsList
+
     Public Property Output As String 'full list of the properties, to be used for the datamodule on the wiki
     Public Sub New(language As Integer, lootPath As String, itempath As String)
 
@@ -24,8 +27,9 @@ Public Class LootCreator
         deserializedlanguageData = deserializeLanguageData(rawlanguagedata)
         getLootData(lootPath)
         getItemData(itempath)
-        lootListIndex = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "AssetIndices/unifiedIndex.xml"))
-        itemListIndex = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "AssetIndices/unifiedIndex.xml"))
+        assets = MainWindow.GetAssets
+        'lootListIndex = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "AssetIndices/unifiedIndex.xml"))
+        'itemListIndex = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "AssetIndices/unifiedIndex.xml"))
     End Sub
 
     Public Sub parseData(path As String) 'main method of the class, uses the private methods to extract the data from a loot file, deserialize it into a lootClassMirror class and extracts information from lootClassMirror
@@ -165,28 +169,15 @@ Public Class LootCreator
         If lootList = "0" Then
             Return ""
         End If
-        Dim lootListName As String = ""
-        Dim index As Integer = lootListIndex.IndexOf(lootList)
-        Dim startName As Integer = lootListIndex.LastIndexOf("<Name>", index)
-        Dim endName As Integer = lootListIndex.IndexOf("</Name>", startName)
-        lootListName = lootListIndex.Substring(startName + 6, endName - startName - 6)
-        Return lootListName
+        Return MainWindow.GetAssetFromIndex(lootList, assets).Name
     End Function
 
-    Shared Function getItem(item As String, itemListIndex As String) As String 'used also by monster data creator and Item data creator
+    Shared Function getItem(item As String, assets As AssetItemsList) As String 'used also by monster data creator and Item data creator
         If item <> "0" Then
-            Dim itemRef As String = ""
-            Dim index As Integer = itemListIndex.IndexOf(item)
-            Dim startName As Integer = itemListIndex.LastIndexOf("<Name>", index)
-            Dim endName As Integer = itemListIndex.IndexOf("</Name>", startName)
-            itemRef = itemListIndex.Substring(startName + 6, endName - startName - 6)
-            Return itemRef
+            Return MainWindow.GetAssetFromIndex(item, assets).Name
         Else
             Return ""
         End If
-
-
-
     End Function
 
     Private Function extractLootItems(lootList As LootClassMirror) As String
@@ -194,7 +185,7 @@ Public Class LootCreator
         lootList.probabilityLoot.AddRange(lootList.alternateLoot) 'I join the 2 lists of loot into one
         For Each item As ItemLoot In lootList.probabilityLoot
             Dim partialOutput As String = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "LootCreator/defaultItemLootData.txt"))
-            Dim itemRef As String = getItem(item.item.m_PathID, itemListIndex)
+            Dim itemRef As String = getItem(item.item.m_PathID, assets)
             If itemRef = "" Then
                 Return ""
             End If

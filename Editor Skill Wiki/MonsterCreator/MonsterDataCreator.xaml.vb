@@ -23,12 +23,13 @@ Public Class MonsterDataCreator
                 'extract language data to get the correct monster name and description
                 languageData = deserializeLanguageData(GetLanguageData())
                 Dim output As String = ""
+                Dim assets As AssetItemsList = MainWindow.GetAssets
                 For Each file As String In OpenFileDialog1.FileNames
                     Dim Path As String = file
                     If System.IO.File.Exists(Path) Then
                         rawData = System.IO.File.ReadAllText(Path)
                         Dim parsedData = parseMonsterData(rawData)
-                        Dim finalData As New MonsterFinalData
+                        Dim finalData As New MonsterFinalData(assets)
                         finalData.parseData(parsedData, attackFolder, spellFolder, wpFolder, enchantFolder, languageData, languageEnum)
                         output &= createModuleOutput(finalData)
                         output &= vbCrLf

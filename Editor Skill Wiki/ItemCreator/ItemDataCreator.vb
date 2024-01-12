@@ -34,20 +34,22 @@ Public Class ItemDataCreator
 
     Private MaterialProperties As List(Of MaterialClassMirror)
 
-    Dim itemListIndex As String
+    'Dim itemListIndex As String
 
     Dim itemsFolder As String
     Dim materialsFolder As String
     Dim weaponPropertiesFolder As String
     Dim armorSetsFolder As String
     Dim enchantmentsFolder As String
+    Dim assetList As AssetItemsList
 
     Public Sub New(language As Integer, itemsFolder As String, materialsFolder As String, Optional weaponPropertiesFolder As String = "", Optional ArmorSetsFolder As String = "", Optional enchantmentsFolder As String = "")
         Me.language = language
         Dim rawlanguagedata As String = GetLanguageData()
         deserializedlanguageData = deserializeLanguageData(rawlanguagedata)
         MaterialProperties = New List(Of MaterialClassMirror)
-        itemListIndex = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "AssetIndices/unifiedIndex.xml"))
+        assetList = MainWindow.GetAssets
+        'itemListIndex = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "AssetIndices/unifiedIndex.xml"))
         Me.itemsFolder = itemsFolder
         Me.materialsFolder = materialsFolder
         Me.weaponPropertiesFolder = weaponPropertiesFolder
@@ -107,7 +109,7 @@ Public Class ItemDataCreator
         ItemName = data.Name
         If data.itemTooltipCategory = ItemTooltipCategory.None Then
             Output = ""
-        ElseIf ItemName = "Admin Sword" Then
+        ElseIf ItemName = "Admin Sword" Or ItemName = "Uber Admin Sword" Then
             Output = ""
         Else
             Output = GetGenericItemInfoOutput(data)
@@ -384,17 +386,17 @@ Public Class ItemDataCreator
 
 
 
-        Dim statusRawData As String = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "AssetIndices/unifiedIndex.xml"))
-        Dim attackRawData As String = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "AssetIndices/unifiedIndex.xml"))
-        Dim wpRawData As String = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "AssetIndices/unifiedIndex.xml"))
-        Dim enchantsRawData As String = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "AssetIndices/unifiedIndex.xml"))
+        'Dim statusRawData As String = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "AssetIndices/unifiedIndex.xml"))
+        'Dim attackRawData As String = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "AssetIndices/unifiedIndex.xml"))
+        'Dim wpRawData As String = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "AssetIndices/unifiedIndex.xml"))
+        'Dim enchantsRawData As String = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "AssetIndices/unifiedIndex.xml"))
 
         'inherent properties
 
         For Each prop As WeaponProperty In data.weaponProperties
-            Dim propName As String = MonsterFinalData.getAttackPropertyName(prop.Property.m_PathID, weaponPropertiesFolder, enchantmentsFolder, wpRawData, enchantsRawData, statusRawData, deserializedlanguageData, EnumLanguage.English)
+            Dim propName As String = MonsterFinalData.getAttackPropertyName(prop.Property.m_PathID, weaponPropertiesFolder, enchantmentsFolder, deserializedlanguageData, EnumLanguage.English, assetList)
             Dim propValue As String = prop.baseAmount.ToString
-            If WpIsPercentage(prop.Property.m_PathID, wpRawData, weaponPropertiesFolder) Or propName = "Poison Chance" Then
+            If WpIsPercentage(prop.Property.m_PathID, weaponPropertiesFolder, assetList) Or propName = "Poison Chance" Then
                 propValue &= "%"
             End If
             output &= "         [""" & propName & """] = " & """" & propValue & ""","
@@ -422,9 +424,9 @@ Public Class ItemDataCreator
                         output &= "             {"
                         output &= vbCrLf
                         For Each prop As WeaponProperty In materiale.armorEnchantments
-                            Dim propName As String = MonsterFinalData.getAttackPropertyName(prop.Property.m_PathID, weaponPropertiesFolder, enchantmentsFolder, wpRawData, enchantsRawData, statusRawData, deserializedlanguageData, EnumLanguage.English)
+                            Dim propName As String = MonsterFinalData.getAttackPropertyName(prop.Property.m_PathID, weaponPropertiesFolder, enchantmentsFolder, deserializedlanguageData, EnumLanguage.English, assetList)
                             Dim propValue As String = prop.baseAmount.ToString
-                            If WpIsPercentage(prop.Property.m_PathID, wpRawData, weaponPropertiesFolder) Or propName = "Poison Chance" Then
+                            If WpIsPercentage(prop.Property.m_PathID, weaponPropertiesFolder, assetList) Or propName = "Poison Chance" Then
                                 propValue &= "%"
                             End If
                             output &= "             [""" & propName & """] = " & """" & propValue & ""","
@@ -440,9 +442,9 @@ Public Class ItemDataCreator
                         output &= "             {"
                         output &= vbCrLf
                         For Each prop As WeaponProperty In materiale.weaponEnchantments
-                            Dim propName As String = MonsterFinalData.getAttackPropertyName(prop.Property.m_PathID, weaponPropertiesFolder, enchantmentsFolder, wpRawData, enchantsRawData, statusRawData, deserializedlanguageData, EnumLanguage.English)
+                            Dim propName As String = MonsterFinalData.getAttackPropertyName(prop.Property.m_PathID, weaponPropertiesFolder, enchantmentsFolder, deserializedlanguageData, EnumLanguage.English, assetList)
                             Dim propValue As String = prop.baseAmount.ToString
-                            If WpIsPercentage(prop.Property.m_PathID, wpRawData, weaponPropertiesFolder) Or propName = "Poison Chance" Then
+                            If WpIsPercentage(prop.Property.m_PathID, weaponPropertiesFolder, assetList) Or propName = "Poison Chance" Then
                                 propValue &= "%"
                             End If
                             output &= "             [""" & propName & """] = " & """" & propValue & ""","
@@ -458,9 +460,9 @@ Public Class ItemDataCreator
                         output &= "             {"
                         output &= vbCrLf
                         For Each prop As WeaponProperty In materiale.amuletRingEnchantments
-                            Dim propName As String = MonsterFinalData.getAttackPropertyName(prop.Property.m_PathID, weaponPropertiesFolder, enchantmentsFolder, wpRawData, enchantsRawData, statusRawData, deserializedlanguageData, EnumLanguage.English)
+                            Dim propName As String = MonsterFinalData.getAttackPropertyName(prop.Property.m_PathID, weaponPropertiesFolder, enchantmentsFolder, deserializedlanguageData, EnumLanguage.English, assetList)
                             Dim propValue As String = prop.baseAmount.ToString
-                            If WpIsPercentage(prop.Property.m_PathID, wpRawData, weaponPropertiesFolder) Or propName = "Poison Chance" Then
+                            If WpIsPercentage(prop.Property.m_PathID, weaponPropertiesFolder, assetList) Or propName = "Poison Chance" Then
                                 propValue &= "%"
                             End If
                             output &= "             [""" & propName & """] = " & """" & propValue & ""","
@@ -476,9 +478,9 @@ Public Class ItemDataCreator
                         output &= "             {"
                         output &= vbCrLf
                         For Each prop As WeaponProperty In materiale.shieldEnchantments
-                            Dim propName As String = MonsterFinalData.getAttackPropertyName(prop.Property.m_PathID, weaponPropertiesFolder, enchantmentsFolder, wpRawData, enchantsRawData, statusRawData, deserializedlanguageData, EnumLanguage.English)
+                            Dim propName As String = MonsterFinalData.getAttackPropertyName(prop.Property.m_PathID, weaponPropertiesFolder, enchantmentsFolder, deserializedlanguageData, EnumLanguage.English, assetList)
                             Dim propValue As String = prop.baseAmount.ToString
-                            If WpIsPercentage(prop.Property.m_PathID, wpRawData, weaponPropertiesFolder) Or propName = "Poison Chance" Then
+                            If WpIsPercentage(prop.Property.m_PathID, weaponPropertiesFolder, assetList) Or propName = "Poison Chance" Then
                                 propValue &= "%"
                             End If
                             output &= "             [""" & propName & """] = " & """" & propValue & ""","
@@ -516,6 +518,9 @@ Public Class ItemDataCreator
             output = output.Replace(targetName, [Enum].GetName(GetType(Aspects), aspect.aspect))
             output = output.Replace(targetValue, aspect.value)
         Next
+        'rimuovo gli aspetti non usati
+        output = output.Replace("[""aspect2""] = {""Value2""},", "")
+        output = output.Replace("[""aspect3""] = {""Value3""},", "")
         Return output
     End Function
 
@@ -526,7 +531,7 @@ Public Class ItemDataCreator
         'I need the item name and item tooltip type of the created item
         Dim itemref As String = ""
         If data.craftedItem.m_PathID <> 0 Then
-            itemref = LootCreator.getItem(data.craftedItem.m_PathID, itemListIndex)
+            itemref = LootCreator.getItem(data.craftedItem.m_PathID, assetList)
         Else
             Return ""
         End If
@@ -675,22 +680,14 @@ Public Class ItemDataCreator
         Return iconName
     End Function
 
-    Shared Function GetRecipe(recipeRef As String) As String
-        Dim rawdata As String = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "AssetIndices/recipeIndex.xml"))
+    Shared Function GetRecipe(recipeRef As String, assets As AssetItemsList) As String
         Dim recipeName As String = ""
-        Dim index As Integer
         If recipeRef <> "0" Then
-            index = rawdata.IndexOf(recipeRef)
         Else
             Return "No Icon"
         End If
 
-        If index <> -1 Then
-            Dim startName As Integer = rawdata.LastIndexOf("<Name>", index)
-            Dim endName As Integer = rawdata.IndexOf("</Name>", startName)
-            recipeName = rawdata.Substring(startName + 6, endName - startName - 6)
-        End If
-        Return recipeName
+        Return MainWindow.GetAssetFromIndex(recipeRef, assets).Name
     End Function
     Shared Function GetRecipeData(recipeName As String, recipeFolder As String) As RecipeClassMirror
         Dim filePath As String = recipeFolder & "\" & recipeName & ".json"
@@ -731,7 +728,7 @@ Public Class ItemDataCreator
                 ingredientSpace &= vbCrLf
                 For i = 0 To data.ingredients.Count - 1
                     Dim partialOutput As String = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "ItemCreator/defaultIngredientData.txt"))
-                    Dim ingrRef As String = LootCreator.getItem(data.ingredients(i).item.m_PathID, itemListIndex)
+                    Dim ingrRef As String = LootCreator.getItem(data.ingredients(i).item.m_PathID, assetList)
                     Dim ingr As ItemClassMirror = deserializeItemData(cutData(getRawData(itemsFolder & "/" & ingrRef & ".json")))
                     Dim ingrName As String = GetItemName(ingrRef, ingr.itemTooltipCategory, deserializedlanguageData, language)
                     Dim icona As String = GetIcon(ingr.icon.m_PathID) & ".png"
@@ -753,7 +750,7 @@ Public Class ItemDataCreator
                 Dim materialList As List(Of MaterialClassMirror) = getSubmaterialGroup(materialGroup)
                 For i = 0 To materialList.Count - 1
                     Dim partialOutput As String = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "ItemCreator/defaultIngredientData.txt"))
-                    Dim ingrRef As String = LootCreator.getItem(materialList(i).items(0).m_PathID, itemListIndex)
+                    Dim ingrRef As String = LootCreator.getItem(materialList(i).items(0).m_PathID, assetList)
                     Dim ingr As ItemClassMirror = deserializeItemData(cutData(getRawData(itemsFolder & "/" & ingrRef & ".json")))
                     Dim ingrName As String = GetItemName(ingrRef, ingr.itemTooltipCategory, deserializedlanguageData, language)
                     Dim icona As String = GetIcon(ingr.icon.m_PathID) & ".png"
@@ -768,7 +765,7 @@ Public Class ItemDataCreator
                     For j = 0 To data.ingredients.Count - 1
                         If Not data.ingredients(j).canUseMaterial Then
                             partialOutput = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "ItemCreator/defaultIngredientData.txt"))
-                            ingrRef = LootCreator.getItem(data.ingredients(j).item.m_PathID, itemListIndex)
+                            ingrRef = LootCreator.getItem(data.ingredients(j).item.m_PathID, assetList)
                             ingr = deserializeItemData(cutData(getRawData(itemsFolder & "/" & ingrRef & ".json")))
                             ingrName = GetItemName(ingrRef, ingr.itemTooltipCategory, deserializedlanguageData, language)
                             icona = GetIcon(ingr.icon.m_PathID) & ".png"
@@ -807,21 +804,12 @@ Public Class ItemDataCreator
 
     Private Function getArmorSet(armorSetRef As Integer)
         Dim data As New FullSetArmorData
-        Dim rawdata As String = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "AssetIndices/unifiedIndex.xml"))
         Dim setName As String = ""
-        Dim index As Integer
         If armorSetRef <> "0" Then
-            index = rawdata.IndexOf(armorSetRef)
         Else
             Return ""
         End If
-
-        If index <> -1 Then
-            Dim startName As Integer = rawdata.LastIndexOf("<Name>", index)
-            Dim endName As Integer = rawdata.IndexOf("</Name>", startName)
-            setName = rawdata.Substring(startName + 6, endName - startName - 6)
-        End If
-        Return setName
+        Return MainWindow.GetAssetFromIndex(armorSetRef, assetList).Name
     End Function
 
     Private Function getArmorSetData(armorSetName As String, armorSetFolder As String)
@@ -836,14 +824,10 @@ Public Class ItemDataCreator
         Return armorSet
     End Function
 
-    Private Function WpIsPercentage(wpref As String, wpRawData As String, wpfolder As String)
+    Private Function WpIsPercentage(wpref As String, wpfolder As String, assets As AssetItemsList)
         Dim isPercentage As Boolean = False
         Dim attackPropertyData As New WeaponPropertyData
-        Dim index As Integer = wpRawData.IndexOf(wpref)
-        Dim startName As Integer = wpRawData.LastIndexOf("<Name>", index)
-        Dim endName As Integer = wpRawData.IndexOf("</Name>", startName)
-        Dim name = wpRawData.Substring(startName + 6, endName - startName - 6)
-        Dim filePath As String = wpfolder & "\" & name & ".json"
+        Dim filePath As String = MainWindow.GetAssetFromIndex(wpref, assets).Name
         If System.IO.File.Exists(filePath) Then
             Dim textData As String = System.IO.File.ReadAllText(filePath)
             attackPropertyData = Newtonsoft.Json.JsonConvert.DeserializeObject(Of WeaponPropertyData)(textData)
@@ -851,6 +835,5 @@ Public Class ItemDataCreator
         End If
         Return isPercentage
     End Function
-
 
 End Class

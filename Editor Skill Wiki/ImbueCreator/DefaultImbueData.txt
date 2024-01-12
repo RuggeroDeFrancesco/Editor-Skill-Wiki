@@ -1,0 +1,14 @@
+﻿        ["ImbueName"] = {
+        ["RecipeName"] = "recipeNameText",
+        ["Value"] = "valueText",
+        ["Group"] = "groupText",
+        ["Aspects"] = {
+spazioAspetti
+            },
+        ["Gems"] = {
+spazioGemme
+            },
+        ["Slots"] = {
+spazioSlot
+            },
+    },
