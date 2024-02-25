@@ -1,148 +1,155 @@
-﻿Imports Newtonsoft.Json
+﻿Imports System.Net.Security
+
 Public Class SpellDataCreator
 
     'class that parses a json file of a spell and extracts all the fields in a usable format.
 
-    Dim language As Integer
+    Private CommonFunctions As CommonFunctions
 
-    Public Property Output As String 'full list of the properties, to be used for the datamodule on the wiki
-    Public Property rawDescription As String 'description of the spell, before filling the parameters with customData
-
-    Public Property customDataNameList As ObjectModel.ObservableCollection(Of String)
-
-    Public Property customDataValueList As ObjectModel.ObservableCollection(Of String)
-
-    Public Property SpellName As String
-
-    Public Property gameReady As Boolean
-
-    Public Property removed As Boolean
-
-    Public Property TooltipSpellName As String
-
-    Private Function getRawData(path As String) As String 'reads the file and extracts the content as text
-        If System.IO.File.Exists(path) Then
-            Dim rawData As String
-            rawData = System.IO.File.ReadAllText(path)
-            Return rawData
-        Else Throw New System.Exception("File does not exist.")
-            Return ""
-        End If
-    End Function
-
-    Private Function cutData(data As String) As String 'removes the useless parts of the file
-        Dim processedData As String
-        Dim startingIndex As Integer
-        startingIndex = data.IndexOf("m_Name") - 1
-        Dim secondIndex As Integer
-        secondIndex = data.IndexOf("Icon") - 1
-        Dim thirdIndex As Integer
-        thirdIndex = data.IndexOf("spellcastingRestrictions") - 1
-        'Dim fourthIndex As Integer
-        'fourthIndex = data.IndexOf("customData") - 1
-        processedData = "{"
-        processedData &= data.Substring(startingIndex, secondIndex - startingIndex)
-        processedData &= data.Substring(thirdIndex)
-        'processedData &= data.Substring(thirdIndex, fourthIndex - thirdIndex)
-        'processedData &= "}"
-        Return processedData
-    End Function
-
-    Private Function deserializeSpellData(data As String) As SpellClassMirror 'converts the json to fields of the SpellData class
-
-        Dim parsedData As SpellClassMirror
-        parsedData = JsonConvert.DeserializeObject(Of SpellClassMirror)(data)
-        Return parsedData
-    End Function
-
-    Public Sub parseData(path As String) 'main method of the class, uses the private methods to extract the data from a spell file, deserialize it into a spellClassMirror class and extracts information from SpellClassMirror
-
-        Dim data As SpellClassMirror = deserializeSpellData(cutData(getRawData(path)))
-        Output = createOutput(data)
-        Dim languageData As LanguageData = deserializeLanguageData(GetLanguageData(System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "I2languages.json"))))
-        rawDescription = GetDescription(data.m_name, languageData)
-        SpellName = data.m_name
-        removed = data.removed
-        gameReady = data.gameReady
-        Output = Output.Replace("SpellName", GetTooltipName(SpellName, languageData, language))
-        Dim customDataLists As filteredCustomData
-        customDataLists = data.GetCustomData()
-        customDataNameList = customDataLists.name
-        customDataValueList = customDataLists.value
-        customDataNameList.Add("None")
-        customDataNameList.Add("Linear")
-        customDataValueList.Add("0") 'adding the 0 and 1 values to correct the bugged tooltips.
-        customDataValueList.Add("1")
+    Public Sub New(commonFunctions As CommonFunctions)
+        Me.CommonFunctions = commonFunctions
     End Sub
 
-    Private Function createOutput(data As SpellClassMirror) As String 'converts the enumerators into clear text and adds the categories
-        Dim output As String
+    Public Property Output As String 'full list of the properties, to be used for the datamodule on the wiki
 
-        output = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "SpellCreator/defaultSpellData.txt"))
-        'output = output.Replace("SpellName", data.m_name)
-        If data.m_name = "spell_Charge" Then 'exceptions
-            output = output.Replace("imageValue", data.m_name.Replace("spell_", "Icon_") & "_Ability.png")
-        ElseIf data.m_name = "spell_LighitningRush" Then
-            output = output.Replace("imageValue", "Icon_LightningRush.png")
-        ElseIf data.m_name = "spell_SkeletalDragonBreath_SkeletalDragon" Then
-            output = output.Replace("imageValue", "Icon_SkeletalDragonBreath.png")
+    Public Property Description As String
+
+    Public Sub createOutput(data As MirrorClasses.SpellInfo) 'converts the enumerators into clear text and adds the categories
+
+        GetDescription(data.SpellKey)
+        If My.Settings.json Then
+            Output = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "DefaultOutputs/jsonSpellData.txt"))
         Else
-            output = output.Replace("imageValue", data.m_name.Replace("spell_", "Icon_") & ".png")
-        End If
-        output = output.Replace("schoolValue", [Enum].GetName(GetType(SpellSchool), data.SpellSchool))
-        output = output.Replace("toggleGroupValue", [Enum].GetName(GetType(ToggleGroup), data.toggleGroup))
-        output = output.Replace("effectGroupValue", [Enum].GetName(GetType(EffectGroup), data.effectgroup))
-        output = output.Replace("readyTriggerValue", [Enum].GetName(GetType(ReadyTrigger), data.readyTrigger))
-        output = output.Replace("friendlyFireValue", [Enum].GetName(GetType(FriendlyFire), data.friendlyFire))
-        output = output.Replace("secureHitValue", [Enum].GetName(GetType(SecureHit), data.SecureHit))
-        output = output.Replace("removeStealthValue", [Enum].GetName(GetType(dontRemoveStealth), data.dontRemoveStealth))
-        output = output.Replace("BlockCheckValue", [Enum].GetName(GetType(avoidBlockControllerCheck), data.avoidBlockControllerCheck))
-        output = output.Replace("canCritValue", [Enum].GetName(GetType(canBeCritical), data.canBeCritical))
-        output = output.Replace("mobilitySpellValue", [Enum].GetName(GetType(mobilitySpell), data.mobilitySpell))
-        output = output.Replace("memoryCostValue", data.difficulty + 1)
-        output = output.Replace("spellGroupValue", [Enum].GetName(GetType(SpellGroup), data.spellGroup))
-        output = output.Replace("cooldownValue", data.Cooldown)
-        output = output.Replace("ActivationTypeValue", [Enum].GetName(GetType(ActivationType), data.activationType))
-        output = output.Replace("targetTypeValue", [Enum].GetName(GetType(TargetType), data.targetType))
-        output = output.Replace("targetingRangeValue", data.TargetingRange)
-        output = output.Replace("castingRangeValue", data.CastingRange)
-        output = output.Replace("checkLosValue", [Enum].GetName(GetType(checkLos), data.checkLos))
-        output = output.Replace("ChannelingWeaponValue", [Enum].GetName(GetType(ChannelingWeapon), data.spellcastingRestrictions.spellChannelingWeapon))
-        output = output.Replace("weaponClassValue", [Enum].GetName(GetType(RestrictedWeaponClass), data.spellcastingRestrictions.restrictedWeaponClass))
-        output = output.Replace("weaponWeightValue", correctWeightEnumerator([Enum].GetName(GetType(RestrictedWeaponWeight), data.spellcastingRestrictions.restrictedWeaponWeight)))
-        output = output.Replace("weaponDamageValue", correctDamageEnumerator([Enum].GetName(GetType(RestrictedWeaponDamage), data.spellcastingRestrictions.restrictedWeaponDamage)))
-        output = output.Replace("ShieldRequiredValue", [Enum].GetName(GetType(ShieldRequired), data.spellcastingRestrictions.shieldRequired))
-        output = output.Replace("armorWeightValue", correctWeightEnumerator([Enum].GetName(GetType(RestrictedArmorWeight), data.spellcastingRestrictions.restrictedArmorWeight)))
-        output = output.Replace("targetEntityValue", [Enum].GetName(GetType(TargetEntityType), data.targetEntityType))
-        output = output.Replace("manaCostValue", data.ResourceCost)
-        If data.customData.ManaPerSecond <> 0 Then
-            output = output.Replace("manaCostPersValue", data.customData.ManaPerSecond)
-        ElseIf data.customData.consumePerSecond <> 0 Then
-            output = output.Replace("manaCostPersValue", data.customData.consumePerSecond)
-        Else
-            output = output.Replace("manaCostPersValue", "0")
+            Output = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "DefaultOutputs/defaultSpellData.txt"))
         End If
 
+        Output = Output.Replace("SpellName", GetTooltipName(data.SpellKey))
+
+
+        '['Ultimate'] = ultimateValue,
+        '['school'] = "schoolValue",
+        '['Spell Type'] = "spellTypeValue",
+        '['Ability Type'] = "abilityTypeValue",
+        '['Pre Cast Time'] = "preCastTimeValue",
+        '['Can Crit'] = "canCritValue",
+        '['Friend Fire'] = "friendlyFireValue", 
+        '['Restricted Armor Weight'] = "armorWeightValue",
+        '['Special Weapon Restriction'] = "SpecialWeaponRestictionValue",
+        '['Effect Group'] = "effectGroupValue",
+        '['description'] = "descriptionValue",
+        '['Skill Parameters'] = "skillParametersValue",
+        '['Spell Tags'] = "spellTagsValue",
+        '['cooldown'] = cooldownValue,
+        '['mana_cost'] = manaCostValue,
+        '['mana_cost_per_s'] = manaCostPersValue,
+        '['max_mana_cost'] = maxManaCostValue,
+        '['Player Skill'] = playerSkillValue,
+        '['image'] = "imageValue",
+        '['Categories'] = "categoriesValue",
+
+
+        Output = Output.Replace("ultimateValue", IsUltimate(data.difficulty).ToString)
+        Output = Output.Replace("schoolValue", [Enum].GetName(GetType(Enumerators.SpellSchool), data.spellSchool))
+        Output = Output.Replace("spellTypeValue", GetSpellType(data))
+        Output = Output.Replace("abilityTypeValue", GetAbilityTypeSpecial(data))
+        Output = Output.Replace("preCastTimeValue", data.preCastTime.ToString)
+        Output = Output.Replace("canCritValue", data.canBeCritical.ToString)
+        Output = Output.Replace("friendlyFireValue", [Enum].GetName(GetType(Enumerators.FriendlyFire), data.friendlyFire))
+        Output = Output.Replace("armorWeightValue", GetArmorRestrictions(data.spellcastingRestrictions.restrictedArmorWeight))
+        Output = Output.Replace("SpecialWeaponRestictionValue", GetWeaponRestrictions(data.spellcastingRestrictions.weaponRestriction, data.spellcastingRestrictions.specialWeaponRestriction))
+        Output = Output.Replace("effectGroupValue", GetEffectGroup(data.effectGroup, data.irremovable))
+        Output = Output.Replace("skillParametersValue", GetSkillParameters(data))
+        Output = Output.Replace("spellTagsValue", GetSpellTags(data))
+        Output = Output.Replace("cooldownValue", GetCooldown(data))
+        If HasSpellData(data, Enumerators.SpellDataType.ManaCost) Then
+            Output = Output.Replace("manaCostValue", GetSpellDataValue(data, Enumerators.SpellDataType.ManaCost))
+            Output = Output.Replace("manaCostPersValue", "-")
+            Output = Output.Replace("maxManaCostValue", "-")
+        ElseIf HasSpellData(data, Enumerators.SpellDataType.MaxManaCost) Then
+            Output = Output.Replace("maxManaCostValue", GetSpellDataValue(data, Enumerators.SpellDataType.MaxManaCost))
+            Output = Output.Replace("manaCostPersValue", "-")
+            Output = Output.Replace("manaCostValue", "-")
+        ElseIf HasSpellData(data, Enumerators.SpellDataType.ManaCostPerSecond) Then
+            Output = Output.Replace("manaCostPersValue", GetSpellDataValue(data, Enumerators.SpellDataType.ManaCostPerSecond))
+            Output = Output.Replace("maxManaCostValue", "-")
+            Output = Output.Replace("manaCostValue", "-")
+        End If
+        Output = Output.Replace("playerSkillValue", data.PlayerSpell.ToString)
+        Dim icon As String = CommonFunctions.GetIconName(data.Icon.m_PathID)
+        Output = Output.Replace("imageValue", icon)
+
+
+
+        '['Unicity Group'] = "unicityGroupValue",
+        '['Effect Group'] = "effectGroupValue",
+        '['Irremovable'] = "irremovableValue",
+        '['Pathfinding'] = "spellPathfindingValue",
+        '['Ready Trigger'] = "readyTriggerValue",
+        '['Secure Hit'] = "secureHitValue",
+        '['Remove Stealth'] = "removeStealthValue",
+        '['Block Check'] = "blockCheckValue",
+        '['ActivationType'] = "activationTypeValue",
+        '['Target Type'] = "targetTypeValue",
+        '['Targeting Range'] = "targetingRangeValue",
+        '['Casting Range'] = "castingRangeValue",
+        '['Check Los'] = "checkLosValue",
+        '['Status On Target'] = "statusOnTargetValue",
+        '['Block In Siege'] = "blockInSiegeValue",
+
+        Output = Output.Replace("unicityGroupValue", [Enum].GetName(GetType(Enumerators.SpellUnicityGroup), data.unicityGroup))
+        Output = Output.Replace("effectGroupValue", [Enum].GetName(GetType(Enumerators.EffectGroup), data.effectGroup))
+        Output = Output.Replace("irremovableValue", data.irremovable.ToString)
+        Output = Output.Replace("spellPathfindingValue", [Enum].GetName(GetType(Enumerators.SpellPathfinding), data.pathfinding))
+        Output = Output.Replace("readyTriggerValue", [Enum].GetName(GetType(Enumerators.ReadyTrigger), data.readyTrigger))
+        Output = Output.Replace("secureHitValue", data.SecureHit.ToString)
+        Output = Output.Replace("removeStealthValue", data.dontRemoveStealth.ToString)
+        Output = Output.Replace("blockCheckValue", data.avoidBlockControllerCheck.ToString)
+        Output = Output.Replace("activationTypeValue", [Enum].GetName(GetType(Enumerators.SpellActivationType), data.activationType))
+        Output = Output.Replace("targetTypeValue", [Enum].GetName(GetType(Enumerators.SpellTargetType), data.targetType))
+        Output = Output.Replace("targetingRangeValue", data.targetingRange)
+        Output = Output.Replace("castingRangeValue", data.castingRange)
+        Output = Output.Replace("checkLosValue", data.checkLos.ToString)
+        Output = Output.Replace("blockInSiegeValue", data.blockInSiege.ToString)
 
         Dim categories As String = ""
         Select Case data.difficulty
             Case 0
-                categories &= """Memory Cost 1 Spells"","
+                categories &= """Non-Ultimate Skills"","
             Case 1
-                categories &= """Memory Cost 2 Spells"","
+                categories &= """Non-Ultimate Skills"","
             Case 2
-                categories &= """Memory Cost 3 Spells"","
+                categories &= """Ultimate Skills"","
         End Select
 
-        Select Case data.spellcastingRestrictions.spellChannelingWeapon
-            Case 1
+        Select Case HasTag(data, Enumerators.SpellTagType.MagicalAbility)
+            Case True
                 categories &= """Magical Skills"","
-            Case 0
+            Case False
                 categories &= """Combat Skills"","
         End Select
 
+        If data.tooltipActivationType = Enumerators.SpellTooltipActivationType.Sustained Then
+            categories &= """Sustained Skills"","
+        End If
+
+        If data.blockInSiege Then
+            categories &= """Skills forbidden in Sieges"","
+        End If
+
+        If HasTag(data, Enumerators.SpellTagType.Channeled) Then
+            categories &= """Channeled Skills"","
+        End If
+
+        If HasTag(data, Enumerators.SpellTagType.LinkedEffects) Then
+            categories &= """Linked Skills"","
+        End If
+
+        If HasTag(data, Enumerators.SpellTagType.Healing) Then
+            categories &= """Healing Skills"","
+        End If
+
         Select Case data.canBeCritical
-            Case canBeCritical.Yes
+            Case Enumerators.SpellCrit.Yes
                 categories &= """Skills that Can Critically Hit"","
         End Select
 
@@ -169,208 +176,239 @@ Public Class SpellDataCreator
 
         End Select
 
-        Select Case data.spellcastingRestrictions.shieldRequired
-            Case True
+        Select Case data.spellcastingRestrictions.specialWeaponRestriction
+            Case Enumerators.SpellSpecialWeaponRestriction.ShieldRequired
                 categories &= """Skills Requiring a Shield"","
             Case False
         End Select
 
-        Select Case data.spellcastingRestrictions.restrictedWeaponWeight
-            Case 0
-            Case 1
-                categories &= """Skills that Require Light Weapons"","
-            Case 2
-                categories &= """Skills that Require Medium Weapons"","
-            Case 3
-                categories &= """Skills that Require Light Weapons"","
-                categories &= """Skills that Require Medium Weapons"","
-            Case 4
-                categories &= """Skills that Require Heavy Weapons"","
-            Case 5
-                categories &= """Skills that Require Light Weapons"","
-                categories &= """Skills that Require Heavy Weapons"","
-            Case 6
-                categories &= """Skills that Require Medium Weapons"","
-                categories &= """Skills that Require Heavy Weapons"","
-        End Select
-
-        Select Case data.spellcastingRestrictions.restrictedWeaponClass
-            Case 0
-            Case 1
-                categories &= """Skills that Require Melee Weapons"","
-            Case 2
+        Select Case data.spellcastingRestrictions.specialWeaponRestriction
+            Case Enumerators.SpellSpecialWeaponRestriction.BowRequired
                 categories &= """Skills that Require Ranged Weapons"","
-            Case 8
+            Case Enumerators.SpellSpecialWeaponRestriction.Unarmed
                 categories &= """Skills that Require Being Unarmed"","
         End Select
 
-        output = output.Replace("CategoriesValue", categories)
-
-        Return output
-    End Function
-
-    Private Function GetLanguageData()
-        Dim rawLanguageData As String
-        rawLanguageData = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "I2languages.json"))
-        Return rawLanguageData
-    End Function
-
-    Private Function deserializeLanguageData(data As String) As LanguageData
-
-        Dim parsedData As LanguageData
-        Dim correctedData As String = data.Replace("\n", " ")
-        parsedData = JsonConvert.DeserializeObject(Of LanguageData)(data)
-        Return parsedData
-    End Function
-
-    Private Function GetDescription(spellname As String, deserializedData As LanguageData) As String 'extracts the description of the spell from the I2Language file
-
-
-        Dim rawDescription As String
-        Dim term As String
-
-        term = spellname.Replace("spell_", "spells/")
-        term &= "_description"
-        term = term.Remove(7, 1).Insert(7, Char.ToLower(term(7))) 'converts the 7th letter to lower case
-        If term = "spells/cloakOfLightning_description" Then 'c'è un disallineamento tra il nome della spell sul file name e come termine su l2Language
-            term = "spells/cloakOfLightnings_description"
-        End If
-        If term = "spells/counterstrike_description" Then
-            term = "spells/counterStrike_description"
-        End If
-        If term = "spells/globeOfSpellProtection_description" Then
-            term = "spells/globeSpellProtection_description"
-        End If
-        If term = "spells/lighitningRush_description" Then
-            term = "spells/lightningRush_description"
-        End If
-        If term = "spells/magicMissiles_description" Then
-            term = "spells/magicMissile_description"
-        End If
-        If term = "spells/skeletalDragonBreath_SkeletalDragon_description" Then
-            term = "spells/skeletalDragonBreath_description"
-        End If
-        If term = "spells/thunderClap_description" Then
-            term = "spells/thunderclap_description"
-        End If
-        If term = "spells/wordOfPower_Heal_description" Then
-            term = "spells/wordOfPowerHeal_description"
-        End If
-        If term = "spells/wordOfPower_Silence_description" Then
-            term = "spells/wordOfPowerSilence_description"
-        End If
-        If term = "spells/wordOfPower_Stun_description" Then
-            term = "spells/wordOfPowerStun_description"
-        End If
-        If term = "spells/wordOfPower_Kill_description" Then
-            term = "spells/wordOfPowerKill_description"
-        End If
-        rawDescription = deserializedData.returnTerm(term, language)
-        While rawDescription.IndexOf("({") <> -1
-            rawDescription = rawDescription.Remove(rawDescription.IndexOf("({"), rawDescription.IndexOf(")", rawDescription.IndexOf("({")) - rawDescription.IndexOf("({") + 1)
-        End While
-        rawDescription = rawDescription.Replace(vbCr, " ").Replace(vbLf, " ")
-        Return rawDescription
-    End Function
-
-    Public Shared Function GetTooltipName(spellname As String, deserializedData As LanguageData, language As Integer) 'the func
-        Dim tooltipName As String
-        Dim term As String
-
-        term = spellname.Replace("spell_", "spells/")
-        term &= "_name"
-        term = term.Remove(7, 1).Insert(7, Char.ToLower(term(7))) 'converts the 7th letter to lower case
-        If term = "spells/cloakOfLightning_name" Then 'c'è un disallineamento tra il nome della spell sul file name e come termine su l2Language
-            term = "spells/cloakOfLightnings_name"
-        End If
-        If term = "spells/counterstrike_name" Then
-            term = "spells/counterStrike_name"
-        End If
-        If term = "spells/globeOfSpellProtection_name" Then
-            term = "spells/globeSpellProtection_name"
-        End If
-        If term = "spells/lighitningRush_name" Then
-            term = "spells/lightningRush_name"
-        End If
-        If term = "spells/magicMissiles_name" Then
-            term = "spells/magicMissile_name"
-        End If
-        If term = "spells/skeletalDragonBreath_SkeletalDragon_name" Then
-            term = "spells/skeletalDragonBreath_name"
-        End If
-        If term = "spells/thunderClap_name" Then
-            term = "spells/thunderclap_name"
-        End If
-        If term = "spells/wordOfPower_Heal_name" Then
-            term = "spells/wordOfPowerHeal_name"
-        End If
-        If term = "spells/wordOfPower_Silence_name" Then
-            term = "spells/wordOfPowerSilence_name"
-        End If
-        If term = "spells/wordOfPower_Stun_name" Then
-            term = "spells/wordOfPowerStun_name"
-        End If
-        If term = "spells/wordOfPower_Kill_name" Then
-            term = "spells/wordOfPowerKill_name"
-        End If
-        tooltipName = deserializedData.returnTerm(term, language)
-        If tooltipName = "Counterstrike" Then
-            tooltipName = "Counter Strike"
+        If categories.Length <> 0 Then
+            categories = categories.Substring(0, categories.Length - 1)
         End If
 
-        Return tooltipName
-
-
-    End Function
-
-
-
-    Public Sub New(language As Integer)
-
-        Me.language = language
-
+        Output = Output.Replace("categoriesValue", categories)
+        Output = Output.Replace("Deffault", "Default")
     End Sub
 
-    Private Function correctWeightEnumerator(Value As String) As String
-        Dim output As String
 
-        Select Case Value
-            Case "Light_Medium"
-                output = "Light, Medium"
-                Exit Select
-            Case "Light_Heavy"
-                output = "Light, Heavy"
-                Exit Select
-            Case "Medium_Heavy"
-                output = "Medium, Heavy"
-                Exit Select
-            Case Else
-                output = Value
+    Private Sub GetDescription(spellKey As String) 'extracts the description of the spell from the I2Language file
+        Description = CommonFunctions.terms.getTerm("spells/" & spellKey & "_description", My.Settings.Language)
+    End Sub
 
-        End Select
-        Return output
+    Public Function GetTooltipName(spellkey As String)
+
+        Return CommonFunctions.terms.getTerm("spells/" & spellkey & "_name", My.Settings.Language)
+
     End Function
 
-    Private Function correctDamageEnumerator(Value As String) As String
-        Dim output As String
-
-        Select Case Value
-            Case "Slash_Pierce"
-                output = "Slash or Pierce"
-                Exit Select
-            Case "Crush_Slash"
-                output = "Crush or Slash"
-                Exit Select
-            Case "Crush_Pierce"
-                output = "Crush or Pierce"
-                Exit Select
-            Case Else
-                output = Value
-
-        End Select
-        Return output
+    Private Function IsUltimate(difficulty As Integer) As Boolean
+        If difficulty = 2 Then
+            Return True
+        Else Return False
+        End If
     End Function
 
+    Private Function GetCooldown(spell As MirrorClasses.SpellInfo) As String
+        Dim cooldown As String = 0
+        Dim cooldownFound As Boolean = False
+        For Each data As MirrorClasses.SpellDataInfo In spell.spellData
+            If data.dataType = Enumerators.SpellDataType.Cooldown Then
+                cooldownFound = True
+                If data.level0 = data.level10 Then
+                    cooldown = data.level0
+                Else
+                    cooldown = data.level0.ToString & " to " & data.level10
+                End If
+            End If
+        Next
+        If cooldownFound = False Then
+            CommonFunctions.AddLogEntry("Cannot find cooldown information for skill " & spell.SpellKey)
+        End If
+        Return cooldown
+    End Function
+
+    Private Function GetAbilityTypeSpecial(spell As MirrorClasses.SpellInfo) As String ' from class UITooltip_Spell
+        Dim abilityTypeSpecial As String = ""
+        Select Case spell.tooltipActivationType
+            Case Enumerators.SpellTooltipActivationType.Targeted
+                If spell.tooltipTargetType <> 0 Then
+                    Dim abilityType As String = CommonFunctions.terms.getTerm("spells/spellActivationType_" & spell.tooltipTargetType.ToString, My.Settings.Language)
+                    abilityTypeSpecial = "Target (" & abilityType & ")"
+                Else
+                    abilityTypeSpecial = "Target"
+                End If
+            Case Enumerators.SpellTooltipActivationType.Sustained
+                If spell.tooltipTargetType <> 0 Then
+                    Dim sustainedType As String = CommonFunctions.terms.getTerm("spells/spellActivationType_" & spell.tooltipTargetType.ToString, My.Settings.Language)
+                    abilityTypeSpecial = "Sustained (" & sustainedType & ")"
+                Else
+                    abilityTypeSpecial = "Sustained"
+                End If
+            Case Enumerators.SpellTooltipActivationType.Ready
+                If spell.tooltipTargetType <> 0 Then
+                    Dim sustainedType As String = CommonFunctions.terms.getTerm("spells/spellActivationType_" & spell.tooltipTargetType.ToString, My.Settings.Language)
+                    abilityTypeSpecial = "Ready (" & sustainedType & ")"
+                Else
+                    abilityTypeSpecial = "Ready"
+                End If
+            Case Else
+                abilityTypeSpecial = [Enum].GetName(GetType(Enumerators.SpellTooltipActivationType), spell.tooltipActivationType)
+        End Select
+        Return abilityTypeSpecial
+    End Function
+
+    Private Function GetSpellType(spell As MirrorClasses.SpellInfo) As String ' from class UITooltip_Spell
+        Dim spellTypeText As String = ""
+
+        If HasTag(spell, Enumerators.SpellTagType.MagicalAbility) Then
+            spellTypeText = CommonFunctions.terms.getTerm("spells/spelltag_" & Enumerators.SpellTagType.MagicalAbility.ToString, My.Settings.Language)
+        Else
+            spellTypeText = CommonFunctions.terms.getTerm("spells/spelltag_" & Enumerators.SpellTagType.PhysicalAbility.ToString, My.Settings.Language)
+        End If
+        Return spellTypeText
+    End Function
+
+    Private Function HasTag(spell As MirrorClasses.SpellInfo, tag As Enumerators.SpellTagType) As Boolean
+        If spell.spellTags.Find(Function(p) p.dataType = tag) IsNot Nothing Then
+            Return True
+        Else Return False
+
+        End If
+
+    End Function
+
+    Private Function HasSpellData(spell As MirrorClasses.SpellInfo, data As Enumerators.SpellDataType) As Boolean
+        If spell.spellData.Find(Function(p) p.dataType = data) IsNot Nothing Then
+            Return True
+        Else Return False
+
+        End If
+
+    End Function
+
+    Private Function GetSpellDataValue(spell As MirrorClasses.SpellInfo, data As Enumerators.SpellDataType) As Double
+        Dim foundData As MirrorClasses.SpellDataInfo = spell.spellData.Find(Function(p) p.dataType = data)
+        If foundData IsNot Nothing Then
+            Return foundData.level0
+        Else Return 0
+        End If
+    End Function
+
+    Private Function GetArmorRestrictions(restrictions As Enumerators.EquipWeightClass) As String
+        Select Case restrictions
+            Case Enumerators.EquipWeightClass.Light
+                Return CommonFunctions.terms.getTerm("spells/spelldata_Light", My.Settings.Language)
+            Case Enumerators.EquipWeightClass.Medium
+                Return CommonFunctions.terms.getTerm("spells/spelldata_Light", My.Settings.Language) & " / " & CommonFunctions.terms.getTerm("spells/spelldata_Medium", My.Settings.Language)
+            Case Else
+                Return "-"
+        End Select
+    End Function
+
+    Private Function GetWeaponRestrictions(restrictions As Enumerators.SpellWeaponRestriction, specialRestrictions As Enumerators.SpellSpecialWeaponRestriction) As String
+        If restrictions = 0 And specialRestrictions = 0 Then
+            Return "-"
+        Else
+            Select Case restrictions
+                Case Enumerators.SpellWeaponRestriction.OneHanded
+                    Return CommonFunctions.terms.getTerm("spells/spelldata_OneHanded", My.Settings.Language)
+                Case Enumerators.SpellWeaponRestriction.TwoHanded
+                    Return CommonFunctions.terms.getTerm("spells/spelldata_TwoHanded", My.Settings.Language)
+                Case Enumerators.SpellWeaponRestriction.SpellChanneling
+                    Return CommonFunctions.terms.getTerm("spells/spelldata_SpellChanneling", My.Settings.Language)
+                Case Else
+                    Select Case specialRestrictions
+                        Case Enumerators.SpellSpecialWeaponRestriction.BowRequired
+                            Return CommonFunctions.terms.getTerm("spells/spelldata_BowRequired", My.Settings.Language)
+                        Case Enumerators.SpellSpecialWeaponRestriction.ShieldRequired
+                            Return CommonFunctions.terms.getTerm("spells/spelldata_ShieldRequired", My.Settings.Language)
+                        Case Enumerators.SpellSpecialWeaponRestriction.Unarmed
+                            Return CommonFunctions.terms.getTerm("spells/spelldata_Unarmed", My.Settings.Language)
+                    End Select
+            End Select
+        End If
+        Return "-"
+    End Function
+
+    Private Function GetEffectGroup(effectGroup As Enumerators.EffectGroup, irremovable As Boolean) As String
+        If effectGroup <> Enumerators.EffectGroup.None Then
+            If irremovable Then
+                Return CommonFunctions.terms.getTerm("spells/statusType_" & effectGroup.ToString, My.Settings.Language) & " (" & CommonFunctions.terms.getTerm("spells/spelldata_Irremovable" & effectGroup.ToString, My.Settings.Language) & ")"
+            Else
+                Return CommonFunctions.terms.getTerm("spells/statusType_" & effectGroup.ToString, My.Settings.Language)
+            End If
+        Else
+            Return "-"
+        End If
+
+    End Function
+
+    Private Function GetSpellSchool(spellSchool As Enumerators.SpellSchool) As String
+        Return CommonFunctions.terms.getTerm("ui/spellSchool_" & spellSchool.ToString, My.Settings.Language)
+    End Function
+
+    Private Function GetSkillParameters(spell As MirrorClasses.SpellInfo) As String
+
+        Dim parameters As String = ""
+        For Each data As MirrorClasses.SpellDataInfo In spell.spellData
+
+            If data.dataType = Enumerators.SpellDataType.ManaCost Or data.dataType = Enumerators.SpellDataType.Cooldown Or data.dataType = Enumerators.SpellDataType.ManaCostPerSecond Or data.dataType = Enumerators.SpellDataType.MaxManaCost Then
+                Continue For
+            End If
+
+            Dim parameterText As String = CommonFunctions.terms.getTerm("spells/spelldata_" & data.dataType.ToString, My.Settings.Language) & ": "
+
+            If data.level0 <> data.level10 Then
+                parameterText &= data.level0 & " to " & data.level10
+            Else
+                parameterText &= data.level0
+            End If
+
+            If data.dataType.ToString.Contains("Percentage") Then
+                parameterText &= "%"
+            End If
+
+            If data.attributeType <> Enumerators.SpellCoefficientAttributeType.None Then
+                parameterText &= "( + " & data.attributeType.ToString & ")"
+            End If
+
+            If data.modifierType <> Enumerators.SaveModifierType.None Then
+                parameterText &= " (" & CommonFunctions.terms.getTerm("spells/spellSaveModifier_" & data.modifierType.ToString, My.Settings.Language) & ")"
+            End If
+
+            parameterText &= "</br>"
+            parameters &= parameterText
+        Next
+
+        If parameters <> "" Then
+            parameters = parameters.Substring(0, parameters.Length - 5)
+        End If
+
+
+        Return parameters
+    End Function
+
+
+    Private Function GetSpellTags(spell As MirrorClasses.SpellInfo) As String
+        Dim tagText As String = ""
+        For Each tag As MirrorClasses.SpellTagDataInfo In spell.spellTags
+            If tag.tooltipHidden = False And tag.dataType <> Enumerators.SpellTagType.PhysicalAbility And tag.dataType <> Enumerators.SpellTagType.MagicalAbility Then
+                Dim tagLocalization As String = CommonFunctions.terms.getTerm("spells/spelltag_" & tag.dataType.ToString, My.Settings.Language)
+                tagText &= tagLocalization & ", "
+            End If
+        Next
+        If tagText.Length <> 0 Then
+            tagText = tagText.Substring(0, tagText.Length - 2)
+        End If
+        Return tagText
+    End Function
 
 End Class
 

@@ -1,68 +1,76 @@
-﻿Imports Newtonsoft.Json
+﻿
+Imports Editor_Skill_Wiki.Enumerators
+
 Public Class MonsterDataCreator
 
+    Dim commonFunctions As CommonFunctions
 
-    Dim languageEnum As Integer = 0
-    Dim languageData As LanguageData
+    Public Sub New(commonFunctions As CommonFunctions)
 
+        ' La chiamata è richiesta dalla finestra di progettazione.
+        InitializeComponent()
 
-    Private Sub test_click(sender As Object, e As RoutedEventArgs)
+        ' Aggiungere le eventuali istruzioni di inizializzazione dopo la chiamata a InitializeComponent().
+        Me.commonFunctions = commonFunctions
         Try
-            Dim rawData As String
-            Dim OpenFileDialog1 As New Microsoft.Win32.OpenFileDialog
-            OpenFileDialog1.Title = "Open File..."
-            OpenFileDialog1.Multiselect = False
-            OpenFileDialog1.Filter = "All Files|*.*"
-            OpenFileDialog1.ShowDialog()
-            Dim path As String = OpenFileDialog1.FileName
-            If System.IO.File.Exists(path) Then
-                rawData = System.IO.File.ReadAllText(path)
-            Else Throw New System.Exception("File does not exist.")
-            End If
-
-            'extract language data to get the correct monster name and description
-            languageData = deserializeLanguageData(GetLanguageData())
-
-
-            Dim parsedData = parseMonsterData(rawData)
-            Dim finalData As New MonsterFinalData
-            finalData.parseData(parsedData, "E:\Desktop\Miscellanea\Fractured\Creatures\Pre Closing\Attacks", "E:\Desktop\Miscellanea\Fractured\Spell\Pre Closing")
-            Dim output = createModuleOutput(finalData)
-            OutputBlock.Text = output
+            OutputBlock.Text = ""
+            For Each monster As MirrorClasses.MonsterClass In commonFunctions.MonsterList
+                If monster.IsDummy Then
+                    Continue For
+                End If
+                If monster.m_Name = "class_NPC" Then
+                    Continue For
+                End If
+                Dim finalData As New MonsterFinalData(commonFunctions)
+                finalData.parseData(monster)
+                Dim output = createModuleOutput(finalData)
+                OutputBlock.Text &= output
+                OutputBlock.Text &= vbCrLf
+            Next
+            Clipboard.SetText(OutputBlock.Text)
         Catch ex As Exception
             MsgBox(ex.Message)
             MsgBox(ex.StackTrace)
         End Try
     End Sub
 
-
-    Private Function parseMonsterData(data As String)
-        Dim parsedData As MonsterData
-        parsedData = JsonConvert.DeserializeObject(Of MonsterData)(data)
-
-        Return parsedData
-    End Function
+    Private Sub test_click(sender As Object, e As RoutedEventArgs)
+        Clipboard.SetText(OutputBlock.Text)
+    End Sub
 
 
 
     Private Function createModuleOutput(data As MonsterFinalData)
         Dim output As String
-        output = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "MonsterCreator/defaultMonsterData.txt"))
+        If My.Settings.json Then
+            output = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "DefaultOutputs/jsonMonsterData.txt"))
+        Else
+            output = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "DefaultOutputs/defaultMonsterData.txt"))
+        End If
 
-        output = output.Replace("nameText", getMonsterName(data.name, languageData))
-        output = output.Replace("descriptionText", getMonsterDescription(data.name, languageData))
+
+        output = output.Replace("nameText", data.name)
+        output = output.Replace("descriptionText", data.description)
         output = output.Replace("strText", data.str)
         output = output.Replace("dexText", data.dex)
         output = output.Replace("intText", data.int)
         output = output.Replace("conText", data.cos)
         output = output.Replace("perText", data.per)
-        output = output.Replace("chaText", data.cha)
+        output = output.Replace("chaText", data.wis)
         output = output.Replace("healthText", data.health)
+        output = output.Replace("healthRegenText", data.healthRegen)
         output = output.Replace("manaText", data.mana)
+        output = output.Replace("manaRegenText", data.manaRegen)
         output = output.Replace("accuracyText", data.accuracy)
         output = output.Replace("fortitudeText", data.fortitude)
         output = output.Replace("evasionText", data.evasion)
         output = output.Replace("willpowerText", data.willpower)
+        output = output.Replace("stealthText", data.stealth)
+        output = output.Replace("detectionText", data.detection)
+        output = output.Replace("criticalChanceText", data.criticalChance)
+        output = output.Replace("criticalDamageText", data.criticalDamage)
+        output = output.Replace("luckText", data.luck)
+
 
         output = output.Replace("slashText", data.slashArmor)
         output = output.Replace("slash%Text", data.slashArmorPerc)
@@ -83,11 +91,35 @@ Public Class MonsterDataCreator
         output = output.Replace("acidText", data.acidResistance)
         output = output.Replace("acid%Text", data.acidResistancePerc)
 
+        output = output.Replace("cooldownReductionText", data.cooldownReduction)
+        output = output.Replace("spellDamageIncreaseText", data.spellDamageIncrease)
+
+
+        output = output.Replace("immunityGroupText", data.EffectGroupImmunities)
+        output = output.Replace("specialImmunityText", data.SpecialImmunities)
+        output = output.Replace("immunitySpace", data.StatusImmunities)
+        output = output.Replace("absorbSpace", data.Absorb)
+        output = output.Replace("magicalDamageReflectionText", data.magicalDamageRefection)
+        output = output.Replace("physicalDamageReflectionText", data.physicalDamageReflection)
+
+        output = output.Replace("challengeRatingText", data.ChallengeRating)
+        output = output.Replace("difficultyText", data.Difficulty)
+        output = output.Replace("halfKillsRequiredText", data.HalfKillsRequired)
+        output = output.Replace("monsterRaceText", data.MonsterRace)
+        output = output.Replace("capturableText", data.Capturable)
+        output = output.Replace("skinAmountText", data.SkinAmount)
+        output = output.Replace("championText", data.Champion)
+        output = output.Replace("walkSpeedText", data.WalkSpeed)
+        output = output.Replace("baseSpeedText", data.BaseSpeed)
+        output = output.Replace("broadcastAggressionText", data.BroadCastAggression)
+        output = output.Replace("playerAttitudeText", data.PlayerAttitude)
+        output = output.Replace("combatStanceText", data.CombatStance)
+
+
+
 
         Dim attackText As String = ""
         For Each attack As MonsterAttackFinalData In data.monsterAttacks
-            'insert the right name into the fullText, using the language data
-            attack.fullText = attack.fullText.Replace("textName", getAttackName(attack.name, languageData))
             attackText &= attack.fullText & vbCrLf
         Next
 
@@ -95,65 +127,17 @@ Public Class MonsterDataCreator
 
         Dim skillText As String = ""
         For Each skill As MonsterSpellFinalData In data.monsterSkills
-            'insert the right name into the fullText, using the language data
-            skill.fullText = skill.fullText.Replace("nameText", SpellDataCreator.GetTooltipName(skill.name, languageData, languageEnum))
             skillText &= skill.fullText & vbCrLf
         Next
 
         output = output.Replace("skillSpace", skillText)
 
+        output = output.Replace("categoryText", data.Category)
+
+
         Return output
     End Function
 
-    Private Function GetLanguageData()
-        Dim rawLanguageData As String
-        rawLanguageData = System.IO.File.ReadAllText(IO.Path.Combine(Environment.CurrentDirectory, "I2languages.json"))
-        Return rawLanguageData
-    End Function
-
-    Private Function deserializeLanguageData(data As String) As LanguageData
-
-        Dim parsedData As LanguageData
-        Dim correctedData As String = data.Replace("\n", " ")
-        parsedData = JsonConvert.DeserializeObject(Of LanguageData)(data)
-        Return parsedData
-    End Function
-
-    Private Function getMonsterName(monsterName As String, deserializedData As LanguageData)
-        Dim tooltipName As String
-        Dim term As String
-
-        term = monsterName.Replace("class_", "monsters/")
-        term &= "Name"
-        term = term.Remove(9, 1).Insert(9, Char.ToLower(term(9))) 'converts the 9th letter to lower case
-
-        tooltipName = deserializedData.returnTerm(term, languageEnum)
-        Return tooltipName
-
-    End Function
-
-    Private Function getMonsterDescription(monsterName As String, deserializedData As LanguageData)
-        Dim description As String
-        Dim term As String
-
-        term = monsterName.Replace("class_", "monsters/")
-        term &= "Description"
-        term = term.Remove(10, 1).Insert(10, Char.ToLower(term(10))) 'converts the 10th letter to lower case
-
-        description = deserializedData.returnTerm(term, languageEnum)
-        Return description
-
-    End Function
-
-    Private Function getAttackName(attackName As String, deserializedData As LanguageData)
-        Dim name As String
-        Dim term As String
-
-        term = attackName.Replace("key:", "")
-
-        name = deserializedData.returnTerm(term, languageEnum)
-        Return name
-    End Function
 
 
 End Class

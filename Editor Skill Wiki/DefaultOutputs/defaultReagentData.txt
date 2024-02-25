@@ -1,0 +1,6 @@
+﻿    ["reagentNameValue"] = {
+        ["Rarity"] = {"rarityText"},
+        ["aspect1"] = {"Value1"},
+        ["aspect2"] = {"Value2"},
+        ["aspect3"] = {"Value3"},
+    },

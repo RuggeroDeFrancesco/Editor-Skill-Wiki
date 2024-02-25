@@ -11,8 +11,38 @@
     <Window.Background>
         <ImageBrush ImageSource="/Images/MainWindow.jpg" />
     </Window.Background>
+    <Window.Resources>
+        <Style TargetType="{x:Type CheckBox}" x:Key="myCheckboxStyle">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type CheckBox}">
+                        <StackPanel Orientation="Horizontal">
+                            <Image x:Name="checkboxImage" Source="normal.png" Width="32"/>
+                            <ContentPresenter/>
+                        </StackPanel>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsChecked" Value="True">
+                                <Setter TargetName="checkboxImage" Property="Source" Value="/Images/jsonV.png"/>
+                            </Trigger>
+                            <Trigger Property="IsChecked" Value="False">
+                                <Setter TargetName="checkboxImage" Property="Source" Value="/Images/jsonX.png"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
     <Grid>
-        <WrapPanel Margin="0,0,502,195">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <WrapPanel Grid.Row="0">
             <Button HorizontalAlignment="Left" Margin="33,28,0,0" VerticalAlignment="Top" Click="GenerateSpellData" Height="64" Width="64">
                 <Button.Background>
                     <ImageBrush ImageSource="/Images/SpellData.Png" />
@@ -20,14 +50,40 @@
             </Button>
             <TextBox Text="Spell Data" FontSize="18" FontFamily="MS Gothic" FontWeight="Bold" Foreground="Tan"  Background="Transparent" BorderBrush="Transparent" Height="32" Margin="33,28,0,0"/>
         </WrapPanel>
-        <WrapPanel Margin="0,83,0,110">
+        <WrapPanel Grid.Row="1">
             <Button HorizontalAlignment="Left" Margin="33,28,0,0" VerticalAlignment="Top" Click="GenerateMonsterSpells" Height="64" Width="64">
                 <Button.Background>
                     <ImageBrush ImageSource="/Images/MonsterSpells.Png" />
                 </Button.Background>
             </Button>
-            <TextBox Text="Monster Spells" FontSize="18" FontFamily="MS Gothic" FontWeight="Bold" Foreground="Tan"  Background="Transparent" BorderBrush="Transparent" Height="32" Margin="33,28,0,0"/>
+            <TextBox Text="Monster Data" FontSize="18" FontFamily="MS Gothic" FontWeight="Bold" Foreground="Tan"  Background="Transparent" BorderBrush="Transparent" Height="32" Margin="33,28,0,0"/>
         </WrapPanel>
+        <WrapPanel Grid.Row="0" Grid.Column="1">
+            <Button HorizontalAlignment="Left" Margin="33,28,0,0" VerticalAlignment="Top" Click="OpenLog" Height="64" Width="64">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Images/Log.Png" />
+                </Button.Background>
+            </Button>
+            <TextBox Text="Open Log" FontSize="18" FontFamily="MS Gothic" FontWeight="Bold" Foreground="Tan"  Background="Transparent" BorderBrush="Transparent" Height="32" Margin="33,28,0,0"/>
+        </WrapPanel>
+        <Grid Grid.Row="1" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <WrapPanel Grid.Column="0" VerticalAlignment="top">
+                <CheckBox Style="{StaticResource myCheckboxStyle}" Height="32" Margin="33,32,0,0" VerticalAlignment="center" Checked="CheckBox_Checked" Unchecked="CheckBox_Checked"/>
+                <TextBox Text="Json Output" VerticalAlignment="Center" FontSize="18" FontFamily="MS Gothic" FontWeight="Bold" Foreground="Tan"  Background="Transparent" BorderBrush="Transparent" Height="32" Margin="33,40,0,0"/>
+            </WrapPanel>
 
+            <WrapPanel Grid.Column="1">
+                <Button HorizontalAlignment="Left" Margin="33,20,0,0" VerticalAlignment="Top" Click="ExitApp"  Height="64" Width="64">
+                    <Button.Background>
+                        <ImageBrush ImageSource="/Images/ExitApp.Png" />
+                    </Button.Background>
+                </Button>
+                <TextBox Text="Exit" FontSize="18" FontFamily="MS Gothic" FontWeight="Bold" Foreground="Tan"  Background="Transparent" BorderBrush="Transparent" Height="32" Margin="33,28,0,0"/>
+            </WrapPanel>
+        </Grid>
     </Grid>
 </Window>

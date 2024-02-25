@@ -1,0 +1,66 @@
+﻿	["itemNameText"] = {
+		["Slot"] = "slotText",
+		["Armor Type"] = "armorTypeText",
+		["Physical Armor"] = "pharmorText",
+		["Slash Armor"] = "sarmorText",
+		["Pierce Armor"] = "parmorText",
+		["Crush Armor"] = "carmorText",
+		["Magical Armor"] = "marmorText",
+		["Poison Resistance"] = "presistanceText",
+		["Acid Resistance"] = "aresistanceText",
+		["Shock Resistance"] = "sresistanceText",
+		["Ice Resistance"] = "iresistanceText",
+		["Fire Resistance"] = "fresistanceText",
+		["Energy Resistance"] = "eresistanceText",
+		["Durability"] = "durabilityText",
+		["Heat Insulation"] = "heatInsulationText",
+		["Cold Insulation"] = "coldInsulationText",
+		["Armor Set"] = "armorSetText",		        
+        ["Material Stats"] = {
+            {
+                ["Physical Armor"] = "+8",
+                ["Armor Encumbrance"] = "+2%",    
+            },
+            {
+            	["Heat Insulation"] = "+2",	
+           	},
+            {
+            	["Cold Insulation"] = "+2",	
+            	["Heat Insulation"] = "+2",	
+                ["Physical Armor"] = "+12",
+            },
+            {
+                ["Magical Armor"] = "+16",
+                ["Energy Damage Increase"] = "+3%",                
+            },
+            {
+            	["Cold Insulation"] = "+2",	
+            	["Heat Insulation"] = "-3",		
+           	},
+            {
+            	["Cold Insulation"] = "+4",	
+            	["Heat Insulation"] = "-3",	
+                ["Crush Armor"] = "+36",
+                ["Shock Resistance"] = "+36",
+                ["Health"] = "+40",                
+            },
+            {
+            	["Cold Insulation"] = "+2",	
+            	["Heat Insulation"] = "+1",	            	
+                ["Magical Armor"] = "+8",
+                ["Acid Resistance"] = "+20",
+            },
+            {
+            	["Cold Insulation"] = "+3",	
+            	["Heat Insulation"] = "-2",	              	
+                ["Magical Armor"] = "+8",
+                ["Luck"] = "+30",
+            },
+            {
+                ["Armor Encumbrance"] = "+2%",
+                ["Physical Armor"] = "+8",
+                ["Ice Resistance"] = "+52",  
+                ["Magical Damage Reflection"] = "+4%",       
+            }
+        },
+	},

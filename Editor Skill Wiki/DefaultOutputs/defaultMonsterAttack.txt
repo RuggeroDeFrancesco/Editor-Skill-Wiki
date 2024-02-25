@@ -1,0 +1,18 @@
+﻿            {
+                ["Name"] = "textName",
+                ["Damage"] = "textDamageValue",
+                ["DamageType1"] = "textType1",
+                ["DamageType2"] = "textType2",
+                ["DamageType3"] = "textType3",
+                ["Range"] = "textRange",
+                ["Speed"] = "textSpeed",
+                ["Weapon Type"] = "textWeaponType",
+                ["Damage Width"] = "textDamageWidth",
+                ["Damange Length"] = "textDamageLength",
+                ["Damage Amplitude"] = "textDamageAmplitude",
+                ["Projectile Speed"] = "textProjectileSpeed",
+                ["Projectile Despawn"] = "textProjectileDespawn",
+                ["Attack Properties"] = {
+propertySpace
+                },
+            },

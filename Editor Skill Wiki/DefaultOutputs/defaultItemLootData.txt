@@ -1,0 +1,6 @@
+﻿        {
+        ["Item Name"] = "itemNameText",
+        ["Minimum Quantity"] = "minimumQuantityText",
+        ["Maximum Quantity"] = "maximumQuantityText",
+        ["Drop Probability"] = "dropProbabilityText",
+        },

@@ -9,24 +9,117 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="DefaultOutputs\defaultArmorData.txt" />
+    <None Remove="DefaultOutputs\defaultAttackProperty.txt" />
+    <None Remove="DefaultOutputs\defaultItemData.txt" />
+    <None Remove="DefaultOutputs\defaultItemLootData.txt" />
+    <None Remove="DefaultOutputs\defaultLootData.txt" />
+    <None Remove="DefaultOutputs\defaultMonsterAttack.txt" />
+    <None Remove="DefaultOutputs\defaultMonsterData.txt" />
+    <None Remove="DefaultOutputs\defaultMonsterRestriction.txt" />
+    <None Remove="DefaultOutputs\defaultMonsterSkill.txt" />
+    <None Remove="DefaultOutputs\defaultReagentData.txt" />
+    <None Remove="DefaultOutputs\defaultSpellData.txt" />
+    <None Remove="DefaultOutputs\jsonMonsterAttack.txt" />
+    <None Remove="DefaultOutputs\jsonMonsterData.txt" />
+    <None Remove="DefaultOutputs\jsonMonsterSkill.txt" />
+    <None Remove="DefaultOutputs\jsonSpellData.txt" />
     <None Remove="defaultSpellData.txt" />
     <None Remove="I2Languages.json" />
+    <None Remove="Images\ExitApp.png" />
+    <None Remove="Images\ItemData.png" />
+    <None Remove="Images\jsonV.png" />
+    <None Remove="Images\jsonX.png" />
+    <None Remove="Images\Log.png" />
+    <None Remove="Images\LootData.png" />
     <None Remove="Images\MainWindow.jpg" />
+    <None Remove="Images\MonsterData.png" />
     <None Remove="Images\MonsterSpells.png" />
+    <None Remove="Images\Pentagram.png" />
+    <None Remove="Images\SeData.png" />
     <None Remove="Images\SpellData.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="DefaultOutputs\defaultArmorData.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DefaultOutputs\defaultAttackProperty.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DefaultOutputs\defaultItemData.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DefaultOutputs\defaultItemLootData.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DefaultOutputs\defaultLootData.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DefaultOutputs\jsonMonsterSkill.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DefaultOutputs\jsonMonsterAttack.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DefaultOutputs\defaultMonsterAttack.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DefaultOutputs\jsonMonsterData.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DefaultOutputs\defaultMonsterData.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DefaultOutputs\defaultMonsterRestriction.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DefaultOutputs\defaultMonsterSkill.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DefaultOutputs\defaultReagentData.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DefaultOutputs\defaultSpellData.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DefaultOutputs\jsonSpellData.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\ExitApp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\jsonV.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\jsonX.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Log.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\ItemData.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\LootData.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\MonsterData.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Images\MonsterSpells.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Pentagram.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\SeData.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\SpellData.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\MainWindow.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SpellCreator\defaultSpellData.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
@@ -60,6 +153,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Update="My Project\Settings.Designer.vb">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
@@ -86,6 +184,15 @@
     <None Update="MonsterCreator\SpellIndex.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Update="My Project\Settings.settings">
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Assets\" />
   </ItemGroup>
 
 </Project>

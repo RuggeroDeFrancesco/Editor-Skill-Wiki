@@ -1,0 +1,42 @@
+﻿    ['SpellName'] = {
+
+    -- Main Info --
+
+        ['Ultimate'] = ultimateValue,
+        ['school'] = "schoolValue",
+        ['Spell Type'] = "spellTypeValue",
+        ['Ability Type'] = "abilityTypeValue",
+        ['Pre Cast Time'] = "preCastTimeValue",
+        ['Can Crit'] = "canCritValue",
+        ['Friend Fire'] = "friendlyFireValue", 
+        ['Restricted Armor Weight'] = "armorWeightValue",
+        ['Special Weapon Restriction'] = "SpecialWeaponRestictionValue",
+        ['Effect Group'] = "effectGroupValue",
+        ['description'] = "descriptionValue",
+        ['Skill Parameters'] = "skillParametersValue",
+        ['Spell Tags'] = "spellTagsValue",
+        ['cooldown'] = cooldownValue,
+        ['mana_cost'] = manaCostValue,
+        ['mana_cost_per_s'] = manaCostPersValue,
+        ['max_mana_cost'] = maxManaCostValue,
+        ['Player Skill'] = playerSkillValue,
+        ['image'] = "imageValue",
+        ['Categories'] = "categoriesValue",
+
+        -- Secondary Info --
+
+        ['Unicity Group'] = "unicityGroupValue",
+        ['Effect Group'] = "effectGroupValue",
+        ['Irremovable'] = "irremovableValue",
+        ['Pathfinding'] = "spellPathfindingValue",
+        ['Ready Trigger'] = "readyTriggerValue",
+        ['Secure Hit'] = "secureHitValue",
+        ['Remove Stealth'] = "removeStealthValue",
+        ['Block Check'] = "blockCheckValue",
+        ['ActivationType'] = "activationTypeValue",
+        ['Target Type'] = "targetTypeValue",
+        ['Targeting Range'] = "targetingRangeValue",
+        ['Casting Range'] = "castingRangeValue",
+        ['Check Los'] = "checkLosValue",
+        ['Block In Siege'] = "blockInSiegeValue",
+    },

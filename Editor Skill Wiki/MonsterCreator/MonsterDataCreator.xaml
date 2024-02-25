@@ -5,15 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Editor_Skill_Wiki"
         mc:Ignorable="d"
-        Title="MonsterDataCreator" Height="450" Width="800">
+        Title="MonsterDataCreator" Height="800" Width="800">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="Auto"></RowDefinition>
         </Grid.RowDefinitions>
-        <TextBox x:Name="OutputBlock" Grid.Row="0"></TextBox>
+        <TextBox x:Name="OutputBlock" Grid.Row="0" Foreground="white" >
+            <TextBox.Background>
+                <ImageBrush ImageSource="/Images/Pentagram.png" />
+            </TextBox.Background>
+        </TextBox>
         <Button x:Name="test" Grid.Row="1" Margin="5, 0, 5, 5" Click="test_click">
-            <TextBlock Text="Load Monster Data"/>
+            <TextBlock Text="Copy to Clipboard"/>
         </Button>
     </Grid>
 </Window>
